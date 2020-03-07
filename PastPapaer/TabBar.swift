@@ -15,15 +15,15 @@ struct TabBar: View {
                 Text("Home")
             }
            
-//            CourseList().tabItem {
-//               Image(systemName: "rectangle.stack.fill")
-//               Text("Categories")
-//                      }
+            SamplePaperView().tabItem {
+               Image(systemName: "list.dash")
+               Text("Paper")
+                      }
            
-            LandmarkList().tabItem {
-                Image(systemName: "list.dash")
-                Text("Paper")
-            }
+//            LandmarkList().tabItem {
+//                Image(systemName: "list.dash")
+//                Text("Paper")
+//            }
           
         }
         .edgesIgnoringSafeArea(.top)

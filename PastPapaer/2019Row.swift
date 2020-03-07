@@ -16,6 +16,7 @@ struct LandmarkRow: View {
 //                .resizable()
 //                .frame(width: 50, height: 50)
             Text(landmark.name)
+                .frame(width: 230, height: 45, alignment: .leading)
             Spacer()
         }
     }

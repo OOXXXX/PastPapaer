@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180408C42413C4C8005979A5 /* PaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180408C32413C4C8005979A5 /* PaperView.swift */; };
+		180408C62413C703005979A5 /* Ultility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180408C52413C703005979A5 /* Ultility.swift */; };
+		180408C82413C91D005979A5 /* SamplePaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180408C72413C91D005979A5 /* SamplePaperView.swift */; };
+		180408D82413CF41005979A5 /* Oxygen-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 180408CA2413CF41005979A5 /* Oxygen-Regular.ttf */; };
+		180408D92413CF41005979A5 /* Oxygen-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 180408CB2413CF41005979A5 /* Oxygen-Light.ttf */; };
+		180408DA2413CF41005979A5 /* Oxygen-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 180408CC2413CF41005979A5 /* Oxygen-Bold.ttf */; };
+		180408DB2413CF41005979A5 /* UbuntuCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 180408CE2413CF41005979A5 /* UbuntuCondensed-Regular.ttf */; };
+		180408DC2413CF41005979A5 /* Oswald-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 180408D12413CF41005979A5 /* Oswald-Bold.ttf */; };
+		180408DD2413CF41005979A5 /* Oswald-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 180408D22413CF41005979A5 /* Oswald-SemiBold.ttf */; };
+		180408DE2413CF41005979A5 /* Oswald-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 180408D32413CF41005979A5 /* Oswald-Medium.ttf */; };
+		180408DF2413CF41005979A5 /* Oswald-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 180408D42413CF41005979A5 /* Oswald-Regular.ttf */; };
+		180408E02413CF41005979A5 /* Oswald-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 180408D52413CF41005979A5 /* Oswald-ExtraLight.ttf */; };
+		180408E12413CF41005979A5 /* Oswald-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 180408D62413CF41005979A5 /* Oswald-Light.ttf */; };
+		180408E22413CF41005979A5 /* Oswald-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 180408D72413CF41005979A5 /* Oswald-VariableFont_wght.ttf */; };
+		180408E42413CFE6005979A5 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180408E32413CFE6005979A5 /* Support.swift */; };
 		18B6E24B24134DE7002615DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E24A24134DE7002615DE /* AppDelegate.swift */; };
 		18B6E24D24134DE7002615DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E24C24134DE7002615DE /* SceneDelegate.swift */; };
 		18B6E25024134DE7002615DE /* PastPapaer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E24E24134DE7002615DE /* PastPapaer.xcdatamodeld */; };
@@ -25,6 +40,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		180408C32413C4C8005979A5 /* PaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperView.swift; sourceTree = "<group>"; };
+		180408C52413C703005979A5 /* Ultility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ultility.swift; sourceTree = "<group>"; };
+		180408C72413C91D005979A5 /* SamplePaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePaperView.swift; sourceTree = "<group>"; };
+		180408CA2413CF41005979A5 /* Oxygen-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Regular.ttf"; sourceTree = "<group>"; };
+		180408CB2413CF41005979A5 /* Oxygen-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Light.ttf"; sourceTree = "<group>"; };
+		180408CC2413CF41005979A5 /* Oxygen-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Bold.ttf"; sourceTree = "<group>"; };
+		180408CE2413CF41005979A5 /* UbuntuCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UbuntuCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		180408D12413CF41005979A5 /* Oswald-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Bold.ttf"; sourceTree = "<group>"; };
+		180408D22413CF41005979A5 /* Oswald-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-SemiBold.ttf"; sourceTree = "<group>"; };
+		180408D32413CF41005979A5 /* Oswald-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Medium.ttf"; sourceTree = "<group>"; };
+		180408D42413CF41005979A5 /* Oswald-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Regular.ttf"; sourceTree = "<group>"; };
+		180408D52413CF41005979A5 /* Oswald-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-ExtraLight.ttf"; sourceTree = "<group>"; };
+		180408D62413CF41005979A5 /* Oswald-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Light.ttf"; sourceTree = "<group>"; };
+		180408D72413CF41005979A5 /* Oswald-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		180408E32413CFE6005979A5 /* Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
 		18B6E24724134DE7002615DE /* PastPaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PastPaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B6E24A24134DE7002615DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18B6E24C24134DE7002615DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +85,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180408C92413CF41005979A5 /* Oxygen */ = {
+			isa = PBXGroup;
+			children = (
+				180408CA2413CF41005979A5 /* Oxygen-Regular.ttf */,
+				180408CB2413CF41005979A5 /* Oxygen-Light.ttf */,
+				180408CC2413CF41005979A5 /* Oxygen-Bold.ttf */,
+			);
+			path = Oxygen;
+			sourceTree = "<group>";
+		};
+		180408CD2413CF41005979A5 /* Ubuntu_Condensed */ = {
+			isa = PBXGroup;
+			children = (
+				180408CE2413CF41005979A5 /* UbuntuCondensed-Regular.ttf */,
+			);
+			path = Ubuntu_Condensed;
+			sourceTree = "<group>";
+		};
+		180408CF2413CF41005979A5 /* Oswald */ = {
+			isa = PBXGroup;
+			children = (
+				180408D02413CF41005979A5 /* static */,
+				180408D72413CF41005979A5 /* Oswald-VariableFont_wght.ttf */,
+			);
+			path = Oswald;
+			sourceTree = "<group>";
+		};
+		180408D02413CF41005979A5 /* static */ = {
+			isa = PBXGroup;
+			children = (
+				180408D12413CF41005979A5 /* Oswald-Bold.ttf */,
+				180408D22413CF41005979A5 /* Oswald-SemiBold.ttf */,
+				180408D32413CF41005979A5 /* Oswald-Medium.ttf */,
+				180408D42413CF41005979A5 /* Oswald-Regular.ttf */,
+				180408D52413CF41005979A5 /* Oswald-ExtraLight.ttf */,
+				180408D62413CF41005979A5 /* Oswald-Light.ttf */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
 		18B6E23E24134DE7002615DE = {
 			isa = PBXGroup;
 			children = (
@@ -81,14 +151,21 @@
 				18B6E27B24138178002615DE /* OlevelList.swift */,
 				18B6E27F2413821E002615DE /* 2019Detail.swift */,
 				18B6E287241382C1002615DE /* 2019Row.swift */,
+				180408C32413C4C8005979A5 /* PaperView.swift */,
+				180408C72413C91D005979A5 /* SamplePaperView.swift */,
+				180408C52413C703005979A5 /* Ultility.swift */,
 				18B6E27D241381EB002615DE /* Data.swift */,
-				18B6E28524138254002615DE /* WebViewAble.swift */,
+				180408E32413CFE6005979A5 /* Support.swift */,
 				18B6E27724138134002615DE /* HomeView.swift */,
+				18B6E28524138254002615DE /* WebViewAble.swift */,
 				18B6E28324138237002615DE /* landmarkData.json */,
 				18B6E25324134DEA002615DE /* Assets.xcassets */,
 				18B6E25824134DEA002615DE /* LaunchScreen.storyboard */,
 				18B6E25B24134DEA002615DE /* Info.plist */,
 				18B6E24E24134DE7002615DE /* PastPapaer.xcdatamodeld */,
+				180408CF2413CF41005979A5 /* Oswald */,
+				180408C92413CF41005979A5 /* Oxygen */,
+				180408CD2413CF41005979A5 /* Ubuntu_Condensed */,
 				18B6E25524134DEA002615DE /* Preview Content */,
 			);
 			path = PastPapaer;
@@ -161,8 +238,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				18B6E25A24134DEA002615DE /* LaunchScreen.storyboard in Resources */,
+				180408DD2413CF41005979A5 /* Oswald-SemiBold.ttf in Resources */,
+				180408D92413CF41005979A5 /* Oxygen-Light.ttf in Resources */,
+				180408E12413CF41005979A5 /* Oswald-Light.ttf in Resources */,
 				18B6E28424138237002615DE /* landmarkData.json in Resources */,
+				180408E02413CF41005979A5 /* Oswald-ExtraLight.ttf in Resources */,
 				18B6E25724134DEA002615DE /* Preview Assets.xcassets in Resources */,
+				180408DB2413CF41005979A5 /* UbuntuCondensed-Regular.ttf in Resources */,
+				180408E22413CF41005979A5 /* Oswald-VariableFont_wght.ttf in Resources */,
+				180408DC2413CF41005979A5 /* Oswald-Bold.ttf in Resources */,
+				180408DF2413CF41005979A5 /* Oswald-Regular.ttf in Resources */,
+				180408DE2413CF41005979A5 /* Oswald-Medium.ttf in Resources */,
+				180408DA2413CF41005979A5 /* Oxygen-Bold.ttf in Resources */,
+				180408D82413CF41005979A5 /* Oxygen-Regular.ttf in Resources */,
 				18B6E25424134DEA002615DE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,12 +264,16 @@
 			files = (
 				18B6E27E241381EB002615DE /* Data.swift in Sources */,
 				18B6E27C24138178002615DE /* OlevelList.swift in Sources */,
+				180408C62413C703005979A5 /* Ultility.swift in Sources */,
 				18B6E24B24134DE7002615DE /* AppDelegate.swift in Sources */,
 				18B6E27824138134002615DE /* HomeView.swift in Sources */,
+				180408C82413C91D005979A5 /* SamplePaperView.swift in Sources */,
 				18B6E2802413821E002615DE /* 2019Detail.swift in Sources */,
+				180408C42413C4C8005979A5 /* PaperView.swift in Sources */,
 				18B6E2822413822D002615DE /* Decode.swift in Sources */,
 				18B6E24D24134DE7002615DE /* SceneDelegate.swift in Sources */,
 				18B6E25024134DE7002615DE /* PastPapaer.xcdatamodeld in Sources */,
+				180408E42413CFE6005979A5 /* Support.swift in Sources */,
 				18B6E288241382C1002615DE /* 2019Row.swift in Sources */,
 				18B6E27A2413814E002615DE /* TabBar.swift in Sources */,
 				18B6E28624138254002615DE /* WebViewAble.swift in Sources */,

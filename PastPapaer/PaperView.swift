@@ -1,0 +1,131 @@
+//
+//  PaperView.swift
+//  PastPapaer
+//
+//  Created by Rhapsody on 2020/3/7.
+//  Copyright © 2020 Rhapsody. All rights reserved.
+//
+
+import SwiftUI
+
+struct PaperView: View {
+    var body: some View {
+        
+        ScrollView{
+                   VStack {
+                       HStack {
+                        
+                           Text("Home")
+                              //.modifier(FontCoustom(size: 33))
+                               .font(.largeTitle)
+                               .fontWeight(.bold)
+                               
+                           Spacer()
+                           
+                           }
+                       }
+                       .padding(.horizontal)
+                       .padding(.leading, 10)
+                       .padding(.top, 8)
+                       
+                       ScrollView(.horizontal, showsIndicators: false) {
+                           HStack(spacing: 20) {
+                               ForEach(sectionData) { item in
+                                   GeometryReader {
+                                       geometry in
+                                       SectionView(section: item)
+                                           .rotation3DEffect(Angle(degrees:
+                                                   Double(geometry.frame(in: .global).minX - 30) / -20), axis: (x: 0, y: 10, z: 0))
+                                   }
+                                   .frame(width: 275, height: 275)
+                               }
+                           }
+                           .padding(30)
+                           .padding(.bottom, 30)
+                       }
+                       .offset(x: 0, y: -30)
+                       
+                       HStack {
+                           Text("Courses")
+                               .font(.title)
+                               .fontWeight(.semibold)
+                           Spacer()
+                       }
+                       .padding(.leading, 30)
+                       .offset(x: 0, y: -70)
+                       
+                       SectionView(section: sectionData[2], height: screen.width - 80, width: 310)
+                       .offset(x: 0, y: -70)
+                       Spacer()
+                       
+                       }
+                   .frame(width: screen.width)
+                   }
+        
+    }
+
+
+
+
+
+
+
+
+struct PaperView_Previews: PreviewProvider {
+    static var previews: some View {
+        ForEach(["iPhone 8", "iPhone XS"], id: \.self) { deviceName in
+            PaperView()
+                .previewDevice(PreviewDevice(rawValue: deviceName))
+                .previewDisplayName(deviceName)
+        }
+    }
+}
+
+struct SectionView: View {
+    var section: Section
+    var height: CGFloat = 275
+    var width: CGFloat = 275
+    
+    var body: some View {
+        VStack {
+            HStack(alignment: .top) {
+                Text(section.title)
+                    .font(.system(size: 24, weight: .bold))
+                    .frame(width: 160, alignment: .leading)
+                    .foregroundColor(.white)
+                Spacer()
+                Image(section.logo)
+            }
+            
+            Text(section.text.uppercased())
+                .frame(maxWidth: .infinity, alignment: .leading)
+            
+            section.image
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 210)
+        }
+        .padding(.top, 20)
+        .padding(.horizontal, 20)
+        .frame(width: width, height: height)
+        .background(section.color)
+        .cornerRadius(30)
+        .shadow(color: Color("HomeCard").opacity(0.3), radius: 20, x: 0, y: 20)
+    }
+}
+
+struct Section: Identifiable {
+    var id = UUID()
+    var title: String
+    var text: String
+    var logo: String
+    var image: Image
+    var color: Color
+}
+
+let sectionData = [
+    Section(title: "Prototype designs in SwiftUI", text: "18 Sections", logo: "Logo1", image: Image(uiImage: #imageLiteral(resourceName: "Card4")), color: Color(#colorLiteral(red: 0.3643261492, green: 0.06778096408, blue: 0.9673630595, alpha: 1))),
+    Section(title: "Build a SwiftUI app", text: "20 Sections", logo: "Logo1", image: Image(uiImage: #imageLiteral(resourceName: "Background1")), color: Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1))),
+    Section(title: "SwiftUI Advanced", text: "20 Sections", logo: "Logo1", image: Image(uiImage: #imageLiteral(resourceName: "Card2")), color: Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
+]
+
