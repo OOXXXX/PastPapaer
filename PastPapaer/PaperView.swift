@@ -12,7 +12,7 @@ struct SamplePaperView: View {
     
     @State var show2019 = false
     
-    var body: some View {
+    var body: some View  {
         
         ScrollView {
             ZStack {
