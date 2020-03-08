@@ -20,19 +20,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Get the managed object context from the shared persistent container.
-        _ = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+         let contentView = SamplePaperView()
 
-        // Create the SwiftUI view and set the context as the value for the managedObjectContext environment keyPath.
-        // Add `@Environment(\.managedObjectContext)` in the views that will need the context.
-       let HomeView = TabBar()
-
-        // Use a UIHostingController as window root view controller.
-        if let windowScene = scene as? UIWindowScene {
-            let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: HomeView)
-            self.window = window
-            window.makeKeyAndVisible()
-        }
+               // Use a UIHostingController as window root view controller.
+               if let windowScene = scene as? UIWindowScene {
+                   let window = UIWindow(windowScene: windowScene)
+                   window.rootViewController = UIHostingController(rootView: contentView)
+                   self.window = window
+                   window.makeKeyAndVisible()
+               }
+           
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
