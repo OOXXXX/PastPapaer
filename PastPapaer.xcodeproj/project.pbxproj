@@ -36,6 +36,7 @@
 		18B6E28424138237002615DE /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 18B6E28324138237002615DE /* landmarkData.json */; };
 		18B6E28624138254002615DE /* WebViewAble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E28524138254002615DE /* WebViewAble.swift */; };
 		18B6E288241382C1002615DE /* 2019Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E287241382C1002615DE /* 2019Row.swift */; };
+		18CF478C2414C2D0006F01FA /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CF478B2414C2D0006F01FA /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		18B6E28324138237002615DE /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		18B6E28524138254002615DE /* WebViewAble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewAble.swift; sourceTree = "<group>"; };
 		18B6E287241382C1002615DE /* 2019Row.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 2019Row.swift; sourceTree = "<group>"; };
+		18CF478B2414C2D0006F01FA /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,19 +144,14 @@
 		18B6E24924134DE7002615DE /* PastPapaer */ = {
 			isa = PBXGroup;
 			children = (
-				18B6E24A24134DE7002615DE /* AppDelegate.swift */,
-				18B6E24C24134DE7002615DE /* SceneDelegate.swift */,
-				18B6E2792413814E002615DE /* TabBar.swift */,
-				18B6E2812413822C002615DE /* Decode.swift */,
-				18B6E27B24138178002615DE /* OlevelList.swift */,
-				18B6E27F2413821E002615DE /* 2019Detail.swift */,
-				18B6E287241382C1002615DE /* 2019Row.swift */,
+				18CF47882414A436006F01FA /* 2019 */,
+				18CF478A2414A52E006F01FA /* Delegate */,
 				180408C72413C91D005979A5 /* PaperView.swift */,
-				18B6E27D241381EB002615DE /* Data.swift */,
-				180408E32413CFE6005979A5 /* Support.swift */,
+				18B6E2792413814E002615DE /* TabBar.swift */,
+				18CF478B2414C2D0006F01FA /* MenuView.swift */,
 				18B6E27724138134002615DE /* HomeView.swift */,
-				180408C52413C703005979A5 /* Ultility.swift */,
-				18B6E28524138254002615DE /* WebViewAble.swift */,
+				180408E32413CFE6005979A5 /* Support.swift */,
+				18CF47892414A4FD006F01FA /* Source */,
 				18B6E28324138237002615DE /* landmarkData.json */,
 				18B6E25324134DEA002615DE /* Assets.xcassets */,
 				18B6E25824134DEA002615DE /* LaunchScreen.storyboard */,
@@ -174,6 +171,36 @@
 				18B6E25624134DEA002615DE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18CF47882414A436006F01FA /* 2019 */ = {
+			isa = PBXGroup;
+			children = (
+				18B6E27B24138178002615DE /* OlevelList.swift */,
+				18B6E27F2413821E002615DE /* 2019Detail.swift */,
+				18B6E287241382C1002615DE /* 2019Row.swift */,
+			);
+			path = 2019;
+			sourceTree = "<group>";
+		};
+		18CF47892414A4FD006F01FA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				18B6E27D241381EB002615DE /* Data.swift */,
+				18B6E2812413822C002615DE /* Decode.swift */,
+				180408C52413C703005979A5 /* Ultility.swift */,
+				18B6E28524138254002615DE /* WebViewAble.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		18CF478A2414A52E006F01FA /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				18B6E24A24134DE7002615DE /* AppDelegate.swift */,
+				18B6E24C24134DE7002615DE /* SceneDelegate.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +296,7 @@
 				18B6E2822413822D002615DE /* Decode.swift in Sources */,
 				18B6E24D24134DE7002615DE /* SceneDelegate.swift in Sources */,
 				18B6E25024134DE7002615DE /* PastPapaer.xcdatamodeld in Sources */,
+				18CF478C2414C2D0006F01FA /* MenuView.swift in Sources */,
 				180408E42413CFE6005979A5 /* Support.swift in Sources */,
 				18B6E288241382C1002615DE /* 2019Row.swift in Sources */,
 				18B6E27A2413814E002615DE /* TabBar.swift in Sources */,

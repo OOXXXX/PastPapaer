@@ -26,13 +26,19 @@ struct SamplePaperView: View {
                         .padding()
                     
                     Firstcard()
-                        .padding(.bottom)
+                    .padding(.bottom)
                     
                     Secondcard()
                     .padding()
                     
                     Thridcard()
                     .padding()
+                    .contextMenu{
+                            VStack{
+                                Text("Hello")
+                                
+                            }
+                    }
                     
                     
                 Spacer()
