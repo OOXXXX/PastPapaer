@@ -13,6 +13,15 @@ struct SamplePaperView: View {
     @State var showUpdate = false
     @State var show2019 = false
     @State var show2018 = false
+    @State var show2017 = false
+    @State var show2016 = false
+    @State var show2015 = false
+    @State var show2014 = false
+    @State var show2013 = false
+    @State var show2012 = false
+    @State var show2011 = false
+    @State var show2010 = false
+    
     
     var body: some View  {
         
@@ -82,6 +91,16 @@ struct SamplePaperView: View {
                   }
                   .offset(x: 0, y: 34)
                 
+              Button(action: {self.show2017.toggle() }) {
+                  Text("")
+                  .frame(width: 320, height: 70)
+                //.background(Color.black)
+              
+              }
+              .sheet(isPresented: self.$show2017) {
+                  _17List()
+              }
+              .offset(x: 0, y: 133)
             }
         }
 
