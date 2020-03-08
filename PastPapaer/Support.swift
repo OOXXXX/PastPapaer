@@ -31,3 +31,43 @@ struct FontCoustom2: ViewModifier {
         content.font(.custom("UbuntuCondensed-Regular", size: size))
     }
 }
+
+struct FontCoustom3: ViewModifier {
+    var size: CGFloat
+    
+    func body(content: Content) -> some View {
+        content.font(.custom("RobotoMono-Regular", size: size))
+    }
+}
+
+struct FontCoustom4: ViewModifier {
+    var size: CGFloat
+    
+    func body(content: Content) -> some View {
+        content.font(.custom("RobotoMono-Bold", size: size))
+    }
+}
+
+struct FontCoustom5: ViewModifier {
+    var size: CGFloat
+    
+    func body(content: Content) -> some View {
+        content.font(.custom("Teko-Medium", size: size))
+    }
+}
+
+struct FontCoustom6: ViewModifier {
+    var size: CGFloat
+    
+    func body(content: Content) -> some View {
+        content.font(.custom("AmaticSC-Bold", size: size))
+    }
+}
+
+struct FontCoustom7: ViewModifier {
+    var size: CGFloat
+    
+    func body(content: Content) -> some View {
+        content.font(.custom("Girassol-Regular", size: size))
+    }
+}

@@ -6,6 +6,12 @@
 	<array>
 		<string>Oxygen-Bold.ttf</string>
 		<string>UbuntuCondensed-Regular.ttf</string>
+		<string>RobotoMono-Regular.ttf</string>
+		<string>RobotoMono-Medium.ttf</string>
+		<string>RobotoMono-Bold.ttf</string>
+		<string>AmaticSC-Bold.ttf</string>
+		<string>Teko-Medium.ttf</string>
+		<string>Girassol-Regular.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>

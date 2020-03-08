@@ -17,7 +17,7 @@ struct LandmarkList: View {
                     LandmarkRow(landmark: landmark)
                 }
             }
-            .navigationBarTitle(Text("PastPaper"))
+            .navigationBarTitle(Text("2019"))
         }
         
     }
