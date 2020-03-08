@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		180408C42413C4C8005979A5 /* PaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180408C32413C4C8005979A5 /* PaperView.swift */; };
 		180408C62413C703005979A5 /* Ultility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180408C52413C703005979A5 /* Ultility.swift */; };
-		180408C82413C91D005979A5 /* SamplePaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180408C72413C91D005979A5 /* SamplePaperView.swift */; };
+		180408C82413C91D005979A5 /* PaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180408C72413C91D005979A5 /* PaperView.swift */; };
 		180408D82413CF41005979A5 /* Oxygen-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 180408CA2413CF41005979A5 /* Oxygen-Regular.ttf */; };
 		180408D92413CF41005979A5 /* Oxygen-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 180408CB2413CF41005979A5 /* Oxygen-Light.ttf */; };
 		180408DA2413CF41005979A5 /* Oxygen-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 180408CC2413CF41005979A5 /* Oxygen-Bold.ttf */; };
@@ -40,9 +39,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		180408C32413C4C8005979A5 /* PaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperView.swift; sourceTree = "<group>"; };
 		180408C52413C703005979A5 /* Ultility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ultility.swift; sourceTree = "<group>"; };
-		180408C72413C91D005979A5 /* SamplePaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePaperView.swift; sourceTree = "<group>"; };
+		180408C72413C91D005979A5 /* PaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperView.swift; sourceTree = "<group>"; };
 		180408CA2413CF41005979A5 /* Oxygen-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Regular.ttf"; sourceTree = "<group>"; };
 		180408CB2413CF41005979A5 /* Oxygen-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Light.ttf"; sourceTree = "<group>"; };
 		180408CC2413CF41005979A5 /* Oxygen-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Bold.ttf"; sourceTree = "<group>"; };
@@ -151,12 +149,11 @@
 				18B6E27B24138178002615DE /* OlevelList.swift */,
 				18B6E27F2413821E002615DE /* 2019Detail.swift */,
 				18B6E287241382C1002615DE /* 2019Row.swift */,
-				180408C32413C4C8005979A5 /* PaperView.swift */,
-				180408C72413C91D005979A5 /* SamplePaperView.swift */,
-				180408C52413C703005979A5 /* Ultility.swift */,
+				180408C72413C91D005979A5 /* PaperView.swift */,
 				18B6E27D241381EB002615DE /* Data.swift */,
 				180408E32413CFE6005979A5 /* Support.swift */,
 				18B6E27724138134002615DE /* HomeView.swift */,
+				180408C52413C703005979A5 /* Ultility.swift */,
 				18B6E28524138254002615DE /* WebViewAble.swift */,
 				18B6E28324138237002615DE /* landmarkData.json */,
 				18B6E25324134DEA002615DE /* Assets.xcassets */,
@@ -267,9 +264,8 @@
 				180408C62413C703005979A5 /* Ultility.swift in Sources */,
 				18B6E24B24134DE7002615DE /* AppDelegate.swift in Sources */,
 				18B6E27824138134002615DE /* HomeView.swift in Sources */,
-				180408C82413C91D005979A5 /* SamplePaperView.swift in Sources */,
+				180408C82413C91D005979A5 /* PaperView.swift in Sources */,
 				18B6E2802413821E002615DE /* 2019Detail.swift in Sources */,
-				180408C42413C4C8005979A5 /* PaperView.swift in Sources */,
 				18B6E2822413822D002615DE /* Decode.swift in Sources */,
 				18B6E24D24134DE7002615DE /* SceneDelegate.swift in Sources */,
 				18B6E25024134DE7002615DE /* PastPapaer.xcdatamodeld in Sources */,
