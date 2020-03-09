@@ -26,7 +26,7 @@ struct SamplePaperView: View {
     var body: some View  {
         
         ScrollView {
-            ZStack {
+              ZStack {
                 
                 VStack{
                     HStack{
@@ -36,7 +36,7 @@ struct SamplePaperView: View {
                         .modifier(FontCoustom7(size: 40))
                         .frame(width: 325, height: 40, alignment: .leading)
                         .padding()
-                        .offset(x: 20, y: 0)
+                        .offset(x: 13, y: 0)
                         
                 Button(action: { self.showUpdate.toggle() }) {
                     Image(systemName: "bolt.horizontal.fill")
@@ -57,12 +57,21 @@ struct SamplePaperView: View {
             }
                     
                     Firstcard()
-                    .padding(.bottom)
+                        .padding(.bottom)
                     
                     Secondcard()
                         .padding(.bottom)
                     
                     Thridcard()
+                        .padding(.bottom)
+                    
+                    Forthcard()
+                        .padding(.bottom)
+                    
+                    Fifthcard()
+                        .padding(.bottom)
+                    
+                    Sixthcard()
                         .padding(.bottom)
                     
                     
@@ -102,8 +111,10 @@ struct SamplePaperView: View {
               }
               .offset(x: 0, y: 133)
             }
+            
         }
-
+//.background(Color.gray)
+    
 }
 
 
@@ -135,18 +146,19 @@ struct Firstcard: View {
                 }
                 
                 Spacer()
-                Image("Logo2")
+                Image("Logo19")
                     .resizable()
                     .frame(width: 40, height: 40)
-                    .offset(x: 0, y: -3)
+                    .offset(x: 0, y: 5)
             }
             .padding()
             Spacer()
         }
-        .frame(width: 330.0, height: 80.0)
+        .frame(width: 345.0, height: 80.0)
         .background(Color("secondary"))
-        .cornerRadius(18)
-        .shadow(color: Color.black.opacity(0.4), radius: 10, x: 0, y: 10)
+        .cornerRadius(11)
+        .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
+        .shadow(color: Color.black.opacity(0.3), radius: 4, x: 2, y: 4)
         }
     
     }
@@ -167,18 +179,19 @@ struct Firstcard: View {
                 }
                 
                 Spacer()
-                Image("Logo2")
+                Image("Logo18")
                     .resizable()
                     .frame(width: 40, height: 40)
-                    .offset(x: 0, y: -3)
+                    .offset(x: 0, y: 5)
             }
             .padding()
             Spacer()
         }
-        .frame(width: 330.0, height: 80.0)
+        .frame(width: 345.0, height: 80.0)
         .background(Color("secondary"))
-        .cornerRadius(18)
-        .shadow(color: Color.black.opacity(0.4), radius: 10, x: 0, y: 10)
+        .cornerRadius(11)
+        .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
+        .shadow(color: Color.black.opacity(0.3), radius: 4, x: 2, y: 4)
         }
     
     }
@@ -199,18 +212,118 @@ struct Firstcard: View {
                 }
                 
                 Spacer()
-                Image("Logo2")
+                Image("Logo17")
                     .resizable()
                     .frame(width: 40, height: 40)
-                    .offset(x: 0, y: -3)
+                    .offset(x: 0, y: 5)
             }
             .padding()
             Spacer()
         }
-        .frame(width: 330, height: 80)
+        .frame(width: 345, height: 80)
         .background(Color("secondary"))
-        .cornerRadius(18)
-        .shadow(color: Color.black.opacity(0.4), radius: 10, x: 0, y: 10)
+        .cornerRadius(11)
+        .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
+        .shadow(color: Color.black.opacity(0.3), radius: 4, x: 2, y: 4)
+        }
+    
+    }
+    
+    struct Forthcard: View {
+    var body: some View {
+        VStack(alignment: .center) {
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("2016")
+                        .modifier(FontCoustom5(size: 38))
+                        .foregroundColor(Color("background2"))
+                        .padding(.bottom, -10)
+                    
+                    Text("Olevel")
+                        .modifier(FontCoustom2(size: 18))
+                        .foregroundColor(Color("Color"))
+                }
+                
+                Spacer()
+                Image("Logo16")
+                    .resizable()
+                    .frame(width: 40, height: 40)
+                    .offset(x: 0, y: 5)
+            }
+            .padding()
+            Spacer()
+        }
+        .frame(width: 345, height: 80)
+        .background(Color("secondary"))
+        .cornerRadius(11)
+        .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
+        .shadow(color: Color.black.opacity(0.3), radius: 4, x: 2, y: 4)
+        }
+    
+    }
+    
+    struct Fifthcard: View {
+    var body: some View {
+        VStack(alignment: .center) {
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("2015")
+                        .modifier(FontCoustom5(size: 38))
+                        .foregroundColor(Color("background2"))
+                        .padding(.bottom, -10)
+                    
+                    Text("Olevel")
+                        .modifier(FontCoustom2(size: 18))
+                        .foregroundColor(Color("Color"))
+                }
+                
+                Spacer()
+                Image("Logo15")
+                    .resizable()
+                    .frame(width: 40, height: 40)
+                    .offset(x: 0, y: 5)
+            }
+            .padding()
+            Spacer()
+        }
+        .frame(width: 345, height: 80)
+        .background(Color("secondary"))
+        .cornerRadius(11)
+        .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
+        .shadow(color: Color.black.opacity(0.3), radius: 4, x: 2, y: 4)
+        }
+    
+    }
+    
+    struct Sixthcard: View {
+    var body: some View {
+        VStack(alignment: .center) {
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("2014")
+                        .modifier(FontCoustom5(size: 38))
+                        .foregroundColor(Color("background2"))
+                        .padding(.bottom, -10)
+                    
+                    Text("Olevel")
+                        .modifier(FontCoustom2(size: 18))
+                        .foregroundColor(Color("Color"))
+                }
+                
+                Spacer()
+                Image("Logo14")
+                    .resizable()
+                    .frame(width: 40, height: 40)
+                    .offset(x: 0, y: 5)
+            }
+            .padding()
+            Spacer()
+        }
+        .frame(width: 345, height: 80)
+        .background(Color("secondary"))
+        .cornerRadius(11)
+        .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
+        .shadow(color: Color.black.opacity(0.3), radius: 4, x: 2, y: 4)
         }
     
     }
