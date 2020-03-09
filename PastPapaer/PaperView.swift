@@ -166,7 +166,7 @@ struct SamplePaperView: View {
              
              }
              .sheet(isPresented: self.$show2016) {
-                 _17List()
+                 _16L()
              }
              .offset(x: 0, y: -195)
                 
@@ -180,7 +180,7 @@ struct SamplePaperView: View {
             
             }
             .sheet(isPresented: self.$show2015) {
-                _17List()
+                _15L()
             }
             .offset(x: 0, y: -170)
                 
@@ -194,7 +194,7 @@ struct SamplePaperView: View {
             
             }
             .sheet(isPresented: self.$show2014) {
-                _17List()
+                _14L()
             }
             .offset(x: 0, y: -143)
                 
@@ -208,7 +208,7 @@ struct SamplePaperView: View {
             
             }
             .sheet(isPresented: self.$show2013) {
-                _17List()
+                _13L()
             }
             .offset(x: 0, y: -118)
             
@@ -222,7 +222,7 @@ struct SamplePaperView: View {
             
             }
             .sheet(isPresented: self.$show2012) {
-                _17List()
+                _12L()
             }
             .offset(x: 0, y: -92)
             
@@ -236,7 +236,7 @@ struct SamplePaperView: View {
             
             }
             .sheet(isPresented: self.$show2011) {
-                _17List()
+                _11L()
             }
             .offset(x: 0, y: -66)
                 
