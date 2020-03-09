@@ -35,11 +35,13 @@ struct SamplePaperView: View {
                 
                 Text("PastPaper")
                     .modifier(FontCoustom7(size: 40))
-                    .frame(width: 325, height: 20, alignment: .leading)
+                    .frame(width: screen.width-50, height: 20, alignment: .leading)
                     .padding(.top)
                     .offset(x: 13, y: 0)
                     
-            Button(action: { self.showUpdate.toggle() }) {
+            Button(action: {
+                self.generator.notificationOccurred(.success)
+                self.showUpdate.toggle() }) {
                 Image(systemName: "bolt.horizontal.fill")
                     .renderingMode(.original)
                     .font(.system(size: 18, weight: .medium))
@@ -282,7 +284,7 @@ struct Firstcard: View {
             .padding()
             Spacer()
         }
-        .frame(width: 345.0, height: 80.0)
+        .frame(width: screen.width-30, height: 80.0)
         .background(Color("secondary"))
         .cornerRadius(11)
         .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
@@ -315,7 +317,7 @@ struct Firstcard: View {
             .padding()
             Spacer()
         }
-        .frame(width: 345.0, height: 80.0)
+        .frame(width: screen.width-30, height: 80.0)
         .background(Color("secondary"))
         .cornerRadius(11)
         .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
@@ -348,7 +350,7 @@ struct Firstcard: View {
             .padding()
             Spacer()
         }
-        .frame(width: 345, height: 80)
+        .frame(width: screen.width-30, height: 80)
         .background(Color("secondary"))
         .cornerRadius(11)
         .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
@@ -381,7 +383,7 @@ struct Firstcard: View {
             .padding()
             Spacer()
         }
-        .frame(width: 345, height: 80)
+        .frame(width: screen.width-30, height: 80)
         .background(Color("secondary"))
         .cornerRadius(11)
         .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
@@ -414,7 +416,7 @@ struct Firstcard: View {
             .padding()
             Spacer()
         }
-        .frame(width: 345, height: 80)
+        .frame(width: screen.width-30, height: 80)
         .background(Color("secondary"))
         .cornerRadius(11)
         .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
@@ -447,7 +449,7 @@ struct Firstcard: View {
             .padding()
             Spacer()
         }
-        .frame(width: 345, height: 80)
+        .frame(width: screen.width-30, height: 80)
         .background(Color("secondary"))
         .cornerRadius(11)
         .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
@@ -480,7 +482,7 @@ struct Firstcard: View {
             .padding()
             Spacer()
         }
-        .frame(width: 345, height: 80)
+        .frame(width: screen.width-30, height: 80)
         .background(Color("secondary"))
         .cornerRadius(11)
         .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
@@ -513,7 +515,7 @@ struct Firstcard: View {
             .padding()
             Spacer()
         }
-        .frame(width: 345, height: 80)
+        .frame(width: screen.width-30, height: 80)
         .background(Color("secondary"))
         .cornerRadius(11)
         .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
@@ -546,7 +548,7 @@ struct Firstcard: View {
             .padding()
             Spacer()
         }
-        .frame(width: 345, height: 80)
+        .frame(width: screen.width-30, height: 80)
         .background(Color("secondary"))
         .cornerRadius(11)
         .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
@@ -579,7 +581,7 @@ struct Firstcard: View {
             .padding()
             Spacer()
         }
-        .frame(width: 345, height: 80)
+        .frame(width: screen.width-30, height: 80)
         .background(Color("secondary"))
         .cornerRadius(11)
         .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
