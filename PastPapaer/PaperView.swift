@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct SamplePaperView: View {
+    let generator = UINotificationFeedbackGenerator()
     
     @State var showUpdate = false
     @State var show2019 = false
@@ -22,42 +23,53 @@ struct SamplePaperView: View {
     @State var show2011 = false
     @State var show2010 = false
     
+    @State var active = false
+    @State var activeIndex = -1
+    @State var activeView = CGSize.zero
+    
     
     var body: some View  {
+        VStack{
+                HStack{
+                
+                
+                Text("PastPaper")
+                    .modifier(FontCoustom7(size: 40))
+                    .frame(width: 325, height: 20, alignment: .leading)
+                    .padding(.top)
+                    .offset(x: 13, y: 0)
+                    
+            Button(action: { self.showUpdate.toggle() }) {
+                Image(systemName: "bolt.horizontal.fill")
+                    .renderingMode(.original)
+                    .font(.system(size: 18, weight: .medium))
+                    .frame(width: 36, height: 36)
+                    .background(Color.white)
+                    .clipShape(Circle())
+                    .shadow(color: Color.black.opacity(0.1), radius: 1, x: 0, y: 1)
+                    .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 10)
+                .padding(.top)
+                
+                }
+                .offset(x: -15, y: 0)
+            .sheet(isPresented: $showUpdate) {
+                BlogView()
+            }
+            
+        }
+            .frame(width: screen.width, height: 35)
+                .padding(.top)
+                .padding(.bottom, -5)
         
         ScrollView {
+            //frame(width: 300, height: 1000)
               ZStack {
-                
                 VStack{
-                    HStack{
-                    
-                    
-                    Text("PastPaper")
-                        .modifier(FontCoustom7(size: 40))
-                        .frame(width: 325, height: 40, alignment: .leading)
-                        .padding()
-                        .offset(x: 13, y: 0)
-                        
-                Button(action: { self.showUpdate.toggle() }) {
-                    Image(systemName: "bolt.horizontal.fill")
-                        .renderingMode(.original)
-                        .font(.system(size: 18, weight: .medium))
-                        .frame(width: 36, height: 36)
-                        .background(Color.white)
-                        .clipShape(Circle())
-                        .shadow(color: Color.black.opacity(0.1), radius: 1, x: 0, y: 1)
-                        .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 10)
-                    
-                    }
-                    .offset(x: -30, y: 0)
-                .sheet(isPresented: $showUpdate) {
-                    BlogView()
-                }
-                        
-            }
+                
                     
                     Firstcard()
                         .padding(.bottom)
+                        .padding(.top)
                     
                     Secondcard()
                         .padding(.bottom)
@@ -75,31 +87,49 @@ struct SamplePaperView: View {
                         .padding(.bottom)
                     
                     Seventhcard()
-                    .padding(.bottom)
+                        .padding(.bottom)
                     
-//                    Eighthcard()
-//                    .padding(.bottom)
-//
-//                    Ninthcard()
-//                    .padding(.bottom)
+                    Eighthcard()
+                        .padding(.bottom)
+                    
+                    Ninthcard()
+                        .padding(.bottom)
+                    
+//                    Tenthcard()
+//                        .padding(.bottom)
                     
                     
                     
 
                 Spacer()
+                }
+                .frame(width: screen.width, height: 600)
+                .padding(.top, 150)
+                .padding(.bottom, -450)
             }
-              Button(action: {self.show2019.toggle() }) {
+              Button(action: {
+                  let selectionFeedback = UISelectionFeedbackGenerator()
+                                  selectionFeedback.selectionChanged()
+                              self.show2019.toggle()}) {
+                
+                
                     Text("")
                     .frame(width: 320, height: 70)
                   //.background(Color.black)
+                    
                 
                 }
+                
                 .sheet(isPresented: self.$show2019) {
                     LandmarkList()
                 }
-                .offset(x: 0, y: -250)
+                .offset(x: 0, y: -275)
+            
                 
-              Button(action: {self.show2018.toggle() }) {
+              Button(action: {
+              let selectionFeedback = UISelectionFeedbackGenerator()
+                              selectionFeedback.selectionChanged()
+                          self.show2018.toggle()}) {
                       Text("")
                       .frame(width: 320, height: 70)
                     //.background(Color.black)
@@ -108,9 +138,12 @@ struct SamplePaperView: View {
                   .sheet(isPresented: self.$show2018) {
                       _18List()
                   }
-                  .offset(x: 0, y: -155)
+                  .offset(x: 0, y: -245)
                 
-              Button(action: {self.show2017.toggle() }) {
+              Button(action: {
+              let selectionFeedback = UISelectionFeedbackGenerator()
+                              selectionFeedback.selectionChanged()
+                          self.show2017.toggle()}) {
                   Text("")
                   .frame(width: 320, height: 70)
                 //.background(Color.black)
@@ -119,9 +152,12 @@ struct SamplePaperView: View {
               .sheet(isPresented: self.$show2017) {
                   _17List()
               }
-              .offset(x: 0, y: -58)
+              .offset(x: 0, y: -220)
                 
-             Button(action: {self.show2016.toggle() }) {
+             Button(action: {
+             let selectionFeedback = UISelectionFeedbackGenerator()
+                             selectionFeedback.selectionChanged()
+                         self.show2016.toggle()}) {
                  Text("")
                  .frame(width: 320, height: 70)
                //.background(Color.black)
@@ -130,9 +166,12 @@ struct SamplePaperView: View {
              .sheet(isPresented: self.$show2016) {
                  _17List()
              }
-             .offset(x: 0, y: 38)
+             .offset(x: 0, y: -195)
                 
-            Button(action: {self.show2015.toggle() }) {
+            Button(action: {
+            let selectionFeedback = UISelectionFeedbackGenerator()
+                            selectionFeedback.selectionChanged()
+                        self.show2015.toggle()}) {
                 Text("")
                 .frame(width: 320, height: 70)
               //.background(Color.black)
@@ -141,9 +180,12 @@ struct SamplePaperView: View {
             .sheet(isPresented: self.$show2015) {
                 _17List()
             }
-            .offset(x: 0, y: 135)
+            .offset(x: 0, y: -170)
                 
-            Button(action: {self.show2014.toggle() }) {
+            Button(action: {
+            let selectionFeedback = UISelectionFeedbackGenerator()
+                            selectionFeedback.selectionChanged()
+                        self.show2014.toggle()}) {
                 Text("")
                 .frame(width: 320, height: 70)
               //.background(Color.black)
@@ -152,9 +194,12 @@ struct SamplePaperView: View {
             .sheet(isPresented: self.$show2014) {
                 _17List()
             }
-            .offset(x: 0, y: 230)
+            .offset(x: 0, y: -143)
                 
-            Button(action: {self.show2013.toggle() }) {
+            Button(action: {
+            let selectionFeedback = UISelectionFeedbackGenerator()
+                            selectionFeedback.selectionChanged()
+                        self.show2013.toggle()}) {
                 Text("")
                 .frame(width: 320, height: 70)
               //.background(Color.black)
@@ -163,7 +208,35 @@ struct SamplePaperView: View {
             .sheet(isPresented: self.$show2013) {
                 _17List()
             }
-            .offset(x: 0, y: 325)
+            .offset(x: 0, y: -118)
+            
+            Button(action: {
+            let selectionFeedback = UISelectionFeedbackGenerator()
+                            selectionFeedback.selectionChanged()
+                        self.show2012.toggle()}) {
+                Text("")
+                .frame(width: 320, height: 70)
+             // .background(Color.black)
+            
+            }
+            .sheet(isPresented: self.$show2012) {
+                _17List()
+            }
+            .offset(x: 0, y: -92)
+            
+            Button(action: {
+            let selectionFeedback = UISelectionFeedbackGenerator()
+                            selectionFeedback.selectionChanged()
+                        self.show2011.toggle()}) {
+                Text("")
+                .frame(width: 320, height: 70)
+             // .background(Color.black)
+            
+            }
+            .sheet(isPresented: self.$show2011) {
+                _17List()
+            }
+            .offset(x: 0, y: -66)
                 
             }
             
@@ -515,3 +588,4 @@ struct Firstcard: View {
     
     }
 }
+
