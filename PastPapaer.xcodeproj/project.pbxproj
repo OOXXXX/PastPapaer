@@ -23,6 +23,7 @@
 		180408E42413CFE6005979A5 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180408E32413CFE6005979A5 /* Support.swift */; };
 		18367EC624151F06004B634D /* BlogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18367EC524151F06004B634D /* BlogView.swift */; };
 		183C24BF2415D9A7006D96EF /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C24BE2415D9A7006D96EF /* TabBarView.swift */; };
+		188F81AF24166A750043DBDB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188F81AE24166A750043DBDB /* StoreKit.framework */; };
 		18B6E24B24134DE7002615DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E24A24134DE7002615DE /* AppDelegate.swift */; };
 		18B6E24D24134DE7002615DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E24C24134DE7002615DE /* SceneDelegate.swift */; };
 		18B6E25024134DE7002615DE /* PastPapaer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E24E24134DE7002615DE /* PastPapaer.xcdatamodeld */; };
@@ -123,6 +124,8 @@
 		180408E32413CFE6005979A5 /* Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
 		18367EC524151F06004B634D /* BlogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogView.swift; sourceTree = "<group>"; };
 		183C24BE2415D9A7006D96EF /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		188F81AC241669F80043DBDB /* PastPaper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PastPaper.entitlements; sourceTree = "<group>"; };
+		188F81AE24166A750043DBDB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		18B6E24724134DE7002615DE /* PastPaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PastPaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B6E24A24134DE7002615DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18B6E24C24134DE7002615DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -213,6 +216,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188F81AF24166A750043DBDB /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,11 +263,20 @@
 			path = static;
 			sourceTree = "<group>";
 		};
+		188F81AD24166A750043DBDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				188F81AE24166A750043DBDB /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		18B6E23E24134DE7002615DE = {
 			isa = PBXGroup;
 			children = (
 				18B6E24924134DE7002615DE /* PastPapaer */,
 				18B6E24824134DE7002615DE /* Products */,
+				188F81AD24166A750043DBDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -278,6 +291,7 @@
 		18B6E24924134DE7002615DE /* PastPapaer */ = {
 			isa = PBXGroup;
 			children = (
+				188F81AC241669F80043DBDB /* PastPaper.entitlements */,
 				18DB6B43241621500050F099 /* 2011 */,
 				18DB6B372416209E0050F099 /* 2012 */,
 				18DB6B2C2416203D0050F099 /* 2013 */,
@@ -888,6 +902,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PastPapaer/PastPaper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"PastPapaer/Preview Content\"";
 				DEVELOPMENT_TEAM = 6MM6Y2NK23;
@@ -908,6 +923,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PastPapaer/PastPaper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"PastPapaer/Preview Content\"";
 				DEVELOPMENT_TEAM = 6MM6Y2NK23;

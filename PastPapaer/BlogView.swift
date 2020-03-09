@@ -15,76 +15,82 @@ let generator = UINotificationFeedbackGenerator()
     
     var body: some View {
               
-        VStack {
-            ZStack {
-                VStack {
+        ZStack {
+            Image("Image")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+                .scaleEffect(0.5)
+                .offset(x: screen.width/2-40, y: screen.height/2-66)
+            VStack {
+                ZStack {
                     VStack {
-    Button(action: {
-                      let impactMed = UIImpactFeedbackGenerator(style: .medium)
-                      impactMed.impactOccurred()
-        stopSound(sound: "Radiohead-Creep", type: "mp3")
-                      self.presentationMode.wrappedValue.dismiss()
-                      })
-                   {
-                      
-                      
-                       Image(systemName: "house")
-                          .font(.system(size: 18, weight: .medium))
-                          .frame(width: 36.0, height: 36)
-                          .background(Color.white)
-                          .foregroundColor(Color.black)
-                          .clipShape(Circle())
-                          .shadow(color: Color.black.opacity(0.2), radius: 2, x: 0, y: 2)
-                        .frame(width: screen.width, height: 45, alignment: .trailing)
-                        .padding(.trailing, 27)
-                        .padding(.top, 10)
-                          //.shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 10)
-    
-                   }
-                
-                        Webview(url: "https://www.ooxxxx.club")
-                            //.padding(.top,60)
-                            .edgesIgnoringSafeArea(.top)
+                        VStack {
+        Button(action: {
+                          let impactMed = UIImpactFeedbackGenerator(style: .medium)
+                          impactMed.impactOccurred()
+            stopSound(sound: "Radiohead-Creep", type: "mp3")
+                          self.presentationMode.wrappedValue.dismiss()
+                          })
+                       {
+                          
+                          
+                           Image(systemName: "house")
+                              .font(.system(size: 18, weight: .medium))
+                              .frame(width: 36.0, height: 36)
+                              .background(Color.white)
+                              .foregroundColor(Color.black)
+                              .clipShape(Circle())
+                              .shadow(color: Color.black.opacity(0.2), radius: 2, x: 0, y: 2)
+                            .frame(width: screen.width, height: 45, alignment: .trailing)
+                            .padding(.trailing, 27)
+                            .padding(.top, 10)
+                              //.shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 10)
+        
+                       }
+                    
+                            Webview(url: "https://www.ooxxxx.club")
+    //                            .frame(width: screen.width,  height: screen.height-210)
+                                .frame(width: screen.width)
+                                //.padding(.top, 60)
+                                .edgesIgnoringSafeArea(.top)
+                        }
+                         
+    //                            .offset(x: screen.width/2-40, y: -screen.height/2-230)
+    //
                     }
-                     
-//                            .offset(x: screen.width/2-40, y: -screen.height/2-230)
-//
-                            
+      
+    //                .offset(x: screen.width-60, y: -screen.height/2+100)
                     
                 }
+    //            Image("Image")
+    //            .resizable()
+    //            .aspectRatio(contentMode: .fit)
+    //                .offset(x: 0, y: 170)
+    //           frame(width: 300, height: 200)
                 
-                    
-//                .offset(x: screen.width-60, y: -screen.height/2+100)
                 
+                Text("2020 Patrick Zhu™️")
+                .modifier(FontCoustom2(size: 18))
+                    .padding(.bottom, 37)
+                    //.padding(.top, 10)
+                    .offset(x: 0, y: 10)
+                
+                Button(action: {
+                self.generator.notificationOccurred(.success)
+                    playSound(sound: "Radiohead-Creep", type: "mp3")
+                           }) {
+                    Text("")
+                    .frame(width: 320, height: 60)
+                 // .background(Color.black)
+                
+                }
+                .offset(x: 0, y: -20)
+     
             }
-//            Image("Image")
-//            .resizable()
-//            .aspectRatio(contentMode: .fit)
-//                .offset(x: 0, y: 170)
-//           frame(width: 300, height: 200)
-            
-            
-            Text("2020 Patrick Zhu™️")
-            .modifier(FontCoustom2(size: 18))
-                .padding(.bottom, 15)
-                .padding(.top, 10)
-                .offset(x: 0, y: 10)
-            
-            Button(action: {
-            self.generator.notificationOccurred(.success)
-                playSound(sound: "Radiohead-Creep", type: "mp3")
-                       }) {
-                Text("")
-                .frame(width: 320, height: 30)
-              //.background(Color.black)
-            
-            }
-        .offset(x: 0, y: -38)
-            
+
             
         }
-        
-            
+    
     }
     
 }
