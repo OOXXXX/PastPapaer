@@ -72,6 +72,8 @@
 		18DB6B3E241621280050F099 /* 2011R.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB6B3D241621280050F099 /* 2011R.swift */; };
 		18DB6B402416213F0050F099 /* Decode1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB6B3F2416213F0050F099 /* Decode1.swift */; };
 		18DB6B42241621490050F099 /* Data1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB6B41241621490050F099 /* Data1.swift */; };
+		18DB6B46241639710050F099 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB6B45241639710050F099 /* PlaySound.swift */; };
+		18DB6B4824163C0A0050F099 /* Radiohead-Creep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18DB6B4724163C0A0050F099 /* Radiohead-Creep.mp3 */; };
 		18E956832415299100DAF229 /* RobotoMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18E956782415299100DAF229 /* RobotoMono-Medium.ttf */; };
 		18E956842415299100DAF229 /* RobotoMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18E956792415299100DAF229 /* RobotoMono-Regular.ttf */; };
 		18E956852415299100DAF229 /* RobotoMono-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18E9567A2415299100DAF229 /* RobotoMono-LightItalic.ttf */; };
@@ -172,6 +174,8 @@
 		18DB6B3D241621280050F099 /* 2011R.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2011R.swift; sourceTree = "<group>"; };
 		18DB6B3F2416213F0050F099 /* Decode1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decode1.swift; sourceTree = "<group>"; };
 		18DB6B41241621490050F099 /* Data1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data1.swift; sourceTree = "<group>"; };
+		18DB6B45241639710050F099 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+		18DB6B4724163C0A0050F099 /* Radiohead-Creep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Radiohead-Creep.mp3"; sourceTree = "<group>"; };
 		18E956782415299100DAF229 /* RobotoMono-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Medium.ttf"; sourceTree = "<group>"; };
 		18E956792415299100DAF229 /* RobotoMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Regular.ttf"; sourceTree = "<group>"; };
 		18E9567A2415299100DAF229 /* RobotoMono-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-LightItalic.ttf"; sourceTree = "<group>"; };
@@ -287,6 +291,7 @@
 				180408C72413C91D005979A5 /* PaperView.swift */,
 				18367EC524151F06004B634D /* BlogView.swift */,
 				183C24BE2415D9A7006D96EF /* TabBarView.swift */,
+				18DB6B45241639710050F099 /* PlaySound.swift */,
 				180408E32413CFE6005979A5 /* Support.swift */,
 				18CF47892414A4FD006F01FA /* Source */,
 				18E956C1241535A800DAF229 /* JSON */,
@@ -294,6 +299,7 @@
 				18B6E25824134DEA002615DE /* LaunchScreen.storyboard */,
 				18B6E25B24134DEA002615DE /* Info.plist */,
 				18B6E24E24134DE7002615DE /* PastPapaer.xcdatamodeld */,
+				18DB6B4724163C0A0050F099 /* Radiohead-Creep.mp3 */,
 				18E956B12415326400DAF229 /* Girassol */,
 				18E956A42415311000DAF229 /* Teko */,
 				18E9569324152EC800DAF229 /* Amatic_SC */,
@@ -676,6 +682,7 @@
 				18E956B42415326400DAF229 /* Girassol-Regular.ttf in Resources */,
 				180408D82413CF41005979A5 /* Oxygen-Regular.ttf in Resources */,
 				18E956AC2415311000DAF229 /* Teko-Medium.ttf in Resources */,
+				18DB6B4824163C0A0050F099 /* Radiohead-Creep.mp3 in Resources */,
 				18E9568A2415299100DAF229 /* RobotoMono-Bold.ttf in Resources */,
 				18B6E25424134DEA002615DE /* Assets.xcassets in Resources */,
 				18E956AF2415311000DAF229 /* Teko-Regular.ttf in Resources */,
@@ -706,6 +713,7 @@
 				18DB6B3E241621280050F099 /* 2011R.swift in Sources */,
 				18E956DC2415430B00DAF229 /* 2017List.swift in Sources */,
 				18DB6B1624161F640050F099 /* 2014D.swift in Sources */,
+				18DB6B46241639710050F099 /* PlaySound.swift in Sources */,
 				18B6E24B24134DE7002615DE /* AppDelegate.swift in Sources */,
 				18E956C6241538BE00DAF229 /* Decode8.swift in Sources */,
 				180408C82413C91D005979A5 /* PaperView.swift in Sources */,

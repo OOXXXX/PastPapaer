@@ -22,6 +22,7 @@ let generator = UINotificationFeedbackGenerator()
     Button(action: {
                       let impactMed = UIImpactFeedbackGenerator(style: .medium)
                       impactMed.impactOccurred()
+        stopSound(sound: "Radiohead-Creep", type: "mp3")
                       self.presentationMode.wrappedValue.dismiss()
                       })
                    {
@@ -56,13 +57,34 @@ let generator = UINotificationFeedbackGenerator()
 //                .offset(x: screen.width-60, y: -screen.height/2+100)
                 
             }
+//            Image("Image")
+//            .resizable()
+//            .aspectRatio(contentMode: .fit)
+//                .offset(x: 0, y: 170)
+//           frame(width: 300, height: 200)
+            
+            
             Text("2020 Patrick Zhu™️")
             .modifier(FontCoustom2(size: 18))
                 .padding(.bottom, 15)
                 .padding(.top, 10)
+                .offset(x: 0, y: 10)
+            
+            Button(action: {
+            self.generator.notificationOccurred(.success)
+                playSound(sound: "Radiohead-Creep", type: "mp3")
+                       }) {
+                Text("")
+                .frame(width: 320, height: 30)
+              //.background(Color.black)
+            
+            }
+        .offset(x: 0, y: -38)
+            
             
         }
- 
+        
+            
     }
     
 }
