@@ -19,7 +19,7 @@ let generator = UINotificationFeedbackGenerator()
             Image("Image")
             .resizable()
             .aspectRatio(contentMode: .fit)
-                .scaleEffect(0.5)
+                .scaleEffect(0.45)
                 .offset(x: screen.width/2-40, y: screen.height/2-66)
             VStack {
                 ZStack {
@@ -71,9 +71,9 @@ let generator = UINotificationFeedbackGenerator()
                 
                 Text("2020 Patrick Zhu™️")
                 .modifier(FontCoustom2(size: 18))
-                    .padding(.bottom, 37)
+                    //.padding(.bottom, 37)
                     //.padding(.top, 10)
-                    .offset(x: 0, y: 10)
+                    .offset(x: 0, y: 30)
                 
                 Button(action: {
                 self.generator.notificationOccurred(.success)
@@ -82,9 +82,10 @@ let generator = UINotificationFeedbackGenerator()
                     Text("")
                     .frame(width: 320, height: 60)
                  // .background(Color.black)
+                            .offset(x: 0, y: -20)
                 
                 }
-                .offset(x: 0, y: -20)
+                
      
             }
 
