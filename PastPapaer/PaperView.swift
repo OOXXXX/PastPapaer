@@ -74,8 +74,18 @@ struct SamplePaperView: View {
                     Sixthcard()
                         .padding(.bottom)
                     
+                    Seventhcard()
+                    .padding(.bottom)
+                    
+//                    Eighthcard()
+//                    .padding(.bottom)
+//
+//                    Ninthcard()
+//                    .padding(.bottom)
                     
                     
+                    
+
                 Spacer()
             }
               Button(action: {self.show2019.toggle() }) {
@@ -87,7 +97,7 @@ struct SamplePaperView: View {
                 .sheet(isPresented: self.$show2019) {
                     LandmarkList()
                 }
-                .offset(x: 0, y: -60)
+                .offset(x: 0, y: -250)
                 
               Button(action: {self.show2018.toggle() }) {
                       Text("")
@@ -98,7 +108,7 @@ struct SamplePaperView: View {
                   .sheet(isPresented: self.$show2018) {
                       _18List()
                   }
-                  .offset(x: 0, y: 34)
+                  .offset(x: 0, y: -155)
                 
               Button(action: {self.show2017.toggle() }) {
                   Text("")
@@ -109,7 +119,52 @@ struct SamplePaperView: View {
               .sheet(isPresented: self.$show2017) {
                   _17List()
               }
-              .offset(x: 0, y: 133)
+              .offset(x: 0, y: -58)
+                
+             Button(action: {self.show2016.toggle() }) {
+                 Text("")
+                 .frame(width: 320, height: 70)
+               //.background(Color.black)
+             
+             }
+             .sheet(isPresented: self.$show2016) {
+                 _17List()
+             }
+             .offset(x: 0, y: 38)
+                
+            Button(action: {self.show2015.toggle() }) {
+                Text("")
+                .frame(width: 320, height: 70)
+              //.background(Color.black)
+            
+            }
+            .sheet(isPresented: self.$show2015) {
+                _17List()
+            }
+            .offset(x: 0, y: 135)
+                
+            Button(action: {self.show2014.toggle() }) {
+                Text("")
+                .frame(width: 320, height: 70)
+              //.background(Color.black)
+            
+            }
+            .sheet(isPresented: self.$show2014) {
+                _17List()
+            }
+            .offset(x: 0, y: 230)
+                
+            Button(action: {self.show2013.toggle() }) {
+                Text("")
+                .frame(width: 320, height: 70)
+              //.background(Color.black)
+            
+            }
+            .sheet(isPresented: self.$show2013) {
+                _17List()
+            }
+            .offset(x: 0, y: 325)
+                
             }
             
         }
@@ -312,6 +367,138 @@ struct Firstcard: View {
                 
                 Spacer()
                 Image("Logo14")
+                    .resizable()
+                    .frame(width: 40, height: 40)
+                    .offset(x: 0, y: 5)
+            }
+            .padding()
+            Spacer()
+        }
+        .frame(width: 345, height: 80)
+        .background(Color("secondary"))
+        .cornerRadius(11)
+        .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
+        .shadow(color: Color.black.opacity(0.3), radius: 4, x: 2, y: 4)
+        }
+    
+    }
+    
+    struct Seventhcard: View {
+    var body: some View {
+        VStack(alignment: .center) {
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("2013")
+                        .modifier(FontCoustom5(size: 38))
+                        .foregroundColor(Color("background2"))
+                        .padding(.bottom, -10)
+                    
+                    Text("Olevel")
+                        .modifier(FontCoustom2(size: 18))
+                        .foregroundColor(Color("Color"))
+                }
+                
+                Spacer()
+                Image("Logo13")
+                    .resizable()
+                    .frame(width: 40, height: 40)
+                    .offset(x: 0, y: 5)
+            }
+            .padding()
+            Spacer()
+        }
+        .frame(width: 345, height: 80)
+        .background(Color("secondary"))
+        .cornerRadius(11)
+        .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
+        .shadow(color: Color.black.opacity(0.3), radius: 4, x: 2, y: 4)
+        }
+    
+    }
+    
+    struct Eighthcard: View {
+    var body: some View {
+        VStack(alignment: .center) {
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("2012")
+                        .modifier(FontCoustom5(size: 38))
+                        .foregroundColor(Color("background2"))
+                        .padding(.bottom, -10)
+                    
+                    Text("Olevel")
+                        .modifier(FontCoustom2(size: 18))
+                        .foregroundColor(Color("Color"))
+                }
+                
+                Spacer()
+                Image("Logo12")
+                    .resizable()
+                    .frame(width: 40, height: 40)
+                    .offset(x: 0, y: 5)
+            }
+            .padding()
+            Spacer()
+        }
+        .frame(width: 345, height: 80)
+        .background(Color("secondary"))
+        .cornerRadius(11)
+        .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
+        .shadow(color: Color.black.opacity(0.3), radius: 4, x: 2, y: 4)
+        }
+    
+    }
+    
+    struct Ninthcard: View {
+    var body: some View {
+        VStack(alignment: .center) {
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("2011")
+                        .modifier(FontCoustom5(size: 38))
+                        .foregroundColor(Color("background2"))
+                        .padding(.bottom, -10)
+                    
+                    Text("Olevel")
+                        .modifier(FontCoustom2(size: 18))
+                        .foregroundColor(Color("Color"))
+                }
+                
+                Spacer()
+                Image("Logo11")
+                    .resizable()
+                    .frame(width: 40, height: 40)
+                    .offset(x: 0, y: 5)
+            }
+            .padding()
+            Spacer()
+        }
+        .frame(width: 345, height: 80)
+        .background(Color("secondary"))
+        .cornerRadius(11)
+        .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
+        .shadow(color: Color.black.opacity(0.3), radius: 4, x: 2, y: 4)
+        }
+    
+    }
+    
+    struct Tenthcard: View {
+    var body: some View {
+        VStack(alignment: .center) {
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("2010")
+                        .modifier(FontCoustom5(size: 38))
+                        .foregroundColor(Color("background2"))
+                        .padding(.bottom, -10)
+                    
+                    Text("Olevel")
+                        .modifier(FontCoustom2(size: 18))
+                        .foregroundColor(Color("Color"))
+                }
+                
+                Spacer()
+                Image("Logo10")
                     .resizable()
                     .frame(width: 40, height: 40)
                     .offset(x: 0, y: 5)
