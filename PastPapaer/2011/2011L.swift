@@ -11,7 +11,7 @@ import SwiftUI
 struct  _11L: View {
     
     @State var selected = 1
-    //@State private var listView = [_11ListView(), TestView()]
+    //@State private var listView = [_18LististView(), TestView()]
     
     var body: some View {
         
@@ -26,10 +26,10 @@ struct  _11L: View {
                 .frame(width: screen.width-24)
                 
                 if selected == 1{
-                    _11ListView()
+                    _11L1()
                 }
                 if selected == 2{
-                    TestView()
+                    _11L2()
                 }
                 
             }
@@ -40,19 +40,7 @@ struct  _11L: View {
 }
 
 
-
-
-struct  _11L_Previews: PreviewProvider {
-    static var previews: some View {
-        ForEach(["iPhone SE", "iPhone XS Max"], id: \.self) { deviceName in
-             _11L()
-                .previewDevice(PreviewDevice(rawValue: deviceName))
-                .previewDisplayName(deviceName)
-        }
-    }
-}
-
-struct _11ListView: View {
+struct _11L1: View {
     var body: some View {
         List(_11Data) { eee in
             
@@ -64,9 +52,17 @@ struct _11ListView: View {
     }
 }
 
-struct TestView: View {
+struct _11L2: View {
     var body: some View {
-        Text("Hello Swift")
+        List(_11Data2) { eee2 in
+            
+            NavigationLink(destination: _11D2(eee2: eee2)) {
+                _11Row2(eee2: eee2)
+            }
+        }
+        
     }
-    
 }
+
+
+ 

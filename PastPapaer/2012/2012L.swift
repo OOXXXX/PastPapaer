@@ -9,31 +9,41 @@
 import SwiftUI
 
 struct  _12L: View {
+    
+    @State var selected = 1
+    //@State private var listView = [_18LististView(), TestView()]
+    
     var body: some View {
         
+      
         NavigationView {
-            _12listView()
+            VStack{
+                Picker(selection: $selected, label: Text("")){
+                       Text("May-Jun").tag(1)
+                       Text("Oct-Nov").tag(2)
+                   }
+                .pickerStyle(SegmentedPickerStyle())
+                .frame(width: screen.width-24)
+                
+                if selected == 1{
+                    _12L1()
+                }
+                if selected == 2{
+                    _12L2()
+                }
+                
+            }
+           .navigationBarTitle(Text("2012"))
         }
-        .navigationBarTitle(Text("2012"))
+        
     }
 }
 
 
-
-
-struct  _12L_Previews: PreviewProvider {
-    static var previews: some View {
-        ForEach(["iPhone SE", "iPhone XS Max"], id: \.self) { deviceName in
-             _12L()
-                .previewDevice(PreviewDevice(rawValue: deviceName))
-                .previewDisplayName(deviceName)
-        }
-    }
-}
-
-struct _12listView: View {
+struct _12L1: View {
     var body: some View {
         List(_12Data) { fff in
+            
             NavigationLink(destination: _12D(fff: fff)) {
                 _12Row(fff: fff)
             }
@@ -41,3 +51,18 @@ struct _12listView: View {
         
     }
 }
+
+struct _12L2: View {
+    var body: some View {
+        List(_12Data2) { fff2 in
+            
+            NavigationLink(destination: _12D2(fff2: fff2)) {
+                _12Row2(fff2: fff2)
+            }
+        }
+        
+    }
+}
+
+
+ 
