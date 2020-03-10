@@ -20,7 +20,7 @@ let generator = UINotificationFeedbackGenerator()
             .resizable()
             .aspectRatio(contentMode: .fit)
                 .scaleEffect(0.45)
-                .offset(x: screen.width/2-40, y: screen.height/2-66)
+                .offset(x: screen.width/2-50, y: screen.height/2-72)
             VStack {
                 ZStack {
                     VStack {
