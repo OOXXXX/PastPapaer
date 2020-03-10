@@ -144,7 +144,7 @@
 		1865B3ED24178094007DB193 /* 2011-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2011-2.json"; sourceTree = "<group>"; };
 		188F81AC241669F80043DBDB /* PastPaper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PastPaper.entitlements; sourceTree = "<group>"; };
 		188F81AE24166A750043DBDB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		18B6E24724134DE7002615DE /* PastPaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PastPaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B6E24724134DE7002615DE /* PastPaperO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PastPaperO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B6E24A24134DE7002615DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18B6E24C24134DE7002615DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		18B6E24F24134DE7002615DE /* PastPapaer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PastPapaer.xcdatamodel; sourceTree = "<group>"; };
@@ -301,7 +301,7 @@
 		18B6E24824134DE7002615DE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				18B6E24724134DE7002615DE /* PastPaper.app */,
+				18B6E24724134DE7002615DE /* PastPaperO.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -646,7 +646,7 @@
 			);
 			name = PastPapaer;
 			productName = PastPapaer;
-			productReference = 18B6E24724134DE7002615DE /* PastPaper.app */;
+			productReference = 18B6E24724134DE7002615DE /* PastPaperO.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -940,6 +940,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PastPapaer/PastPaper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"PastPapaer/Preview Content\"";
 				DEVELOPMENT_TEAM = 6MM6Y2NK23;
 				ENABLE_PREVIEWS = YES;
@@ -948,8 +949,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = "1.1 Beta";
 				PRODUCT_BUNDLE_IDENTIFIER = Patrick.PastPaper;
-				PRODUCT_NAME = PastPaper;
+				PRODUCT_NAME = PastPaperO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -961,6 +963,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PastPapaer/PastPaper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"PastPapaer/Preview Content\"";
 				DEVELOPMENT_TEAM = 6MM6Y2NK23;
 				ENABLE_PREVIEWS = YES;
@@ -969,8 +972,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = "1.1 Beta";
 				PRODUCT_BUNDLE_IDENTIFIER = Patrick.PastPaper;
-				PRODUCT_NAME = PastPaper;
+				PRODUCT_NAME = PastPaperO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -287,8 +287,8 @@ struct Firstcard: View {
         .frame(width: screen.width-30, height: 80.0)
         .background(Color("secondary"))
         .cornerRadius(11)
-        .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
-        .shadow(color: Color.black.opacity(0.3), radius: 4, x: 2, y: 4)
+        .shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
+        .shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
         }
     
     }
@@ -320,8 +320,8 @@ struct Firstcard: View {
         .frame(width: screen.width-30, height: 80.0)
         .background(Color("secondary"))
         .cornerRadius(11)
-        .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
-        .shadow(color: Color.black.opacity(0.3), radius: 4, x: 2, y: 4)
+        .shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
+        .shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
         }
     
     }
@@ -353,8 +353,8 @@ struct Firstcard: View {
         .frame(width: screen.width-30, height: 80)
         .background(Color("secondary"))
         .cornerRadius(11)
-        .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
-        .shadow(color: Color.black.opacity(0.3), radius: 4, x: 2, y: 4)
+        .shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
+        .shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
         }
     
     }
@@ -386,8 +386,8 @@ struct Firstcard: View {
         .frame(width: screen.width-30, height: 80)
         .background(Color("secondary"))
         .cornerRadius(11)
-        .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
-        .shadow(color: Color.black.opacity(0.3), radius: 4, x: 2, y: 4)
+        .shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
+        .shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
         }
     
     }
@@ -419,8 +419,8 @@ struct Firstcard: View {
         .frame(width: screen.width-30, height: 80)
         .background(Color("secondary"))
         .cornerRadius(11)
-        .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
-        .shadow(color: Color.black.opacity(0.3), radius: 4, x: 2, y: 4)
+        .shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
+        .shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
         }
     
     }
@@ -452,8 +452,8 @@ struct Firstcard: View {
         .frame(width: screen.width-30, height: 80)
         .background(Color("secondary"))
         .cornerRadius(11)
-        .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
-        .shadow(color: Color.black.opacity(0.3), radius: 4, x: 2, y: 4)
+        .shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
+        .shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
         }
     
     }
@@ -485,8 +485,8 @@ struct Firstcard: View {
         .frame(width: screen.width-30, height: 80)
         .background(Color("secondary"))
         .cornerRadius(11)
-        .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
-        .shadow(color: Color.black.opacity(0.3), radius: 4, x: 2, y: 4)
+        .shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
+        .shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
         }
     
     }
@@ -518,8 +518,8 @@ struct Firstcard: View {
         .frame(width: screen.width-30, height: 80)
         .background(Color("secondary"))
         .cornerRadius(11)
-        .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
-        .shadow(color: Color.black.opacity(0.3), radius: 4, x: 2, y: 4)
+        .shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
+        .shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
         }
     
     }
@@ -551,8 +551,8 @@ struct Firstcard: View {
         .frame(width: screen.width-30, height: 80)
         .background(Color("secondary"))
         .cornerRadius(11)
-        .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
-        .shadow(color: Color.black.opacity(0.3), radius: 4, x: 2, y: 4)
+        .shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
+        .shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
         }
     
     }
@@ -584,8 +584,8 @@ struct Firstcard: View {
         .frame(width: screen.width-30, height: 80)
         .background(Color("secondary"))
         .cornerRadius(11)
-        .shadow(color: Color.black.opacity(0.2), radius: 4, x: -3, y: -2)
-        .shadow(color: Color.black.opacity(0.3), radius: 4, x: 2, y: 4)
+        .shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
+        .shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
         }
     
     }
