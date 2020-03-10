@@ -291,7 +291,6 @@
 		18B6E24924134DE7002615DE /* PastPapaer */ = {
 			isa = PBXGroup;
 			children = (
-				188F81AC241669F80043DBDB /* PastPaper.entitlements */,
 				18DB6B43241621500050F099 /* 2011 */,
 				18DB6B372416209E0050F099 /* 2012 */,
 				18DB6B2C2416203D0050F099 /* 2013 */,
@@ -312,6 +311,7 @@
 				18B6E25324134DEA002615DE /* Assets.xcassets */,
 				18B6E25824134DEA002615DE /* LaunchScreen.storyboard */,
 				18B6E25B24134DEA002615DE /* Info.plist */,
+				188F81AC241669F80043DBDB /* PastPaper.entitlements */,
 				18B6E24E24134DE7002615DE /* PastPapaer.xcdatamodeld */,
 				18DB6B4724163C0A0050F099 /* Radiohead-Creep.mp3 */,
 				18E956B12415326400DAF229 /* Girassol */,
