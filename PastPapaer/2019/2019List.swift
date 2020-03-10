@@ -8,16 +8,32 @@
 
 import SwiftUI
 
-struct LandmarkList: View {
+struct  LandmarkList: View {
+    
+    @State var selected = 1
+    //@State private var listView = [LandmarkLististView(), TestView()]
+    
     var body: some View {
         
+      
         NavigationView {
-            List(landmarkData) { landmark in
-                NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
-                    LandmarkRow(landmark: landmark)
+            VStack{
+                Picker(selection: $selected, label: Text("")){
+                       Text("May-Jun").tag(1)
+                       Text("Oct-Nov").tag(2)
+                   }
+                .pickerStyle(SegmentedPickerStyle())
+                .frame(width: screen.width-24)
+                
+                if selected == 1{
+                    LandmarkLististView1()
                 }
+                if selected == 2{
+                    LandmarkLististView2()
+                }
+                
             }
-            .navigationBarTitle(Text("2019"))
+           .navigationBarTitle(Text("2019"))
         }
         
     }
@@ -26,12 +42,36 @@ struct LandmarkList: View {
 
 
 
-struct LandmarkList_Previews: PreviewProvider {
+struct  LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(["iPhone SE", "iPhone XS Max"], id: \.self) { deviceName in
-            LandmarkList()
+             LandmarkList()
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
         }
+    }
+}
+
+struct LandmarkLististView1: View {
+    var body: some View {
+        List(landmarkData) { landmark in
+            
+            NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
+                LandmarkRow(landmark: landmark)
+            }
+        }
+        
+    }
+}
+
+struct LandmarkLististView2: View {
+    var body: some View {
+        List(landmarkData2) { landmark2 in
+            
+            NavigationLink(destination: LandmarkDetail2(landmark2: landmark2)) {
+                LandmarkRow2(landmark2: landmark2)
+            }
+        }
+        
     }
 }

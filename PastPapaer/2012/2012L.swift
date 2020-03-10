@@ -12,14 +12,9 @@ struct  _12L: View {
     var body: some View {
         
         NavigationView {
-            List(_12Data) { fff in
-                NavigationLink(destination: _12D(fff: fff)) {
-                    _12Row(fff: fff)
-                }
-            }
-            .navigationBarTitle(Text("2012"))
+            _12listView()
         }
-        
+        .navigationBarTitle(Text("2012"))
     }
 }
 
@@ -33,5 +28,16 @@ struct  _12L_Previews: PreviewProvider {
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
         }
+    }
+}
+
+struct _12listView: View {
+    var body: some View {
+        List(_12Data) { fff in
+            NavigationLink(destination: _12D(fff: fff)) {
+                _12Row(fff: fff)
+            }
+        }
+        
     }
 }

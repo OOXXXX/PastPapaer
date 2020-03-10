@@ -23,6 +23,15 @@
 		180408E42413CFE6005979A5 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180408E32413CFE6005979A5 /* Support.swift */; };
 		18367EC624151F06004B634D /* BlogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18367EC524151F06004B634D /* BlogView.swift */; };
 		183C24BF2415D9A7006D96EF /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C24BE2415D9A7006D96EF /* TabBarView.swift */; };
+		1865B3DE24177CD7007DB193 /* 2019-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3DD24177CD7007DB193 /* 2019-2.json */; };
+		1865B3E024178036007DB193 /* 2018-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3DF24178036007DB193 /* 2018-2.json */; };
+		1865B3E224178048007DB193 /* 2017-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3E124178048007DB193 /* 2017-2.json */; };
+		1865B3E424178054007DB193 /* 2016-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3E324178054007DB193 /* 2016-2.json */; };
+		1865B3E624178067007DB193 /* 2015-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3E524178067007DB193 /* 2015-2.json */; };
+		1865B3E824178070007DB193 /* 2014-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3E724178070007DB193 /* 2014-2.json */; };
+		1865B3EA2417807B007DB193 /* 2013-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3E92417807B007DB193 /* 2013-2.json */; };
+		1865B3EC24178088007DB193 /* 2012-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3EB24178088007DB193 /* 2012-2.json */; };
+		1865B3EE24178094007DB193 /* 2011-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3ED24178094007DB193 /* 2011-2.json */; };
 		188F81AF24166A750043DBDB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188F81AE24166A750043DBDB /* StoreKit.framework */; };
 		18B6E24B24134DE7002615DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E24A24134DE7002615DE /* AppDelegate.swift */; };
 		18B6E24D24134DE7002615DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E24C24134DE7002615DE /* SceneDelegate.swift */; };
@@ -124,6 +133,15 @@
 		180408E32413CFE6005979A5 /* Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
 		18367EC524151F06004B634D /* BlogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogView.swift; sourceTree = "<group>"; };
 		183C24BE2415D9A7006D96EF /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		1865B3DD24177CD7007DB193 /* 2019-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2019-2.json"; sourceTree = "<group>"; };
+		1865B3DF24178036007DB193 /* 2018-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2018-2.json"; sourceTree = "<group>"; };
+		1865B3E124178048007DB193 /* 2017-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2017-2.json"; sourceTree = "<group>"; };
+		1865B3E324178054007DB193 /* 2016-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2016-2.json"; sourceTree = "<group>"; };
+		1865B3E524178067007DB193 /* 2015-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2015-2.json"; sourceTree = "<group>"; };
+		1865B3E724178070007DB193 /* 2014-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2014-2.json"; sourceTree = "<group>"; };
+		1865B3E92417807B007DB193 /* 2013-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2013-2.json"; sourceTree = "<group>"; };
+		1865B3EB24178088007DB193 /* 2012-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2012-2.json"; sourceTree = "<group>"; };
+		1865B3ED24178094007DB193 /* 2011-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2011-2.json"; sourceTree = "<group>"; };
 		188F81AC241669F80043DBDB /* PastPaper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PastPaper.entitlements; sourceTree = "<group>"; };
 		188F81AE24166A750043DBDB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		18B6E24724134DE7002615DE /* PastPaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PastPaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -552,14 +570,23 @@
 			isa = PBXGroup;
 			children = (
 				18B6E28324138237002615DE /* 2019.json */,
+				1865B3DD24177CD7007DB193 /* 2019-2.json */,
 				18E956BF2415357200DAF229 /* 2018.json */,
+				1865B3DF24178036007DB193 /* 2018-2.json */,
 				18E956E02415444A00DAF229 /* 2017.json */,
+				1865B3E124178048007DB193 /* 2017-2.json */,
 				18DB6AF124161D0C0050F099 /* 2016.json */,
+				1865B3E324178054007DB193 /* 2016-2.json */,
 				18DB6AF324161D470050F099 /* 2015.json */,
+				1865B3E524178067007DB193 /* 2015-2.json */,
 				18DB6AF524161D580050F099 /* 2014.json */,
+				1865B3E724178070007DB193 /* 2014-2.json */,
 				18DB6AF724161D670050F099 /* 2013.json */,
+				1865B3E92417807B007DB193 /* 2013-2.json */,
 				18DB6AF924161D720050F099 /* 2012.json */,
+				1865B3EB24178088007DB193 /* 2012-2.json */,
 				18DB6AFB24161D7C0050F099 /* 2011.json */,
+				1865B3ED24178094007DB193 /* 2011-2.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -665,14 +692,18 @@
 				18DB6AF624161D580050F099 /* 2014.json in Resources */,
 				18E956892415299100DAF229 /* RobotoMono-MediumItalic.ttf in Resources */,
 				18B6E25A24134DEA002615DE /* LaunchScreen.storyboard in Resources */,
+				1865B3EE24178094007DB193 /* 2011-2.json in Resources */,
 				180408DD2413CF41005979A5 /* Oswald-SemiBold.ttf in Resources */,
+				1865B3DE24177CD7007DB193 /* 2019-2.json in Resources */,
 				180408D92413CF41005979A5 /* Oxygen-Light.ttf in Resources */,
 				180408E12413CF41005979A5 /* Oswald-Light.ttf in Resources */,
+				1865B3E424178054007DB193 /* 2016-2.json in Resources */,
 				18E956AB2415311000DAF229 /* Teko-Bold.ttf in Resources */,
 				18E956872415299100DAF229 /* RobotoMono-ThinItalic.ttf in Resources */,
 				18E956AD2415311000DAF229 /* Teko-SemiBold.ttf in Resources */,
 				18B6E28424138237002615DE /* 2019.json in Resources */,
 				18E956852415299100DAF229 /* RobotoMono-LightItalic.ttf in Resources */,
+				1865B3EC24178088007DB193 /* 2012-2.json in Resources */,
 				180408E02413CF41005979A5 /* Oswald-ExtraLight.ttf in Resources */,
 				18DB6AFA24161D720050F099 /* 2012.json in Resources */,
 				18E956882415299100DAF229 /* RobotoMono-Light.ttf in Resources */,
@@ -684,21 +715,26 @@
 				18E9569824152EC800DAF229 /* AmaticSC-Bold.ttf in Resources */,
 				180408DB2413CF41005979A5 /* UbuntuCondensed-Regular.ttf in Resources */,
 				180408E22413CF41005979A5 /* Oswald-VariableFont_wght.ttf in Resources */,
+				1865B3E024178036007DB193 /* 2018-2.json in Resources */,
 				18E956842415299100DAF229 /* RobotoMono-Regular.ttf in Resources */,
 				180408DC2413CF41005979A5 /* Oswald-Bold.ttf in Resources */,
 				18DB6AF224161D0C0050F099 /* 2016.json in Resources */,
 				180408DF2413CF41005979A5 /* Oswald-Regular.ttf in Resources */,
 				180408DE2413CF41005979A5 /* Oswald-Medium.ttf in Resources */,
+				1865B3E624178067007DB193 /* 2015-2.json in Resources */,
 				18E9568C2415299100DAF229 /* RobotoMono-Italic.ttf in Resources */,
 				180408DA2413CF41005979A5 /* Oxygen-Bold.ttf in Resources */,
 				18E956832415299100DAF229 /* RobotoMono-Medium.ttf in Resources */,
 				18DB6AFC24161D7C0050F099 /* 2011.json in Resources */,
+				1865B3E224178048007DB193 /* 2017-2.json in Resources */,
 				18E956B42415326400DAF229 /* Girassol-Regular.ttf in Resources */,
 				180408D82413CF41005979A5 /* Oxygen-Regular.ttf in Resources */,
 				18E956AC2415311000DAF229 /* Teko-Medium.ttf in Resources */,
+				1865B3E824178070007DB193 /* 2014-2.json in Resources */,
 				18DB6B4824163C0A0050F099 /* Radiohead-Creep.mp3 in Resources */,
 				18E9568A2415299100DAF229 /* RobotoMono-Bold.ttf in Resources */,
 				18B6E25424134DEA002615DE /* Assets.xcassets in Resources */,
+				1865B3EA2417807B007DB193 /* 2013-2.json in Resources */,
 				18E956AF2415311000DAF229 /* Teko-Regular.ttf in Resources */,
 				18E9568D2415299100DAF229 /* RobotoMono-Thin.ttf in Resources */,
 				18E956E12415444A00DAF229 /* 2017.json in Resources */,

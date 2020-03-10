@@ -10,6 +10,7 @@ import SwiftUI
 
 
 let landmarkData: [Landmark] = load("2019.json")
+let landmarkData2: [Landmark2] = load("2019-2.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
