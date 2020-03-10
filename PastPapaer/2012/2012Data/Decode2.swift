@@ -15,3 +15,10 @@ struct Land12: Hashable, Codable, Identifiable {
     
 }
 
+struct Land122: Hashable, Codable, Identifiable {
+    var id: Int
+    var name: String
+    var url: String
+    
+}
+

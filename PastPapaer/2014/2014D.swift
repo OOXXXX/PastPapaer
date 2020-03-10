@@ -19,6 +19,20 @@ struct _14D: View {
     }
 }
 
+struct _14D2: View {
+    var ccc2: Land142
+
+    var body: some View {
+        VStack {
+            Webview(url: (ccc2.url))
+        }
+        .navigationBarTitle(Text(ccc2.name), displayMode: .inline)
+    }
+}
+
+
+
+
 struct _14D_Previews: PreviewProvider {
     static var previews: some View {
         _14D(ccc: _14Data[0])

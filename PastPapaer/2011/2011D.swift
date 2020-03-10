@@ -19,6 +19,17 @@ struct _11D: View {
     }
 }
 
+struct _11D2: View {
+    var eee2: Land112
+
+    var body: some View {
+        VStack {
+            Webview(url: (eee2.url))
+        }
+        .navigationBarTitle(Text(eee2.name), displayMode: .inline)
+    }
+}
+
 struct _11D_Previews: PreviewProvider {
     static var previews: some View {
         _11D(eee: _11Data[0])

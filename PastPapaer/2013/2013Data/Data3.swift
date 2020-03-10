@@ -11,3 +11,4 @@ import SwiftUI
 
 
 let _13Data: [Land13] = load("2013.json")
+let _13Data2: [Land132] = load("2013-2.json")

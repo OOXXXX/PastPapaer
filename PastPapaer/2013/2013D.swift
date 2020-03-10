@@ -19,6 +19,19 @@ struct _13D: View {
     }
 }
 
+struct _13D2: View {
+    var ddd2: Land132
+
+    var body: some View {
+        VStack {
+            Webview(url: (ddd2.url))
+        }
+        .navigationBarTitle(Text(ddd2.name), displayMode: .inline)
+    }
+}
+
+
+
 struct _13D_Previews: PreviewProvider {
     static var previews: some View {
         _13D(ddd: _13Data[0])

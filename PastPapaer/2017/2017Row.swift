@@ -20,6 +20,24 @@ struct _17Row: View {
     }
 }
 
+struct _17Row2: View {
+    var sss2: Land172
+
+    var body: some View {
+        HStack {
+            Text(sss2.name)
+                .frame(width: 230, height: 45, alignment: .leading)
+            Spacer()
+        }
+    }
+}
+
+
+
+
+
+
+
 struct _17Row_Previews: PreviewProvider {
     static var previews: some View {
         Group {

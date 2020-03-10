@@ -19,8 +19,15 @@ struct _18Detail: View {
     }
 }
 
-struct _18Detail_Previews: PreviewProvider {
-    static var previews: some View {
-        _18Detail(xxx: _18Data[0])
+struct _18Detail2: View {
+    var xxx2: LandMar2
+
+    var body: some View {
+        VStack {
+            Webview(url: (xxx2.url))
+        }
+        .navigationBarTitle(Text(xxx2.name), displayMode: .inline)
     }
 }
+
+ 

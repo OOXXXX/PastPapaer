@@ -14,3 +14,10 @@ struct LandMar: Hashable, Codable, Identifiable {
     var url: String
     
 }
+
+struct LandMar2: Hashable, Codable, Identifiable {
+    var id: Int
+    var name: String
+    var url: String
+    
+}

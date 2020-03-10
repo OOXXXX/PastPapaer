@@ -8,16 +8,57 @@
 
 import SwiftUI
 
-struct _17List: View {
+struct  _17List: View {
+    
+    @State var selected = 1
+    //@State private var listView = [_18LististView(), TestView()]
+    
     var body: some View {
         
+      
         NavigationView {
-            List(_17Data) { sss in
-                NavigationLink(destination: _17Detail(sss: sss)) {
-                    _17Row(sss: sss)
+            VStack{
+                Picker(selection: $selected, label: Text("")){
+                       Text("May-Jun").tag(1)
+                       Text("Oct-Nov").tag(2)
+                   }
+                .pickerStyle(SegmentedPickerStyle())
+                .frame(width: screen.width-24)
+                
+                if selected == 1{
+                    _17List1()
                 }
+                if selected == 2{
+                    _17List2()
+                }
+                
             }
-            .navigationBarTitle(Text("2017"))
+           .navigationBarTitle(Text("2017"))
+        }
+        
+    }
+}
+
+
+struct _17List1: View {
+    var body: some View {
+        List(_17Data) { sss in
+            
+            NavigationLink(destination: _17Detail(sss: sss)) {
+                _17Row(sss: sss)
+            }
+        }
+        
+    }
+}
+
+struct _17List2: View {
+    var body: some View {
+        List(_17Data2) { sss2 in
+            
+            NavigationLink(destination: _17Detail2(sss2: sss2)) {
+                _17Row2(sss2: sss2)
+            }
         }
         
     }
@@ -26,12 +67,5 @@ struct _17List: View {
 
 
 
-struct _17List_Previews: PreviewProvider {
-    static var previews: some View {
-        ForEach(["iPhone SE", "iPhone XS Max"], id: \.self) { deviceName in
-            _17List()
-                .previewDevice(PreviewDevice(rawValue: deviceName))
-                .previewDisplayName(deviceName)
-        }
-    }
-}
+
+ 

@@ -20,6 +20,20 @@ struct _14Row: View {
     }
 }
 
+struct _14Row2: View {
+    var ccc2: Land142
+
+    var body: some View {
+        HStack {
+            Text(ccc2.name)
+                .frame(width: 230, height: 45, alignment: .leading)
+            Spacer()
+        }
+    }
+}
+
+
+
 struct _14Row_Previews: PreviewProvider {
     static var previews: some View {
         Group {

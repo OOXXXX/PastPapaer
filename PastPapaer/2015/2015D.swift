@@ -19,6 +19,17 @@ struct _15D: View {
     }
 }
 
+struct _15D2: View {
+    var bbb2: Land152
+
+    var body: some View {
+        VStack {
+            Webview(url: (bbb2.url))
+        }
+        .navigationBarTitle(Text(bbb2.name), displayMode: .inline)
+    }
+}
+
 struct _15D_Previews: PreviewProvider {
     static var previews: some View {
         _15D(bbb: _15Data[0])

@@ -19,3 +19,15 @@ struct _11Row: View {
         }
     }
 }
+
+struct _11Row2: View {
+    var eee2: Land112
+
+    var body: some View {
+        HStack {
+            Text(eee2.name)
+                .frame(width: 230, height: 45, alignment: .leading)
+            Spacer()
+        }
+    }
+}

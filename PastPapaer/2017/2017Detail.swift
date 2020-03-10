@@ -19,6 +19,17 @@ struct _17Detail: View {
     }
 }
 
+struct _17Detail2: View {
+    var sss2: Land172
+
+    var body: some View {
+        VStack {
+            Webview(url: (sss2.url))
+        }
+        .navigationBarTitle(Text(sss2.name), displayMode: .inline)
+    }
+}
+
 struct _17Detail_Previews: PreviewProvider {
     static var previews: some View {
         _17Detail(sss: _17Data[0])

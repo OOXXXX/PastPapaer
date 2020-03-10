@@ -15,3 +15,12 @@ import SwiftUI
      
  }
 
+import SwiftUI
+
+struct Land162: Hashable, Codable, Identifiable {
+    var id: Int
+    var name: String
+    var url: String
+    
+}
+

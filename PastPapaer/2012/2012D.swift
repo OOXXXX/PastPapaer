@@ -19,6 +19,20 @@ struct _12D: View {
     }
 }
 
+struct _12D2: View {
+    var fff2: Land122
+
+    var body: some View {
+        VStack {
+            Webview(url: (fff2.url))
+        }
+        .navigationBarTitle(Text(fff2.name), displayMode: .inline)
+    }
+}
+
+
+
+
 struct _12D_Previews: PreviewProvider {
     static var previews: some View {
         _12D(fff: _12Data[0])

@@ -11,6 +11,7 @@ import SwiftUI
 
 
 let _17Data: [Land17] = load("2017.json")
+let _17Data2: [Land172] = load("2017-2.json")
 
 //func load<T: Decodable>(_ filename: String) -> T {
 //    let data: Data

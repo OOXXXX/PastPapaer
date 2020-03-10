@@ -394,8 +394,8 @@
 		18DB6B0824161EA40050F099 /* 2016Data */ = {
 			isa = PBXGroup;
 			children = (
-				18DB6B0424161E930050F099 /* Decode6.swift */,
 				18DB6B0624161E9D0050F099 /* Data6.swift */,
+				18DB6B0424161E930050F099 /* Decode6.swift */,
 			);
 			path = 2016Data;
 			sourceTree = "<group>";
@@ -623,8 +623,8 @@
 		18E956D72415430B00DAF229 /* 2017Data */ = {
 			isa = PBXGroup;
 			children = (
-				18E956D82415430B00DAF229 /* Decode7.swift */,
 				18E956D92415430B00DAF229 /* Data7.swift */,
+				18E956D82415430B00DAF229 /* Decode7.swift */,
 			);
 			path = 2017Data;
 			sourceTree = "<group>";
