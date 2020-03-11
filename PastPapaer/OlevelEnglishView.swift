@@ -1,5 +1,5 @@
 //
-//  SamplePaperView.swift
+//  OlevelEnglishView.swift
 //  PastPapaer
 //
 //  Created by Rhapsody on 2020/3/7.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct SamplePaperView: View {
+struct OlevelEnglishView: View {
     let generator = UINotificationFeedbackGenerator()
     
     @State var showUpdate = false
@@ -250,10 +250,10 @@ struct SamplePaperView: View {
 
 
 
-struct SamplePaperView_Previews: PreviewProvider {
+struct OlevelEnglishView_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(["iPhone 8", "iPhone XS"], id: \.self) { deviceName in
-            SamplePaperView()
+            OlevelEnglishView()
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
         }

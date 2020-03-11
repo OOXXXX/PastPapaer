@@ -11,7 +11,7 @@ import SwiftUI
 struct TabBar: View {
     var body: some View {
         TabView {
-            SamplePaperView().tabItem {
+            OlevelEnglishView().tabItem {
                 Image(systemName: " ")
                 Text(" ")
             }
