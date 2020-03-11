@@ -63,9 +63,11 @@ struct OlevelEnglishView: View {
                 .padding(.top)
                 .padding(.bottom, -5)
         
-        ScrollView {
+    ScrollView {
             //frame(width: 300, height: 1000)
-              ZStack {
+        ZStack {
+                
+            ZStack{
                 VStack{
                 
                     
@@ -105,10 +107,17 @@ struct OlevelEnglishView: View {
 
                 Spacer()
                 }
+                    
+                    
+                    
                 .frame(width: screen.width, height: 600)
                 .padding(.top, 150)
                 .padding(.bottom, -450)
             }
+//            LottieView()
+//            .frame(width: 200, height: 200, alignment: .center)
+        }
+        
               Button(action: {
                   let selectionFeedback = UISelectionFeedbackGenerator()
                                   selectionFeedback.selectionChanged()

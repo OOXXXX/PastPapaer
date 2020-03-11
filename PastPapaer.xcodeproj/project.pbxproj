@@ -33,7 +33,6 @@
 		1865B3EC24178088007DB193 /* 2012-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3EB24178088007DB193 /* 2012-2.json */; };
 		1865B3EE24178094007DB193 /* 2011-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3ED24178094007DB193 /* 2011-2.json */; };
 		188F81AF24166A750043DBDB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188F81AE24166A750043DBDB /* StoreKit.framework */; };
-		1899ACA62418D21800C74827 /* TestLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1899ACA52418D21800C74827 /* TestLottieView.swift */; };
 		1899ACE02418D3C200C74827 /* Switch.json in Resources */ = {isa = PBXBuildFile; fileRef = 1899ACA82418D3C200C74827 /* Switch.json */; };
 		1899ACE12418D3C200C74827 /* TwitterHeart.json in Resources */ = {isa = PBXBuildFile; fileRef = 1899ACA92418D3C200C74827 /* TwitterHeart.json */; };
 		1899ACE22418D3C200C74827 /* 9squares-AlBoardman.json in Resources */ = {isa = PBXBuildFile; fileRef = 1899ACAA2418D3C200C74827 /* 9squares-AlBoardman.json */; };
@@ -171,6 +170,7 @@
 		18E956DF2415430B00DAF229 /* 2017Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E956DA2415430B00DAF229 /* 2017Row.swift */; };
 		18E956E12415444A00DAF229 /* 2017.json in Resources */ = {isa = PBXBuildFile; fileRef = 18E956E02415444A00DAF229 /* 2017.json */; };
 		18EB60012418D0D800132DBF /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 18EB60002418D0D800132DBF /* Lottie */; };
+		18ED0B982419075F00B23373 /* TestLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED0B972419075F00B23373 /* TestLottieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -201,7 +201,6 @@
 		1865B3ED24178094007DB193 /* 2011-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2011-2.json"; sourceTree = "<group>"; };
 		188F81AC241669F80043DBDB /* PastPaper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PastPaper.entitlements; sourceTree = "<group>"; };
 		188F81AE24166A750043DBDB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		1899ACA52418D21800C74827 /* TestLottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLottieView.swift; sourceTree = "<group>"; };
 		1899ACA82418D3C200C74827 /* Switch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Switch.json; sourceTree = "<group>"; };
 		1899ACA92418D3C200C74827 /* TwitterHeart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TwitterHeart.json; sourceTree = "<group>"; };
 		1899ACAA2418D3C200C74827 /* 9squares-AlBoardman.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "9squares-AlBoardman.json"; sourceTree = "<group>"; };
@@ -340,6 +339,7 @@
 		18E956D92415430B00DAF229 /* Data7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data7.swift; sourceTree = "<group>"; };
 		18E956DA2415430B00DAF229 /* 2017Row.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 2017Row.swift; sourceTree = "<group>"; };
 		18E956E02415444A00DAF229 /* 2017.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 2017.json; sourceTree = "<group>"; };
+		18ED0B972419075F00B23373 /* TestLottieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestLottieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -505,9 +505,9 @@
 				18CF478A2414A52E006F01FA /* Delegate */,
 				180408C72413C91D005979A5 /* OlevelEnglishView.swift */,
 				18367EC524151F06004B634D /* BlogView.swift */,
-				1899ACA52418D21800C74827 /* TestLottieView.swift */,
 				183C24BE2415D9A7006D96EF /* TabBarView.swift */,
 				18DB6B45241639710050F099 /* PlaySound.swift */,
+				18ED0B972419075F00B23373 /* TestLottieView.swift */,
 				180408E32413CFE6005979A5 /* Support.swift */,
 				18CF47892414A4FD006F01FA /* Source */,
 				18E956C1241535A800DAF229 /* JSON */,
@@ -1022,7 +1022,7 @@
 				18B6E24D24134DE7002615DE /* SceneDelegate.swift in Sources */,
 				18367EC624151F06004B634D /* BlogView.swift in Sources */,
 				18DB6B1D24161FB90050F099 /* Decode4.swift in Sources */,
-				1899ACA62418D21800C74827 /* TestLottieView.swift in Sources */,
+				18ED0B982419075F00B23373 /* TestLottieView.swift in Sources */,
 				18E956B72415333B00DAF229 /* 2018List.swift in Sources */,
 				18DB6B2224161FE00050F099 /* 2013D.swift in Sources */,
 				18B6E25024134DE7002615DE /* PastPapaer.xcdatamodeld in Sources */,

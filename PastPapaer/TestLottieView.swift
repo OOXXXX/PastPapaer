@@ -12,22 +12,25 @@ import Lottie
 struct TestLottieView: View {
     var body: some View {
          
-            AnimationsView()
+            LottieView()
+        //.frame(width: 300, height: 300)
+            
         
     }
 }
 
-struct AnimationsView : UIViewRepresentable {
-    func makeUIView(context: UIViewRepresentableContext<AnimationsView>) -> AnimationView {
+struct LottieView : UIViewRepresentable {
+    func makeUIView(context: UIViewRepresentableContext<LottieView>) -> AnimationView {
+        
         
         let aniView = AnimationView()
-        let animation = Animation.named("Switch" , subdirectory: "TestAnimations")
+        let animation = Animation.named("TwitterHeart")
         aniView.animation = animation
         aniView.loopMode = .loop
         aniView.play()
         return aniView
     }
-    func updateUIView(_ uiView: AnimationView, context: UIViewRepresentableContext<AnimationsView>) {
+    func updateUIView(_ uiView: AnimationView, context: UIViewRepresentableContext<LottieView>) {
          
     }
     
