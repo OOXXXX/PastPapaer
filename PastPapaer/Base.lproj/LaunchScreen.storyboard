@@ -14,26 +14,7 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patrick Zhu ©" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUE-fB-xcz">
-                                <rect key="frame" x="146" y="657" width="123" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="zUE-fB-xcz" secondAttribute="height" multiplier="41:8" id="COd-Wn-b5a"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="123" id="QtL-Cf-8Ag"/>
-                                    <constraint firstAttribute="height" constant="24" id="hFI-ry-tdM"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="zUE-fB-xcz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="HBr-tv-30n"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zUE-fB-xcz" secondAttribute="trailing" constant="145" id="KIk-9e-zj2"/>
-                            <constraint firstItem="zUE-fB-xcz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="613" id="qwV-1W-gOa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zUE-fB-xcz" secondAttribute="bottom" constant="181" id="ymK-S6-svW"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

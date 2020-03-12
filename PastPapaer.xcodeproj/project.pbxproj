@@ -32,7 +32,6 @@
 		1865B3EA2417807B007DB193 /* 2013-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3E92417807B007DB193 /* 2013-2.json */; };
 		1865B3EC24178088007DB193 /* 2012-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3EB24178088007DB193 /* 2012-2.json */; };
 		1865B3EE24178094007DB193 /* 2011-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3ED24178094007DB193 /* 2011-2.json */; };
-		188F81AF24166A750043DBDB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188F81AE24166A750043DBDB /* StoreKit.framework */; };
 		1899ACE02418D3C200C74827 /* Switch.json in Resources */ = {isa = PBXBuildFile; fileRef = 1899ACA82418D3C200C74827 /* Switch.json */; };
 		1899ACE12418D3C200C74827 /* TwitterHeart.json in Resources */ = {isa = PBXBuildFile; fileRef = 1899ACA92418D3C200C74827 /* TwitterHeart.json */; };
 		1899ACE22418D3C200C74827 /* 9squares-AlBoardman.json in Resources */ = {isa = PBXBuildFile; fileRef = 1899ACAA2418D3C200C74827 /* 9squares-AlBoardman.json */; };
@@ -200,7 +199,6 @@
 		1865B3EB24178088007DB193 /* 2012-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2012-2.json"; sourceTree = "<group>"; };
 		1865B3ED24178094007DB193 /* 2011-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2011-2.json"; sourceTree = "<group>"; };
 		188F81AC241669F80043DBDB /* PastPaper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PastPaper.entitlements; sourceTree = "<group>"; };
-		188F81AE24166A750043DBDB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		1899ACA82418D3C200C74827 /* Switch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Switch.json; sourceTree = "<group>"; };
 		1899ACA92418D3C200C74827 /* TwitterHeart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TwitterHeart.json; sourceTree = "<group>"; };
 		1899ACAA2418D3C200C74827 /* 9squares-AlBoardman.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "9squares-AlBoardman.json"; sourceTree = "<group>"; };
@@ -347,7 +345,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				188F81AF24166A750043DBDB /* StoreKit.framework in Frameworks */,
 				18EB60012418D0D800132DBF /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,7 +395,6 @@
 		188F81AD24166A750043DBDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				188F81AE24166A750043DBDB /* StoreKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1188,20 +1184,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PastPapaer/PastPaper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"PastPapaer/Preview Content\"";
 				DEVELOPMENT_TEAM = 6MM6Y2NK23;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = PastPapaer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = Patrick.PastPaper;
 				PRODUCT_NAME = PastPaperO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1211,20 +1208,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PastPapaer/PastPaper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"PastPapaer/Preview Content\"";
 				DEVELOPMENT_TEAM = 6MM6Y2NK23;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = PastPapaer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = Patrick.PastPaper;
 				PRODUCT_NAME = PastPaperO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

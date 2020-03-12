@@ -250,6 +250,8 @@ struct OlevelEnglishView: View {
             .offset(x: 0, y: -66)
                 
             }
+    .background(Color("Color-1"))
+            
             
         }
 //.background(Color.gray)
@@ -294,11 +296,16 @@ struct Firstcard: View {
             Spacer()
         }
         .frame(width: screen.width-30, height: 80.0)
-        .background(Color("secondary"))
-        .cornerRadius(11)
-        .shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
-        .shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
-        }
+            // .background(Color("secondary"))
+            .background(Color("Color-2"))
+            .cornerRadius(11)
+            //        .shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
+            //        .shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
+            //.cornerRadius(10)
+            .overlay(RoundedRectangle(cornerRadius: 10)
+            .stroke(Color.gray.opacity(0.1), lineWidth: 2))
+            .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
+    }
     
     }
     
@@ -327,10 +334,13 @@ struct Firstcard: View {
             Spacer()
         }
         .frame(width: screen.width-30, height: 80.0)
-        .background(Color("secondary"))
+        .background(Color("Color-2"))
         .cornerRadius(11)
-        .shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
-        .shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
+        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
+        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
+        .overlay(RoundedRectangle(cornerRadius: 10)
+        .stroke(Color.gray.opacity(0.1), lineWidth: 2))
+        .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
         }
     
     }
@@ -360,10 +370,13 @@ struct Firstcard: View {
             Spacer()
         }
         .frame(width: screen.width-30, height: 80)
-        .background(Color("secondary"))
+        .background(Color("Color-2"))
         .cornerRadius(11)
-        .shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
-        .shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
+        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
+        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
+        .overlay(RoundedRectangle(cornerRadius: 10)
+        .stroke(Color.gray.opacity(0.1), lineWidth: 2))
+        .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
         }
     
     }
@@ -393,10 +406,13 @@ struct Firstcard: View {
             Spacer()
         }
         .frame(width: screen.width-30, height: 80)
-        .background(Color("secondary"))
+        .background(Color("Color-2"))
         .cornerRadius(11)
-        .shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
-        .shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
+        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
+        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
+        .overlay(RoundedRectangle(cornerRadius: 10)
+        .stroke(Color.gray.opacity(0.1), lineWidth: 2))
+        .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
         }
     
     }
@@ -426,10 +442,13 @@ struct Firstcard: View {
             Spacer()
         }
         .frame(width: screen.width-30, height: 80)
-        .background(Color("secondary"))
+        .background(Color("Color-2"))
         .cornerRadius(11)
-        .shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
-        .shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
+        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
+        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
+        .overlay(RoundedRectangle(cornerRadius: 10)
+        .stroke(Color.gray.opacity(0.1), lineWidth: 2))
+        .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
         }
     
     }
@@ -459,10 +478,13 @@ struct Firstcard: View {
             Spacer()
         }
         .frame(width: screen.width-30, height: 80)
-        .background(Color("secondary"))
+        .background(Color("Color-2"))
         .cornerRadius(11)
-        .shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
-        .shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
+        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
+        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
+        .overlay(RoundedRectangle(cornerRadius: 10)
+        .stroke(Color.gray.opacity(0.1), lineWidth: 2))
+        .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
         }
     
     }
@@ -492,10 +514,13 @@ struct Firstcard: View {
             Spacer()
         }
         .frame(width: screen.width-30, height: 80)
-        .background(Color("secondary"))
+        .background(Color("Color-2"))
         .cornerRadius(11)
-        .shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
-        .shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
+        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
+        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
+        .overlay(RoundedRectangle(cornerRadius: 10)
+        .stroke(Color.gray.opacity(0.1), lineWidth: 2))
+        .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
         }
     
     }
@@ -525,10 +550,13 @@ struct Firstcard: View {
             Spacer()
         }
         .frame(width: screen.width-30, height: 80)
-        .background(Color("secondary"))
+        .background(Color("Color-2"))
         .cornerRadius(11)
-        .shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
-        .shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
+        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
+        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
+        .overlay(RoundedRectangle(cornerRadius: 10)
+        .stroke(Color.gray.opacity(0.1), lineWidth: 2))
+        .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
         }
     
     }
@@ -558,10 +586,13 @@ struct Firstcard: View {
             Spacer()
         }
         .frame(width: screen.width-30, height: 80)
-        .background(Color("secondary"))
+        .background(Color("Color-2"))
         .cornerRadius(11)
-        .shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
-        .shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
+        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
+        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
+        .overlay(RoundedRectangle(cornerRadius: 10)
+        .stroke(Color.gray.opacity(0.1), lineWidth: 2))
+        .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
         }
     
     }
@@ -591,10 +622,13 @@ struct Firstcard: View {
             Spacer()
         }
         .frame(width: screen.width-30, height: 80)
-        .background(Color("secondary"))
+        .background(Color("Color-2"))
         .cornerRadius(11)
-        .shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
-        .shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
+        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
+        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
+        .overlay(RoundedRectangle(cornerRadius: 10)
+        .stroke(Color.gray.opacity(0.1), lineWidth: 2))
+        .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
         }
     
     }
