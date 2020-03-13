@@ -23,6 +23,7 @@
 		180408E42413CFE6005979A5 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180408E32413CFE6005979A5 /* Support.swift */; };
 		18367EC624151F06004B634D /* BlogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18367EC524151F06004B634D /* BlogView.swift */; };
 		183C24BF2415D9A7006D96EF /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C24BE2415D9A7006D96EF /* TabBarView.swift */; };
+		1860956A241BED6D008871E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18609569241BED6D008871E7 /* ContentView.swift */; };
 		1865B3DE24177CD7007DB193 /* 2019-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3DD24177CD7007DB193 /* 2019-2.json */; };
 		1865B3E024178036007DB193 /* 2018-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3DF24178036007DB193 /* 2018-2.json */; };
 		1865B3E224178048007DB193 /* 2017-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3E124178048007DB193 /* 2017-2.json */; };
@@ -189,6 +190,7 @@
 		180408E32413CFE6005979A5 /* Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
 		18367EC524151F06004B634D /* BlogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogView.swift; sourceTree = "<group>"; };
 		183C24BE2415D9A7006D96EF /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		18609569241BED6D008871E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1865B3DD24177CD7007DB193 /* 2019-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2019-2.json"; sourceTree = "<group>"; };
 		1865B3DF24178036007DB193 /* 2018-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2018-2.json"; sourceTree = "<group>"; };
 		1865B3E124178048007DB193 /* 2017-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2017-2.json"; sourceTree = "<group>"; };
@@ -501,6 +503,7 @@
 				18CF478A2414A52E006F01FA /* Delegate */,
 				180408C72413C91D005979A5 /* OlevelEnglishView.swift */,
 				18367EC524151F06004B634D /* BlogView.swift */,
+				18609569241BED6D008871E7 /* ContentView.swift */,
 				183C24BE2415D9A7006D96EF /* TabBarView.swift */,
 				18DB6B45241639710050F099 /* PlaySound.swift */,
 				18ED0B972419075F00B23373 /* TestLottieView.swift */,
@@ -999,6 +1002,7 @@
 				18B6E27C24138178002615DE /* 2019List.swift in Sources */,
 				18DB6B0524161E930050F099 /* Decode6.swift in Sources */,
 				180408C62413C703005979A5 /* Ultility.swift in Sources */,
+				1860956A241BED6D008871E7 /* ContentView.swift in Sources */,
 				18DB6B0A24161ECB0050F099 /* 2015D.swift in Sources */,
 				183C24BF2415D9A7006D96EF /* TabBarView.swift in Sources */,
 				18DB6B36241620930050F099 /* Data2.swift in Sources */,

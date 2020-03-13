@@ -9,21 +9,26 @@
 import SwiftUI
 
 struct TabBar: View {
+
     var body: some View {
+        
         TabView {
+            
             OlevelEnglishView().tabItem {
-                Image(systemName: " ")
-                Text(" ")
+                Image(systemName: "greaterthan.square.fill")
+                    .font(.system(size: 25))
+                    
             }
-//
-//            CourseList().tabItem {
-//               Image(systemName: "rectangle.stack.fill")
-//               Text("Categories")
-//                      }
-//
-//            ContentView().tabItem {
-//                Image(systemName: "paperplane.fill")
-//                Text("About")
+
+            TestLottieView().tabItem {
+               Image(systemName: "number.square.fill")
+                .font(.system(size: 25))
+                
+                    }
+
+            ContentView().tabItem {
+                Image(systemName: "equal.square.fill")
+                .font(.system(size: 25))
             }
           
         }
@@ -38,4 +43,5 @@ struct TabBar_Previews: PreviewProvider {
             TabBar().previewDevice("iPhone 11 Pro")
         }
     }
+  }
 }
