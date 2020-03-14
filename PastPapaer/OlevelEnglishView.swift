@@ -261,14 +261,7 @@ struct OlevelEnglishView: View {
 
 
 
-struct OlevelEnglishView_Previews: PreviewProvider {
-    static var previews: some View {
-        ForEach(["iPhone 8", "iPhone XS"], id: \.self) { deviceName in
-            OlevelEnglishView()
-                .previewDevice(PreviewDevice(rawValue: deviceName))
-                .previewDisplayName(deviceName)
-        }
-    }
+
 }
 
 struct Firstcard: View {
@@ -299,9 +292,6 @@ struct Firstcard: View {
             // .background(Color("secondary"))
             .background(Color("Color-2"))
             .cornerRadius(11)
-            //        .shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
-            //        .shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
-            //.cornerRadius(10)
             .overlay(RoundedRectangle(cornerRadius: 10)
             .stroke(Color.gray.opacity(0.1), lineWidth: 2))
             .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
@@ -632,5 +622,18 @@ struct Firstcard: View {
         }
     
     }
+
+
+
+struct OlevelEnglishView_Previews: PreviewProvider {
+static var previews: some View {
+    ForEach(["iPhone 8", "iPhone XS"], id: \.self) { deviceName in
+        OlevelEnglishView()
+            .previewDevice(PreviewDevice(rawValue: deviceName))
+            .previewDisplayName(deviceName)
+       }
+   }
 }
+
+
 
