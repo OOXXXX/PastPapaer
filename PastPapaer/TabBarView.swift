@@ -26,7 +26,7 @@ struct TabBar: View {
                 
                     }
 
-            ContentView().tabItem {
+            HomeView().tabItem {
                 Image(systemName: "equal.square.fill")
                 .font(.system(size: 25))
             }
