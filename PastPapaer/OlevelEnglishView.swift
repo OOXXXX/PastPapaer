@@ -11,6 +11,7 @@ import SwiftUI
 struct OlevelEnglishView: View {
     let generator = UINotificationFeedbackGenerator()
     
+    @State var selected = 2
     @State var showUpdate = false
     @State var show2019 = false
     @State var show2018 = false
@@ -62,15 +63,13 @@ struct OlevelEnglishView: View {
             .frame(width: screen.width, height: 35)
                 .padding(.top)
                 .padding(.bottom, -5)
+            
         
+
     ScrollView {
-            //frame(width: 300, height: 1000)
-        ZStack {
-                
+         ZStack {
             ZStack{
                 VStack{
-                
-                    
                     Firstcard()
                         .padding(.bottom)
                         .padding(.top)
@@ -99,23 +98,16 @@ struct OlevelEnglishView: View {
                     Ninthcard()
                         .padding(.bottom)
                     
-//                    Tenthcard()
-//                        .padding(.bottom)
                     
-                    
-                    
-
                 Spacer()
+                    
                 }
-                    
-                    
-                    
+    
                 .frame(width: screen.width, height: 600)
                 .padding(.top, 150)
                 .padding(.bottom, -450)
             }
-//            LottieView()
-//            .frame(width: 200, height: 200, alignment: .center)
+ 
         }
         
               Button(action: {
@@ -255,13 +247,9 @@ struct OlevelEnglishView: View {
             
         }
 //.background(Color.gray)
+        
+    }
     
-}
-
-
-
-
-
 }
 
 struct Firstcard: View {
