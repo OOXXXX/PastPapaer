@@ -19,15 +19,15 @@ struct Home: View {
                 
                 if self.selected == 0{
                     
-                    test()
+                    OlevelEnglishView()
                 }
                 if self.selected == 1{
                     
-                   HomeView()
+                    HomeView()
                 }
                 if self.selected == 2{
                     
-                  OlevelEnglishView()
+                    test()
                 }
                 
                 Topbar(selected: self.$selected).padding(.top, 8).padding(.bottom, -2)
@@ -65,7 +65,7 @@ struct Topbar : View {
                 
             }) {
                 
-                Image(systemName: "a.circle.fill")
+                Image(systemName: "o.circle.fill")
                     .resizable()
                     .frame(width: 30, height: 30)
                     .padding(.vertical,5)
@@ -103,7 +103,7 @@ struct Topbar : View {
                 
             }) {
                 
-                Image(systemName: "o.circle.fill")
+                Image(systemName: "a.circle.fill")
                 .resizable()
                 .frame(width: 30, height: 30)
                 .padding(.vertical,5)
