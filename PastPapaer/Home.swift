@@ -12,29 +12,29 @@ struct Home: View {
         @State var selected = 0
         
         var body: some View {
-           
-            VStack(spacing: 8){
-                
-                
-                
+            
+            VStack(spacing: 22){
                 if self.selected == 0{
                     
                     OlevelEnglishView()
                 }
                 if self.selected == 1{
-                    
-                    HomeView()
+                    TestView()
+                     
                 }
                 if self.selected == 2{
-                    
-                    test()
+                    TestView()
+                     
                 }
-                
-                Topbar(selected: self.$selected).padding(.top, 8).padding(.bottom, -2)
-                
-            }
+ 
+                Topbar(selected: self.$selected).offset(x: screen.width/2-92, y:-5)
+                    .padding(.bottom, 28)
+                     
+ 
         }
+               .edgesIgnoringSafeArea(.bottom)
     }
+}
 
 
 struct Home_Previews: PreviewProvider {
@@ -43,11 +43,6 @@ struct Home_Previews: PreviewProvider {
     }
 }
 
-struct test: View {
-     var body: some View {
-         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
 
 struct Topbar : View {
     
@@ -115,13 +110,15 @@ struct Topbar : View {
               
             
             }
-            
-            .padding(.horizontal, 8)
-            .padding(.vertical, 8)
+    .frame(width: 145, height: 40)
+            .padding(.horizontal, 6)
+            .padding(.vertical, 5)
             .background(Color("Color2"))
             .clipShape(Capsule())
             .animation(.spring(response: 0.5, dampingFraction: 0.5, blendDuration: 0.1))
+            
     
-            .offset(x: screen.width-280)
+            
     }
+    
 }

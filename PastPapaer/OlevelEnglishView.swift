@@ -50,17 +50,17 @@ struct OlevelEnglishView: View {
                     .background(Color.white)
                     .clipShape(Circle())
                     .shadow(color: Color.black.opacity(0.1), radius: 1, x: 0, y: 1)
-                    .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 10)
+                    .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 3)
                 .padding(.top)
                 
                 }
                 .offset(x: -15, y: 0)
-            .sheet(isPresented: $showUpdate) {
+                .sheet(isPresented: $showUpdate) {
                 BlogView()
             }
             
         }
-            .frame(width: screen.width, height: 35)
+                .frame(width: screen.width, height: 35)
                 .padding(.top)
                 .padding(.bottom, -5)
             
