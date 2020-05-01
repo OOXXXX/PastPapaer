@@ -15,15 +15,14 @@ struct Home: View {
             
             VStack(spacing: 22){
                 if self.selected == 0{
-                    
-                    OlevelEnglishView()
+                    OLView()
                 }
                 if self.selected == 1{
-                    TestView()
+                    IGView()
                      
                 }
                 if self.selected == 2{
-                    TestView()
+                    ALView()
                      
                 }
  
