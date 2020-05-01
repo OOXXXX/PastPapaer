@@ -31,6 +31,7 @@
 		1865B3EA2417807B007DB193 /* 2013-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3E92417807B007DB193 /* 2013-2.json */; };
 		1865B3EC24178088007DB193 /* 2012-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3EB24178088007DB193 /* 2012-2.json */; };
 		1865B3EE24178094007DB193 /* 2011-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3ED24178094007DB193 /* 2011-2.json */; };
+		18A33AB1245C73C600446ACF /* YearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A33AB0245C73C600446ACF /* YearView.swift */; };
 		18B21DC62444A9CF007ECAE7 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B21DC52444A9CF007ECAE7 /* Home.swift */; };
 		18B6E24B24134DE7002615DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E24A24134DE7002615DE /* AppDelegate.swift */; };
 		18B6E24D24134DE7002615DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E24C24134DE7002615DE /* SceneDelegate.swift */; };
@@ -144,6 +145,7 @@
 		1865B3EB24178088007DB193 /* 2012-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2012-2.json"; sourceTree = "<group>"; };
 		1865B3ED24178094007DB193 /* 2011-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2011-2.json"; sourceTree = "<group>"; };
 		188F81AC241669F80043DBDB /* PastPaper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PastPaper.entitlements; sourceTree = "<group>"; };
+		18A33AB0245C73C600446ACF /* YearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearView.swift; sourceTree = "<group>"; };
 		18B21DC52444A9CF007ECAE7 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		18B6E24724134DE7002615DE /* PastPaperO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PastPaperO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B6E24A24134DE7002615DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -321,13 +323,14 @@
 				18E956BC241533A700DAF229 /* 2018 */,
 				18CF47882414A436006F01FA /* 2019 */,
 				18CF478A2414A52E006F01FA /* Delegate */,
-				180408C72413C91D005979A5 /* OLView.swift */,
 				18367EC524151F06004B634D /* BlogView.swift */,
 				18DB6B45241639710050F099 /* PlaySound.swift */,
 				180408E32413CFE6005979A5 /* Support.swift */,
 				18B21DC52444A9CF007ECAE7 /* Home.swift */,
+				180408C72413C91D005979A5 /* OLView.swift */,
 				18CC130A245C12A200C22204 /* IGView.swift */,
 				18CC130C245C200600C22204 /* ALView.swift */,
+				18A33AB0245C73C600446ACF /* YearView.swift */,
 				18CF47892414A4FD006F01FA /* Source */,
 				18E956C1241535A800DAF229 /* JSON */,
 				18B6E25324134DEA002615DE /* Assets.xcassets */,
@@ -775,6 +778,7 @@
 				18DB6B1624161F640050F099 /* 2014D.swift in Sources */,
 				18DB6B46241639710050F099 /* PlaySound.swift in Sources */,
 				18B6E24B24134DE7002615DE /* AppDelegate.swift in Sources */,
+				18A33AB1245C73C600446ACF /* YearView.swift in Sources */,
 				18CC130B245C12A200C22204 /* IGView.swift in Sources */,
 				18E956C6241538BE00DAF229 /* Decode8.swift in Sources */,
 				180408C82413C91D005979A5 /* OLView.swift in Sources */,

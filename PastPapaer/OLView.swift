@@ -12,11 +12,13 @@ struct OLView: View {
     let generator = UINotificationFeedbackGenerator()
     @State var showUpdate = false
     @State var show2019 = false
+    @State var isActive = false
     
     var body: some View {
         
-        
+    
         VStack {
+            
             HStack{
            
                  Text("PastPaper")
@@ -50,22 +52,34 @@ struct OLView: View {
         .padding(.top)
         .padding(.bottom, -5)
         
-        ScrollView{
             
             
+  
+            
+ ScrollView{
+    
+           
+     
+    
+    
 
     Button(action: {
         let selectionFeedback = UISelectionFeedbackGenerator()
           selectionFeedback.selectionChanged()
         
-        self.show2019.toggle()
+        self.isActive = true
         
       })
     {
 
         VStack(alignment: .center) {
+        
+                
+            
+            NavigationLink(destination: OLView(), isActive: $isActive){
             HStack {
                 VStack(alignment: .leading) {
+                                  
                     Text("English")
                         .modifier(FontCoustom5(size: 38))
                         .foregroundColor(Color("background2"))
@@ -79,6 +93,7 @@ struct OLView: View {
                 Spacer()
                 
             }
+            
             .padding()
             Spacer()
         }
@@ -90,11 +105,18 @@ struct OLView: View {
             .stroke(Color.gray.opacity(0.1), lineWidth: 2))
             .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
             .padding(.top)
+        }
      }
-                            
-    .sheet(isPresented: self.$show2019) {
-        LandmarkList()
+
+    .sheet(isPresented: self.$isActive) {
+        YearView()
     }
+    
+            
+            
+            
+            
+            
     
         Button(action: {
             let selectionFeedback = UISelectionFeedbackGenerator()
@@ -353,8 +375,8 @@ struct Firstcard: View {
             .overlay(RoundedRectangle(cornerRadius: 10)
             .stroke(Color.gray.opacity(0.1), lineWidth: 2))
             .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
-    }
-
+      }
+    
 }
     
 

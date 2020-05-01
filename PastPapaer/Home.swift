@@ -13,7 +13,7 @@ struct Home: View {
         
         var body: some View {
             
-            VStack(spacing: 22){
+            VStack(spacing: 14){
                 if self.selected == 0{
                     OLView()
                 }
@@ -27,7 +27,7 @@ struct Home: View {
                 }
  
                 Topbar(selected: self.$selected).offset(x: screen.width/2-92, y:-5)
-                    .padding(.bottom, 28)
+                    .padding(.bottom, 27)
                      
  
         }
