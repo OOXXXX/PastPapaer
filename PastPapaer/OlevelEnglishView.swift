@@ -63,448 +63,316 @@ struct OlevelEnglishView: View {
                 .frame(width: screen.width, height: 35)
                 .padding(.top)
                 .padding(.bottom, -5)
-            
-        
 
-    ScrollView {
-         ZStack {
-            ZStack{
-                VStack{
-                    Firstcard()
-                        .padding(.bottom)
-                        .padding(.top)
-                    
-                    Secondcard()
-                        .padding(.bottom)
-                    
-                    Thridcard()
-                        .padding(.bottom)
-                    
-                    Forthcard()
-                        .padding(.bottom)
-                    
-                    Fifthcard()
-                        .padding(.bottom)
-                    
-                    Sixthcard()
-                        .padding(.bottom)
-                    
-                    Seventhcard()
-                        .padding(.bottom)
-                    
-                    Eighthcard()
-                        .padding(.bottom)
-                    
-                    Ninthcard()
-                        .padding(.bottom)
-                    
-                    
-                Spacer()
-                    
-                }
-    
-                .frame(width: screen.width, height: 600)
-                .padding(.top, 150)
-                .padding(.bottom, -450)
-            }
- 
-        }
-        
-              Button(action: {
-                  let selectionFeedback = UISelectionFeedbackGenerator()
-                                  selectionFeedback.selectionChanged()
-                              self.show2019.toggle()}) {
-                
-                
-                    Text("")
-                    .frame(width: 320, height: 70)
-                  //.background(Color.black)
-                    
-                
-                }
-                
-                .sheet(isPresented: self.$show2019) {
-                    LandmarkList()
-                }
-                .offset(x: 0, y: -275)
-            
-                
-              Button(action: {
-              let selectionFeedback = UISelectionFeedbackGenerator()
-                              selectionFeedback.selectionChanged()
-                          self.show2018.toggle()}) {
-                      Text("")
-                      .frame(width: 320, height: 70)
-                    //.background(Color.black)
-                  
-                  }
-                  .sheet(isPresented: self.$show2018) {
-                      _18List()
-                  }
-                  .offset(x: 0, y: -245)
-                
-              Button(action: {
-              let selectionFeedback = UISelectionFeedbackGenerator()
-                              selectionFeedback.selectionChanged()
-                          self.show2017.toggle()}) {
-                  Text("")
-                  .frame(width: 320, height: 70)
-                //.background(Color.black)
-              
-              }
-              .sheet(isPresented: self.$show2017) {
-                  _17List()
-              }
-              .offset(x: 0, y: -220)
-                
-             Button(action: {
-             let selectionFeedback = UISelectionFeedbackGenerator()
-                             selectionFeedback.selectionChanged()
-                         self.show2016.toggle()}) {
-                 Text("")
-                 .frame(width: 320, height: 70)
-               //.background(Color.black)
-             
-             }
-             .sheet(isPresented: self.$show2016) {
-                 _16L()
-             }
-             .offset(x: 0, y: -195)
-                
-            Button(action: {
-            let selectionFeedback = UISelectionFeedbackGenerator()
-                            selectionFeedback.selectionChanged()
-                        self.show2015.toggle()}) {
-                Text("")
-                .frame(width: 320, height: 70)
-              //.background(Color.black)
-            
-            }
-            .sheet(isPresented: self.$show2015) {
-                _15L()
-            }
-            .offset(x: 0, y: -170)
-                
-            Button(action: {
-            let selectionFeedback = UISelectionFeedbackGenerator()
-                            selectionFeedback.selectionChanged()
-                        self.show2014.toggle()}) {
-                Text("")
-                .frame(width: 320, height: 70)
-              //.background(Color.black)
-            
-            }
-            .sheet(isPresented: self.$show2014) {
-                _14L()
-            }
-            .offset(x: 0, y: -143)
-                
-            Button(action: {
-            let selectionFeedback = UISelectionFeedbackGenerator()
-                            selectionFeedback.selectionChanged()
-                        self.show2013.toggle()}) {
-                Text("")
-                .frame(width: 320, height: 70)
-              //.background(Color.black)
-            
-            }
-            .sheet(isPresented: self.$show2013) {
-                _13L()
-            }
-            .offset(x: 0, y: -118)
-            
-            Button(action: {
-            let selectionFeedback = UISelectionFeedbackGenerator()
-                            selectionFeedback.selectionChanged()
-                        self.show2012.toggle()}) {
-                Text("")
-                .frame(width: 320, height: 70)
-             // .background(Color.black)
-            
-            }
-            .sheet(isPresented: self.$show2012) {
-                _12L()
-            }
-            .offset(x: 0, y: -92)
-            
-            Button(action: {
-            let selectionFeedback = UISelectionFeedbackGenerator()
-                            selectionFeedback.selectionChanged()
-                        self.show2011.toggle()}) {
-                Text("")
-                .frame(width: 320, height: 70)
-             // .background(Color.black)
-            
-            }
-            .sheet(isPresented: self.$show2011) {
-                _11L()
-            }
-            .offset(x: 0, y: -66)
-                
-            }
-    .background(Color("Color-1"))
-            
-            
-        }
-//.background(Color.gray)
-        
-    }
-    
-}
+ScrollView {
+  
+  Button(action: {
+  let selectionFeedback = UISelectionFeedbackGenerator()
+                  selectionFeedback.selectionChanged()
+              self.show2019.toggle()}) {
 
-struct Firstcard: View {
-    var body: some View {
-        VStack(alignment: .center) {
-            HStack {
-                VStack(alignment: .leading) {
-                    Text("2019")
-                    .modifier(FontCoustom5(size: 38))
-                    .foregroundColor(Color("background2"))
-                    .padding(.bottom, -10)
-                    
-                    Text("Olevel")
-                        .modifier(FontCoustom2(size: 18))
-                        .foregroundColor(Color("Color"))
-                }
-                
-                Spacer()
-                Image("Logo19")
-                    .resizable()
-                    .frame(width: 40, height: 40)
-                    .offset(x: 0, y: 5)
-            }
-            .padding()
-            Spacer()
-        }
-        .frame(width: screen.width-30, height: 80.0)
-            // .background(Color("secondary"))
-            .background(Color("Color-2"))
-            .cornerRadius(11)
-            .overlay(RoundedRectangle(cornerRadius: 10)
-            .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-            .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
-    }
-    
-    }
-    
-    struct Secondcard: View {
-    var body: some View {
-        VStack(alignment: .center) {
-            HStack {
-                VStack(alignment: .leading) {
-                    Text("2018")
+            VStack(alignment: .center) {
+                HStack {
+                    VStack(alignment: .leading) {
+                        Text("2019")
                         .modifier(FontCoustom5(size: 38))
                         .foregroundColor(Color("background2"))
                         .padding(.bottom, -10)
                         
                         Text("Olevel")
-                        .modifier(FontCoustom2(size: 18))
-                        .foregroundColor(Color("Color"))
-                }
-                
-                Spacer()
-                Image("Logo18")
-                    .resizable()
-                    .frame(width: 40, height: 40)
-                    .offset(x: 0, y: 5)
-            }
-            .padding()
-            Spacer()
-        }
-        .frame(width: screen.width-30, height: 80.0)
-        .background(Color("Color-2"))
-        .cornerRadius(11)
-        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
-        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
-        .overlay(RoundedRectangle(cornerRadius: 10)
-        .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-        .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
-        }
-    
-    }
-    
-    struct Thridcard: View {
-    var body: some View {
-        VStack(alignment: .center) {
-            HStack {
-                VStack(alignment: .leading) {
-                    Text("2017")
-                        .modifier(FontCoustom5(size: 38))
-                        .foregroundColor(Color("background2"))
-                        .padding(.bottom, -10)
+                            .modifier(FontCoustom2(size: 18))
+                            .foregroundColor(Color("Color"))
+                    }
                     
-                    Text("Olevel")
-                        .modifier(FontCoustom2(size: 18))
-                        .foregroundColor(Color("Color"))
+                    Spacer()
+                    Image("Logo18")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .offset(x: 0, y: 5)
                 }
-                
+                .padding()
                 Spacer()
-                Image("Logo17")
-                    .resizable()
-                    .frame(width: 40, height: 40)
-                    .offset(x: 0, y: 5)
             }
-            .padding()
-            Spacer()
-        }
-        .frame(width: screen.width-30, height: 80)
-        .background(Color("Color-2"))
-        .cornerRadius(11)
-        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
-        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
-        .overlay(RoundedRectangle(cornerRadius: 10)
-        .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-        .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
-        }
-    
-    }
-    
-    struct Forthcard: View {
-    var body: some View {
-        VStack(alignment: .center) {
-            HStack {
-                VStack(alignment: .leading) {
-                    Text("2016")
-                        .modifier(FontCoustom5(size: 38))
-                        .foregroundColor(Color("background2"))
-                        .padding(.bottom, -10)
+            .frame(width: screen.width-30, height: 80.0)
+                // .background(Color("secondary"))
+                .background(Color("Color-2"))
+                .cornerRadius(11)
+                .overlay(RoundedRectangle(cornerRadius: 10)
+                .stroke(Color.gray.opacity(0.1), lineWidth: 2))
+                .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
+                .padding(.top)
+}
+                
+.sheet(isPresented: self.$show2019) {
+    LandmarkList()
+}
+
+                
+Button(action: {
+let selectionFeedback = UISelectionFeedbackGenerator()
+              selectionFeedback.selectionChanged()
+          self.show2018.toggle()}) {
+
+            VStack(alignment: .center) {
+                HStack {
+                    VStack(alignment: .leading) {
+                        Text("2018")
+                            .modifier(FontCoustom5(size: 38))
+                            .foregroundColor(Color("background2"))
+                            .padding(.bottom, -10)
+                            
+                            Text("Olevel")
+                            .modifier(FontCoustom2(size: 18))
+                            .foregroundColor(Color("Color"))
+                    }
                     
-                    Text("Olevel")
-                        .modifier(FontCoustom2(size: 18))
-                        .foregroundColor(Color("Color"))
+                    Spacer()
+                    Image("Logo18")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .offset(x: 0, y: 5)
                 }
-                
+                .padding()
                 Spacer()
-                Image("Logo16")
-                    .resizable()
-                    .frame(width: 40, height: 40)
-                    .offset(x: 0, y: 5)
             }
-            .padding()
-            Spacer()
-        }
-        .frame(width: screen.width-30, height: 80)
-        .background(Color("Color-2"))
-        .cornerRadius(11)
-        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
-        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
-        .overlay(RoundedRectangle(cornerRadius: 10)
-        .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-        .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
-        }
-    
-    }
-    
-    struct Fifthcard: View {
-    var body: some View {
-        VStack(alignment: .center) {
-            HStack {
-                VStack(alignment: .leading) {
-                    Text("2015")
-                        .modifier(FontCoustom5(size: 38))
-                        .foregroundColor(Color("background2"))
-                        .padding(.bottom, -10)
-                    
-                    Text("Olevel")
-                        .modifier(FontCoustom2(size: 18))
-                        .foregroundColor(Color("Color"))
+            .frame(width: screen.width-30, height: 80.0)
+            .background(Color("Color-2"))
+            .cornerRadius(11)
+            //.shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
+            //.shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
+            .overlay(RoundedRectangle(cornerRadius: 10)
+            .stroke(Color.gray.opacity(0.1), lineWidth: 2))
+            .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
+            .padding(.top)
+       
+  
+  }
+  .sheet(isPresented: self.$show2018) {
+      _18List()
+  }
+//  .offset(x: 0, y: -245)
+                
+  Button(action: {
+  let selectionFeedback = UISelectionFeedbackGenerator()
+                  selectionFeedback.selectionChanged()
+              self.show2017.toggle()}) {
+     
+                VStack(alignment: .center) {
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text("2017")
+                                .modifier(FontCoustom5(size: 38))
+                                .foregroundColor(Color("background2"))
+                                .padding(.bottom, -10)
+                            
+                            Text("Olevel")
+                                .modifier(FontCoustom2(size: 18))
+                                .foregroundColor(Color("Color"))
+                        }
+                        
+                        Spacer()
+                        Image("Logo18")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .offset(x: 0, y: 5)
+                    }
+                    .padding()
+                    Spacer()
                 }
+                .frame(width: screen.width-30, height: 80)
+                .background(Color("Color-2"))
+                .cornerRadius(11)
+                .overlay(RoundedRectangle(cornerRadius: 10)
+                .stroke(Color.gray.opacity(0.1), lineWidth: 2))
+                .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
+                .padding(.top)
                 
-                Spacer()
-                Image("Logo15")
-                    .resizable()
-                    .frame(width: 40, height: 40)
-                    .offset(x: 0, y: 5)
-            }
-            .padding()
-            Spacer()
-        }
-        .frame(width: screen.width-30, height: 80)
-        .background(Color("Color-2"))
-        .cornerRadius(11)
-        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
-        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
-        .overlay(RoundedRectangle(cornerRadius: 10)
-        .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-        .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
-        }
-    
-    }
-    
-    struct Sixthcard: View {
-    var body: some View {
-        VStack(alignment: .center) {
-            HStack {
-                VStack(alignment: .leading) {
-                    Text("2014")
-                        .modifier(FontCoustom5(size: 38))
-                        .foregroundColor(Color("background2"))
-                        .padding(.bottom, -10)
-                    
-                    Text("Olevel")
-                        .modifier(FontCoustom2(size: 18))
-                        .foregroundColor(Color("Color"))
+  
+  }
+  .sheet(isPresented: self.$show2017) {
+      _17List()
+  }
+//              .offset(x: 0, y: -220)
+                
+ Button(action: {
+ let selectionFeedback = UISelectionFeedbackGenerator()
+                 selectionFeedback.selectionChanged()
+             self.show2016.toggle()}) {
+      
+                VStack(alignment: .center) {
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text("2016")
+                                .modifier(FontCoustom5(size: 38))
+                                .foregroundColor(Color("background2"))
+                                .padding(.bottom, -10)
+                            
+                            Text("Olevel")
+                                .modifier(FontCoustom2(size: 18))
+                                .foregroundColor(Color("Color"))
+                        }
+                        
+                       Spacer()
+                        Image("Logo18")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .offset(x: 0, y: 5)
+                    }
+                    .padding()
+                    Spacer()
                 }
+                .frame(width: screen.width-30, height: 80)
+                .background(Color("Color-2"))
+                .cornerRadius(11)
+                .overlay(RoundedRectangle(cornerRadius: 10)
+                .stroke(Color.gray.opacity(0.1), lineWidth: 2))
+                .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
+                .padding(.top)
                 
-                Spacer()
-                Image("Logo14")
-                    .resizable()
-                    .frame(width: 40, height: 40)
-                    .offset(x: 0, y: 5)
-            }
-            .padding()
-            Spacer()
-        }
-        .frame(width: screen.width-30, height: 80)
-        .background(Color("Color-2"))
-        .cornerRadius(11)
-        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
-        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
-        .overlay(RoundedRectangle(cornerRadius: 10)
-        .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-        .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
-        }
-    
-    }
-    
-    struct Seventhcard: View {
-    var body: some View {
-        VStack(alignment: .center) {
-            HStack {
-                VStack(alignment: .leading) {
-                    Text("2013")
-                        .modifier(FontCoustom5(size: 38))
-                        .foregroundColor(Color("background2"))
-                        .padding(.bottom, -10)
-                    
-                    Text("Olevel")
-                        .modifier(FontCoustom2(size: 18))
-                        .foregroundColor(Color("Color"))
-                }
+ }
+ .sheet(isPresented: self.$show2016) {
+     _16L()
+ }
+ 
                 
-                Spacer()
-                Image("Logo13")
-                    .resizable()
-                    .frame(width: 40, height: 40)
-                    .offset(x: 0, y: 5)
-            }
-            .padding()
-            Spacer()
+Button(action: {
+let selectionFeedback = UISelectionFeedbackGenerator()
+            selectionFeedback.selectionChanged()
+        self.show2015.toggle()}) {
+ VStack(alignment: .center) {
+     HStack {
+         VStack(alignment: .leading) {
+             Text("2015")
+                 .modifier(FontCoustom5(size: 38))
+                 .foregroundColor(Color("background2"))
+                 .padding(.bottom, -10)
+             
+             Text("Olevel")
+                 .modifier(FontCoustom2(size: 18))
+                 .foregroundColor(Color("Color"))
+         }
+         
+         Spacer()
+         Image("Logo18")
+             .resizable()
+             .frame(width: 40, height: 40)
+             .offset(x: 0, y: 5)
+     }
+     .padding()
+     Spacer()
+ }
+ .frame(width: screen.width-30, height: 80)
+ .background(Color("Color-2"))
+ .cornerRadius(11)
+ //.shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
+ //.shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
+ .overlay(RoundedRectangle(cornerRadius: 10)
+ .stroke(Color.gray.opacity(0.1), lineWidth: 2))
+ .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
+ .padding(.top)
+            
+
+}
+.sheet(isPresented: self.$show2015) {
+    _15L()
+}
+ 
+                
+Button(action: {
+let selectionFeedback = UISelectionFeedbackGenerator()
+            selectionFeedback.selectionChanged()
+        self.show2014.toggle()}) {
+            
+VStack(alignment: .center) {
+    HStack {
+        VStack(alignment: .leading) {
+            Text("2014")
+                .modifier(FontCoustom5(size: 38))
+                .foregroundColor(Color("background2"))
+                .padding(.bottom, -10)
+            
+            Text("Olevel")
+                .modifier(FontCoustom2(size: 18))
+                .foregroundColor(Color("Color"))
         }
-        .frame(width: screen.width-30, height: 80)
-        .background(Color("Color-2"))
-        .cornerRadius(11)
-        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
-        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
-        .overlay(RoundedRectangle(cornerRadius: 10)
-        .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-        .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
-        }
-    
+        
+        Spacer()
+        Image("Logo18")
+            .resizable()
+            .frame(width: 40, height: 40)
+            .offset(x: 0, y: 5)
     }
+    .padding()
+    Spacer()
+}
+.frame(width: screen.width-30, height: 80)
+.background(Color("Color-2"))
+.cornerRadius(11)
+//.shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
+//.shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
+.overlay(RoundedRectangle(cornerRadius: 10)
+.stroke(Color.gray.opacity(0.1), lineWidth: 2))
+.shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
+.padding(.top)
+
+
+}
+.sheet(isPresented: self.$show2014) {
+    _14L()
+}
+ 
+                
+Button(action: {
+let selectionFeedback = UISelectionFeedbackGenerator()
+                selectionFeedback.selectionChanged()
+            self.show2013.toggle()})
+{
+     
     
-    struct Eighthcard: View {
-    var body: some View {
+    VStack(alignment: .center) {
+        HStack {
+            VStack(alignment: .leading) {
+                Text("2013")
+                    .modifier(FontCoustom5(size: 38))
+                    .foregroundColor(Color("background2"))
+                    .padding(.bottom, -10)
+                
+                Text("Olevel")
+                    .modifier(FontCoustom2(size: 18))
+                    .foregroundColor(Color("Color"))
+            }
+            
+            Spacer()
+            Image("Logo18")
+                .resizable()
+                .frame(width: 40, height: 40)
+                .offset(x: 0, y: 5)
+        }
+        .padding()
+        Spacer()
+    }
+    .frame(width: screen.width-30, height: 80)
+    .background(Color("Color-2"))
+    .cornerRadius(11)
+    //.shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
+    //.shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
+    .overlay(RoundedRectangle(cornerRadius: 10)
+    .stroke(Color.gray.opacity(0.1), lineWidth: 2))
+    .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
+    .padding(.top)
+
+}
+.sheet(isPresented: self.$show2013) {
+    _13L()
+}
+ 
+            
+Button(action: {
+let selectionFeedback = UISelectionFeedbackGenerator()
+        selectionFeedback.selectionChanged()
+    self.show2012.toggle()}) {
+
+        
         VStack(alignment: .center) {
             HStack {
                 VStack(alignment: .leading) {
@@ -519,7 +387,7 @@ struct Firstcard: View {
                 }
                 
                 Spacer()
-                Image("Logo12")
+                Image("Logo18")
                     .resizable()
                     .frame(width: 40, height: 40)
                     .offset(x: 0, y: 5)
@@ -535,83 +403,106 @@ struct Firstcard: View {
         .overlay(RoundedRectangle(cornerRadius: 10)
         .stroke(Color.gray.opacity(0.1), lineWidth: 2))
         .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
+        .padding(.top)
+        
+        
+}
+.sheet(isPresented: self.$show2012) {
+    _12L()
+}
+ 
+            
+Button(action: {
+let selectionFeedback = UISelectionFeedbackGenerator()
+            selectionFeedback.selectionChanged()
+        self.show2011.toggle()}) {
+
+            
+VStack(alignment: .center) {
+    HStack {
+        VStack(alignment: .leading) {
+            Text("2011")
+                .modifier(FontCoustom5(size: 38))
+                .foregroundColor(Color("background2"))
+                .padding(.bottom, -10)
+            
+            Text("Olevel")
+                .modifier(FontCoustom2(size: 18))
+                .foregroundColor(Color("Color"))
         }
+        
+        Spacer()
+        Image("Logo18")
+            .resizable()
+            .frame(width: 40, height: 40)
+            .offset(x: 0, y: 5)
+    }
+    .padding()
+    Spacer()
+}
+.frame(width: screen.width-30, height: 80)
+.background(Color("Color-2"))
+.cornerRadius(11)
+//.shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
+//.shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
+.overlay(RoundedRectangle(cornerRadius: 10)
+.stroke(Color.gray.opacity(0.1), lineWidth: 2))
+.shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
+.padding(.top)
+            
+}
+            .sheet(isPresented: self.$show2011) {
+                _11L()
+            }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .padding(.bottom, 28)
+          }
     
+        }
+        
     }
     
-    struct Ninthcard: View {
+}
+
+struct Firstcard: View {
     var body: some View {
         VStack(alignment: .center) {
             HStack {
                 VStack(alignment: .leading) {
-                    Text("2011")
-                        .modifier(FontCoustom5(size: 38))
-                        .foregroundColor(Color("background2"))
-                        .padding(.bottom, -10)
-                    
+                    Text("2019")
+                    .modifier(FontCoustom5(size: 38))
+                    .foregroundColor(Color("background2"))
+                    .padding(.bottom, -10)
+
                     Text("Olevel")
                         .modifier(FontCoustom2(size: 18))
                         .foregroundColor(Color("Color"))
                 }
-                
+
                 Spacer()
-                Image("Logo11")
+                Image("Logo19")
                     .resizable()
                     .frame(width: 40, height: 40)
                     .offset(x: 0, y: 5)
+//                  Image(systemName: "play.fill")
+//                      .font(.system(size: 25))
+
+                    .frame(width: 50, height: 50)
             }
             .padding()
             Spacer()
         }
-        .frame(width: screen.width-30, height: 80)
-        .background(Color("Color-2"))
-        .cornerRadius(11)
-        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
-        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
-        .overlay(RoundedRectangle(cornerRadius: 10)
-        .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-        .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
-        }
-    
-    }
-    
-    struct Tenthcard: View {
-    var body: some View {
-        VStack(alignment: .center) {
-            HStack {
-                VStack(alignment: .leading) {
-                    Text("2010")
-                        .modifier(FontCoustom5(size: 38))
-                        .foregroundColor(Color("background2"))
-                        .padding(.bottom, -10)
-                    
-                    Text("Olevel")
-                        .modifier(FontCoustom2(size: 18))
-                        .foregroundColor(Color("Color"))
-                }
-                
-                Spacer()
-                Image("Logo10")
-                    .resizable()
-                    .frame(width: 40, height: 40)
-                    .offset(x: 0, y: 5)
-            }
-            .padding()
-            Spacer()
-        }
-        .frame(width: screen.width-30, height: 80)
-        .background(Color("Color-2"))
-        .cornerRadius(11)
-        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: -3, y: -2)
-        //.shadow(color: Color.black.opacity(0.1), radius: 2, x: 2, y: 4)
-        .overlay(RoundedRectangle(cornerRadius: 10)
-        .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-        .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
-        }
-    
+        .frame(width: screen.width-30, height: 80.0)
+            // .background(Color("secondary"))
+            .background(Color("Color-2"))
+            .cornerRadius(11)
+            .overlay(RoundedRectangle(cornerRadius: 10)
+            .stroke(Color.gray.opacity(0.1), lineWidth: 2))
+            .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
     }
 
-
+}
+    
 
 struct OlevelEnglishView_Previews: PreviewProvider {
 static var previews: some View {

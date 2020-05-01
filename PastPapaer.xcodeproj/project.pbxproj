@@ -117,7 +117,6 @@
 		18E956DF2415430B00DAF229 /* 2017Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E956DA2415430B00DAF229 /* 2017Row.swift */; };
 		18E956E12415444A00DAF229 /* 2017.json in Resources */ = {isa = PBXBuildFile; fileRef = 18E956E02415444A00DAF229 /* 2017.json */; };
 		18EB60012418D0D800132DBF /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 18EB60002418D0D800132DBF /* Lottie */; };
-		18ED0B982419075F00B23373 /* TestLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED0B972419075F00B23373 /* TestLottieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -233,7 +232,6 @@
 		18E956D92415430B00DAF229 /* Data7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data7.swift; sourceTree = "<group>"; };
 		18E956DA2415430B00DAF229 /* 2017Row.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 2017Row.swift; sourceTree = "<group>"; };
 		18E956E02415444A00DAF229 /* 2017.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 2017.json; sourceTree = "<group>"; };
-		18ED0B972419075F00B23373 /* TestLottieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestLottieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -329,7 +327,6 @@
 				18367EC524151F06004B634D /* BlogView.swift */,
 				18DB6B45241639710050F099 /* PlaySound.swift */,
 				18609569241BED6D008871E7 /* HomeView.swift */,
-				18ED0B972419075F00B23373 /* TestLottieView.swift */,
 				180408E32413CFE6005979A5 /* Support.swift */,
 				183C24BE2415D9A7006D96EF /* TabBarView.swift */,
 				18B21DC52444A9CF007ECAE7 /* Home.swift */,
@@ -792,7 +789,6 @@
 				18B6E24D24134DE7002615DE /* SceneDelegate.swift in Sources */,
 				18367EC624151F06004B634D /* BlogView.swift in Sources */,
 				18DB6B1D24161FB90050F099 /* Decode4.swift in Sources */,
-				18ED0B982419075F00B23373 /* TestLottieView.swift in Sources */,
 				18E956B72415333B00DAF229 /* 2018List.swift in Sources */,
 				18DB6B2224161FE00050F099 /* 2013D.swift in Sources */,
 				18B6E25024134DE7002615DE /* PastPapaer.xcdatamodeld in Sources */,
@@ -960,22 +956,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PastPapaer/PastPaper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 26;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"PastPapaer/Preview Content\"";
 				DEVELOPMENT_TEAM = 6MM6Y2NK23;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = PastPapaer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = Patrick.PastPaper;
 				PRODUCT_NAME = PastPaperO;
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -985,22 +982,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PastPapaer/PastPaper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 26;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"PastPapaer/Preview Content\"";
 				DEVELOPMENT_TEAM = 6MM6Y2NK23;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = PastPapaer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = Patrick.PastPaper;
 				PRODUCT_NAME = PastPaperO;
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
