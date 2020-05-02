@@ -17,11 +17,12 @@ struct OLView: View {
     
     var body: some View {
         
-    
+    NavigationView{
+        
         VStack {
             
             HStack{
-           
+                    
                  Text("PastPaper")
                      .modifier(FontCoustom7(size: 40))
                      .frame(width: screen.width-50, height: 20, alignment: .leading)
@@ -53,35 +54,32 @@ struct OLView: View {
         .padding(.top)
         .padding(.bottom, -5)
         
-            
+         
             
   
-NavigationView{
+
     
    ScrollView(.vertical, showsIndicators: false){
     
+     
            
-    
-    
-    
-
-    Button(action: {
+  NavigationLink(destination: YearView(isNavigationBarHidden: $isNavigationBarHidden), isActive: $isActive){
+     Button(action: {
         let selectionFeedback = UISelectionFeedbackGenerator()
           selectionFeedback.selectionChanged()
         
         self.isActive = true
         
+        
       })
     {
-
+        
         VStack(alignment: .center) {
         
-   NavigationLink(destination: YearView(isNavigationBarHidden: $isNavigationBarHidden), isActive: $isActive){
-                
-            
             HStack {
+                
                 VStack(alignment: .leading) {
-                                  
+                    
                     Text("English")
                         .modifier(FontCoustom5(size: 38))
                         .foregroundColor(Color("background2"))
@@ -100,11 +98,7 @@ NavigationView{
             Spacer()
         }
             
-            .navigationBarTitle("", displayMode: .inline)
-            .navigationBarHidden(self.isNavigationBarHidden)
-            .onAppear {
-                self.isNavigationBarHidden = true
-            }
+            
             
             
             .frame(width: screen.width-30, height: 80.0)
@@ -116,7 +110,7 @@ NavigationView{
             .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
             .padding(.top)
         }
-     }
+    }
 
 //    .sheet(isPresented: self.$isActive) {
 //        YearView()
@@ -344,10 +338,14 @@ NavigationView{
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .padding(.bottom, 28)
           }
-    
+            
         }
-         
-        
+         .navigationBarTitle("", displayMode: .inline)
+         .navigationBarHidden(self.isNavigationBarHidden)
+         .onAppear {
+             self.isNavigationBarHidden = true
+         }
+        }
     }
     
 }
@@ -380,7 +378,7 @@ struct Firstcard: View {
             .padding()
             Spacer()
         }
-        .frame(width: screen.width-30, height: 80.0)
+            .frame(width: screen.width-30, height: 80.0)
             // .background(Color("secondary"))
             .background(Color("Color-2"))
             .cornerRadius(11)
@@ -388,8 +386,10 @@ struct Firstcard: View {
             .stroke(Color.gray.opacity(0.1), lineWidth: 2))
             .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
       }
+   
+  }
     
-}
+
     
 
 struct OlevelEnglishView_Previews: PreviewProvider {
@@ -403,4 +403,5 @@ static var previews: some View {
 }
 
 
-}
+
+
