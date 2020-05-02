@@ -13,6 +13,7 @@ struct OLView: View {
     @State var showUpdate = false
     @State var show2019 = false
     @State var isActive = false
+    @State var isNavigationBarHidden: Bool = true
     
     var body: some View {
         
@@ -55,11 +56,12 @@ struct OLView: View {
             
             
   
-            
- ScrollView{
+NavigationView{
+    
+   ScrollView(.vertical, showsIndicators: false){
     
            
-     
+    
     
     
 
@@ -74,9 +76,9 @@ struct OLView: View {
 
         VStack(alignment: .center) {
         
+   NavigationLink(destination: YearView(isNavigationBarHidden: $isNavigationBarHidden), isActive: $isActive){
                 
             
-            NavigationLink(destination: OLView(), isActive: $isActive){
             HStack {
                 VStack(alignment: .leading) {
                                   
@@ -97,7 +99,15 @@ struct OLView: View {
             .padding()
             Spacer()
         }
-        .frame(width: screen.width-30, height: 80.0)
+            
+            .navigationBarTitle("", displayMode: .inline)
+            .navigationBarHidden(self.isNavigationBarHidden)
+            .onAppear {
+                self.isNavigationBarHidden = true
+            }
+            
+            
+            .frame(width: screen.width-30, height: 80.0)
             // .background(Color("secondary"))
             .background(Color("Color-2"))
             .cornerRadius(11)
@@ -108,9 +118,9 @@ struct OLView: View {
         }
      }
 
-    .sheet(isPresented: self.$isActive) {
-        YearView()
-    }
+//    .sheet(isPresented: self.$isActive) {
+//        YearView()
+//    }
     
             
             
@@ -126,7 +136,7 @@ struct OLView: View {
             
           })
         {
-
+        
             VStack(alignment: .center) {
                 HStack {
                     VStack(alignment: .leading) {
@@ -336,6 +346,8 @@ struct OLView: View {
           }
     
         }
+         
+        
     }
     
 }
@@ -391,4 +403,4 @@ static var previews: some View {
 }
 
 
-
+}
