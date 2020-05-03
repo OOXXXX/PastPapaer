@@ -11,18 +11,21 @@ import SwiftUI
 struct YearView: View {
     @Binding var isNavigationBarHidden: Bool
     @State var show2019 = false
+    @State var showCard = false
+    @State var bottomState = CGSize.zero
+    @State var show = false
     
     var body: some View {
         VStack {
                 ScrollView(.horizontal, showsIndicators: false){
                     HStack{
-                        ForEach(0 ..< 8) { item in
+                        ForEach(0 ..< 10) { item in
                             Button(action: {
                                     let selectionFeedback = UISelectionFeedbackGenerator()
                                       selectionFeedback.selectionChanged()
                                     
                                     self.show2019.toggle()
-                                    
+                                    //self.show2019.toggle()
                                   })
                                 {
                                      
@@ -30,18 +33,19 @@ struct YearView: View {
                                      HStack {
                                          VStack(alignment: .center) {
                                              Text("19")
-                                                 .modifier(FontCoustom5(size: 38))
-                                                 .foregroundColor(Color.white)
+                                                 .modifier(FontCoustom5(size: 48))
+                                                 .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
                                                  .padding(.bottom, -10)
                                          }
                                          
                                      }
                                          
-                                     .frame(width: 70, height: 70)
-                                     .background(Color("background2"))
-                                     .clipShape(Circle())
+                                     .frame(width: 70, height: 100)
+                                     .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.7384952911)))
+                                     .clipShape(RoundedRectangle(cornerRadius: 20))
                                      .overlay(
-                                 Circle().stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 2))
+                                RoundedRectangle(cornerRadius: 20).stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 2))
+                                     .shadow(color: Color.gray.opacity(0.3), radius: 2, x: 0, y: 2)
                                  }
                                 .sheet(isPresented: self.$show2019) {
                                     LandmarkList()
@@ -54,26 +58,25 @@ struct YearView: View {
                     .padding(10)
                     .padding(.top, 10)
             }
+            
+            
+                EnglishDocsView()
+                    
+             
+                
                 Spacer()
-                
-                
+             
+               
+             
+            
                 
         }
-        
+        .navigationBarTitle("English")
         .onAppear {
             self.isNavigationBarHidden = false
         }
     }
 }
 
-//struct YearView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        YearView()
-//    }
-//}
 
-//struct YearView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        YearView(isNavigationBarHidden: true)
-//    }
-//}
+
