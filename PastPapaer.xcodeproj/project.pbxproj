@@ -21,6 +21,7 @@
 		180408E12413CF41005979A5 /* Oswald-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 180408D62413CF41005979A5 /* Oswald-Light.ttf */; };
 		180408E22413CF41005979A5 /* Oswald-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 180408D72413CF41005979A5 /* Oswald-VariableFont_wght.ttf */; };
 		180408E42413CFE6005979A5 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180408E32413CFE6005979A5 /* Support.swift */; };
+		1813F4DF245E95400085A43D /* SampleYearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813F4DE245E95400085A43D /* SampleYearView.swift */; };
 		18367EC624151F06004B634D /* BlogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18367EC524151F06004B634D /* BlogView.swift */; };
 		1865B3DE24177CD7007DB193 /* 2019-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3DD24177CD7007DB193 /* 2019-2.json */; };
 		1865B3E024178036007DB193 /* 2018-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3DF24178036007DB193 /* 2018-2.json */; };
@@ -134,6 +135,7 @@
 		180408D62413CF41005979A5 /* Oswald-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Light.ttf"; sourceTree = "<group>"; };
 		180408D72413CF41005979A5 /* Oswald-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		180408E32413CFE6005979A5 /* Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
+		1813F4DE245E95400085A43D /* SampleYearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleYearView.swift; sourceTree = "<group>"; };
 		18367EC524151F06004B634D /* BlogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogView.swift; sourceTree = "<group>"; };
 		1865B3DD24177CD7007DB193 /* 2019-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2019-2.json"; sourceTree = "<group>"; };
 		1865B3DF24178036007DB193 /* 2018-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2018-2.json"; sourceTree = "<group>"; };
@@ -331,6 +333,7 @@
 				18CC130A245C12A200C22204 /* IGView.swift */,
 				18CC130C245C200600C22204 /* ALView.swift */,
 				18A33AB0245C73C600446ACF /* YearView.swift */,
+				1813F4DE245E95400085A43D /* SampleYearView.swift */,
 				18CF47892414A4FD006F01FA /* Source */,
 				18E956C1241535A800DAF229 /* JSON */,
 				18B6E25324134DEA002615DE /* Assets.xcassets */,
@@ -762,6 +765,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18DB6B3A2416210B0050F099 /* 2011D.swift in Sources */,
+				1813F4DF245E95400085A43D /* SampleYearView.swift in Sources */,
 				18DB6B0E24161EE60050F099 /* 2015R.swift in Sources */,
 				18DB6B1824161F7B0050F099 /* 2014L.swift in Sources */,
 				18B6E27E241381EB002615DE /* Data.swift in Sources */,
