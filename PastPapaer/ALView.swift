@@ -50,7 +50,7 @@ struct ALView: View {
             .padding(.top)
             .padding(.bottom, -5)
             
-            ScrollView{
+            ScrollView(.vertical, showsIndicators: false){
                 
                 
 

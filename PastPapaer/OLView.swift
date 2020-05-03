@@ -126,7 +126,7 @@ struct OLView: View {
             let selectionFeedback = UISelectionFeedbackGenerator()
               selectionFeedback.selectionChanged()
             
-            self.show2019.toggle()
+            self.isActive = true
             
           })
         {
@@ -160,15 +160,13 @@ struct OLView: View {
                 .padding(.top)
          }
                                 
-        .sheet(isPresented: self.$show2019) {
-            LandmarkList()
-        }
+        
         
         Button(action: {
             let selectionFeedback = UISelectionFeedbackGenerator()
               selectionFeedback.selectionChanged()
             
-            self.show2019.toggle()
+            self.isActive = true
             
           })
         {
@@ -202,15 +200,13 @@ struct OLView: View {
                 .padding(.top)
          }
                                 
-        .sheet(isPresented: self.$show2019) {
-            LandmarkList()
-        }
+         
         
         Button(action: {
             let selectionFeedback = UISelectionFeedbackGenerator()
               selectionFeedback.selectionChanged()
             
-            self.show2019.toggle()
+            self.isActive = true
             
           })
         {
@@ -244,15 +240,12 @@ struct OLView: View {
                 .padding(.top)
          }
                                 
-        .sheet(isPresented: self.$show2019) {
-            LandmarkList()
-        }
-        
+         
         Button(action: {
             let selectionFeedback = UISelectionFeedbackGenerator()
               selectionFeedback.selectionChanged()
             
-            self.show2019.toggle()
+            self.isActive = true
             
           })
         {
@@ -286,15 +279,13 @@ struct OLView: View {
                 .padding(.top)
          }
                                 
-        .sheet(isPresented: self.$show2019) {
-            LandmarkList()
-        }
+         
         
         Button(action: {
             let selectionFeedback = UISelectionFeedbackGenerator()
               selectionFeedback.selectionChanged()
             
-            self.show2019.toggle()
+            self.isActive = true
             
           })
         {
@@ -328,10 +319,7 @@ struct OLView: View {
                 .padding(.top)
          }
                                 
-        .sheet(isPresented: self.$show2019) {
-            LandmarkList()
-        }
-        
+         
          
             
             

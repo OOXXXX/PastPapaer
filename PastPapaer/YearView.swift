@@ -14,7 +14,7 @@ struct YearView: View {
     
     
     var body: some View {
-        Text("sss")
+        Text("")
         
         .onAppear {
             self.isNavigationBarHidden = false
