@@ -12,7 +12,7 @@ import SafariServices
 struct EnglishDocsView: View {
      @State var show2019 = false
      @State var showSafari = false
-     @State var urlString = "https://duckduckgo.com"
+     @State var urlString1 = "https://duckduckgo.com"
     
     var body: some View {
     ScrollView(.vertical, showsIndicators: false){
@@ -23,7 +23,7 @@ struct EnglishDocsView: View {
                  self.showSafari.toggle()
             }
             .sheet(isPresented: $showSafari) {
-                SafariView(url:URL(string: self.urlString)!)
+                SafariView(url:URL(string: self.urlString1)!)
             }
          
         
