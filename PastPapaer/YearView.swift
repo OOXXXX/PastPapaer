@@ -17,7 +17,7 @@ var body: some View {
         
             YearNumberView(isNavigationBarHidden: $isNavigationBarHidden)
             
-            EnglishDocsView()
+            EngDocsView()
             .padding(.top, -5)
             
             
@@ -41,7 +41,7 @@ var body: some View {
         
             YearNumberView(isNavigationBarHidden: $isNavigationBarHidden)
             
-            EnglishDocsView()
+            MathDocsView()
             .padding(.top, -5)
             
             
@@ -65,7 +65,7 @@ var body: some View {
         
             YearNumberView(isNavigationBarHidden: $isNavigationBarHidden)
             
-            EnglishDocsView()
+            PhyDocsView()
             .padding(.top, -5)
             
             
@@ -89,7 +89,7 @@ var body: some View {
         
             YearNumberView(isNavigationBarHidden: $isNavigationBarHidden)
             
-            EnglishDocsView()
+            CsDocsView()
             .padding(.top, -5)
             
             
@@ -113,7 +113,7 @@ var body: some View {
         
             YearNumberView(isNavigationBarHidden: $isNavigationBarHidden)
             
-            EnglishDocsView()
+            BioDocsView()
             .padding(.top, -5)
             
             
@@ -137,7 +137,7 @@ var body: some View {
         
             YearNumberView(isNavigationBarHidden: $isNavigationBarHidden)
             
-            EnglishDocsView()
+            GeoDocsView()
             .padding(.top, -5)
             
             

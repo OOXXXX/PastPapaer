@@ -118,7 +118,7 @@
 		18E956DF2415430B00DAF229 /* 2017Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E956DA2415430B00DAF229 /* 2017Row.swift */; };
 		18E956E12415444A00DAF229 /* 2017.json in Resources */ = {isa = PBXBuildFile; fileRef = 18E956E02415444A00DAF229 /* 2017.json */; };
 		18EB60012418D0D800132DBF /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 18EB60002418D0D800132DBF /* Lottie */; };
-		18F5CE80245F08F600D9D627 /* EnglishDocsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F5CE7F245F08F600D9D627 /* EnglishDocsView.swift */; };
+		18F5CE80245F08F600D9D627 /* DocsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F5CE7F245F08F600D9D627 /* DocsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -235,7 +235,7 @@
 		18E956D92415430B00DAF229 /* Data7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data7.swift; sourceTree = "<group>"; };
 		18E956DA2415430B00DAF229 /* 2017Row.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 2017Row.swift; sourceTree = "<group>"; };
 		18E956E02415444A00DAF229 /* 2017.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 2017.json; sourceTree = "<group>"; };
-		18F5CE7F245F08F600D9D627 /* EnglishDocsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishDocsView.swift; sourceTree = "<group>"; };
+		18F5CE7F245F08F600D9D627 /* DocsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -335,7 +335,7 @@
 				18CC130A245C12A200C22204 /* IGView.swift */,
 				18CC130C245C200600C22204 /* ALView.swift */,
 				18468222245FDD6B0054B8D0 /* YearView.swift */,
-				18F5CE7F245F08F600D9D627 /* EnglishDocsView.swift */,
+				18F5CE7F245F08F600D9D627 /* DocsView.swift */,
 				18CF47892414A4FD006F01FA /* Source */,
 				18E956C1241535A800DAF229 /* JSON */,
 				18B6E25324134DEA002615DE /* Assets.xcassets */,
@@ -813,7 +813,7 @@
 				18E956C4241538B200DAF229 /* Data8.swift in Sources */,
 				18DB6B2E241620530050F099 /* 2012D.swift in Sources */,
 				18DB6B30241620690050F099 /* 2012L.swift in Sources */,
-				18F5CE80245F08F600D9D627 /* EnglishDocsView.swift in Sources */,
+				18F5CE80245F08F600D9D627 /* DocsView.swift in Sources */,
 				180408E42413CFE6005979A5 /* Support.swift in Sources */,
 				18DB6B262416200F0050F099 /* 2013R.swift in Sources */,
 				18DB6B0C24161EDA0050F099 /* 2015L.swift in Sources */,
