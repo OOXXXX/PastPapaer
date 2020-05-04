@@ -54,10 +54,13 @@ struct SampleYearView: View {
                         BoxView(box: box)
                         }
                         
-                    }
-                    .sheet(isPresented: self.$show2019) {
+                        .sheet(isPresented: self.$show2019) {
                         LandmarkList()
                         }
+                        
+                    
+                    }
+                    
                     
                     
                     }
