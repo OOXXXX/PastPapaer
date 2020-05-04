@@ -15,10 +15,10 @@ var body: some View {
         
     VStack {
         
-            YearNumberView(isNavigationBarHidden: $isNavigationBarHidden)
+            OLEngYearView(isNavigationBarHidden: $isNavigationBarHidden)
             
             EngDocsView()
-            .padding(.top, -5)
+            .padding(.top, -10)
             
             
             }
@@ -39,7 +39,7 @@ var body: some View {
         
     VStack {
         
-            YearNumberView(isNavigationBarHidden: $isNavigationBarHidden)
+            OLMathYearView(isNavigationBarHidden: $isNavigationBarHidden)
             
             MathDocsView()
             .padding(.top, -5)
@@ -63,7 +63,7 @@ var body: some View {
         
     VStack {
         
-            YearNumberView(isNavigationBarHidden: $isNavigationBarHidden)
+            OLPhyYearView(isNavigationBarHidden: $isNavigationBarHidden)
             
             PhyDocsView()
             .padding(.top, -5)
@@ -87,7 +87,7 @@ var body: some View {
         
     VStack {
         
-            YearNumberView(isNavigationBarHidden: $isNavigationBarHidden)
+            OLCsYearView(isNavigationBarHidden: $isNavigationBarHidden)
             
             CsDocsView()
             .padding(.top, -5)
@@ -111,7 +111,7 @@ var body: some View {
         
     VStack {
         
-            YearNumberView(isNavigationBarHidden: $isNavigationBarHidden)
+            OLBioYearView(isNavigationBarHidden: $isNavigationBarHidden)
             
             BioDocsView()
             .padding(.top, -5)
@@ -135,7 +135,7 @@ var body: some View {
         
     VStack {
         
-            YearNumberView(isNavigationBarHidden: $isNavigationBarHidden)
+            OLGeoYearView(isNavigationBarHidden: $isNavigationBarHidden)
             
             GeoDocsView()
             .padding(.top, -5)
@@ -190,7 +190,7 @@ struct YearRoundedButton: ButtonStyle {
 
  
 
-struct YearNumberView: View {
+struct OLEngYearView: View {
     
     @Binding var isNavigationBarHidden: Bool
     
@@ -337,11 +337,800 @@ struct YearNumberView: View {
                     
                     
                 }
-                    
+                .padding(.top, 3)
                 .padding(.trailing, 8)
                 Spacer()
             }
             .padding()
+            .padding(.bottom, -7)
         }
     }
 }
+
+struct OLMathYearView: View {
+    
+    @Binding var isNavigationBarHidden: Bool
+    
+    @State var show2019 = false
+    @State var show2018 = false
+    @State var show2017 = false
+    @State var show2016 = false
+    @State var show2015 = false
+    @State var show2014 = false
+    @State var show2013 = false
+    @State var show2012 = false
+    @State var show2011 = false
+    @State var show2010 = false
+    var body: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack {
+                Group {
+                    Button("19") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2019.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2019) {
+                        LandmarkList()
+                    }
+                    
+                    Button("18") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2018.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2018) {
+                        _18List()
+                    }
+                    
+                    Button("17") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2017.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2017) {
+                        _17List()
+                    }
+                    
+                    Button("16") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2016.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2016) {
+                        _16L()
+                    }
+                    
+                    Button("15") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2015.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2015) {
+                        _15L()
+                    }
+                    
+                    Button("14") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2014.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2014) {
+                        _14L()
+                    }
+                    
+                    Button("13") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2013.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2013) {
+                        _13L()
+                    }
+                    
+                    Button("12") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2012.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2012) {
+                        _12L()
+                    }
+                    
+                    Button("11") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2011.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2011) {
+                        _11L()
+                    }
+                    
+                    Button("10") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        
+                    }
+                    .buttonStyle(YearRoundedButton())
+                    
+                    
+                    
+                }
+                .padding(.top, 3)
+                .padding(.trailing, 8)
+                Spacer()
+            }
+            .padding()
+            .padding(.bottom, -7)
+        }
+    }
+}
+
+
+struct OLPhyYearView: View {
+    
+    @Binding var isNavigationBarHidden: Bool
+    
+    @State var show2019 = false
+    @State var show2018 = false
+    @State var show2017 = false
+    @State var show2016 = false
+    @State var show2015 = false
+    @State var show2014 = false
+    @State var show2013 = false
+    @State var show2012 = false
+    @State var show2011 = false
+    @State var show2010 = false
+    var body: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack {
+                Group {
+                    Button("19") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2019.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2019) {
+                        LandmarkList()
+                    }
+                    
+                    Button("18") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2018.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2018) {
+                        _18List()
+                    }
+                    
+                    Button("17") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2017.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2017) {
+                        _17List()
+                    }
+                    
+                    Button("16") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2016.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2016) {
+                        _16L()
+                    }
+                    
+                    Button("15") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2015.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2015) {
+                        _15L()
+                    }
+                    
+                    Button("14") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2014.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2014) {
+                        _14L()
+                    }
+                    
+                    Button("13") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2013.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2013) {
+                        _13L()
+                    }
+                    
+                    Button("12") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2012.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2012) {
+                        _12L()
+                    }
+                    
+                    Button("11") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2011.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2011) {
+                        _11L()
+                    }
+                    
+                    Button("10") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        
+                    }
+                    .buttonStyle(YearRoundedButton())
+                    
+                    
+                    
+                }
+                .padding(.top, 3)
+                .padding(.trailing, 8)
+                Spacer()
+            }
+            .padding()
+            .padding(.bottom, -7)
+        }
+    }
+}
+
+struct OLCsYearView: View {
+    
+    @Binding var isNavigationBarHidden: Bool
+    
+    @State var show2019 = false
+    @State var show2018 = false
+    @State var show2017 = false
+    @State var show2016 = false
+    @State var show2015 = false
+    @State var show2014 = false
+    @State var show2013 = false
+    @State var show2012 = false
+    @State var show2011 = false
+    @State var show2010 = false
+    var body: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack {
+                Group {
+                    Button("19") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2019.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2019) {
+                        LandmarkList()
+                    }
+                    
+                    Button("18") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2018.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2018) {
+                        _18List()
+                    }
+                    
+                    Button("17") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2017.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2017) {
+                        _17List()
+                    }
+                    
+                    Button("16") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2016.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2016) {
+                        _16L()
+                    }
+                    
+                    Button("15") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2015.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2015) {
+                        _15L()
+                    }
+                    
+                    Button("14") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2014.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2014) {
+                        _14L()
+                    }
+                    
+                    Button("13") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2013.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2013) {
+                        _13L()
+                    }
+                    
+                    Button("12") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2012.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2012) {
+                        _12L()
+                    }
+                    
+                    Button("11") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2011.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2011) {
+                        _11L()
+                    }
+                    
+                    Button("10") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        
+                    }
+                    .buttonStyle(YearRoundedButton())
+                    
+                    
+                    
+                }
+                .padding(.top, 3)
+                .padding(.trailing, 8)
+                Spacer()
+            }
+            .padding()
+            .padding(.bottom, -7)
+        }
+    }
+}
+
+struct OLBioYearView: View {
+    
+    @Binding var isNavigationBarHidden: Bool
+    
+    @State var show2019 = false
+    @State var show2018 = false
+    @State var show2017 = false
+    @State var show2016 = false
+    @State var show2015 = false
+    @State var show2014 = false
+    @State var show2013 = false
+    @State var show2012 = false
+    @State var show2011 = false
+    @State var show2010 = false
+    var body: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack {
+                Group {
+                    Button("19") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2019.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2019) {
+                        LandmarkList()
+                    }
+                    
+                    Button("18") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2018.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2018) {
+                        _18List()
+                    }
+                    
+                    Button("17") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2017.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2017) {
+                        _17List()
+                    }
+                    
+                    Button("16") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2016.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2016) {
+                        _16L()
+                    }
+                    
+                    Button("15") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2015.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2015) {
+                        _15L()
+                    }
+                    
+                    Button("14") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2014.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2014) {
+                        _14L()
+                    }
+                    
+                    Button("13") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2013.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2013) {
+                        _13L()
+                    }
+                    
+                    Button("12") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2012.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2012) {
+                        _12L()
+                    }
+                    
+                    Button("11") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2011.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2011) {
+                        _11L()
+                    }
+                    
+                    Button("10") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        
+                    }
+                    .buttonStyle(YearRoundedButton())
+                    
+                    
+                    
+                }
+                .padding(.top, 3)
+                .padding(.trailing, 8)
+                Spacer()
+            }
+            .padding()
+            .padding(.bottom, -7)
+        }
+    }
+}
+
+struct OLGeoYearView: View {
+    
+    @Binding var isNavigationBarHidden: Bool
+    
+    @State var show2019 = false
+    @State var show2018 = false
+    @State var show2017 = false
+    @State var show2016 = false
+    @State var show2015 = false
+    @State var show2014 = false
+    @State var show2013 = false
+    @State var show2012 = false
+    @State var show2011 = false
+    @State var show2010 = false
+    var body: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack {
+                Group {
+                    Button("19") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2019.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2019) {
+                        LandmarkList()
+                    }
+                    
+                    Button("18") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2018.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2018) {
+                        _18List()
+                    }
+                    
+                    Button("17") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2017.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2017) {
+                        _17List()
+                    }
+                    
+                    Button("16") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2016.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2016) {
+                        _16L()
+                    }
+                    
+                    Button("15") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2015.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2015) {
+                        _15L()
+                    }
+                    
+                    Button("14") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2014.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2014) {
+                        _14L()
+                    }
+                    
+                    Button("13") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2013.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2013) {
+                        _13L()
+                    }
+                    
+                    Button("12") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2012.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2012) {
+                        _12L()
+                    }
+                    
+                    Button("11") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        self.show2011.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2011) {
+                        _11L()
+                    }
+                    
+                    Button("10") {
+                        
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+                        
+                        
+                    }
+                    .buttonStyle(YearRoundedButton())
+                    
+                    
+                    
+                }
+                .padding(.top, 3)
+                .padding(.trailing, 8)
+                Spacer()
+            }
+            .padding()
+            .padding(.bottom, -7)
+        }
+    }
+}
+
+ 
