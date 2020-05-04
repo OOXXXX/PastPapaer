@@ -9,10 +9,18 @@
 import SwiftUI
 
 struct OLView: View {
+    
+     
+ 
     let generator = UINotificationFeedbackGenerator()
     @State var showUpdate = false
     @State var show2019 = false
-    @State var isActive = false
+    @State var isActive1 = false
+    @State var isActive2 = false
+    @State var isActive3 = false
+    @State var isActive4 = false
+    @State var isActive5 = false
+    @State var isActive6 = false
     @State var isNavigationBarHidden: Bool = true
     
     var body: some View {
@@ -63,52 +71,18 @@ struct OLView: View {
     
      
            
-  NavigationLink(destination: YearView(isNavigationBarHidden: $isNavigationBarHidden), isActive: $isActive){
+  NavigationLink(destination: OLEng(isNavigationBarHidden: $isNavigationBarHidden), isActive: $isActive1){
      Button(action: {
         let selectionFeedback = UISelectionFeedbackGenerator()
           selectionFeedback.selectionChanged()
         
-        self.isActive = true
+        self.isActive1 = true
         
         
       })
     {
-        
-        VStack(alignment: .center) {
-        
-            HStack {
-                
-                VStack(alignment: .leading) {
-                    
-                    Text("English")
-                        .modifier(FontCoustom5(size: 38))
-                        .foregroundColor(Color("background2"))
-                        .padding(.bottom, -10)
-                    
-                    Text("Olevel")
-                        .modifier(FontCoustom2(size: 18))
-                        .foregroundColor(Color("Color"))
-                }
-                
-                Spacer()
-                
-            }
-            
-            .padding()
-            Spacer()
-        }
-            
-            
-            
-            
-            .frame(width: screen.width-30, height: 80.0)
-            // .background(Color("secondary"))
-            .background(Color("Color-2"))
-            .cornerRadius(11)
-            .overlay(RoundedRectangle(cornerRadius: 10)
-            .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-            .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
-            .padding(.top)
+        ButtonView(name: "English")
+         
         }
     }
 
@@ -121,203 +95,77 @@ struct OLView: View {
             
             
             
-    
+   NavigationLink(destination: OLMath(isNavigationBarHidden: $isNavigationBarHidden), isActive: $isActive2){
         Button(action: {
             let selectionFeedback = UISelectionFeedbackGenerator()
               selectionFeedback.selectionChanged()
             
-            self.isActive = true
+            self.isActive2 = true
             
           })
         {
         
-            VStack(alignment: .center) {
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("Mathematics A")
-                            .modifier(FontCoustom5(size: 38))
-                            .foregroundColor(Color("background2"))
-                            .padding(.bottom, -10)
-                        
-                        Text("Olevel")
-                            .modifier(FontCoustom2(size: 18))
-                            .foregroundColor(Color("Color"))
-                    }
-                    
-                    Spacer()
-                    
-                }
-                .padding()
-                Spacer()
-            }
-            .frame(width: screen.width-30, height: 80.0)
-                // .background(Color("secondary"))
-                .background(Color("Color-2"))
-                .cornerRadius(11)
-                .overlay(RoundedRectangle(cornerRadius: 10)
-                .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-                .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
-                .padding(.top)
+            ButtonView(name: "Mathematics A")
          }
                                 
-        
-        
+    }
+     NavigationLink(destination: OLPhy(isNavigationBarHidden: $isNavigationBarHidden), isActive: $isActive3){
         Button(action: {
             let selectionFeedback = UISelectionFeedbackGenerator()
               selectionFeedback.selectionChanged()
             
-            self.isActive = true
+            self.isActive3 = true
             
           })
         {
 
-            VStack(alignment: .center) {
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("Physics")
-                            .modifier(FontCoustom5(size: 38))
-                            .foregroundColor(Color("background2"))
-                            .padding(.bottom, -10)
-                        
-                        Text("Olevel")
-                            .modifier(FontCoustom2(size: 18))
-                            .foregroundColor(Color("Color"))
-                    }
-                    
-                    Spacer()
-                    
-                }
-                .padding()
-                Spacer()
-            }
-            .frame(width: screen.width-30, height: 80.0)
-                // .background(Color("secondary"))
-                .background(Color("Color-2"))
-                .cornerRadius(11)
-                .overlay(RoundedRectangle(cornerRadius: 10)
-                .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-                .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
-                .padding(.top)
+            ButtonView(name: "Physics")
          }
+    }
                                 
-         
+     NavigationLink(destination: OLCs(isNavigationBarHidden: $isNavigationBarHidden), isActive: $isActive4){
         
         Button(action: {
             let selectionFeedback = UISelectionFeedbackGenerator()
               selectionFeedback.selectionChanged()
             
-            self.isActive = true
+            self.isActive4 = true
             
           })
         {
 
-            VStack(alignment: .center) {
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("Computer Science")
-                            .modifier(FontCoustom5(size: 38))
-                            .foregroundColor(Color("background2"))
-                            .padding(.bottom, -10)
-                        
-                        Text("Olevel")
-                            .modifier(FontCoustom2(size: 18))
-                            .foregroundColor(Color("Color"))
-                    }
-                    
-                    Spacer()
-                    
-                }
-                .padding()
-                Spacer()
-            }
-            .frame(width: screen.width-30, height: 80.0)
-                // .background(Color("secondary"))
-                .background(Color("Color-2"))
-                .cornerRadius(11)
-                .overlay(RoundedRectangle(cornerRadius: 10)
-                .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-                .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
-                .padding(.top)
+            ButtonView(name: "Computer Science")
          }
-                                
-         
+    }
+        
+    NavigationLink(destination: OLBio(isNavigationBarHidden: $isNavigationBarHidden), isActive: $isActive5){
         Button(action: {
             let selectionFeedback = UISelectionFeedbackGenerator()
               selectionFeedback.selectionChanged()
             
-            self.isActive = true
+            self.isActive5 = true
             
           })
         {
 
-            VStack(alignment: .center) {
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("Biology")
-                            .modifier(FontCoustom5(size: 38))
-                            .foregroundColor(Color("background2"))
-                            .padding(.bottom, -10)
-                        
-                        Text("Olevel")
-                            .modifier(FontCoustom2(size: 18))
-                            .foregroundColor(Color("Color"))
-                    }
-                    
-                    Spacer()
-                    
-                }
-                .padding()
-                Spacer()
-            }
-            .frame(width: screen.width-30, height: 80.0)
-                // .background(Color("secondary"))
-                .background(Color("Color-2"))
-                .cornerRadius(11)
-                .overlay(RoundedRectangle(cornerRadius: 10)
-                .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-                .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
-                .padding(.top)
+            ButtonView(name: "Biology")
          }
                                 
-         
+    }
+    NavigationLink(destination: OLGeo(isNavigationBarHidden: $isNavigationBarHidden), isActive: $isActive6){
         
         Button(action: {
             let selectionFeedback = UISelectionFeedbackGenerator()
               selectionFeedback.selectionChanged()
             
-            self.isActive = true
+            self.isActive6 = true
             
           })
         {
-
-            VStack(alignment: .center) {
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("Geography")
-                            .modifier(FontCoustom5(size: 38))
-                            .foregroundColor(Color("background2"))
-                            .padding(.bottom, -10)
-                        
-                        Text("Olevel")
-                            .modifier(FontCoustom2(size: 18))
-                            .foregroundColor(Color("Color"))
-                    }
-                    
-                    Spacer()
-                    
-                }
-                .padding()
-                Spacer()
-            }
-            .frame(width: screen.width-30, height: 80.0)
-                // .background(Color("secondary"))
-                .background(Color("Color-2"))
-                .cornerRadius(11)
-                .overlay(RoundedRectangle(cornerRadius: 10)
-                .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-                .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
-                .padding(.top)
+            ButtonView(name: "Geography")
+            
          }
+    }
                                 
          
          
@@ -392,4 +240,40 @@ static var previews: some View {
 
 
 
+struct ButtonView: View {
+    
+    let name: String
+    
+    var body: some View{
+        
+        VStack(alignment: .center) {
+            HStack {
+                VStack(alignment: .leading) {
+                    Text(name)
+                        .modifier(FontCoustom5(size: 38))
+                        .foregroundColor(Color("background2"))
+                        .padding(.bottom, -10)
+                    
+                    Text("Olevel")
+                        .modifier(FontCoustom2(size: 18))
+                        .foregroundColor(Color("Color"))
+                }
+                
+                Spacer()
+                
+            }
+            .padding()
+            Spacer()
+        }
+        .frame(width: screen.width-30, height: 80.0)
+            // .background(Color("secondary"))
+            .background(Color("Color-2"))
+            .cornerRadius(11)
+            .overlay(RoundedRectangle(cornerRadius: 10)
+            .stroke(Color.gray.opacity(0.1), lineWidth: 2))
+            .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
+            .padding(.top)
+    }
+    
+}
 
