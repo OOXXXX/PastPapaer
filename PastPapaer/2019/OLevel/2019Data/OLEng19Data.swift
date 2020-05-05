@@ -21,8 +21,10 @@ struct Landmark2: Hashable, Codable, Identifiable {
     
 }
 
-let landmarkData: [Landmark] = load("2019.json")
-let landmarkData2: [Landmark2] = load("2019-2.json")
+let landmarkData: [Landmark] = load("OLEng19.json")
+let landmarkData2: [Landmark2] = load("OLEng19-2.json")
+
+
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
