@@ -49,6 +49,18 @@
 		18B6E288241382C1002615DE /* 2019Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E287241382C1002615DE /* 2019Row.swift */; };
 		18CC130B245C12A200C22204 /* IGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC130A245C12A200C22204 /* IGView.swift */; };
 		18CC130D245C200600C22204 /* ALView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC130C245C200600C22204 /* ALView.swift */; };
+		18D5B43B24611215001B6774 /* OLCs18Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B42F24611215001B6774 /* OLCs18Data.swift */; };
+		18D5B43C24611215001B6774 /* OLMath18Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B43024611215001B6774 /* OLMath18Data.swift */; };
+		18D5B43D24611215001B6774 /* OLPhy18Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B43124611215001B6774 /* OLPhy18Data.swift */; };
+		18D5B43E24611215001B6774 /* OLBio18Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B43224611215001B6774 /* OLBio18Data.swift */; };
+		18D5B43F24611215001B6774 /* OLEng18Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B43324611215001B6774 /* OLEng18Data.swift */; };
+		18D5B44024611215001B6774 /* OLGeo18Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B43424611215001B6774 /* OLGeo18Data.swift */; };
+		18D5B44124611215001B6774 /* OLGeo18List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B43524611215001B6774 /* OLGeo18List.swift */; };
+		18D5B44224611215001B6774 /* OLEng18List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B43624611215001B6774 /* OLEng18List.swift */; };
+		18D5B44324611215001B6774 /* OLMath18List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B43724611215001B6774 /* OLMath18List.swift */; };
+		18D5B44424611215001B6774 /* OLCs18List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B43824611215001B6774 /* OLCs18List.swift */; };
+		18D5B44524611215001B6774 /* OLPhy18List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B43924611215001B6774 /* OLPhy18List.swift */; };
+		18D5B44624611215001B6774 /* OLBio18List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B43A24611215001B6774 /* OLBio18List.swift */; };
 		18DB6AF224161D0C0050F099 /* 2016.json in Resources */ = {isa = PBXBuildFile; fileRef = 18DB6AF124161D0C0050F099 /* 2016.json */; };
 		18DB6AF424161D470050F099 /* 2015.json in Resources */ = {isa = PBXBuildFile; fileRef = 18DB6AF324161D470050F099 /* 2015.json */; };
 		18DB6AF624161D580050F099 /* 2014.json in Resources */ = {isa = PBXBuildFile; fileRef = 18DB6AF524161D580050F099 /* 2014.json */; };
@@ -105,12 +117,7 @@
 		18E956AF2415311000DAF229 /* Teko-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18E956A92415311000DAF229 /* Teko-Regular.ttf */; };
 		18E956B02415311000DAF229 /* Teko-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18E956AA2415311000DAF229 /* Teko-Light.ttf */; };
 		18E956B42415326400DAF229 /* Girassol-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18E956B22415326400DAF229 /* Girassol-Regular.ttf */; };
-		18E956B72415333B00DAF229 /* 2018List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E956B62415333B00DAF229 /* 2018List.swift */; };
-		18E956B92415337B00DAF229 /* 2018Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E956B82415337B00DAF229 /* 2018Detail.swift */; };
-		18E956BB2415338C00DAF229 /* 2018Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E956BA2415338C00DAF229 /* 2018Row.swift */; };
 		18E956C02415357200DAF229 /* 2018.json in Resources */ = {isa = PBXBuildFile; fileRef = 18E956BF2415357200DAF229 /* 2018.json */; };
-		18E956C4241538B200DAF229 /* Data8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E956C3241538B200DAF229 /* Data8.swift */; };
-		18E956C6241538BE00DAF229 /* Decode8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E956C5241538BE00DAF229 /* Decode8.swift */; };
 		18E956DB2415430B00DAF229 /* 2017Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E956D52415430B00DAF229 /* 2017Detail.swift */; };
 		18E956DC2415430B00DAF229 /* 2017List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E956D62415430B00DAF229 /* 2017List.swift */; };
 		18E956DD2415430B00DAF229 /* Decode7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E956D82415430B00DAF229 /* Decode7.swift */; };
@@ -167,6 +174,18 @@
 		18B6E287241382C1002615DE /* 2019Row.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 2019Row.swift; sourceTree = "<group>"; };
 		18CC130A245C12A200C22204 /* IGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGView.swift; sourceTree = "<group>"; };
 		18CC130C245C200600C22204 /* ALView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALView.swift; sourceTree = "<group>"; };
+		18D5B42F24611215001B6774 /* OLCs18Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLCs18Data.swift; sourceTree = "<group>"; };
+		18D5B43024611215001B6774 /* OLMath18Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLMath18Data.swift; sourceTree = "<group>"; };
+		18D5B43124611215001B6774 /* OLPhy18Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLPhy18Data.swift; sourceTree = "<group>"; };
+		18D5B43224611215001B6774 /* OLBio18Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLBio18Data.swift; sourceTree = "<group>"; };
+		18D5B43324611215001B6774 /* OLEng18Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLEng18Data.swift; sourceTree = "<group>"; };
+		18D5B43424611215001B6774 /* OLGeo18Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLGeo18Data.swift; sourceTree = "<group>"; };
+		18D5B43524611215001B6774 /* OLGeo18List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLGeo18List.swift; sourceTree = "<group>"; };
+		18D5B43624611215001B6774 /* OLEng18List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLEng18List.swift; sourceTree = "<group>"; };
+		18D5B43724611215001B6774 /* OLMath18List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLMath18List.swift; sourceTree = "<group>"; };
+		18D5B43824611215001B6774 /* OLCs18List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLCs18List.swift; sourceTree = "<group>"; };
+		18D5B43924611215001B6774 /* OLPhy18List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLPhy18List.swift; sourceTree = "<group>"; };
+		18D5B43A24611215001B6774 /* OLBio18List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLBio18List.swift; sourceTree = "<group>"; };
 		18DB6AF124161D0C0050F099 /* 2016.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 2016.json; sourceTree = "<group>"; };
 		18DB6AF324161D470050F099 /* 2015.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 2015.json; sourceTree = "<group>"; };
 		18DB6AF524161D580050F099 /* 2014.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 2014.json; sourceTree = "<group>"; };
@@ -223,12 +242,7 @@
 		18E956A92415311000DAF229 /* Teko-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Regular.ttf"; sourceTree = "<group>"; };
 		18E956AA2415311000DAF229 /* Teko-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Light.ttf"; sourceTree = "<group>"; };
 		18E956B22415326400DAF229 /* Girassol-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Girassol-Regular.ttf"; sourceTree = "<group>"; };
-		18E956B62415333B00DAF229 /* 2018List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2018List.swift; sourceTree = "<group>"; };
-		18E956B82415337B00DAF229 /* 2018Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2018Detail.swift; sourceTree = "<group>"; };
-		18E956BA2415338C00DAF229 /* 2018Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2018Row.swift; sourceTree = "<group>"; };
 		18E956BF2415357200DAF229 /* 2018.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 2018.json; sourceTree = "<group>"; };
-		18E956C3241538B200DAF229 /* Data8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data8.swift; sourceTree = "<group>"; };
-		18E956C5241538BE00DAF229 /* Decode8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decode8.swift; sourceTree = "<group>"; };
 		18E956D52415430B00DAF229 /* 2017Detail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 2017Detail.swift; sourceTree = "<group>"; };
 		18E956D62415430B00DAF229 /* 2017List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 2017List.swift; sourceTree = "<group>"; };
 		18E956D82415430B00DAF229 /* Decode7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decode7.swift; sourceTree = "<group>"; };
@@ -324,7 +338,7 @@
 				18DB6B0F24161EEB0050F099 /* 2015 */,
 				18DB6B0324161E760050F099 /* 2016 */,
 				18E956D42415430B00DAF229 /* 2017 */,
-				18E956BC241533A700DAF229 /* 2018 */,
+				18D5B42C24611215001B6774 /* 2018 */,
 				18CF47882414A436006F01FA /* 2019 */,
 				18CF478A2414A52E006F01FA /* Delegate */,
 				18367EC524151F06004B634D /* BlogView.swift */,
@@ -390,6 +404,42 @@
 				18B6E24C24134DE7002615DE /* SceneDelegate.swift */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		18D5B42C24611215001B6774 /* 2018 */ = {
+			isa = PBXGroup;
+			children = (
+				18D5B42D24611215001B6774 /* OLevel */,
+			);
+			name = 2018;
+			path = 2017/2018;
+			sourceTree = "<group>";
+		};
+		18D5B42D24611215001B6774 /* OLevel */ = {
+			isa = PBXGroup;
+			children = (
+				18D5B43624611215001B6774 /* OLEng18List.swift */,
+				18D5B43724611215001B6774 /* OLMath18List.swift */,
+				18D5B43824611215001B6774 /* OLCs18List.swift */,
+				18D5B43924611215001B6774 /* OLPhy18List.swift */,
+				18D5B43A24611215001B6774 /* OLBio18List.swift */,
+				18D5B43524611215001B6774 /* OLGeo18List.swift */,
+				18D5B42E24611215001B6774 /* 2018Data */,
+			);
+			path = OLevel;
+			sourceTree = "<group>";
+		};
+		18D5B42E24611215001B6774 /* 2018Data */ = {
+			isa = PBXGroup;
+			children = (
+				18D5B42F24611215001B6774 /* OLCs18Data.swift */,
+				18D5B43024611215001B6774 /* OLMath18Data.swift */,
+				18D5B43124611215001B6774 /* OLPhy18Data.swift */,
+				18D5B43224611215001B6774 /* OLBio18Data.swift */,
+				18D5B43324611215001B6774 /* OLEng18Data.swift */,
+				18D5B43424611215001B6774 /* OLGeo18Data.swift */,
+			);
+			path = 2018Data;
 			sourceTree = "<group>";
 		};
 		18DB6B0324161E760050F099 /* 2016 */ = {
@@ -558,17 +608,6 @@
 			path = Girassol;
 			sourceTree = "<group>";
 		};
-		18E956BC241533A700DAF229 /* 2018 */ = {
-			isa = PBXGroup;
-			children = (
-				18E956B62415333B00DAF229 /* 2018List.swift */,
-				18E956B82415337B00DAF229 /* 2018Detail.swift */,
-				18E956BA2415338C00DAF229 /* 2018Row.swift */,
-				18E956C7241538C700DAF229 /* 2018Data */,
-			);
-			path = 2018;
-			sourceTree = "<group>";
-		};
 		18E956BD241533D600DAF229 /* Extra */ = {
 			isa = PBXGroup;
 			children = (
@@ -611,15 +650,6 @@
 				18B6E2812413822C002615DE /* Decode.swift */,
 			);
 			path = 2019Data;
-			sourceTree = "<group>";
-		};
-		18E956C7241538C700DAF229 /* 2018Data */ = {
-			isa = PBXGroup;
-			children = (
-				18E956C3241538B200DAF229 /* Data8.swift */,
-				18E956C5241538BE00DAF229 /* Decode8.swift */,
-			);
-			path = 2018Data;
 			sourceTree = "<group>";
 		};
 		18E956D42415430B00DAF229 /* 2017 */ = {
@@ -787,34 +817,38 @@
 				18DB6B46241639710050F099 /* PlaySound.swift in Sources */,
 				18B6E24B24134DE7002615DE /* AppDelegate.swift in Sources */,
 				18CC130B245C12A200C22204 /* IGView.swift in Sources */,
-				18E956C6241538BE00DAF229 /* Decode8.swift in Sources */,
+				18D5B44024611215001B6774 /* OLGeo18Data.swift in Sources */,
+				18D5B43E24611215001B6774 /* OLBio18Data.swift in Sources */,
 				180408C82413C91D005979A5 /* OLView.swift in Sources */,
+				18D5B44324611215001B6774 /* OLMath18List.swift in Sources */,
 				18B6E2802413821E002615DE /* 2019Detail.swift in Sources */,
 				18DB6B0024161E380050F099 /* 2016L.swift in Sources */,
 				18DB6B1124161F050050F099 /* Decode5.swift in Sources */,
 				18DB6AFE24161DB70050F099 /* 2016D.swift in Sources */,
 				18B6E2822413822D002615DE /* Decode.swift in Sources */,
 				18B6E24D24134DE7002615DE /* SceneDelegate.swift in Sources */,
+				18D5B44424611215001B6774 /* OLCs18List.swift in Sources */,
 				18367EC624151F06004B634D /* BlogView.swift in Sources */,
 				18DB6B1D24161FB90050F099 /* Decode4.swift in Sources */,
-				18E956B72415333B00DAF229 /* 2018List.swift in Sources */,
+				18D5B44124611215001B6774 /* OLGeo18List.swift in Sources */,
 				18DB6B2224161FE00050F099 /* 2013D.swift in Sources */,
 				18B6E25024134DE7002615DE /* PastPapaer.xcdatamodeld in Sources */,
 				18B21DC62444A9CF007ECAE7 /* Home.swift in Sources */,
 				18E956DD2415430B00DAF229 /* Decode7.swift in Sources */,
-				18E956BB2415338C00DAF229 /* 2018Row.swift in Sources */,
 				18E956DF2415430B00DAF229 /* 2017Row.swift in Sources */,
+				18D5B44524611215001B6774 /* OLPhy18List.swift in Sources */,
 				18DB6B3C2416211A0050F099 /* 2011L.swift in Sources */,
-				18E956B92415337B00DAF229 /* 2018Detail.swift in Sources */,
 				18DB6B402416213F0050F099 /* Decode1.swift in Sources */,
 				18E956DB2415430B00DAF229 /* 2017Detail.swift in Sources */,
+				18D5B43D24611215001B6774 /* OLPhy18Data.swift in Sources */,
 				18DB6B0224161E460050F099 /* 2016R.swift in Sources */,
 				18DB6B282416201B0050F099 /* Decode3.swift in Sources */,
-				18E956C4241538B200DAF229 /* Data8.swift in Sources */,
 				18DB6B2E241620530050F099 /* 2012D.swift in Sources */,
 				18DB6B30241620690050F099 /* 2012L.swift in Sources */,
+				18D5B44224611215001B6774 /* OLEng18List.swift in Sources */,
 				18F5CE80245F08F600D9D627 /* DocsView.swift in Sources */,
 				180408E42413CFE6005979A5 /* Support.swift in Sources */,
+				18D5B43C24611215001B6774 /* OLMath18Data.swift in Sources */,
 				18DB6B262416200F0050F099 /* 2013R.swift in Sources */,
 				18DB6B0C24161EDA0050F099 /* 2015L.swift in Sources */,
 				18B6E288241382C1002615DE /* 2019Row.swift in Sources */,
@@ -825,8 +859,11 @@
 				18DB6B1F24161FC30050F099 /* Data4.swift in Sources */,
 				18E956DE2415430B00DAF229 /* Data7.swift in Sources */,
 				18DB6B24241620050050F099 /* 2013L.swift in Sources */,
+				18D5B43F24611215001B6774 /* OLEng18Data.swift in Sources */,
 				18DB6B34241620880050F099 /* Decode2.swift in Sources */,
 				18DB6B0724161E9D0050F099 /* Data6.swift in Sources */,
+				18D5B43B24611215001B6774 /* OLCs18Data.swift in Sources */,
+				18D5B44624611215001B6774 /* OLBio18List.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

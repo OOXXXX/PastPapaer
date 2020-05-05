@@ -21,3 +21,6 @@ struct LandMar2: Hashable, Codable, Identifiable {
     var url: String
     
 }
+
+let _18Data: [LandMar] = load("2018.json")
+let _18Data2: [LandMar2] = load("2018-2.json")

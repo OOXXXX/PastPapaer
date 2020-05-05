@@ -11,7 +11,6 @@ import SwiftUI
 struct  _18List: View {
     
     @State var selected = 1
-    //@State private var listView = [_18LististView(), TestView()]
     
     var body: some View {
         
@@ -65,12 +64,66 @@ struct _18Listist2: View {
 }
 
 
+struct _18Row: View {
+    var xxx: LandMar
+
+    var body: some View {
+        HStack {
+            Text(xxx.name)
+                .frame(width: 230, height: 45, alignment: .leading)
+            Spacer()
+        }
+    }
+}
+
+struct _18Row2: View {
+    var xxx2: LandMar2
+
+    var body: some View {
+        HStack {
+            Text(xxx2.name)
+                .frame(width: 230, height: 45, alignment: .leading)
+            Spacer()
+        }
+    }
+}
+
+
+struct _18Detail: View {
+    var xxx: LandMar
+
+    var body: some View {
+        VStack {
+            Webview(url: (xxx.url))
+        }
+        .navigationBarTitle(Text(xxx.name), displayMode: .inline)
+    }
+}
+
+struct _18Detail2: View {
+    var xxx2: LandMar2
+
+    var body: some View {
+        VStack {
+            Webview(url: (xxx2.url))
+        }
+        .navigationBarTitle(Text(xxx2.name), displayMode: .inline)
+    }
+}
+
+
+
+
+
+
+
+
 
 
 
 struct _18List_Previews: PreviewProvider {
     static var previews: some View {
-        ForEach(["iPhone SE", "iPhone XS Max"], id: \.self) { deviceName in
+        ForEach(["iPhone 8", "iPhone XS Max"], id: \.self) { deviceName in
             _18List()
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
