@@ -148,7 +148,7 @@ struct OLView: View {
           })
         {
 
-            ButtonView(name: "Biology")
+            ButtonView(name: "Mathematics D")
          }
                                 
     }
