@@ -21,3 +21,6 @@ struct Land172: Hashable, Codable, Identifiable {
     var url: String
     
 }
+
+let _17Data: [Land17] = load("2017.json")
+let _17Data2: [Land172] = load("2017-2.json")

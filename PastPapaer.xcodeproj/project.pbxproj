@@ -68,6 +68,16 @@
 		18D5B45724611750001B6774 /* OLCs19Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B45624611750001B6774 /* OLCs19Data.swift */; };
 		18D5B4592461175B001B6774 /* OLBio19Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B4582461175B001B6774 /* OLBio19Data.swift */; };
 		18D5B45B24611767001B6774 /* OLGeo19Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B45A24611767001B6774 /* OLGeo19Data.swift */; };
+		18D5B45E24611B49001B6774 /* OLMath17List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B45D24611B49001B6774 /* OLMath17List.swift */; };
+		18D5B46024611B56001B6774 /* OLPhy17List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B45F24611B56001B6774 /* OLPhy17List.swift */; };
+		18D5B46224611B62001B6774 /* OLCs17List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B46124611B62001B6774 /* OLCs17List.swift */; };
+		18D5B46424611B6F001B6774 /* OLBio17List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B46324611B6F001B6774 /* OLBio17List.swift */; };
+		18D5B46624611B7B001B6774 /* OLGeo17List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B46524611B7B001B6774 /* OLGeo17List.swift */; };
+		18D5B46824611B96001B6774 /* OLMath17Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B46724611B96001B6774 /* OLMath17Data.swift */; };
+		18D5B46A24611BA8001B6774 /* OLPhy17Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B46924611BA8001B6774 /* OLPhy17Data.swift */; };
+		18D5B46C24611BB3001B6774 /* OLCs17Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B46B24611BB3001B6774 /* OLCs17Data.swift */; };
+		18D5B46E24611BCB001B6774 /* OLBio17Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B46D24611BCB001B6774 /* OLBio17Data.swift */; };
+		18D5B47024611BD7001B6774 /* OLGeo17Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B46F24611BD7001B6774 /* OLGeo17Data.swift */; };
 		18DB6AF224161D0C0050F099 /* 2016.json in Resources */ = {isa = PBXBuildFile; fileRef = 18DB6AF124161D0C0050F099 /* 2016.json */; };
 		18DB6AF424161D470050F099 /* 2015.json in Resources */ = {isa = PBXBuildFile; fileRef = 18DB6AF324161D470050F099 /* 2015.json */; };
 		18DB6AF624161D580050F099 /* 2014.json in Resources */ = {isa = PBXBuildFile; fileRef = 18DB6AF524161D580050F099 /* 2014.json */; };
@@ -125,11 +135,8 @@
 		18E956B02415311000DAF229 /* Teko-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18E956AA2415311000DAF229 /* Teko-Light.ttf */; };
 		18E956B42415326400DAF229 /* Girassol-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18E956B22415326400DAF229 /* Girassol-Regular.ttf */; };
 		18E956C02415357200DAF229 /* 2018.json in Resources */ = {isa = PBXBuildFile; fileRef = 18E956BF2415357200DAF229 /* 2018.json */; };
-		18E956DB2415430B00DAF229 /* 2017Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E956D52415430B00DAF229 /* 2017Detail.swift */; };
-		18E956DC2415430B00DAF229 /* 2017List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E956D62415430B00DAF229 /* 2017List.swift */; };
-		18E956DD2415430B00DAF229 /* Decode7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E956D82415430B00DAF229 /* Decode7.swift */; };
-		18E956DE2415430B00DAF229 /* Data7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E956D92415430B00DAF229 /* Data7.swift */; };
-		18E956DF2415430B00DAF229 /* 2017Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E956DA2415430B00DAF229 /* 2017Row.swift */; };
+		18E956DC2415430B00DAF229 /* OLEng17List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E956D62415430B00DAF229 /* OLEng17List.swift */; };
+		18E956DD2415430B00DAF229 /* OLEng17Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E956D82415430B00DAF229 /* OLEng17Data.swift */; };
 		18E956E12415444A00DAF229 /* 2017.json in Resources */ = {isa = PBXBuildFile; fileRef = 18E956E02415444A00DAF229 /* 2017.json */; };
 		18EB60012418D0D800132DBF /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 18EB60002418D0D800132DBF /* Lottie */; };
 		18F5CE80245F08F600D9D627 /* DocsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F5CE7F245F08F600D9D627 /* DocsView.swift */; };
@@ -200,6 +207,16 @@
 		18D5B45624611750001B6774 /* OLCs19Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLCs19Data.swift; sourceTree = "<group>"; };
 		18D5B4582461175B001B6774 /* OLBio19Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLBio19Data.swift; sourceTree = "<group>"; };
 		18D5B45A24611767001B6774 /* OLGeo19Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLGeo19Data.swift; sourceTree = "<group>"; };
+		18D5B45D24611B49001B6774 /* OLMath17List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLMath17List.swift; sourceTree = "<group>"; };
+		18D5B45F24611B56001B6774 /* OLPhy17List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLPhy17List.swift; sourceTree = "<group>"; };
+		18D5B46124611B62001B6774 /* OLCs17List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLCs17List.swift; sourceTree = "<group>"; };
+		18D5B46324611B6F001B6774 /* OLBio17List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLBio17List.swift; sourceTree = "<group>"; };
+		18D5B46524611B7B001B6774 /* OLGeo17List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLGeo17List.swift; sourceTree = "<group>"; };
+		18D5B46724611B96001B6774 /* OLMath17Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLMath17Data.swift; sourceTree = "<group>"; };
+		18D5B46924611BA8001B6774 /* OLPhy17Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLPhy17Data.swift; sourceTree = "<group>"; };
+		18D5B46B24611BB3001B6774 /* OLCs17Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLCs17Data.swift; sourceTree = "<group>"; };
+		18D5B46D24611BCB001B6774 /* OLBio17Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLBio17Data.swift; sourceTree = "<group>"; };
+		18D5B46F24611BD7001B6774 /* OLGeo17Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLGeo17Data.swift; sourceTree = "<group>"; };
 		18DB6AF124161D0C0050F099 /* 2016.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 2016.json; sourceTree = "<group>"; };
 		18DB6AF324161D470050F099 /* 2015.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 2015.json; sourceTree = "<group>"; };
 		18DB6AF524161D580050F099 /* 2014.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 2014.json; sourceTree = "<group>"; };
@@ -257,11 +274,8 @@
 		18E956AA2415311000DAF229 /* Teko-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Light.ttf"; sourceTree = "<group>"; };
 		18E956B22415326400DAF229 /* Girassol-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Girassol-Regular.ttf"; sourceTree = "<group>"; };
 		18E956BF2415357200DAF229 /* 2018.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 2018.json; sourceTree = "<group>"; };
-		18E956D52415430B00DAF229 /* 2017Detail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 2017Detail.swift; sourceTree = "<group>"; };
-		18E956D62415430B00DAF229 /* 2017List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 2017List.swift; sourceTree = "<group>"; };
-		18E956D82415430B00DAF229 /* Decode7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decode7.swift; sourceTree = "<group>"; };
-		18E956D92415430B00DAF229 /* Data7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data7.swift; sourceTree = "<group>"; };
-		18E956DA2415430B00DAF229 /* 2017Row.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 2017Row.swift; sourceTree = "<group>"; };
+		18E956D62415430B00DAF229 /* OLEng17List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLEng17List.swift; sourceTree = "<group>"; };
+		18E956D82415430B00DAF229 /* OLEng17Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLEng17Data.swift; sourceTree = "<group>"; };
 		18E956E02415444A00DAF229 /* 2017.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 2017.json; sourceTree = "<group>"; };
 		18F5CE7F245F08F600D9D627 /* DocsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -463,6 +477,20 @@
 				18D5B44E246116A2001B6774 /* OLBio19List.swift */,
 				18D5B450246116B3001B6774 /* OLGeo19List.swift */,
 				18E956C22415387B00DAF229 /* 2019Data */,
+			);
+			path = OLevel;
+			sourceTree = "<group>";
+		};
+		18D5B45C24611AAB001B6774 /* OLevel */ = {
+			isa = PBXGroup;
+			children = (
+				18E956D62415430B00DAF229 /* OLEng17List.swift */,
+				18D5B45D24611B49001B6774 /* OLMath17List.swift */,
+				18D5B45F24611B56001B6774 /* OLPhy17List.swift */,
+				18D5B46124611B62001B6774 /* OLCs17List.swift */,
+				18D5B46324611B6F001B6774 /* OLBio17List.swift */,
+				18D5B46524611B7B001B6774 /* OLGeo17List.swift */,
+				18E956D72415430B00DAF229 /* 2017Data */,
 			);
 			path = OLevel;
 			sourceTree = "<group>";
@@ -684,10 +712,7 @@
 		18E956D42415430B00DAF229 /* 2017 */ = {
 			isa = PBXGroup;
 			children = (
-				18E956D52415430B00DAF229 /* 2017Detail.swift */,
-				18E956D62415430B00DAF229 /* 2017List.swift */,
-				18E956DA2415430B00DAF229 /* 2017Row.swift */,
-				18E956D72415430B00DAF229 /* 2017Data */,
+				18D5B45C24611AAB001B6774 /* OLevel */,
 			);
 			path = 2017;
 			sourceTree = "<group>";
@@ -695,8 +720,12 @@
 		18E956D72415430B00DAF229 /* 2017Data */ = {
 			isa = PBXGroup;
 			children = (
-				18E956D92415430B00DAF229 /* Data7.swift */,
-				18E956D82415430B00DAF229 /* Decode7.swift */,
+				18E956D82415430B00DAF229 /* OLEng17Data.swift */,
+				18D5B46724611B96001B6774 /* OLMath17Data.swift */,
+				18D5B46924611BA8001B6774 /* OLPhy17Data.swift */,
+				18D5B46B24611BB3001B6774 /* OLCs17Data.swift */,
+				18D5B46D24611BCB001B6774 /* OLBio17Data.swift */,
+				18D5B46F24611BD7001B6774 /* OLGeo17Data.swift */,
 			);
 			path = 2017Data;
 			sourceTree = "<group>";
@@ -829,6 +858,7 @@
 				18D5B45524611742001B6774 /* OLPhy19Data.swift in Sources */,
 				18DB6B3A2416210B0050F099 /* 2011D.swift in Sources */,
 				1813F4DF245E95400085A43D /* SampleYearView.swift in Sources */,
+				18D5B46E24611BCB001B6774 /* OLBio17Data.swift in Sources */,
 				18468223245FDD6B0054B8D0 /* OLYearView.swift in Sources */,
 				18DB6B0E24161EE60050F099 /* 2015R.swift in Sources */,
 				18DB6B1824161F7B0050F099 /* 2014L.swift in Sources */,
@@ -839,12 +869,15 @@
 				180408C62413C703005979A5 /* Ultility.swift in Sources */,
 				18DB6B0A24161ECB0050F099 /* 2015D.swift in Sources */,
 				18CC130D245C200600C22204 /* ALView.swift in Sources */,
+				18D5B46424611B6F001B6774 /* OLBio17List.swift in Sources */,
 				18DB6B36241620930050F099 /* Data2.swift in Sources */,
 				18D5B451246116B3001B6774 /* OLGeo19List.swift in Sources */,
 				18DB6B1324161F0E0050F099 /* Data5.swift in Sources */,
 				18D5B45724611750001B6774 /* OLCs19Data.swift in Sources */,
 				18DB6B3E241621280050F099 /* 2011R.swift in Sources */,
-				18E956DC2415430B00DAF229 /* 2017List.swift in Sources */,
+				18D5B46824611B96001B6774 /* OLMath17Data.swift in Sources */,
+				18D5B46224611B62001B6774 /* OLCs17List.swift in Sources */,
+				18E956DC2415430B00DAF229 /* OLEng17List.swift in Sources */,
 				18DB6B1624161F640050F099 /* 2014D.swift in Sources */,
 				18DB6B46241639710050F099 /* PlaySound.swift in Sources */,
 				18B6E24B24134DE7002615DE /* AppDelegate.swift in Sources */,
@@ -855,8 +888,10 @@
 				18D5B44324611215001B6774 /* OLMath18List.swift in Sources */,
 				18DB6B0024161E380050F099 /* 2016L.swift in Sources */,
 				18DB6B1124161F050050F099 /* Decode5.swift in Sources */,
+				18D5B46A24611BA8001B6774 /* OLPhy17Data.swift in Sources */,
 				18DB6AFE24161DB70050F099 /* 2016D.swift in Sources */,
 				18B6E2822413822D002615DE /* OLEng19Data.swift in Sources */,
+				18D5B46024611B56001B6774 /* OLPhy17List.swift in Sources */,
 				18B6E24D24134DE7002615DE /* SceneDelegate.swift in Sources */,
 				18D5B44424611215001B6774 /* OLCs18List.swift in Sources */,
 				18367EC624151F06004B634D /* BlogView.swift in Sources */,
@@ -867,13 +902,15 @@
 				18DB6B2224161FE00050F099 /* 2013D.swift in Sources */,
 				18B6E25024134DE7002615DE /* PastPapaer.xcdatamodeld in Sources */,
 				18B21DC62444A9CF007ECAE7 /* Home.swift in Sources */,
-				18E956DD2415430B00DAF229 /* Decode7.swift in Sources */,
-				18E956DF2415430B00DAF229 /* 2017Row.swift in Sources */,
+				18E956DD2415430B00DAF229 /* OLEng17Data.swift in Sources */,
 				18D5B44524611215001B6774 /* OLPhy18List.swift in Sources */,
+				18D5B46C24611BB3001B6774 /* OLCs17Data.swift in Sources */,
 				18DB6B3C2416211A0050F099 /* 2011L.swift in Sources */,
 				18DB6B402416213F0050F099 /* Decode1.swift in Sources */,
-				18E956DB2415430B00DAF229 /* 2017Detail.swift in Sources */,
 				18D5B43D24611215001B6774 /* OLPhy18Data.swift in Sources */,
+				18D5B45E24611B49001B6774 /* OLMath17List.swift in Sources */,
+				18D5B47024611BD7001B6774 /* OLGeo17Data.swift in Sources */,
+				18D5B46624611B7B001B6774 /* OLGeo17List.swift in Sources */,
 				18D5B44D24611689001B6774 /* OLPhy19List.swift in Sources */,
 				18DB6B0224161E460050F099 /* 2016R.swift in Sources */,
 				18DB6B282416201B0050F099 /* Decode3.swift in Sources */,
@@ -891,7 +928,6 @@
 				18B6E28624138254002615DE /* WebViewAble.swift in Sources */,
 				18DB6B2A241620250050F099 /* Data3.swift in Sources */,
 				18DB6B1F24161FC30050F099 /* Data4.swift in Sources */,
-				18E956DE2415430B00DAF229 /* Data7.swift in Sources */,
 				18D5B45B24611767001B6774 /* OLGeo19Data.swift in Sources */,
 				18DB6B24241620050050F099 /* 2013L.swift in Sources */,
 				18D5B43F24611215001B6774 /* OLEng18Data.swift in Sources */,

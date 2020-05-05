@@ -65,7 +65,49 @@ struct _17List2: View {
 }
 
 
+struct _17Row: View {
+    var sss: Land17
+
+    var body: some View {
+        HStack {
+            Text(sss.name)
+                .frame(width: 230, height: 45, alignment: .leading)
+            Spacer()
+        }
+    }
+}
+
+struct _17Row2: View {
+    var sss2: Land172
+
+    var body: some View {
+        HStack {
+            Text(sss2.name)
+                .frame(width: 230, height: 45, alignment: .leading)
+            Spacer()
+        }
+    }
+}
 
 
+struct _17Detail: View {
+    var sss: Land17
 
- 
+    var body: some View {
+        VStack {
+            Webview(url: (sss.url))
+        }
+        .navigationBarTitle(Text(sss.name), displayMode: .inline)
+    }
+}
+
+struct _17Detail2: View {
+    var sss2: Land172
+
+    var body: some View {
+        VStack {
+            Webview(url: (sss2.url))
+        }
+        .navigationBarTitle(Text(sss2.name), displayMode: .inline)
+    }
+}
