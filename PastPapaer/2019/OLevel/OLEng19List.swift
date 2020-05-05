@@ -11,7 +11,6 @@ import SwiftUI
 struct  LandmarkList: View {
     
     @State var selected = 1
-    //@State private var listView = [LandmarkLististView(), TestView()]
     
     var body: some View {
         
@@ -40,18 +39,6 @@ struct  LandmarkList: View {
 }
 
 
-
-
-struct  LandmarkList_Previews: PreviewProvider {
-    static var previews: some View {
-        ForEach(["iPhone SE", "iPhone XS Max"], id: \.self) { deviceName in
-             LandmarkList()
-                .previewDevice(PreviewDevice(rawValue: deviceName))
-                .previewDisplayName(deviceName)
-        }
-    }
-}
-
 struct LandmarkLististView1: View {
     var body: some View {
         List(landmarkData) { landmark in
@@ -73,5 +60,65 @@ struct LandmarkLististView2: View {
             }
         }
         
+    }
+}
+
+struct LandmarkDetail: View {
+    var landmark: Landmark
+
+    var body: some View {
+        VStack {
+            Webview(url: (landmark.url))
+        }
+        .navigationBarTitle(Text(landmark.name), displayMode: .inline)
+    }
+}
+
+ 
+
+struct LandmarkDetail2: View {
+    var landmark2: Landmark2
+
+    var body: some View {
+        VStack {
+            Webview(url: (landmark2.url))
+        }
+        .navigationBarTitle(Text(landmark2.name), displayMode: .inline)
+    }
+}
+
+
+struct LandmarkRow: View {
+    var landmark: Landmark
+
+    var body: some View {
+        HStack {
+            Text(landmark.name)
+                .frame(width: 230, height: 45, alignment: .leading)
+            Spacer()
+        }
+    }
+}
+
+struct LandmarkRow2: View {
+    var landmark2: Landmark2
+
+    var body: some View {
+        HStack {
+            Text(landmark2.name)
+                .frame(width: 230, height: 45, alignment: .leading)
+            Spacer()
+        }
+    }
+}
+
+
+struct  LandmarkList_Previews: PreviewProvider {
+    static var previews: some View {
+        ForEach(["iPhone SE", "iPhone XS Max"], id: \.self) { deviceName in
+             LandmarkList()
+                .previewDevice(PreviewDevice(rawValue: deviceName))
+                .previewDisplayName(deviceName)
+        }
     }
 }

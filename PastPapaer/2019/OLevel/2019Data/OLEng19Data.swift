@@ -2,12 +2,24 @@
 See LICENSE folder for this sample’s licensing information.
 
 Abstract:
-Helpers for loading images and data.
+The model for an individual landmark.
 */
 
-import UIKit
 import SwiftUI
 
+struct Landmark: Hashable, Codable, Identifiable {
+    var id: Int
+    var name: String
+    var url: String
+    
+}
+
+struct Landmark2: Hashable, Codable, Identifiable {
+    var id: Int
+    var name: String
+    var url: String
+    
+}
 
 let landmarkData: [Landmark] = load("2019.json")
 let landmarkData2: [Landmark2] = load("2019-2.json")
@@ -17,7 +29,7 @@ func load<T: Decodable>(_ filename: String) -> T {
     
     guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
         else {
-            fatalError("Couldn't find \(filename) in main bundle.")
+        fatalError("Couldn't find \(filename) in main bundle.")
     }
     
     do {
