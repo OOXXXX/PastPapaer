@@ -440,7 +440,7 @@ struct OLMathYearView: View {
                     .buttonStyle(YearRoundedButton())
                         
                     .sheet(isPresented: self.$show2014) {
-                        _14L()
+                        OMath14ListView()
                     }
                     
                     Button("13") {
@@ -598,7 +598,7 @@ struct OLPhyYearView: View {
                     .buttonStyle(YearRoundedButton())
                         
                     .sheet(isPresented: self.$show2014) {
-                        _14L()
+                        OPhy14ListView()
                     }
                     
                     Button("13") {
@@ -755,7 +755,7 @@ struct OLCsYearView: View {
                     .buttonStyle(YearRoundedButton())
                         
                     .sheet(isPresented: self.$show2014) {
-                        _14L()
+                        OCs14ListView()
                     }
                     
                     Button("13") {
@@ -912,7 +912,7 @@ struct OLBioYearView: View {
                     .buttonStyle(YearRoundedButton())
                         
                     .sheet(isPresented: self.$show2014) {
-                        _14L()
+                        OBio14ListView()
                     }
                     
                     Button("13") {
@@ -1069,7 +1069,7 @@ struct OLGeoYearView: View {
                     .buttonStyle(YearRoundedButton())
                         
                     .sheet(isPresented: self.$show2014) {
-                        _14L()
+                        OGeo14ListView()
                     }
                     
                     Button("13") {
