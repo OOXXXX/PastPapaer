@@ -46,7 +46,7 @@ var body: some View {
             
             
             }
-            .navigationBarTitle("Mathematics Additional")
+            .navigationBarTitle("Additional Mathematics")
             .onAppear {
                 self.isNavigationBarHidden = false
         }

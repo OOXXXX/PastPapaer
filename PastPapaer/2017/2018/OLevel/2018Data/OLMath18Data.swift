@@ -22,5 +22,5 @@ struct OMath18_2: Hashable, Codable, Identifiable {
     
 }
 
-let OMath18Data: [OMath18] = load("2018.json")
-let OMath18Data2: [OMath18_2] = load("2018-2.json")
+let OMath18Data: [OMath18] = load("OLMath18.json")
+let OMath18Data2: [OMath18_2] = load("OLMath18-2.json")
