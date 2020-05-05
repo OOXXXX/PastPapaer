@@ -52,6 +52,16 @@
 		183397A1246138F8002F0D88 /* OLCs13Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183397A0246138F8002F0D88 /* OLCs13Data.swift */; };
 		183397A324613902002F0D88 /* OLBio13Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183397A224613902002F0D88 /* OLBio13Data.swift */; };
 		183397A52461390B002F0D88 /* OLGeo13Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183397A42461390B002F0D88 /* OLGeo13Data.swift */; };
+		183397A724613B13002F0D88 /* OLMath12List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183397A624613B13002F0D88 /* OLMath12List.swift */; };
+		183397A924613B1B002F0D88 /* OLPhy12List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183397A824613B1B002F0D88 /* OLPhy12List.swift */; };
+		183397AB24613B22002F0D88 /* OLCs12List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183397AA24613B22002F0D88 /* OLCs12List.swift */; };
+		183397AD24613B2C002F0D88 /* OLBio12List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183397AC24613B2C002F0D88 /* OLBio12List.swift */; };
+		183397AF24613B34002F0D88 /* OLGeo12List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183397AE24613B34002F0D88 /* OLGeo12List.swift */; };
+		183397B124613B3D002F0D88 /* OLMath12Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183397B024613B3D002F0D88 /* OLMath12Data.swift */; };
+		183397B324613B47002F0D88 /* OLPhy12Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183397B224613B47002F0D88 /* OLPhy12Data.swift */; };
+		183397B524613B4F002F0D88 /* OLCs12Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183397B424613B4F002F0D88 /* OLCs12Data.swift */; };
+		183397B724613B56002F0D88 /* OLBio12Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183397B624613B56002F0D88 /* OLBio12Data.swift */; };
+		183397B924613B5E002F0D88 /* OLGeo12Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183397B824613B5E002F0D88 /* OLGeo12Data.swift */; };
 		18367EC624151F06004B634D /* BlogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18367EC524151F06004B634D /* BlogView.swift */; };
 		18468223245FDD6B0054B8D0 /* OLYearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18468222245FDD6B0054B8D0 /* OLYearView.swift */; };
 		1865B3DE24177CD7007DB193 /* 2019-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3DD24177CD7007DB193 /* 2019-2.json */; };
@@ -212,6 +222,16 @@
 		183397A0246138F8002F0D88 /* OLCs13Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLCs13Data.swift; sourceTree = "<group>"; };
 		183397A224613902002F0D88 /* OLBio13Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLBio13Data.swift; sourceTree = "<group>"; };
 		183397A42461390B002F0D88 /* OLGeo13Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLGeo13Data.swift; sourceTree = "<group>"; };
+		183397A624613B13002F0D88 /* OLMath12List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLMath12List.swift; sourceTree = "<group>"; };
+		183397A824613B1B002F0D88 /* OLPhy12List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLPhy12List.swift; sourceTree = "<group>"; };
+		183397AA24613B22002F0D88 /* OLCs12List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLCs12List.swift; sourceTree = "<group>"; };
+		183397AC24613B2C002F0D88 /* OLBio12List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLBio12List.swift; sourceTree = "<group>"; };
+		183397AE24613B34002F0D88 /* OLGeo12List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLGeo12List.swift; sourceTree = "<group>"; };
+		183397B024613B3D002F0D88 /* OLMath12Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLMath12Data.swift; sourceTree = "<group>"; };
+		183397B224613B47002F0D88 /* OLPhy12Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLPhy12Data.swift; sourceTree = "<group>"; };
+		183397B424613B4F002F0D88 /* OLCs12Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLCs12Data.swift; sourceTree = "<group>"; };
+		183397B624613B56002F0D88 /* OLBio12Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLBio12Data.swift; sourceTree = "<group>"; };
+		183397B824613B5E002F0D88 /* OLGeo12Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLGeo12Data.swift; sourceTree = "<group>"; };
 		18367EC524151F06004B634D /* BlogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogView.swift; sourceTree = "<group>"; };
 		18468222245FDD6B0054B8D0 /* OLYearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLYearView.swift; sourceTree = "<group>"; };
 		1865B3DD24177CD7007DB193 /* 2019-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2019-2.json"; sourceTree = "<group>"; };
@@ -557,6 +577,11 @@
 			isa = PBXGroup;
 			children = (
 				18DB6B2F241620690050F099 /* OLEng12List.swift */,
+				183397A624613B13002F0D88 /* OLMath12List.swift */,
+				183397A824613B1B002F0D88 /* OLPhy12List.swift */,
+				183397AA24613B22002F0D88 /* OLCs12List.swift */,
+				183397AC24613B2C002F0D88 /* OLBio12List.swift */,
+				183397AE24613B34002F0D88 /* OLGeo12List.swift */,
 				18DB6B38241620AB0050F099 /* 2012Data */,
 			);
 			path = OLevel;
@@ -739,6 +764,11 @@
 			isa = PBXGroup;
 			children = (
 				18DB6B33241620880050F099 /* OLEng12Data.swift */,
+				183397B024613B3D002F0D88 /* OLMath12Data.swift */,
+				183397B224613B47002F0D88 /* OLPhy12Data.swift */,
+				183397B424613B4F002F0D88 /* OLCs12Data.swift */,
+				183397B624613B56002F0D88 /* OLBio12Data.swift */,
+				183397B824613B5E002F0D88 /* OLGeo12Data.swift */,
 			);
 			path = 2012Data;
 			sourceTree = "<group>";
@@ -1000,10 +1030,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				18D5B48F2461252D001B6774 /* OLBio16Data.swift in Sources */,
+				183397AD24613B2C002F0D88 /* OLBio12List.swift in Sources */,
 				18D5B45524611742001B6774 /* OLPhy19Data.swift in Sources */,
 				1813F4DF245E95400085A43D /* SampleYearView.swift in Sources */,
 				18D5B46E24611BCB001B6774 /* OLBio17Data.swift in Sources */,
 				183397812461367F002F0D88 /* OLPhy14List.swift in Sources */,
+				183397B924613B5E002F0D88 /* OLGeo12Data.swift in Sources */,
 				18D5B47F246124CF001B6774 /* OLMath16List.swift in Sources */,
 				1833979B246138B6002F0D88 /* OLGeo13List.swift in Sources */,
 				18468223245FDD6B0054B8D0 /* OLYearView.swift in Sources */,
@@ -1015,6 +1047,7 @@
 				1833978D246136F1002F0D88 /* OLCs14Data.swift in Sources */,
 				18DB6B0524161E930050F099 /* OLEng16Data.swift in Sources */,
 				180408C62413C703005979A5 /* Ultility.swift in Sources */,
+				183397A924613B1B002F0D88 /* OLPhy12List.swift in Sources */,
 				18CC130D245C200600C22204 /* ALView.swift in Sources */,
 				18D5B46424611B6F001B6774 /* OLBio17List.swift in Sources */,
 				18D5B451246116B3001B6774 /* OLGeo19List.swift in Sources */,
@@ -1046,6 +1079,7 @@
 				18D5B46024611B56001B6774 /* OLPhy17List.swift in Sources */,
 				18B6E24D24134DE7002615DE /* SceneDelegate.swift in Sources */,
 				18D5B44424611215001B6774 /* OLCs18List.swift in Sources */,
+				183397A724613B13002F0D88 /* OLMath12List.swift in Sources */,
 				18367EC624151F06004B634D /* BlogView.swift in Sources */,
 				18D5B44F246116A2001B6774 /* OLBio19List.swift in Sources */,
 				18339777246133A5002F0D88 /* OLPhy15Data.swift in Sources */,
@@ -1054,6 +1088,7 @@
 				18D5B44B24611670001B6774 /* OLCs19List.swift in Sources */,
 				18D5B47C24612288001B6774 /* OLEng10Data.swift in Sources */,
 				18D5B44124611215001B6774 /* OLGeo18List.swift in Sources */,
+				183397B724613B56002F0D88 /* OLBio12Data.swift in Sources */,
 				18B6E25024134DE7002615DE /* PastPapaer.xcdatamodeld in Sources */,
 				18B21DC62444A9CF007ECAE7 /* Home.swift in Sources */,
 				18E956DD2415430B00DAF229 /* OLEng17Data.swift in Sources */,
@@ -1065,6 +1100,7 @@
 				18D5B481246124DD001B6774 /* OLPhy16List.swift in Sources */,
 				18D5B483246124EA001B6774 /* OLCs16List.swift in Sources */,
 				18DB6B3C2416211A0050F099 /* OLEng11List.swift in Sources */,
+				183397B524613B4F002F0D88 /* OLCs12Data.swift in Sources */,
 				18DB6B402416213F0050F099 /* OLEng11Data.swift in Sources */,
 				18D5B43D24611215001B6774 /* OLPhy18Data.swift in Sources */,
 				18D5B45E24611B49001B6774 /* OLMath17List.swift in Sources */,
@@ -1072,6 +1108,7 @@
 				18339783246136AE002F0D88 /* OLCs14List.swift in Sources */,
 				1833978F24613714002F0D88 /* OLBio14Data.swift in Sources */,
 				1833978B246136E7002F0D88 /* OLPhy14Data.swift in Sources */,
+				183397AB24613B22002F0D88 /* OLCs12List.swift in Sources */,
 				18D5B47024611BD7001B6774 /* OLGeo17Data.swift in Sources */,
 				18D5B46624611B7B001B6774 /* OLGeo17List.swift in Sources */,
 				1833976F24613362002F0D88 /* OLCs15List.swift in Sources */,
@@ -1084,6 +1121,7 @@
 				18D5B44224611215001B6774 /* OLEng18List.swift in Sources */,
 				18F5CE80245F08F600D9D627 /* DocsView.swift in Sources */,
 				180408E42413CFE6005979A5 /* Support.swift in Sources */,
+				183397B124613B3D002F0D88 /* OLMath12Data.swift in Sources */,
 				1833979F246138EE002F0D88 /* OLPhy13Data.swift in Sources */,
 				18D5B43C24611215001B6774 /* OLMath18Data.swift in Sources */,
 				183397A324613902002F0D88 /* OLBio13Data.swift in Sources */,
@@ -1095,7 +1133,9 @@
 				18D5B45B24611767001B6774 /* OLGeo19Data.swift in Sources */,
 				18DB6B24241620050050F099 /* OLEng13List.swift in Sources */,
 				18D5B43F24611215001B6774 /* OLEng18Data.swift in Sources */,
+				183397B324613B47002F0D88 /* OLPhy12Data.swift in Sources */,
 				18DB6B34241620880050F099 /* OLEng12Data.swift in Sources */,
+				183397AF24613B34002F0D88 /* OLGeo12List.swift in Sources */,
 				18D5B4912461253A001B6774 /* OLGeo16Data.swift in Sources */,
 				18D5B43B24611215001B6774 /* OLCs18Data.swift in Sources */,
 				18339789246136DD002F0D88 /* OLMath14Data.swift in Sources */,
