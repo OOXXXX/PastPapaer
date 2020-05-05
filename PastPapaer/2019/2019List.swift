@@ -33,7 +33,7 @@ struct  LandmarkList: View {
                 }
                 
             }
-           .navigationBarTitle(Text("xxxx"))
+           .navigationBarTitle(Text("2019"))
         }
         
     }
