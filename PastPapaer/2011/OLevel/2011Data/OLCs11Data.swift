@@ -22,5 +22,5 @@ struct OCs11_2: Hashable, Codable, Identifiable {
     
 }
 
-let OCs11Data: [OCs11] = load("2011.json")
-let OCs11Data2: [OCs11_2] = load("2011-2.json")
+let OCs11Data: [OCs11] = load("OLCs11.json")
+let OCs11Data2: [OCs11_2] = load("OLCs11-2.json")
