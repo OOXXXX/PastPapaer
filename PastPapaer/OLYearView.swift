@@ -18,7 +18,7 @@ var body: some View {
             OLEngYearView(isNavigationBarHidden: $isNavigationBarHidden)
             
             EngDocsView()
-            .padding(.top, -10)
+            .padding(.top, -5)
             
             
             }
@@ -326,15 +326,18 @@ struct OLEngYearView: View {
                     }
                   
                     
-//                    Button("10") {
-//
-//                        let selectionFeedback = UISelectionFeedbackGenerator()
-//                        selectionFeedback.selectionChanged()
-//
-//                        self.show2010.toggle()
-//                    }
-//                    .buttonStyle(YearRoundedButton())
-//                        _10L()
+                    Button("10") {
+
+                        let selectionFeedback = UISelectionFeedbackGenerator()
+                        selectionFeedback.selectionChanged()
+
+                        self.show2010.toggle()
+                    }
+                    .buttonStyle(YearRoundedButton())
+                        
+                    .sheet(isPresented: self.$show2010) {
+                        _10L()
+                    }
                     
                     
                 }
@@ -488,7 +491,7 @@ struct OLMathYearView: View {
                         let selectionFeedback = UISelectionFeedbackGenerator()
                         selectionFeedback.selectionChanged()
                         
-                        
+                        self.show2010.toggle()
                     }
                     .buttonStyle(YearRoundedButton())
                         
@@ -751,70 +754,7 @@ struct OLCsYearView: View {
                         OCs15ListView()
                     }
                     
-                    Button("14") {
-                        
-                        let selectionFeedback = UISelectionFeedbackGenerator()
-                        selectionFeedback.selectionChanged()
-                        
-                        self.show2014.toggle()
-                    }
-                    .buttonStyle(YearRoundedButton())
-                        
-                    .sheet(isPresented: self.$show2014) {
-                        OCs14ListView()
-                    }
-                    
-                    Button("13") {
-                        
-                        let selectionFeedback = UISelectionFeedbackGenerator()
-                        selectionFeedback.selectionChanged()
-                        
-                        self.show2013.toggle()
-                    }
-                    .buttonStyle(YearRoundedButton())
-                        
-                    .sheet(isPresented: self.$show2013) {
-                        OCs13ListView()
-                    }
-                    
-                    Button("12") {
-                        
-                        let selectionFeedback = UISelectionFeedbackGenerator()
-                        selectionFeedback.selectionChanged()
-                        
-                        self.show2012.toggle()
-                    }
-                    .buttonStyle(YearRoundedButton())
-                        
-                    .sheet(isPresented: self.$show2012) {
-                        OCs12ListView()
-                    }
-                    
-                    Button("11") {
-                        
-                        let selectionFeedback = UISelectionFeedbackGenerator()
-                        selectionFeedback.selectionChanged()
-                        
-                        self.show2011.toggle()
-                    }
-                    .buttonStyle(YearRoundedButton())
-                        
-                    .sheet(isPresented: self.$show2011) {
-                        OCs11ListView()
-                    }
-                    
-                    Button("10") {
-                        
-                        let selectionFeedback = UISelectionFeedbackGenerator()
-                        selectionFeedback.selectionChanged()
-                        
-                        
-                    }
-                    .buttonStyle(YearRoundedButton())
-                    
-                    .sheet(isPresented: self.$show2011) {
-                        OCs10ListView()
-                    }
+                     
                     
                 }
                 .padding(.top, 3)
