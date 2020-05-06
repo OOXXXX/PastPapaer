@@ -907,11 +907,12 @@ struct OLBioYearView: View {
                         let selectionFeedback = UISelectionFeedbackGenerator()
                         selectionFeedback.selectionChanged()
                         
+                        self.show2010.toggle()
                         
                     }
                     .buttonStyle(YearRoundedButton())
                     
-                    .sheet(isPresented: self.$show2011) {
+                    .sheet(isPresented: self.$show2010) {
                         OBio10ListView()
                     }
                     

@@ -116,7 +116,7 @@ struct BioDocsView: View {
 
 var body: some View {
 ScrollView(.vertical, showsIndicators: false){
-    DocView(title: "Biology Documentation")
+    DocView(title: "Maths Documentation")
         .padding(.top, 6)
         .padding(.bottom, -15)
         .onTapGesture {

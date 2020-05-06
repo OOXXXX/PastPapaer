@@ -22,5 +22,5 @@ struct OMath10_2: Hashable, Codable, Identifiable {
     
 }
 
-let OMath10Data: [OMath10] = load("2010.json")
-let OMath10Data2: [OMath10_2] = load("2010-2.json")
+let OMath10Data: [OMath10] = load("OLMath10.json")
+let OMath10Data2: [OMath10_2] = load("OLMath10-2.json")

@@ -22,5 +22,5 @@ struct OBio16_2: Hashable, Codable, Identifiable {
     
 }
 
-let OBio16Data: [OBio16] = load("2016.json")
-let OBio16Data2: [OBio16_2] = load("2016-2.json")
+let OBio16Data: [OBio16] = load("OLMathD16.json")
+let OBio16Data2: [OBio16_2] = load("OLMathD16-2.json")
