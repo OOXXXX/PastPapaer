@@ -966,22 +966,22 @@
 		1833981D24618824002F0D88 /* Olevel */ = {
 			isa = PBXGroup;
 			children = (
-				1833981E2461882B002F0D88 /* English */,
-				18601EB52462A6BF00D11325 /* New Group3 */,
-				18601EB42462A6BB00D11325 /* New Group2 */,
-				18601EB32462A6AD00D11325 /* New Group1 */,
-				18601EB22462A69400D11325 /* New Group */,
+				1833981E2461882B002F0D88 /* English10 */,
+				18601EB52462A6BF00D11325 /* Maths10 */,
+				18601EB42462A6BB00D11325 /* Physics10 */,
+				18601EB32462A6AD00D11325 /* MathD10 */,
+				18601EB22462A69400D11325 /* Geography10 */,
 			);
 			path = Olevel;
 			sourceTree = "<group>";
 		};
-		1833981E2461882B002F0D88 /* English */ = {
+		1833981E2461882B002F0D88 /* English10 */ = {
 			isa = PBXGroup;
 			children = (
 				183397EE2461421A002F0D88 /* 2010.json */,
 				183397F02461422A002F0D88 /* 2010-2.json */,
 			);
-			path = English;
+			path = English10;
 			sourceTree = "<group>";
 		};
 		1833983324618F9E002F0D88 /* Maths */ = {
@@ -1344,40 +1344,40 @@
 			path = CS;
 			sourceTree = "<group>";
 		};
-		18601EB22462A69400D11325 /* New Group */ = {
+		18601EB22462A69400D11325 /* Geography10 */ = {
 			isa = PBXGroup;
 			children = (
 				18601EAE2462A68700D11325 /* OLGeo10.json */,
 				18601EB02462A69000D11325 /* OLGeo10-2.json */,
 			);
-			path = "New Group";
+			path = Geography10;
 			sourceTree = "<group>";
 		};
-		18601EB32462A6AD00D11325 /* New Group1 */ = {
+		18601EB32462A6AD00D11325 /* MathD10 */ = {
 			isa = PBXGroup;
 			children = (
 				18601EAA2462A66800D11325 /* OLMathD10.json */,
 				18601EAC2462A67A00D11325 /* OLMathD10-2.json */,
 			);
-			path = "New Group1";
+			path = MathD10;
 			sourceTree = "<group>";
 		};
-		18601EB42462A6BB00D11325 /* New Group2 */ = {
+		18601EB42462A6BB00D11325 /* Physics10 */ = {
 			isa = PBXGroup;
 			children = (
 				18601EA62462A65200D11325 /* OLPhy10.json */,
 				18601EA82462A65C00D11325 /* OLPhy10-2.json */,
 			);
-			path = "New Group2";
+			path = Physics10;
 			sourceTree = "<group>";
 		};
-		18601EB52462A6BF00D11325 /* New Group3 */ = {
+		18601EB52462A6BF00D11325 /* Maths10 */ = {
 			isa = PBXGroup;
 			children = (
 				18601EA22462A63500D11325 /* OLMath10.json */,
 				18601EA42462A64600D11325 /* OLMath10-2.json */,
 			);
-			path = "New Group3";
+			path = Maths10;
 			sourceTree = "<group>";
 		};
 		188F81AD24166A750043DBDB /* Frameworks */ = {
