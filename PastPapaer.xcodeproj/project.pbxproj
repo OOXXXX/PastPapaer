@@ -130,10 +130,10 @@
 		1833987124619280002F0D88 /* OLPhy15-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1833987024619280002F0D88 /* OLPhy15-2.json */; };
 		18339873246192EF002F0D88 /* OLCs15.json in Resources */ = {isa = PBXBuildFile; fileRef = 18339872246192EF002F0D88 /* OLCs15.json */; };
 		18339875246192FC002F0D88 /* OLCs15-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 18339874246192FC002F0D88 /* OLCs15-2.json */; };
-		1833987724619370002F0D88 /* OLMathD.json in Resources */ = {isa = PBXBuildFile; fileRef = 1833987624619370002F0D88 /* OLMathD.json */; };
-		183398792461937D002F0D88 /* OLMathD-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 183398782461937D002F0D88 /* OLMathD-2.json */; };
-		1833987B24619389002F0D88 /* OLGeo.json in Resources */ = {isa = PBXBuildFile; fileRef = 1833987A24619389002F0D88 /* OLGeo.json */; };
-		1833987D246193A2002F0D88 /* OLGeo-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1833987C246193A2002F0D88 /* OLGeo-2.json */; };
+		1833987724619370002F0D88 /* OLMathD15.json in Resources */ = {isa = PBXBuildFile; fileRef = 1833987624619370002F0D88 /* OLMathD15.json */; };
+		183398792461937D002F0D88 /* OLMathD15-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 183398782461937D002F0D88 /* OLMathD15-2.json */; };
+		1833987B24619389002F0D88 /* OLGeo15.json in Resources */ = {isa = PBXBuildFile; fileRef = 1833987A24619389002F0D88 /* OLGeo15.json */; };
+		1833987D246193A2002F0D88 /* OLGeo15-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1833987C246193A2002F0D88 /* OLGeo15-2.json */; };
 		18339884246194D5002F0D88 /* OLMath14.json in Resources */ = {isa = PBXBuildFile; fileRef = 18339883246194D4002F0D88 /* OLMath14.json */; };
 		18339886246194EA002F0D88 /* OLMath14-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 18339885246194EA002F0D88 /* OLMath14-2.json */; };
 		18339888246194F7002F0D88 /* OLPhy14.json in Resources */ = {isa = PBXBuildFile; fileRef = 18339887246194F7002F0D88 /* OLPhy14.json */; };
@@ -420,10 +420,10 @@
 		1833987024619280002F0D88 /* OLPhy15-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "OLPhy15-2.json"; sourceTree = "<group>"; };
 		18339872246192EF002F0D88 /* OLCs15.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = OLCs15.json; sourceTree = "<group>"; };
 		18339874246192FC002F0D88 /* OLCs15-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "OLCs15-2.json"; sourceTree = "<group>"; };
-		1833987624619370002F0D88 /* OLMathD.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = OLMathD.json; sourceTree = "<group>"; };
-		183398782461937D002F0D88 /* OLMathD-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "OLMathD-2.json"; sourceTree = "<group>"; };
-		1833987A24619389002F0D88 /* OLGeo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = OLGeo.json; sourceTree = "<group>"; };
-		1833987C246193A2002F0D88 /* OLGeo-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "OLGeo-2.json"; sourceTree = "<group>"; };
+		1833987624619370002F0D88 /* OLMathD15.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = OLMathD15.json; sourceTree = "<group>"; };
+		183398782461937D002F0D88 /* OLMathD15-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "OLMathD15-2.json"; sourceTree = "<group>"; };
+		1833987A24619389002F0D88 /* OLGeo15.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = OLGeo15.json; sourceTree = "<group>"; };
+		1833987C246193A2002F0D88 /* OLGeo15-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "OLGeo15-2.json"; sourceTree = "<group>"; };
 		18339883246194D4002F0D88 /* OLMath14.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = OLMath14.json; sourceTree = "<group>"; };
 		18339885246194EA002F0D88 /* OLMath14-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "OLMath14-2.json"; sourceTree = "<group>"; };
 		18339887246194F7002F0D88 /* OLPhy14.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = OLPhy14.json; sourceTree = "<group>"; };
@@ -1122,8 +1122,8 @@
 		1833987E24619427002F0D88 /* Geography */ = {
 			isa = PBXGroup;
 			children = (
-				1833987A24619389002F0D88 /* OLGeo.json */,
-				1833987C246193A2002F0D88 /* OLGeo-2.json */,
+				1833987A24619389002F0D88 /* OLGeo15.json */,
+				1833987C246193A2002F0D88 /* OLGeo15-2.json */,
 			);
 			path = Geography;
 			sourceTree = "<group>";
@@ -1131,8 +1131,8 @@
 		1833987F2461942F002F0D88 /* Math-D */ = {
 			isa = PBXGroup;
 			children = (
-				1833987624619370002F0D88 /* OLMathD.json */,
-				183398782461937D002F0D88 /* OLMathD-2.json */,
+				1833987624619370002F0D88 /* OLMathD15.json */,
+				183398782461937D002F0D88 /* OLMathD15-2.json */,
 			);
 			path = "Math-D";
 			sourceTree = "<group>";
@@ -1985,7 +1985,7 @@
 				1833984B24619114002F0D88 /* OLGeo17-2.json in Resources */,
 				1833989224619538002F0D88 /* OLMathD14-2.json in Resources */,
 				18B6E25A24134DEA002615DE /* LaunchScreen.storyboard in Resources */,
-				1833987B24619389002F0D88 /* OLGeo.json in Resources */,
+				1833987B24619389002F0D88 /* OLGeo15.json in Resources */,
 				1865B3EE24178094007DB193 /* 2011-2.json in Resources */,
 				180408DD2413CF41005979A5 /* Oswald-SemiBold.ttf in Resources */,
 				183398392461909E002F0D88 /* OLMath17.json in Resources */,
@@ -2086,7 +2086,7 @@
 				18601E942462A1F100D11325 /* OLCs11.json in Resources */,
 				183398D424619872002F0D88 /* OLMath11.json in Resources */,
 				183397F924614417002F0D88 /* OLPhy19.json in Resources */,
-				183398792461937D002F0D88 /* OLMathD-2.json in Resources */,
+				183398792461937D002F0D88 /* OLMathD15-2.json in Resources */,
 				183398ED24619933002F0D88 /* OLMathD11.json in Resources */,
 				180408D82413CF41005979A5 /* Oxygen-Regular.ttf in Resources */,
 				18339843246190E7002F0D88 /* OLCs17-2.json in Resources */,
@@ -2102,9 +2102,9 @@
 				18B6E25424134DEA002615DE /* Assets.xcassets in Resources */,
 				1865B3EA2417807B007DB193 /* 2013-2.json in Resources */,
 				183398C4246196E5002F0D88 /* OLMathD12-2.json in Resources */,
-				1833987724619370002F0D88 /* OLMathD.json in Resources */,
+				1833987724619370002F0D88 /* OLMathD15.json in Resources */,
 				18E956AF2415311000DAF229 /* Teko-Regular.ttf in Resources */,
-				1833987D246193A2002F0D88 /* OLGeo-2.json in Resources */,
+				1833987D246193A2002F0D88 /* OLGeo15-2.json in Resources */,
 				183398EF2461993C002F0D88 /* OLMathD11-2.json in Resources */,
 				18E9568D2415299100DAF229 /* RobotoMono-Thin.ttf in Resources */,
 				1833984724619102002F0D88 /* OLMathD17-2.json in Resources */,

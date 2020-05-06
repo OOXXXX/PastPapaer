@@ -172,7 +172,7 @@ struct DocView: View {
                         .foregroundColor(Color("background2"))
                         .padding(.bottom, -6)
                     
-                    Text("Documentation for O-level, IGCSE and A-level English, including some official guides and videos.")
+                    Text("Documentation for O-level, IGCSE and A-level, including some official guides and videos.")
                         .modifier(FontCoustom2(size: 18))
                         .foregroundColor(Color("Color"))
                 }

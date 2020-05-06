@@ -22,5 +22,5 @@ struct OPhy12_2: Hashable, Codable, Identifiable {
     
 }
 
-let OPhy12Data: [OPhy12] = load("OLPhy13.json")
+let OPhy12Data: [OPhy12] = load("OLPhy12.json")
 let OPhy12Data2: [OPhy12_2] = load("OLPhy12-2.json")

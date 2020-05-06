@@ -22,5 +22,5 @@ struct OGeo15_2: Hashable, Codable, Identifiable {
     
 }
 
-let OGeo15Data: [OGeo15] = load("2015.json")
-let OGeo15Data2: [OGeo15_2] = load("2015-2.json")
+let OGeo15Data: [OGeo15] = load("OLGeo15.json")
+let OGeo15Data2: [OGeo15_2] = load("OLGeo15-2.json")
