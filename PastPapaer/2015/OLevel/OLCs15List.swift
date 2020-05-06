@@ -22,7 +22,7 @@ var body: some View {
                    Text("Oct-Nov").tag(2)
                }
             .pickerStyle(SegmentedPickerStyle())
-            .frame(width: screen.width-24)
+            //.frame(width: screen.width-24)
             
             if selected == 1{
                 OCs15List()
@@ -34,7 +34,7 @@ var body: some View {
         }
        .navigationBarTitle(Text("2015"))
     }
-    
+    .navigationViewStyle(StackNavigationViewStyle())
   }
 }
 

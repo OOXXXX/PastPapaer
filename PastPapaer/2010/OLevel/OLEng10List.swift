@@ -25,7 +25,7 @@ struct  _10L: View {
                        Text("Oct-Nov").tag(2)
                    }
                 .pickerStyle(SegmentedPickerStyle())
-                .frame(width: screen.width-24)
+                //.frame(width: screen.width-24)
                 
                 if selected == 1{
                     _10L1()
@@ -37,7 +37,7 @@ struct  _10L: View {
             }
            .navigationBarTitle(Text("2010"))
         }
-        
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
