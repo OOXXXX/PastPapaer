@@ -12,7 +12,7 @@ import SafariServices
 struct EngDocsView: View {
 @State var show2019 = false
 @State var showSafari = false
-@State var urlString1 = "https://duckduckgo.com"
+@State var urlString1 = "https://papers.gceguide.com/O%20Levels/Add-Maths%20(4037)/4037_s19_qp_12.pdf"
 
 var body: some View {
 ScrollView(.vertical, showsIndicators: false){

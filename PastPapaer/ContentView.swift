@@ -73,6 +73,8 @@ struct TextShimmerView : View {
                     .foregroundColor(Color("ColorShimmerText"))
                     .font(.system(size: 15))
             }
+            .padding(.bottom, 23.5)
+            .edgesIgnoringSafeArea(.bottom)
             
         }
         .onAppear {

@@ -27,11 +27,11 @@ struct Home: View {
                 }
  
                 Topbar(selected: self.$selected).offset(x: screen.width/2-92, y:-5)
-                    .padding(.bottom, 27)
-                     
+                    .padding(.bottom, 3.5)
+                    .edgesIgnoringSafeArea(.bottom)
  
         }
-               .edgesIgnoringSafeArea(.bottom)
+               
     }
 }
 
@@ -109,7 +109,7 @@ struct Topbar : View {
               
             
             }
-    .frame(width: 145, height: 40)
+            .frame(width: 145, height: 40)
             .padding(.horizontal, 6)
             .padding(.vertical, 5)
             .background(Color("Color2"))
@@ -121,3 +121,4 @@ struct Topbar : View {
     }
     
 }
+

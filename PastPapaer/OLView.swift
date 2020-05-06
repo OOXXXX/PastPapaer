@@ -246,6 +246,7 @@ struct ButtonView: View {
     let name: String
     
     var body: some View{
+     
         
         VStack(alignment: .center) {
             HStack {
@@ -266,7 +267,8 @@ struct ButtonView: View {
             .padding()
             Spacer()
         }
-        .frame(width: UIScreen.main.bounds.width-30, height: 80.0)
+            .frame(maxWidth: .infinity)
+            .frame(height: 80.0)
             // .background(Color("secondary"))
             .background(Color("Color-2"))
             .cornerRadius(11)
@@ -274,6 +276,7 @@ struct ButtonView: View {
             .stroke(Color.gray.opacity(0.1), lineWidth: 2))
             .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
             .padding(.top)
+            .padding(.horizontal)
     }
     
 }

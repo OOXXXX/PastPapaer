@@ -19,13 +19,13 @@ let generator = UINotificationFeedbackGenerator()
             Image("Image")
             .resizable()
             .aspectRatio(contentMode: .fit)
-                .scaleEffect(0.45)
-                .offset(x: screen.width/2-50, y: screen.height/2-72)
+            .scaleEffect(0.45)
+            .offset(x: screen.width/2-50, y: screen.height/2-72)
             VStack {
                 ZStack {
                     VStack {
                         VStack {
-        Button(action: {
+                            Button(action: {
                           let impactMed = UIImpactFeedbackGenerator(style: .medium)
                           impactMed.impactOccurred()
             stopSound(sound: "Radiohead-Creep", type: "mp3")
@@ -44,31 +44,16 @@ let generator = UINotificationFeedbackGenerator()
                             .frame(width: screen.width, height: 45, alignment: .trailing)
                             .padding(.trailing, 27)
                             .padding(.top, 10)
-                              //.shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 10)
+                            
         
                        }
                     
                             Webview(url: "https://www.ooxxxx.club")
-    //                            .frame(width: screen.width,  height: screen.height-210)
                                 .frame(width: screen.width)
-                                //.padding(.top, 60)
                                 .edgesIgnoringSafeArea(.top)
                         }
-                         
-    //                            .offset(x: screen.width/2-40, y: -screen.height/2-230)
-    //
                     }
-      
-    //                .offset(x: screen.width-60, y: -screen.height/2+100)
-                    
                 }
-    //            Image("Image")
-    //            .resizable()
-    //            .aspectRatio(contentMode: .fit)
-    //                .offset(x: 0, y: 170)
-    //           frame(width: 300, height: 200)
-                
-                
                 Text("2020 Patrick Zhu™️")
                 .modifier(FontCoustom2(size: 18))
                     //.padding(.bottom, 37)
