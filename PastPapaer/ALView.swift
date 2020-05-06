@@ -12,6 +12,7 @@ struct ALView: View {
     let generator = UINotificationFeedbackGenerator()
     @State var showUpdate = false
     @State var show2019 = false
+    @State var show = false
  
      var body: some View {
             
@@ -58,7 +59,7 @@ struct ALView: View {
             let selectionFeedback = UISelectionFeedbackGenerator()
               selectionFeedback.selectionChanged()
             
-            self.show2019.toggle()
+            self.show.toggle()
             
           })
         {
@@ -92,8 +93,11 @@ struct ALView: View {
                 .padding(.top)
          }
                                 
-        .sheet(isPresented: self.$show2019) {
-            LandmarkList()
+        .sheet(isPresented: self.$show) {
+            TextShimmerView()
+            
+            
+            
         }
         
             Button(action: {
@@ -135,7 +139,7 @@ struct ALView: View {
              }
                                     
             .sheet(isPresented: self.$show2019) {
-                LandmarkList()
+                TextShimmerView()
             }
             
             Button(action: {
@@ -177,7 +181,7 @@ struct ALView: View {
              }
                                     
             .sheet(isPresented: self.$show2019) {
-                LandmarkList()
+                TextShimmerView()
             }
             
             Button(action: {
@@ -219,7 +223,7 @@ struct ALView: View {
              }
                                     
             .sheet(isPresented: self.$show2019) {
-                LandmarkList()
+                TextShimmerView()
             }
             
             Button(action: {
@@ -261,7 +265,7 @@ struct ALView: View {
              }
                                     
             .sheet(isPresented: self.$show2019) {
-                LandmarkList()
+                TextShimmerView()
             }
             
             Button(action: {
@@ -303,7 +307,7 @@ struct ALView: View {
              }
                                     
             .sheet(isPresented: self.$show2019) {
-                LandmarkList()
+                TextShimmerView()
             }
             
             Button(action: {
@@ -345,7 +349,7 @@ struct ALView: View {
              }
                                     
             .sheet(isPresented: self.$show2019) {
-                LandmarkList()
+                TextShimmerView()
             }
             
           
@@ -388,7 +392,7 @@ struct ALView: View {
                  }
                                         
                 .sheet(isPresented: self.$show2019) {
-                    LandmarkList()
+                    TextShimmerView()
                 }
                 
                 Button(action: {
@@ -430,7 +434,7 @@ struct ALView: View {
                  }
                                         
                 .sheet(isPresented: self.$show2019) {
-                    LandmarkList()
+                    TextShimmerView()
                 }
               
                     
@@ -475,7 +479,7 @@ struct ALView: View {
                          }
                                                 
                         .sheet(isPresented: self.$show2019) {
-                            LandmarkList()
+                            TextShimmerView()
                         }
                     
                          Button(action: {
@@ -517,7 +521,7 @@ struct ALView: View {
                           }
                                                  
                          .sheet(isPresented: self.$show2019) {
-                             LandmarkList()
+                             TextShimmerView()
                          }
                         
                         

@@ -652,7 +652,7 @@ struct OLPhyYearView: View {
                         let selectionFeedback = UISelectionFeedbackGenerator()
                         selectionFeedback.selectionChanged()
                         
-                        
+                        self.show2010.toggle()
                     }
                     .buttonStyle(YearRoundedButton())
                     
@@ -1067,7 +1067,7 @@ struct OLGeoYearView: View {
                         let selectionFeedback = UISelectionFeedbackGenerator()
                         selectionFeedback.selectionChanged()
                         
-                        
+                        self.show2010.toggle()
                     }
                     .buttonStyle(YearRoundedButton())
                     

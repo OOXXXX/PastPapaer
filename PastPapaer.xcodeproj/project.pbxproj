@@ -193,6 +193,7 @@
 		1865B3EA2417807B007DB193 /* 2013-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3E92417807B007DB193 /* 2013-2.json */; };
 		1865B3EC24178088007DB193 /* 2012-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3EB24178088007DB193 /* 2012-2.json */; };
 		1865B3EE24178094007DB193 /* 2011-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3ED24178094007DB193 /* 2011-2.json */; };
+		189F8D3F2462DBF8000044F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189F8D3E2462DBF8000044F0 /* ContentView.swift */; };
 		18B21DC62444A9CF007ECAE7 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B21DC52444A9CF007ECAE7 /* Home.swift */; };
 		18B6E24B24134DE7002615DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E24A24134DE7002615DE /* AppDelegate.swift */; };
 		18B6E24D24134DE7002615DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E24C24134DE7002615DE /* SceneDelegate.swift */; };
@@ -484,6 +485,7 @@
 		1865B3EB24178088007DB193 /* 2012-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2012-2.json"; sourceTree = "<group>"; };
 		1865B3ED24178094007DB193 /* 2011-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2011-2.json"; sourceTree = "<group>"; };
 		188F81AC241669F80043DBDB /* PastPaper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PastPaper.entitlements; sourceTree = "<group>"; };
+		189F8D3E2462DBF8000044F0 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		18B21DC52444A9CF007ECAE7 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		18B6E24724134DE7002615DE /* PastPaperO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PastPaperO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B6E24A24134DE7002615DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -1428,6 +1430,7 @@
 				18CC130C245C200600C22204 /* ALView.swift */,
 				18468222245FDD6B0054B8D0 /* OLYearView.swift */,
 				18F5CE7F245F08F600D9D627 /* DocsView.swift */,
+				189F8D3E2462DBF8000044F0 /* ContentView.swift */,
 				18CF47892414A4FD006F01FA /* Source */,
 				18B6E25324134DEA002615DE /* Assets.xcassets */,
 				18B6E25824134DEA002615DE /* LaunchScreen.storyboard */,
@@ -2179,6 +2182,7 @@
 				18D5B46A24611BA8001B6774 /* OLPhy17Data.swift in Sources */,
 				183397BF24613CAA002F0D88 /* OLCs11List.swift in Sources */,
 				18B6E2822413822D002615DE /* OLEng19Data.swift in Sources */,
+				189F8D3F2462DBF8000044F0 /* ContentView.swift in Sources */,
 				18D5B46024611B56001B6774 /* OLPhy17List.swift in Sources */,
 				18B6E24D24134DE7002615DE /* SceneDelegate.swift in Sources */,
 				18D5B44424611215001B6774 /* OLCs18List.swift in Sources */,
@@ -2393,7 +2397,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PastPapaer/PastPaper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 26;
+				CURRENT_PROJECT_VERSION = 100;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"PastPapaer/Preview Content\"";
 				DEVELOPMENT_TEAM = 6MM6Y2NK23;
@@ -2404,7 +2408,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Patrick.PastPaper;
 				PRODUCT_NAME = PastPaperO;
 				SUPPORTS_MACCATALYST = NO;
@@ -2419,7 +2423,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PastPapaer/PastPaper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 26;
+				CURRENT_PROJECT_VERSION = 100;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"PastPapaer/Preview Content\"";
 				DEVELOPMENT_TEAM = 6MM6Y2NK23;
@@ -2430,7 +2434,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Patrick.PastPaper;
 				PRODUCT_NAME = PastPaperO;
 				SUPPORTS_MACCATALYST = NO;

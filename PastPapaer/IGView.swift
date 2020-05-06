@@ -93,7 +93,7 @@ struct IGView: View {
      }
                             
     .sheet(isPresented: self.$show2019) {
-        LandmarkList()
+        TextShimmerView()
     }
     
         Button(action: {
@@ -135,7 +135,7 @@ struct IGView: View {
          }
                                 
         .sheet(isPresented: self.$show2019) {
-            LandmarkList()
+            TextShimmerView()
         }
         
         Button(action: {
@@ -177,7 +177,7 @@ struct IGView: View {
          }
                                 
         .sheet(isPresented: self.$show2019) {
-            LandmarkList()
+            TextShimmerView()
         }
         
         Button(action: {
@@ -219,7 +219,7 @@ struct IGView: View {
          }
                                 
         .sheet(isPresented: self.$show2019) {
-            LandmarkList()
+            TextShimmerView()
         }
         
         Button(action: {
@@ -261,7 +261,7 @@ struct IGView: View {
          }
                                 
         .sheet(isPresented: self.$show2019) {
-            LandmarkList()
+            TextShimmerView()
         }
         
         Button(action: {
@@ -303,7 +303,7 @@ struct IGView: View {
          }
                                 
         .sheet(isPresented: self.$show2019) {
-            LandmarkList()
+            TextShimmerView()
         }
         
         Button(action: {
@@ -345,7 +345,7 @@ struct IGView: View {
          }
                                 
         .sheet(isPresented: self.$show2019) {
-            LandmarkList()
+            TextShimmerView()
         }
         
       
@@ -388,7 +388,7 @@ struct IGView: View {
              }
                                     
             .sheet(isPresented: self.$show2019) {
-                LandmarkList()
+                TextShimmerView()
             }
             
             Button(action: {
@@ -430,7 +430,7 @@ struct IGView: View {
              }
                                     
             .sheet(isPresented: self.$show2019) {
-                LandmarkList()
+                TextShimmerView()
             }
             
             

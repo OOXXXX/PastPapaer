@@ -34,6 +34,7 @@ var body: some View {
         }
        .navigationBarTitle(Text("2019"))
     }
+    .navigationViewStyle(StackNavigationViewStyle())
     
   }
 }

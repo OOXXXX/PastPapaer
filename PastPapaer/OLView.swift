@@ -182,6 +182,7 @@ struct OLView: View {
              self.isNavigationBarHidden = true
          }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
     
 }
@@ -265,7 +266,7 @@ struct ButtonView: View {
             .padding()
             Spacer()
         }
-        .frame(width: screen.width-30, height: 80.0)
+        .frame(width: UIScreen.main.bounds.width-30, height: 80.0)
             // .background(Color("secondary"))
             .background(Color("Color-2"))
             .cornerRadius(11)

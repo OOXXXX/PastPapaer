@@ -22,7 +22,7 @@ struct  LandmarkList: View {
                        Text("Oct-Nov").tag(2)
                    }
                 .pickerStyle(SegmentedPickerStyle())
-                .frame(width: screen.width-24)
+                //.frame(width: screen.width-24)
                 
                 if selected == 1{
                     LandmarkLististView1()
@@ -32,9 +32,10 @@ struct  LandmarkList: View {
                 }
                 
             }
-           .navigationBarTitle(Text("2019"))
+            .navigationBarTitle(Text("2019"))
+            
         }
-        
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
@@ -47,7 +48,7 @@ struct LandmarkLististView1: View {
                 LandmarkRow(landmark: landmark)
             }
         }
-        
+         
     }
 }
 
