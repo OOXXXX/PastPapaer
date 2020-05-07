@@ -12,7 +12,7 @@ import SafariServices
 struct EngDocsView: View {
 @State var show2019 = false
 @State var showSafari = false
-@State var urlString1 = "https://papers.gceguide.com/O%20Levels/Add-Maths%20(4037)/4037_s19_qp_12.pdf"
+@State var urlString1 = "https://www.notion.so/English-Docs-728f1471a1d94432a965b3d2750a94d1"
 
 var body: some View {
 ScrollView(.vertical, showsIndicators: false){
@@ -24,6 +24,7 @@ ScrollView(.vertical, showsIndicators: false){
             }
         .sheet(isPresented: $showSafari) {
      SafariView(url:URL(string: self.urlString1)!)
+        .edgesIgnoringSafeArea(.all)
           }
          
         
@@ -37,7 +38,7 @@ ScrollView(.vertical, showsIndicators: false){
 struct MathDocsView: View {
 @State var show2019 = false
 @State var showSafari = false
-@State var urlString1 = "https://duckduckgo.com"
+@State var urlString1 = "https://www.notion.so/Mathematics-Docs-731382564a5c43c3b364a06da952657d"
 
 var body: some View {
 ScrollView(.vertical, showsIndicators: false){
@@ -49,6 +50,7 @@ ScrollView(.vertical, showsIndicators: false){
             }
         .sheet(isPresented: $showSafari) {
      SafariView(url:URL(string: self.urlString1)!)
+            .edgesIgnoringSafeArea(.all)
           }
          
         
@@ -62,7 +64,7 @@ ScrollView(.vertical, showsIndicators: false){
 struct PhyDocsView: View {
 @State var show2019 = false
 @State var showSafari = false
-@State var urlString1 = "https://duckduckgo.com"
+@State var urlString1 = "https://www.notion.so/Physics-Docs-8dc7ad8aab96474483c93fb91a5509d7"
 
 var body: some View {
 ScrollView(.vertical, showsIndicators: false){
@@ -74,6 +76,7 @@ ScrollView(.vertical, showsIndicators: false){
             }
         .sheet(isPresented: $showSafari) {
      SafariView(url:URL(string: self.urlString1)!)
+            .edgesIgnoringSafeArea(.all)
           }
          
         
@@ -87,7 +90,7 @@ ScrollView(.vertical, showsIndicators: false){
 struct CsDocsView: View {
 @State var show2019 = false
 @State var showSafari = false
-@State var urlString1 = "https://duckduckgo.com"
+@State var urlString1 = "https://www.notion.so/CS-Docs-a13fd7f4735c47dc85cdeabb2a5fe60a"
 
 var body: some View {
 ScrollView(.vertical, showsIndicators: false){
@@ -99,6 +102,7 @@ ScrollView(.vertical, showsIndicators: false){
             }
         .sheet(isPresented: $showSafari) {
      SafariView(url:URL(string: self.urlString1)!)
+            .edgesIgnoringSafeArea(.all)
           }
          
         
@@ -112,7 +116,7 @@ ScrollView(.vertical, showsIndicators: false){
 struct BioDocsView: View {
 @State var show2019 = false
 @State var showSafari = false
-@State var urlString1 = "https://duckduckgo.com"
+@State var urlString1 = "https://www.notion.so/Mathematics-Docs-731382564a5c43c3b364a06da952657d"
 
 var body: some View {
 ScrollView(.vertical, showsIndicators: false){
@@ -124,6 +128,7 @@ ScrollView(.vertical, showsIndicators: false){
             }
         .sheet(isPresented: $showSafari) {
      SafariView(url:URL(string: self.urlString1)!)
+            .edgesIgnoringSafeArea(.all)
           }
          
         
@@ -137,7 +142,7 @@ ScrollView(.vertical, showsIndicators: false){
 struct GeoDocsView: View {
 @State var show2019 = false
 @State var showSafari = false
-@State var urlString1 = "https://duckduckgo.com"
+@State var urlString1 = "https://www.notion.so/Geography-Docs-8a55eb9e51904495a9c9c63e2b0fb735"
 
 var body: some View {
 ScrollView(.vertical, showsIndicators: false){
@@ -149,6 +154,7 @@ ScrollView(.vertical, showsIndicators: false){
             }
         .sheet(isPresented: $showSafari) {
      SafariView(url:URL(string: self.urlString1)!)
+            .edgesIgnoringSafeArea(.all)
           }
          
         
