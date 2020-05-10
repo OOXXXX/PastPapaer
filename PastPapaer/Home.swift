@@ -70,6 +70,7 @@ struct Topbar : View {
                     .clipShape(Capsule())
                     
             }.padding(.trailing, 3)
+                 
             
             
             Button(action: {
@@ -87,7 +88,8 @@ struct Topbar : View {
                 .background(self.selected == 1 ? Color.white : Color.clear)
                 .foregroundColor(self.selected == 1 ? .blue : .gray)
                 .clipShape(Capsule())
-            }.padding(.trailing, 3)
+            }   .padding(.trailing, 3)
+                 
             
             
             Button(action: {
@@ -106,7 +108,7 @@ struct Topbar : View {
                 .foregroundColor(self.selected == 2 ? .black : .gray)
                 .clipShape(Capsule())
             }
-              
+                 
             
             }
             .frame(width: 145, height: 40)

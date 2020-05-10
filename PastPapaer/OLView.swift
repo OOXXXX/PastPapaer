@@ -24,7 +24,8 @@ struct OLView: View {
     @State var isNavigationBarHidden: Bool = true
     
     var body: some View {
-        
+   
+GeometryReader{ bounds in
     NavigationView{
         
         VStack {
@@ -33,7 +34,7 @@ struct OLView: View {
                     
                  Text("PastPaper")
                      .modifier(FontCoustom7(size: 40))
-                     .frame(width: screen.width-50, height: 20, alignment: .leading)
+                     .frame(width: bounds.size.width-50, height: 20, alignment: .leading)
                      .padding(.top)
                      .offset(x: 13, y: 0)
                          
@@ -51,14 +52,15 @@ struct OLView: View {
                      .padding(.top)
                      
                      }
+                     .hoverEffect()
                      .offset(x: -15, y: 0)
-                     .sheet(isPresented: $showUpdate) {
+                 .sheet(isPresented: self.$showUpdate) {
                      BlogView()
                  }
                  
             }
         
-        .frame(width: screen.width, height: 35)
+        .frame(width: bounds.size.width, height: 35)
         .padding(.top)
         .padding(.bottom, -5)
         
@@ -71,7 +73,7 @@ struct OLView: View {
     
      
            
-  NavigationLink(destination: OLEng(isNavigationBarHidden: $isNavigationBarHidden), isActive: $isActive1){
+    NavigationLink(destination: OLEng(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive1){
      Button(action: {
         let selectionFeedback = UISelectionFeedbackGenerator()
           selectionFeedback.selectionChanged()
@@ -95,7 +97,7 @@ struct OLView: View {
             
             
             
-   NavigationLink(destination: OLMath(isNavigationBarHidden: $isNavigationBarHidden), isActive: $isActive2){
+    NavigationLink(destination: OLMath(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive2){
         Button(action: {
             let selectionFeedback = UISelectionFeedbackGenerator()
               selectionFeedback.selectionChanged()
@@ -109,7 +111,7 @@ struct OLView: View {
          }
                                 
     }
-     NavigationLink(destination: OLPhy(isNavigationBarHidden: $isNavigationBarHidden), isActive: $isActive3){
+    NavigationLink(destination: OLPhy(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive3){
         Button(action: {
             let selectionFeedback = UISelectionFeedbackGenerator()
               selectionFeedback.selectionChanged()
@@ -123,7 +125,7 @@ struct OLView: View {
          }
     }
                                 
-     NavigationLink(destination: OLCs(isNavigationBarHidden: $isNavigationBarHidden), isActive: $isActive4){
+    NavigationLink(destination: OLCs(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive4){
         
         Button(action: {
             let selectionFeedback = UISelectionFeedbackGenerator()
@@ -138,7 +140,7 @@ struct OLView: View {
          }
     }
         
-    NavigationLink(destination: OLBio(isNavigationBarHidden: $isNavigationBarHidden), isActive: $isActive5){
+    NavigationLink(destination: OLBio(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive5){
         Button(action: {
             let selectionFeedback = UISelectionFeedbackGenerator()
               selectionFeedback.selectionChanged()
@@ -152,7 +154,7 @@ struct OLView: View {
          }
                                 
     }
-    NavigationLink(destination: OLGeo(isNavigationBarHidden: $isNavigationBarHidden), isActive: $isActive6){
+    NavigationLink(destination: OLGeo(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive6){
         
         Button(action: {
             let selectionFeedback = UISelectionFeedbackGenerator()
@@ -184,7 +186,7 @@ struct OLView: View {
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
-    
+  }
 }
 
 struct Firstcard: View {
