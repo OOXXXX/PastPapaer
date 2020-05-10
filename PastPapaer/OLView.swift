@@ -49,13 +49,13 @@ GeometryReader{ bounds in
                          .clipShape(Circle())
                          .shadow(color: Color.black.opacity(0.1), radius: 1, x: 0, y: 1)
                          .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 3)
-                     .padding(.top)
+                        .padding(.top)
                      
                      }
-                     .hoverEffect()
+                     
                      .offset(x: -15, y: 0)
-                 .sheet(isPresented: self.$showUpdate) {
-                     BlogView()
+                     .sheet(isPresented: self.$showUpdate) {
+                        BlogView()
                  }
                  
             }
@@ -84,8 +84,9 @@ GeometryReader{ bounds in
       })
     {
         ButtonView(name: "English")
-         
+          
         }
+        
     }
 
 //    .sheet(isPresented: self.$isActive) {
@@ -266,9 +267,11 @@ struct ButtonView: View {
                 Spacer()
                 
             }
+             
             .padding()
             Spacer()
         }
+             
             .frame(maxWidth: .infinity)
             .frame(height: 80.0)
             // .background(Color("secondary"))
@@ -279,7 +282,9 @@ struct ButtonView: View {
             .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
             .padding(.top)
             .padding(.horizontal)
+            
     }
+
     
 }
 
