@@ -34,7 +34,7 @@ struct  _18List: View {
             }
            .navigationBarTitle(Text("2018"))
         }
-        
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

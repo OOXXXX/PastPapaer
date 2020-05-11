@@ -212,7 +212,7 @@ static var previews: some View {
 
 
 struct ButtonView: View {
-    
+@State private var hovered = false
     let name: String
     
     var body: some View{
@@ -249,7 +249,11 @@ struct ButtonView: View {
             .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
             .padding(.top)
             .padding(.horizontal)
-            
+            .scaleEffect(hovered ? 0.98 : 1.0)
+            .animation(.easeInOut)
+            .onHover { isHovered in
+                self.hovered = isHovered
+            }
     }
 
     
