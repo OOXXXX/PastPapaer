@@ -135,9 +135,12 @@ GeometryReader{ bounds in
             
           })
         {
+            
             ButtonView(name: "Geography")
             
+            
          }
+        
     }
                                 
          
@@ -231,6 +234,8 @@ struct ButtonView: View {
                         .foregroundColor(Color("Color"))
                 }
                 
+                
+                
                 Spacer()
                 
             }
@@ -238,7 +243,10 @@ struct ButtonView: View {
             .padding()
             Spacer()
         }
+            
+            
              
+            
             .frame(maxWidth: .infinity)
             .frame(height: 80.0)
             // .background(Color("secondary"))
@@ -249,11 +257,14 @@ struct ButtonView: View {
             .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
             .padding(.top)
             .padding(.horizontal)
-            .scaleEffect(hovered ? 0.98 : 1.0)
-            //.animation(.easeInOut)
-            .onHover { isHovered in
-                self.hovered = isHovered
-            }
+//            .scaleEffect(hovered ? 0.98 : 1.0)
+//            .onHover { isHovered in
+//                self.hovered = isHovered
+//
+//            }
+//            .animation(.easeInOut)
+            
+            
     }
 
     
