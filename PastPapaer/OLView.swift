@@ -9,7 +9,9 @@
 import SwiftUI
 
 struct OLView: View {
-    
+   init() {
+        UINavigationBar.appearance().largeTitleTextAttributes = [.font : UIFont(name: "GillSans-Bold", size: 35)!]
+    }
      
  
     let generator = UINotificationFeedbackGenerator()
@@ -30,39 +32,7 @@ GeometryReader{ bounds in
         
         VStack {
             
-            HStack{
-                    
-                 Text("PastPaper")
-                     .modifier(FontCoustom7(size: 40))
-                     .frame(width: bounds.size.width-50, height: 20, alignment: .leading)
-                     .padding(.top)
-                     .offset(x: 13, y: 0)
-                         
-                 Button(action: {
-                     self.generator.notificationOccurred(.success)
-                     self.showUpdate.toggle() }) {
-                     Image(systemName: "bolt.horizontal.fill")
-                         .renderingMode(.original)
-                         .font(.system(size: 18, weight: .medium))
-                         .frame(width: 36, height: 36)
-                         .background(Color.white)
-                         .clipShape(Circle())
-                         .shadow(color: Color.black.opacity(0.1), radius: 1, x: 0, y: 1)
-                         .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 3)
-                        .padding(.top)
-                     
-                     }
-                     
-                     .offset(x: -15, y: 0)
-                     .sheet(isPresented: self.$showUpdate) {
-                        BlogView()
-                 }
-                 
-            }
-        
-        .frame(width: bounds.size.width, height: 35)
-        .padding(.top)
-        .padding(.bottom, -5)
+             
         
          
             
@@ -179,11 +149,8 @@ GeometryReader{ bounds in
           }
             
         }
-         .navigationBarTitle("", displayMode: .inline)
-         .navigationBarHidden(self.isNavigationBarHidden)
-         .onAppear {
-             self.isNavigationBarHidden = true
-         }
+        .navigationBarTitle(Text("PastPaper"))
+          
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
