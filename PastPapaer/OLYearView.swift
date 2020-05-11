@@ -10,6 +10,7 @@ import SwiftUI
 
 struct OLEng: View {
 @Binding var isNavigationBarHidden: Bool
+     
     
 var body: some View {
         
@@ -23,6 +24,7 @@ var body: some View {
             
             }
             .navigationBarTitle("English")
+             
             .onAppear {
                 self.isNavigationBarHidden = false
         }
@@ -46,7 +48,7 @@ var body: some View {
             
             
             }
-            .navigationBarTitle("Additional Mathematics")
+            .navigationBarTitle("Add Mathematics")
             .onAppear {
                 self.isNavigationBarHidden = false
         }

@@ -10,7 +10,7 @@ import SwiftUI
 
 struct OLView: View {
    init() {
-        UINavigationBar.appearance().largeTitleTextAttributes = [.font : UIFont(name: "GillSans-Bold", size: 35)!]
+        UINavigationBar.appearance().largeTitleTextAttributes = [.font : UIFont(name: "GillSans-Bold", size: 32)!]
     }
      
  
@@ -23,7 +23,7 @@ struct OLView: View {
     @State var isActive4 = false
     @State var isActive5 = false
     @State var isActive6 = false
-    @State var isNavigationBarHidden: Bool = true
+    @State var isNavigationBarHidden: Bool = false
     
     var body: some View {
    
@@ -250,7 +250,7 @@ struct ButtonView: View {
             .padding(.top)
             .padding(.horizontal)
             .scaleEffect(hovered ? 0.98 : 1.0)
-            .animation(.easeInOut)
+            //.animation(.easeInOut)
             .onHover { isHovered in
                 self.hovered = isHovered
             }

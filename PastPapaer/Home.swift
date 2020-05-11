@@ -116,7 +116,7 @@ struct Topbar : View {
             .padding(.vertical, 5)
             .background(Color("Color2"))
             .clipShape(Capsule())
-            .animation(.spring(response: 0.5, dampingFraction: 0.5, blendDuration: 0.1))
+            //.animation(.spring(response: 0.5, dampingFraction: 0.5, blendDuration: 0.1))
             
     
             
