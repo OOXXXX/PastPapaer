@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina5_9" orientation="portrait" appearance="dark"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -17,18 +17,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="dMZ-qE-zW3">
-                                <rect key="frame" x="-51" y="519" width="476" height="293"/>
+                                <rect key="frame" x="-50.666666666666657" y="519" width="476.33333333333326" height="293"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="476" id="74R-OW-yEr"/>
                                     <constraint firstAttribute="height" constant="293" id="vIv-3Y-26a"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PastPaperO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMQ-in-DnS">
+                                <rect key="frame" x="89.666666666666686" y="228" width="196" height="56"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020 Patrick Zhu™️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obz-Eh-b4g">
+                                <rect key="frame" x="109.66666666666669" y="742.33333333333337" width="156" height="22.333333333333371"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" name="background4"/>
                         <color key="tintColor" name="background2"/>
                         <constraints>
                             <constraint firstItem="dMZ-qE-zW3" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6VA-TC-LPP"/>
+                            <constraint firstItem="obz-Eh-b4g" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="347.5" id="EEo-VG-uzK"/>
+                            <constraint firstItem="obz-Eh-b4g" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="EJ2-eU-vXC"/>
+                            <constraint firstItem="aMQ-in-DnS" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="lbj-mg-yN9"/>
                             <constraint firstItem="dMZ-qE-zW3" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="259.5" id="wkA-2k-vSC"/>
+                            <constraint firstItem="aMQ-in-DnS" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-150" id="wtm-0D-r55"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
