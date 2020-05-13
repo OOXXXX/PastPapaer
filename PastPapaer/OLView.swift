@@ -8,6 +8,10 @@
 
 import SwiftUI
 
+func impact() {
+    UIImpactFeedbackGenerator(style: .light).impactOccurred()
+}
+
 struct OLView: View {
    init() {
         UINavigationBar.appearance().largeTitleTextAttributes = [.font : UIFont(name: "GillSans-Bold", size: 32)!]
@@ -23,6 +27,8 @@ struct OLView: View {
     @State var isActive4 = false
     @State var isActive5 = false
     @State var isActive6 = false
+    @State var tap = false
+    @State var press = false
     @State var isNavigationBarHidden: Bool = false
     
     var body: some View {
@@ -45,8 +51,9 @@ GeometryReader{ bounds in
            
     NavigationLink(destination: OLEng(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive1){
      Button(action: {
-        let selectionFeedback = UISelectionFeedbackGenerator()
-          selectionFeedback.selectionChanged()
+//        let selectionFeedback = UISelectionFeedbackGenerator()
+//          selectionFeedback.selectionChanged()
+        impact()
         
         self.isActive1 = true
         
@@ -54,8 +61,10 @@ GeometryReader{ bounds in
       })
     {
         ButtonView(name: "English")
-          
+        
+           
         }
+        
         
     }
 
