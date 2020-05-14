@@ -35,7 +35,8 @@ struct ClockView: View {
                 }
             }
             Text("Stay hungry Stay foolish")
-                .padding(.top)
+            .font(.custom("Futura", size: 15))
+                .padding(.top, 7)
         }
     }
 
@@ -138,3 +139,9 @@ struct SingleFlipView: View {
 
 }
 
+
+struct ClockView_Previews: PreviewProvider {
+    static var previews: some View {
+        ClockView()
+    }
+}
