@@ -60,7 +60,7 @@ GeometryReader{ bounds in
         
       })
     {
-        ButtonView(name: "English")
+        ButtonView(name: "English", level: "Olevel")
         
            
         }
@@ -87,7 +87,7 @@ GeometryReader{ bounds in
           })
         {
         
-            ButtonView(name: "Mathematics A")
+            ButtonView(name: "Mathematics A", level: "Olevel")
          }
                                 
     }
@@ -101,7 +101,7 @@ GeometryReader{ bounds in
           })
         {
 
-            ButtonView(name: "Physics")
+            ButtonView(name: "Physics", level: "Olevel")
          }
     }
                                 
@@ -116,7 +116,7 @@ GeometryReader{ bounds in
           })
         {
 
-            ButtonView(name: "Computer Science")
+            ButtonView(name: "Computer Science", level: "Olevel")
          }
     }
         
@@ -130,7 +130,7 @@ GeometryReader{ bounds in
           })
         {
 
-            ButtonView(name: "Mathematics D")
+            ButtonView(name: "Mathematics D", level: "Olevel")
          }
                                 
     }
@@ -145,7 +145,7 @@ GeometryReader{ bounds in
           })
         {
             
-            ButtonView(name: "Geography")
+            ButtonView(name: "Geography", level: "Olevel")
             
             
          }
@@ -226,6 +226,7 @@ static var previews: some View {
 struct ButtonView: View {
 @State private var hovered = false
     let name: String
+    let level: String
     
     var body: some View{
      
@@ -238,7 +239,7 @@ struct ButtonView: View {
                         .foregroundColor(Color("background2"))
                         .padding(.bottom, -10)
                     
-                    Text("Olevel")
+                    Text(level)
                         .modifier(FontCoustom2(size: 18))
                         .foregroundColor(Color("Color"))
                 }

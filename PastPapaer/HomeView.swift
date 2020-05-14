@@ -16,21 +16,72 @@ struct HomeView: View {
             VStack {
                 
            ClockView()
+            
            .scaleEffect(0.85)
            .padding(.horizontal)
-           .frame(height: 150)
-           .overlay(RoundedRectangle(cornerRadius: 10)
-           .stroke(Color.gray.opacity(0.9), lineWidth: 3))
-           .shadow(radius: 5)
+           .frame(width: screen.width-30, height: 140)
            .background(Color("Clockbackground"))
+           .cornerRadius(12)
+           .overlay(RoundedRectangle(cornerRadius: 12)
+           .stroke(Color.gray.opacity(0.1), lineWidth: 2.5))
+           .shadow(color: Color("ClockShadow"), radius: 5, x: 0, y: 2)
+           
+  
            .padding(.top)
-           Spacer()
-             
+                
+           
+                
+            Button(action: {
+                let selectionFeedback = UISelectionFeedbackGenerator()
+                  selectionFeedback.selectionChanged()
+                
+                                 
+              })
+            {
+
+                ButtonView(name: "Olevel", level: "CAIE")
+             }
+                
+            Button(action: {
+                let selectionFeedback = UISelectionFeedbackGenerator()
+                  selectionFeedback.selectionChanged()
+                
+                                 
+              })
+            {
+
+                ButtonView(name: "Olevel", level: "CAIE AQA Edexcel")
+             }
+            
+            Button(action: {
+                let selectionFeedback = UISelectionFeedbackGenerator()
+                  selectionFeedback.selectionChanged()
+                
+                                 
+              })
+            {
+
+                ButtonView(name: "Alevel", level: "CAIE AQA Edexcel")
+             }
+                
+            Button(action: {
+                let selectionFeedback = UISelectionFeedbackGenerator()
+                  selectionFeedback.selectionChanged()
+                
+                                 
+              })
+            {
+
+                ButtonView(name: "IB", level: "Group1-6")
+             }
+                
+                
+           
+              Spacer()
             }
-        
             .navigationBarTitle("Home")
         }
-    
+    .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
