@@ -60,7 +60,7 @@ GeometryReader{ bounds in
         
       })
     {
-        ButtonView(name: "English", level: "Olevel")
+        ButtonView(name: "English", level: "1123")
         
            
         }
@@ -87,7 +87,7 @@ GeometryReader{ bounds in
           })
         {
         
-            ButtonView(name: "Mathematics A", level: "Olevel")
+            ButtonView(name: "Mathematics A", level: "4037")
          }
                                 
     }
@@ -101,7 +101,7 @@ GeometryReader{ bounds in
           })
         {
 
-            ButtonView(name: "Physics", level: "Olevel")
+            ButtonView(name: "Physics", level: "5054")
          }
     }
                                 
@@ -116,7 +116,7 @@ GeometryReader{ bounds in
           })
         {
 
-            ButtonView(name: "Computer Science", level: "Olevel")
+            ButtonView(name: "Computer Science", level: "2210")
          }
     }
         
@@ -130,7 +130,7 @@ GeometryReader{ bounds in
           })
         {
 
-            ButtonView(name: "Mathematics D", level: "Olevel")
+            ButtonView(name: "Mathematics D", level: "4024")
          }
                                 
     }
@@ -145,7 +145,7 @@ GeometryReader{ bounds in
           })
         {
             
-            ButtonView(name: "Geography", level: "Olevel")
+            ButtonView(name: "Geography", level: "2217")
             
             
          }
@@ -161,7 +161,7 @@ GeometryReader{ bounds in
           }
             
         }
-        .navigationBarTitle(Text("PastPaper"))
+        .navigationBarHidden(true)
           
         }
         .navigationViewStyle(StackNavigationViewStyle())

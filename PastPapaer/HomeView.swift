@@ -9,6 +9,11 @@
 import SwiftUI
 
 struct HomeView: View {
+@State var showOL = false
+@State var showIG = false
+@State var showAL = false
+@State var showIB = false
+    
     var body: some View {
         
         NavigationView{
@@ -30,17 +35,19 @@ struct HomeView: View {
            .padding(.top)
                 
            
-                
+                NavigationLink(destination: OLView(), isActive: self.$showOL){
             Button(action: {
                 let selectionFeedback = UISelectionFeedbackGenerator()
                   selectionFeedback.selectionChanged()
                 
+                self.showOL = true
                                  
               })
             {
 
                 ButtonView(name: "Olevel", level: "CAIE")
              }
+        }
                 
             Button(action: {
                 let selectionFeedback = UISelectionFeedbackGenerator()
@@ -50,7 +57,7 @@ struct HomeView: View {
               })
             {
 
-                ButtonView(name: "Olevel", level: "CAIE AQA Edexcel")
+                ButtonView(name: "IGCSE", level: "CAIE AQA Edexcel")
              }
             
             Button(action: {
