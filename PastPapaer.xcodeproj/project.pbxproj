@@ -295,6 +295,9 @@
 		18E956E12415444A00DAF229 /* 2017.json in Resources */ = {isa = PBXBuildFile; fileRef = 18E956E02415444A00DAF229 /* 2017.json */; };
 		18EB60012418D0D800132DBF /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 18EB60002418D0D800132DBF /* Lottie */; settings = {ATTRIBUTES = (Weak, ); }; };
 		18F5CE80245F08F600D9D627 /* DocsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F5CE7F245F08F600D9D627 /* DocsView.swift */; };
+		18FFE9D4246D69FE00FC1DB7 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFE9D3246D69FE00FC1DB7 /* ClockView.swift */; };
+		18FFE9D6246D6A2900FC1DB7 /* ClockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFE9D5246D6A2900FC1DB7 /* ClockViewModel.swift */; };
+		18FFE9D8246D6A4000FC1DB7 /* FlipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFE9D7246D6A4000FC1DB7 /* FlipViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -588,6 +591,9 @@
 		18E956D82415430B00DAF229 /* OLEng17Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLEng17Data.swift; sourceTree = "<group>"; };
 		18E956E02415444A00DAF229 /* 2017.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 2017.json; sourceTree = "<group>"; };
 		18F5CE7F245F08F600D9D627 /* DocsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocsView.swift; sourceTree = "<group>"; };
+		18FFE9D3246D69FE00FC1DB7 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		18FFE9D5246D6A2900FC1DB7 /* ClockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewModel.swift; sourceTree = "<group>"; };
+		18FFE9D7246D6A4000FC1DB7 /* FlipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1421,9 +1427,11 @@
 				18CF47882414A436006F01FA /* 2019 */,
 				18E956C1241535A800DAF229 /* JSON */,
 				18CF478A2414A52E006F01FA /* Delegate */,
-				18367EC524151F06004B634D /* BlogView.swift */,
+				18FFE9D9246D6A4800FC1DB7 /* ViewModel */,
 				18DB6B45241639710050F099 /* PlaySound.swift */,
 				180408E32413CFE6005979A5 /* Support.swift */,
+				18FFE9D3246D69FE00FC1DB7 /* ClockView.swift */,
+				18367EC524151F06004B634D /* BlogView.swift */,
 				18B21DC52444A9CF007ECAE7 /* Home.swift */,
 				180408C72413C91D005979A5 /* OLView.swift */,
 				18CC130A245C12A200C22204 /* IGView.swift */,
@@ -1899,6 +1907,15 @@
 			path = 2017Data;
 			sourceTree = "<group>";
 		};
+		18FFE9D9246D6A4800FC1DB7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				18FFE9D5246D6A2900FC1DB7 /* ClockViewModel.swift */,
+				18FFE9D7246D6A4000FC1DB7 /* FlipViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2135,6 +2152,7 @@
 				1833979B246138B6002F0D88 /* OLGeo13List.swift in Sources */,
 				18468223245FDD6B0054B8D0 /* OLYearView.swift in Sources */,
 				18DB6B1824161F7B0050F099 /* OLEng14List.swift in Sources */,
+				18FFE9D6246D6A2900FC1DB7 /* ClockViewModel.swift in Sources */,
 				18D5B44924611656001B6774 /* OLMath19List.swift in Sources */,
 				183397DF24613E7A002F0D88 /* OLCs10Data.swift in Sources */,
 				18D5B48D2461251C001B6774 /* OLCs16Data.swift in Sources */,
@@ -2209,6 +2227,7 @@
 				18339799246138AC002F0D88 /* OLBio13List.swift in Sources */,
 				183397DB24613E68002F0D88 /* OLMath10Data.swift in Sources */,
 				18D5B481246124DD001B6774 /* OLPhy16List.swift in Sources */,
+				18FFE9D4246D69FE00FC1DB7 /* ClockView.swift in Sources */,
 				18D5B483246124EA001B6774 /* OLCs16List.swift in Sources */,
 				183397E124613E83002F0D88 /* OLBio10Data.swift in Sources */,
 				18DB6B3C2416211A0050F099 /* OLEng11List.swift in Sources */,
@@ -2225,6 +2244,7 @@
 				18D5B46624611B7B001B6774 /* OLGeo17List.swift in Sources */,
 				1833976F24613362002F0D88 /* OLCs15List.swift in Sources */,
 				18D5B44D24611689001B6774 /* OLPhy19List.swift in Sources */,
+				18FFE9D8246D6A4000FC1DB7 /* FlipViewModel.swift in Sources */,
 				18DB6B282416201B0050F099 /* OLEng13Data.swift in Sources */,
 				18D5B45324611737001B6774 /* OLMath19Data.swift in Sources */,
 				1833977D246133BF002F0D88 /* OLGeo15Data.swift in Sources */,

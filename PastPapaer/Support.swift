@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Foundation
 
 struct DoubleRadiusShadow: ViewModifier {
     func body(content: Content) -> some View {
@@ -114,3 +115,25 @@ extension View {
         modifier(TouchGestureViewModifier(touchBegan: touchBegan, touchEnd: touchEnd))
     }
 }
+
+extension Color {
+
+    static var background: Color { Color("Clockbackground") }
+    static var flipBackground: Color { Color("flip_background") }
+    static var separator: Color { Color("separator") }
+    static var textColor: Color { Color("text_color") }
+
+}
+
+
+
+extension DateFormatter {
+
+    static var timeFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HHmmss"
+        return formatter
+    }
+
+}
+
