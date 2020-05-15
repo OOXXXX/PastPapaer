@@ -10,437 +10,195 @@ import SwiftUI
 
 struct IGView: View {
     let generator = UINotificationFeedbackGenerator()
-    @State var showUpdate = false
-    @State var show2019 = false
-    
-    var body: some View {
         
+        @State var showUpdate = false
+        @State var show2019 = false
+        @State var isActive1 = false
+        @State var isActive2 = false
+        @State var isActive3 = false
+        @State var isActive4 = false
+        @State var isActive5 = false
+        @State var isActive6 = false
+        @State var isActive7 = false
+        @State var isActive8 = false
+        @State var isActive9 = false
+        @State var isActive10 = false
+        @State var tap = false
+        @State var press = false
+        @State var isNavigationBarHidden: Bool = false
         
-        VStack {
-            HStack{
-           
-                 Text("PastPaper")
-                     .modifier(FontCoustom7(size: 40))
-                     .frame(width: screen.width-50, height: 20, alignment: .leading)
-                     .padding(.top)
-                     .offset(x: 13, y: 0)
-                         
-                 Button(action: {
-                     self.generator.notificationOccurred(.success)
-                     self.showUpdate.toggle() }) {
-                     Image(systemName: "bolt.horizontal.fill")
-                         .renderingMode(.original)
-                         .font(.system(size: 18, weight: .medium))
-                         .frame(width: 36, height: 36)
-                         .background(Color.white)
-                         .clipShape(Circle())
-                         .shadow(color: Color.black.opacity(0.1), radius: 1, x: 0, y: 1)
-                         .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 3)
-                     .padding(.top)
-                     
-                     }
-                     .offset(x: -15, y: 0)
-                     .sheet(isPresented: $showUpdate) {
-                     BlogView()
-                 }
-                 
+        var body: some View {
+       
+    GeometryReader{ bounds in
+        NavigationView{
+            
+            VStack {
+        
+                ScrollView(.vertical, showsIndicators: false){
+        
+         
+               
+        NavigationLink(destination: OLEng(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive1){
+         Button(action: {
+    //        let selectionFeedback = UISelectionFeedbackGenerator()
+    //          selectionFeedback.selectionChanged()
+            impact()
+            
+            self.isActive1 = true
+            
+            
+          })
+        {
+            ButtonView(name: "Mathematics", level: "0580")
+            
+               
             }
-        
-        .frame(width: screen.width, height: 35)
-        .padding(.top)
-        .padding(.bottom, -5)
-        
-        ScrollView(.vertical, showsIndicators: false){
-            
-            
-
-    Button(action: {
-        let selectionFeedback = UISelectionFeedbackGenerator()
-          selectionFeedback.selectionChanged()
-        
-        self.show2019.toggle()
-        
-      })
-    {
-
-        VStack(alignment: .center) {
-            HStack {
-                VStack(alignment: .leading) {
-                    Text("Mathematics")
-                        .modifier(FontCoustom5(size: 38))
-                        .foregroundColor(Color("background2"))
-                        .padding(.bottom, -10)
-                    
-                    Text("IGCSE")
-                        .modifier(FontCoustom2(size: 18))
-                        .foregroundColor(Color("Color"))
-                }
+        }
+     
                 
-                Spacer()
                 
-            }
-            .padding()
-            Spacer()
-        }
-        .frame(width: screen.width-30, height: 80.0)
-            // .background(Color("secondary"))
-            .background(Color("Color-2"))
-            .cornerRadius(11)
-            .overlay(RoundedRectangle(cornerRadius: 10)
-            .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-            .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
-            .padding(.top)
-     }
-                            
-    .sheet(isPresented: self.$show2019) {
-        TextShimmerView()
-    }
-    
-        Button(action: {
-            let selectionFeedback = UISelectionFeedbackGenerator()
-              selectionFeedback.selectionChanged()
-            
-            self.show2019.toggle()
-            
-          })
-        {
-
-            VStack(alignment: .center) {
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("Economics")
-                            .modifier(FontCoustom5(size: 38))
-                            .foregroundColor(Color("background2"))
-                            .padding(.bottom, -10)
-                        
-                        Text("IGCSE")
-                            .modifier(FontCoustom2(size: 18))
-                            .foregroundColor(Color("Color"))
-                    }
-                    
-                    Spacer()
-                    
-                }
-                .padding()
-                Spacer()
-            }
-            .frame(width: screen.width-30, height: 80.0)
-                // .background(Color("secondary"))
-                .background(Color("Color-2"))
-                .cornerRadius(11)
-                .overlay(RoundedRectangle(cornerRadius: 10)
-                .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-                .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
-                .padding(.top)
-         }
-                                
-        .sheet(isPresented: self.$show2019) {
-            TextShimmerView()
-        }
-        
-        Button(action: {
-            let selectionFeedback = UISelectionFeedbackGenerator()
-              selectionFeedback.selectionChanged()
-            
-            self.show2019.toggle()
-            
-          })
-        {
-
-            VStack(alignment: .center) {
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("Physics")
-                            .modifier(FontCoustom5(size: 38))
-                            .foregroundColor(Color("background2"))
-                            .padding(.bottom, -10)
-                        
-                        Text("IGCSE")
-                            .modifier(FontCoustom2(size: 18))
-                            .foregroundColor(Color("Color"))
-                    }
-                    
-                    Spacer()
-                    
-                }
-                .padding()
-                Spacer()
-            }
-            .frame(width: screen.width-30, height: 80.0)
-                // .background(Color("secondary"))
-                .background(Color("Color-2"))
-                .cornerRadius(11)
-                .overlay(RoundedRectangle(cornerRadius: 10)
-                .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-                .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
-                .padding(.top)
-         }
-                                
-        .sheet(isPresented: self.$show2019) {
-            TextShimmerView()
-        }
-        
-        Button(action: {
-            let selectionFeedback = UISelectionFeedbackGenerator()
-              selectionFeedback.selectionChanged()
-            
-            self.show2019.toggle()
-            
-          })
-        {
-
-            VStack(alignment: .center) {
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("English SL")
-                            .modifier(FontCoustom5(size: 38))
-                            .foregroundColor(Color("background2"))
-                            .padding(.bottom, -10)
-                        
-                        Text("IGCSE")
-                            .modifier(FontCoustom2(size: 18))
-                            .foregroundColor(Color("Color"))
-                    }
-                    
-                    Spacer()
-                    
-                }
-                .padding()
-                Spacer()
-            }
-            .frame(width: screen.width-30, height: 80.0)
-                // .background(Color("secondary"))
-                .background(Color("Color-2"))
-                .cornerRadius(11)
-                .overlay(RoundedRectangle(cornerRadius: 10)
-                .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-                .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
-                .padding(.top)
-         }
-                                
-        .sheet(isPresented: self.$show2019) {
-            TextShimmerView()
-        }
-        
-        Button(action: {
-            let selectionFeedback = UISelectionFeedbackGenerator()
-              selectionFeedback.selectionChanged()
-            
-            self.show2019.toggle()
-            
-          })
-        {
-
-            VStack(alignment: .center) {
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("Biology")
-                            .modifier(FontCoustom5(size: 38))
-                            .foregroundColor(Color("background2"))
-                            .padding(.bottom, -10)
-                        
-                        Text("IGCSE")
-                            .modifier(FontCoustom2(size: 18))
-                            .foregroundColor(Color("Color"))
-                    }
-                    
-                    Spacer()
-                    
-                }
-                .padding()
-                Spacer()
-            }
-            .frame(width: screen.width-30, height: 80.0)
-                // .background(Color("secondary"))
-                .background(Color("Color-2"))
-                .cornerRadius(11)
-                .overlay(RoundedRectangle(cornerRadius: 10)
-                .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-                .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
-                .padding(.top)
-         }
-                                
-        .sheet(isPresented: self.$show2019) {
-            TextShimmerView()
-        }
-        
-        Button(action: {
-            let selectionFeedback = UISelectionFeedbackGenerator()
-              selectionFeedback.selectionChanged()
-            
-            self.show2019.toggle()
-            
-          })
-        {
-
-            VStack(alignment: .center) {
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("Geography")
-                            .modifier(FontCoustom5(size: 38))
-                            .foregroundColor(Color("background2"))
-                            .padding(.bottom, -10)
-                        
-                        Text("IGCSE")
-                            .modifier(FontCoustom2(size: 18))
-                            .foregroundColor(Color("Color"))
-                    }
-                    
-                    Spacer()
-                    
-                }
-                .padding()
-                Spacer()
-            }
-            .frame(width: screen.width-30, height: 80.0)
-                // .background(Color("secondary"))
-                .background(Color("Color-2"))
-                .cornerRadius(11)
-                .overlay(RoundedRectangle(cornerRadius: 10)
-                .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-                .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
-                .padding(.top)
-         }
-                                
-        .sheet(isPresented: self.$show2019) {
-            TextShimmerView()
-        }
-        
-        Button(action: {
-            let selectionFeedback = UISelectionFeedbackGenerator()
-              selectionFeedback.selectionChanged()
-            
-            self.show2019.toggle()
-            
-          })
-        {
-
-            VStack(alignment: .center) {
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("Computer Science")
-                            .modifier(FontCoustom5(size: 38))
-                            .foregroundColor(Color("background2"))
-                            .padding(.bottom, -10)
-                        
-                        Text("IGCSE")
-                            .modifier(FontCoustom2(size: 18))
-                            .foregroundColor(Color("Color"))
-                    }
-                    
-                    Spacer()
-                    
-                }
-                .padding()
-                Spacer()
-            }
-            .frame(width: screen.width-30, height: 80.0)
-                // .background(Color("secondary"))
-                .background(Color("Color-2"))
-                .cornerRadius(11)
-                .overlay(RoundedRectangle(cornerRadius: 10)
-                .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-                .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
-                .padding(.top)
-         }
-                                
-        .sheet(isPresented: self.$show2019) {
-            TextShimmerView()
-        }
-        
-      
+                
+        NavigationLink(destination: OLMath(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive2){
             Button(action: {
                 let selectionFeedback = UISelectionFeedbackGenerator()
                   selectionFeedback.selectionChanged()
                 
-                self.show2019.toggle()
+                self.isActive2 = true
+                
+              })
+            {
+            
+                ButtonView(name: "Economics", level: "0455")
+             }
+                                    
+        }
+        NavigationLink(destination: OLPhy(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive3){
+            Button(action: {
+                let selectionFeedback = UISelectionFeedbackGenerator()
+                  selectionFeedback.selectionChanged()
+                
+                self.isActive3 = true
                 
               })
             {
 
-                VStack(alignment: .center) {
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text("History")
-                                .modifier(FontCoustom5(size: 38))
-                                .foregroundColor(Color("background2"))
-                                .padding(.bottom, -10)
-                            
-                            Text("IGCSE")
-                                .modifier(FontCoustom2(size: 18))
-                                .foregroundColor(Color("Color"))
-                        }
-                        
-                        Spacer()
-                        
-                    }
-                    .padding()
-                    Spacer()
-                }
-                .frame(width: screen.width-30, height: 80.0)
-                    // .background(Color("secondary"))
-                    .background(Color("Color-2"))
-                    .cornerRadius(11)
-                    .overlay(RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-                    .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
-                    .padding(.top)
+                ButtonView(name: "Physics", level: "0625")
              }
+        }
                                     
-            .sheet(isPresented: self.$show2019) {
-                TextShimmerView()
-            }
+        NavigationLink(destination: OLCs(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive4){
             
             Button(action: {
                 let selectionFeedback = UISelectionFeedbackGenerator()
                   selectionFeedback.selectionChanged()
                 
-                self.show2019.toggle()
+                self.isActive4 = true
                 
               })
             {
 
-                VStack(alignment: .center) {
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text("Chinese")
-                                .modifier(FontCoustom5(size: 38))
-                                .foregroundColor(Color("background2"))
-                                .padding(.bottom, -10)
-                            
-                            Text("IGCSE")
-                                .modifier(FontCoustom2(size: 18))
-                                .foregroundColor(Color("Color"))
-                        }
-                        
-                        Spacer()
-                        
-                    }
-                    .padding()
-                    Spacer()
-                }
-                .frame(width: screen.width-30, height: 80.0)
-                    // .background(Color("secondary"))
-                    .background(Color("Color-2"))
-                    .cornerRadius(11)
-                    .overlay(RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-                    .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
-                    .padding(.top)
+                ButtonView(name: "ESL", level: "0510 & 0991")
+             }
+        }
+            
+        NavigationLink(destination: OLBio(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive5){
+            Button(action: {
+                let selectionFeedback = UISelectionFeedbackGenerator()
+                  selectionFeedback.selectionChanged()
+                
+                self.isActive5 = true
+                
+              })
+            {
+
+                ButtonView(name: "Biology", level: "0610")
              }
                                     
-            .sheet(isPresented: self.$show2019) {
-                TextShimmerView()
-            }
+        }
+                    
+        NavigationLink(destination: OLGeo(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive6){
             
+            Button(action: {
+                let selectionFeedback = UISelectionFeedbackGenerator()
+                  selectionFeedback.selectionChanged()
+                
+                self.isActive6 = true
+                
+              })
+            {
+                
+                ButtonView(name: "Computer Science", level: "0460")
+    
+             }
+            
+        }
+            
+        NavigationLink(destination: OLGeo(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive7){
+            
+            Button(action: {
+                let selectionFeedback = UISelectionFeedbackGenerator()
+                  selectionFeedback.selectionChanged()
+                
+                self.isActive7 = true
+                
+              })
+            {
+                
+                ButtonView(name: "Geography", level: "0478")
+                
+                
+             }
+            
+        }
+        
+        NavigationLink(destination: OLGeo(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive8){
+            
+            Button(action: {
+                let selectionFeedback = UISelectionFeedbackGenerator()
+                  selectionFeedback.selectionChanged()
+                
+                self.isActive8 = true
+                
+              })
+            {
+                
+                ButtonView(name: "History", level: "0470")
+                
+                
+             }
+            
+        }
+        
+        NavigationLink(destination: OLGeo(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive9){
+            
+            Button(action: {
+                let selectionFeedback = UISelectionFeedbackGenerator()
+                  selectionFeedback.selectionChanged()
+                
+                self.isActive9 = true
+                
+              })
+            {
+                
+                ButtonView(name: "Chinese", level: "0509")
+                
+                
+             }
+            
+        }
             
             
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .padding(.bottom, 28)
-          }
-    
+                .padding(.bottom, 28)
+              }
+                
+            }
+            .navigationBarTitle("IGCSE")
+              
+            }
+            .navigationViewStyle(StackNavigationViewStyle())
         }
-    }
+      }
 }
 
 

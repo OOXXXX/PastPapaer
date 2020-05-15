@@ -150,7 +150,7 @@ struct SwitchView: View {
                 .offset(x: self.selected == 0 ? -75 : 0, y: 0)
                 .offset(x: self.selected == 1 ? 0 : 0, y: 0)
                 .offset(x: self.selected == 2 ? 75 : 0, y: 0)
-                .animation(Animation.easeInOut(duration: 0.2))
+                .animation(Animation.easeInOut(duration: 0.25))
                 
                 
                    
