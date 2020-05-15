@@ -161,7 +161,7 @@ GeometryReader{ bounds in
           }
             
         }
-        .navigationBarHidden(true)
+        .navigationBarTitle("Olevel")
           
         }
         .navigationViewStyle(StackNavigationViewStyle())

@@ -13,7 +13,7 @@ struct Home: View {
         
         var body: some View {
             
-            VStack(spacing: 14){
+            ZStack {
                 if self.selected == 0{
                     OLView()
                 }
@@ -26,9 +26,13 @@ struct Home: View {
                      
                 }
  
-                Topbar(selected: self.$selected).offset(x: screen.width/2-92, y:-5)
-                    .padding(.bottom, 3.5)
-                    .edgesIgnoringSafeArea(.bottom)
+                VStack {
+                    Text(" ")
+                    
+                    Spacer()
+                    SwitchView(selected: self.$selected)
+                    .padding(.bottom, 10)
+                }
  
         }
                
@@ -124,3 +128,66 @@ struct Topbar : View {
     
 }
 
+struct SwitchView: View {
+@Binding var selected : Int
+    
+    var body: some View {
+               ZStack {
+                
+                Rectangle()
+                
+                .foregroundColor((Color(#colorLiteral(red: 0.9411764706, green: 0.937254902, blue: 0.937254902, alpha: 0.95))))
+                .frame(width: 240, height: 41)
+                .blendMode(.sourceAtop)
+                .clipShape(RoundedRectangle(cornerRadius: 16))
+                
+               
+                
+                Rectangle()
+                .foregroundColor((Color(#colorLiteral(red: 0.7960784314, green: 0.7960784314, blue: 0.7960784314, alpha: 1))))
+                .frame(width: 80, height: 33)
+                .clipShape(RoundedRectangle(cornerRadius: 15))
+                .offset(x: self.selected == 0 ? -75 : 0, y: 0)
+                .offset(x: self.selected == 1 ? 0 : 0, y: 0)
+                .offset(x: self.selected == 2 ? 75 : 0, y: 0)
+                .animation(Animation.easeInOut(duration: 0.2))
+                
+                
+                   
+                   Group {
+                       HStack {
+                           
+                           Button("Olevel"){
+                            self.selected = 0
+                           }
+                           .font(.custom("Futura", size: 18))
+                           .padding(.horizontal, 8)
+                           .foregroundColor(self.selected == 0 ? Color.white : Color.gray)
+                           //.animation(Animation.easeInOut.delay(0.5))
+                           
+                           Button("IGCSE"){
+                            self.selected = 1
+                           }
+                           .font(.custom("Futura", size: 18))
+                           .padding(.horizontal, 8)
+                           //.animation(Animation.easeInOut.delay(0.5))
+                           .foregroundColor(self.selected == 1 ? Color.white : Color.gray)
+                           //.foregroundColor(Color.gray)
+                           
+                           
+                           
+                           Button("Alevel"){
+                            self.selected = 2
+                           }
+                           .font(.custom("Futura", size: 18))
+                           .padding(.horizontal, 8)
+                           .foregroundColor(self.selected == 2 ? Color.white : Color.gray)
+                           //.animation(Animation.easeInOut.delay(0.5))
+                       
+                       }
+                       
+                   }
+        
+               }
+    }
+}
