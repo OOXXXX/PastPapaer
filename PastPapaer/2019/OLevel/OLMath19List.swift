@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct OMath19ListView: View {
-
+@Environment(\.presentationMode) var presentationMode
 @State var selected = 1
 
 var body: some View {
@@ -33,6 +33,9 @@ var body: some View {
             
         }
        .navigationBarTitle(Text("2019"))
+       .navigationBarItems(trailing: Button("Dismiss") {
+            self.presentationMode.wrappedValue.dismiss()
+        })
     }
     .navigationViewStyle(StackNavigationViewStyle())
     

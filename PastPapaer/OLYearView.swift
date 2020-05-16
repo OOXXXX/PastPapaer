@@ -236,6 +236,7 @@ struct OLEngYearView: View {
                         
                     .sheet(isPresented: self.$show2018) {
                         _18List()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("17") {
@@ -249,6 +250,7 @@ struct OLEngYearView: View {
                         
                     .sheet(isPresented: self.$show2017) {
                         _17List()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("16") {
@@ -262,6 +264,7 @@ struct OLEngYearView: View {
                         
                     .sheet(isPresented: self.$show2016) {
                         _16L()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("15") {
@@ -275,6 +278,7 @@ struct OLEngYearView: View {
                         
                     .sheet(isPresented: self.$show2015) {
                         _15L()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("14") {
@@ -288,6 +292,7 @@ struct OLEngYearView: View {
                         
                     .sheet(isPresented: self.$show2014) {
                         _14L()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("13") {
@@ -301,6 +306,7 @@ struct OLEngYearView: View {
                         
                     .sheet(isPresented: self.$show2013) {
                         _13L()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("12") {
@@ -314,6 +320,7 @@ struct OLEngYearView: View {
                         
                     .sheet(isPresented: self.$show2012) {
                         _12L()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("11") {
@@ -327,6 +334,7 @@ struct OLEngYearView: View {
                         
                     .sheet(isPresented: self.$show2011) {
                         _11L()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                   
                     
@@ -341,6 +349,7 @@ struct OLEngYearView: View {
                         
                     .sheet(isPresented: self.$show2010) {
                         _10L()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     
@@ -385,6 +394,7 @@ struct OLMathYearView: View {
                         
                     .sheet(isPresented: self.$show2019) {
                         OMath19ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("18") {
@@ -398,6 +408,7 @@ struct OLMathYearView: View {
                         
                     .sheet(isPresented: self.$show2018) {
                         OMath18ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("17") {
@@ -411,6 +422,7 @@ struct OLMathYearView: View {
                         
                     .sheet(isPresented: self.$show2017) {
                         OMath17ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("16") {
@@ -424,6 +436,7 @@ struct OLMathYearView: View {
                         
                     .sheet(isPresented: self.$show2016) {
                         OMath16ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("15") {
@@ -437,6 +450,7 @@ struct OLMathYearView: View {
                         
                     .sheet(isPresented: self.$show2015) {
                         OMath15ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("14") {
@@ -450,6 +464,7 @@ struct OLMathYearView: View {
                         
                     .sheet(isPresented: self.$show2014) {
                         OMath14ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("13") {
@@ -463,6 +478,7 @@ struct OLMathYearView: View {
                         
                     .sheet(isPresented: self.$show2013) {
                         OMath13ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("12") {
@@ -476,6 +492,7 @@ struct OLMathYearView: View {
                         
                     .sheet(isPresented: self.$show2012) {
                         OMath12ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("11") {
@@ -489,6 +506,7 @@ struct OLMathYearView: View {
                         
                     .sheet(isPresented: self.$show2011) {
                         OMath11ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("10") {
@@ -502,6 +520,7 @@ struct OLMathYearView: View {
                         
                     .sheet(isPresented: self.$show2011) {
                         OMath10ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     
@@ -546,6 +565,7 @@ struct OLPhyYearView: View {
                         
                     .sheet(isPresented: self.$show2019) {
                         OPhy19ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("18") {
@@ -559,6 +579,7 @@ struct OLPhyYearView: View {
                         
                     .sheet(isPresented: self.$show2018) {
                         OPhy18ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("17") {
@@ -572,6 +593,7 @@ struct OLPhyYearView: View {
                         
                     .sheet(isPresented: self.$show2017) {
                         OPhy17ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("16") {
@@ -585,6 +607,7 @@ struct OLPhyYearView: View {
                         
                     .sheet(isPresented: self.$show2016) {
                         OPhy16ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("15") {
@@ -598,6 +621,7 @@ struct OLPhyYearView: View {
                         
                     .sheet(isPresented: self.$show2015) {
                         OPhy15ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("14") {
@@ -611,6 +635,7 @@ struct OLPhyYearView: View {
                         
                     .sheet(isPresented: self.$show2014) {
                         OPhy14ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("13") {
@@ -624,6 +649,7 @@ struct OLPhyYearView: View {
                         
                     .sheet(isPresented: self.$show2013) {
                         OPhy13ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("12") {
@@ -637,6 +663,7 @@ struct OLPhyYearView: View {
                         
                     .sheet(isPresented: self.$show2012) {
                         OPhy12ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("11") {
@@ -650,6 +677,7 @@ struct OLPhyYearView: View {
                         
                     .sheet(isPresented: self.$show2011) {
                         OPhy11ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("10") {
@@ -705,6 +733,7 @@ struct OLCsYearView: View {
                         
                     .sheet(isPresented: self.$show2019) {
                         OCs19ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("18") {
@@ -718,6 +747,7 @@ struct OLCsYearView: View {
                         
                     .sheet(isPresented: self.$show2018) {
                         OCs18ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("17") {
@@ -731,6 +761,7 @@ struct OLCsYearView: View {
                         
                     .sheet(isPresented: self.$show2017) {
                         OCs17ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("16") {
@@ -744,6 +775,7 @@ struct OLCsYearView: View {
                         
                     .sheet(isPresented: self.$show2016) {
                         OCs16ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("15") {
@@ -757,6 +789,7 @@ struct OLCsYearView: View {
                         
                     .sheet(isPresented: self.$show2015) {
                         OCs15ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                      
@@ -801,6 +834,7 @@ struct OLBioYearView: View {
                         
                     .sheet(isPresented: self.$show2019) {
                         OBio19ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("18") {
@@ -814,6 +848,7 @@ struct OLBioYearView: View {
                         
                     .sheet(isPresented: self.$show2018) {
                         OBio18ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("17") {
@@ -827,6 +862,7 @@ struct OLBioYearView: View {
                         
                     .sheet(isPresented: self.$show2017) {
                         OBio17ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("16") {
@@ -840,6 +876,7 @@ struct OLBioYearView: View {
                         
                     .sheet(isPresented: self.$show2016) {
                         OBio16ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("15") {
@@ -853,6 +890,7 @@ struct OLBioYearView: View {
                         
                     .sheet(isPresented: self.$show2015) {
                         OBio15ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("14") {
@@ -866,6 +904,7 @@ struct OLBioYearView: View {
                         
                     .sheet(isPresented: self.$show2014) {
                         OBio14ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("13") {
@@ -879,6 +918,7 @@ struct OLBioYearView: View {
                         
                     .sheet(isPresented: self.$show2013) {
                         OBio13ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("12") {
@@ -892,6 +932,7 @@ struct OLBioYearView: View {
                         
                     .sheet(isPresented: self.$show2012) {
                         OBio12ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("11") {
@@ -905,6 +946,7 @@ struct OLBioYearView: View {
                         
                     .sheet(isPresented: self.$show2011) {
                         OBio11ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("10") {
@@ -919,6 +961,7 @@ struct OLBioYearView: View {
                     
                     .sheet(isPresented: self.$show2010) {
                         OBio10ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                 }
@@ -961,6 +1004,7 @@ struct OLGeoYearView: View {
                         
                     .sheet(isPresented: self.$show2019) {
                         OGeo19ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("18") {
@@ -974,6 +1018,7 @@ struct OLGeoYearView: View {
                         
                     .sheet(isPresented: self.$show2018) {
                         OGeo18ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("17") {
@@ -987,6 +1032,7 @@ struct OLGeoYearView: View {
                         
                     .sheet(isPresented: self.$show2017) {
                         OGeo17ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("16") {
@@ -1000,6 +1046,7 @@ struct OLGeoYearView: View {
                         
                     .sheet(isPresented: self.$show2016) {
                         OGeo16ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("15") {
@@ -1013,6 +1060,7 @@ struct OLGeoYearView: View {
                         
                     .sheet(isPresented: self.$show2015) {
                         OGeo15ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("14") {
@@ -1026,6 +1074,7 @@ struct OLGeoYearView: View {
                         
                     .sheet(isPresented: self.$show2014) {
                         OGeo14ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("13") {
@@ -1039,6 +1088,7 @@ struct OLGeoYearView: View {
                         
                     .sheet(isPresented: self.$show2013) {
                         OGeo13ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("12") {
@@ -1052,6 +1102,7 @@ struct OLGeoYearView: View {
                         
                     .sheet(isPresented: self.$show2012) {
                         OGeo12ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("11") {
@@ -1065,6 +1116,7 @@ struct OLGeoYearView: View {
                         
                     .sheet(isPresented: self.$show2011) {
                         OGeo11ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                     Button("10") {
@@ -1078,6 +1130,7 @@ struct OLGeoYearView: View {
                     
                     .sheet(isPresented: self.$show2011) {
                         OGeo10ListView()
+                        .modifier(DisableModalDismiss(disabled: true))
                     }
                     
                 }

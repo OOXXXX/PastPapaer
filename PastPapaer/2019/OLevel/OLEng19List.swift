@@ -9,9 +9,8 @@
 import SwiftUI
 
 struct  LandmarkList: View {
-  @Environment(\.presentationMode) var presentationMode
-   let dg = DragGesture()
-    @State var selected = 1
+@Environment(\.presentationMode) var presentationMode
+@State var selected = 1
     
     var body: some View {
         

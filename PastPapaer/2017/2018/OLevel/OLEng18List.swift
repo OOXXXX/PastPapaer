@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct  _18List: View {
-    
+    @Environment(\.presentationMode) var presentationMode
     @State var selected = 1
     
     var body: some View {
@@ -33,6 +33,9 @@ struct  _18List: View {
                 
             }
            .navigationBarTitle(Text("2018"))
+           .navigationBarItems(trailing: Button("Dismiss") {
+                self.presentationMode.wrappedValue.dismiss()
+            })
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
