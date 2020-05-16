@@ -193,7 +193,7 @@ struct YearRoundedButton: ButtonStyle {
  
 
 struct OLEngYearView: View {
-    
+    let vc = UIViewController()
     @Binding var isNavigationBarHidden: Bool
     
     @State var show2019 = false
@@ -221,7 +221,9 @@ struct OLEngYearView: View {
                         
                     .sheet(isPresented: self.$show2019) {
                         LandmarkList()
+                         .modifier(DisableModalDismiss(disabled: true))
                     }
+                    
                     
                     Button("18") {
                         

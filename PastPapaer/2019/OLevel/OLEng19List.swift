@@ -9,13 +9,16 @@
 import SwiftUI
 
 struct  LandmarkList: View {
-    
+  @Environment(\.presentationMode) var presentationMode
+   let dg = DragGesture()
     @State var selected = 1
     
     var body: some View {
         
       
-        NavigationView {
+    NavigationView {
+        ZStack{
+            
             VStack{
                 Picker(selection: $selected, label: Text("")){
                        Text("May-Jun").tag(1)
@@ -35,9 +38,12 @@ struct  LandmarkList: View {
                 
             }
             .navigationBarTitle(Text("2019"))
-            
+            .navigationBarItems(trailing: Button("Dismiss") {
+                self.presentationMode.wrappedValue.dismiss()
+            })
         }
         .navigationViewStyle(StackNavigationViewStyle())
+        }
     }
 }
 
@@ -124,5 +130,43 @@ struct  LandmarkList_Previews: PreviewProvider {
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
         }
+    }
+}
+
+extension UIApplication {
+
+    func visibleViewController() -> UIViewController? {
+        guard let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) else { return nil }
+        guard let rootViewController = window.rootViewController else { return nil }
+        return UIApplication.getVisibleViewControllerFrom(vc: rootViewController)
+    }
+
+private static func getVisibleViewControllerFrom(vc:UIViewController) -> UIViewController {
+        if let navigationController = vc as? UINavigationController,
+            let visibleController = navigationController.visibleViewController  {
+            return UIApplication.getVisibleViewControllerFrom( vc: visibleController )
+        } else if let tabBarController = vc as? UITabBarController,
+            let selectedTabController = tabBarController.selectedViewController {
+            return UIApplication.getVisibleViewControllerFrom(vc: selectedTabController )
+        } else {
+            if let presentedViewController = vc.presentedViewController {
+                return UIApplication.getVisibleViewControllerFrom(vc: presentedViewController)
+            } else {
+                return vc
+            }
+        }
+    }
+}
+
+struct DisableModalDismiss: ViewModifier {
+    let disabled: Bool
+    func body(content: Content) -> some View {
+        disableModalDismiss()
+        return AnyView(content)
+    }
+
+    func disableModalDismiss() {
+        guard let visibleController = UIApplication.shared.visibleViewController() else { return }
+        visibleController.isModalInPresentation = disabled
     }
 }
