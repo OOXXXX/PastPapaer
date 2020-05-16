@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct  _15L: View {
-    
+    @Environment(\.presentationMode) var presentationMode
     @State var selected = 1
     //@State private var listView = [_18LististView(), TestView()]
     
