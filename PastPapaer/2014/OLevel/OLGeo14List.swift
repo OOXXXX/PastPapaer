@@ -33,6 +33,9 @@ var body: some View {
             
         }
        .navigationBarTitle(Text("2014"))
+       .navigationBarItems(trailing: Button("Dismiss") {
+            self.presentationMode.wrappedValue.dismiss()
+        })
     }
     .navigationViewStyle(StackNavigationViewStyle())
   }

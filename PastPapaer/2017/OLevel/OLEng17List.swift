@@ -34,6 +34,9 @@ struct  _17List: View {
                 
             }
            .navigationBarTitle(Text("2017"))
+           .navigationBarItems(trailing: Button("Dismiss") {
+                self.presentationMode.wrappedValue.dismiss()
+            })
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
