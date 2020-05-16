@@ -160,7 +160,7 @@ struct SwitchView: View {
                            Button("Olevel"){
                             self.selected = 0
                            }
-                           .font(.custom("Futura", size: 18))
+                           .font(.system(size: 18))
                            .padding(.horizontal, 8)
                            .foregroundColor(self.selected == 0 ? Color.white : Color("SwitchTextColor"))
                            //.animation(Animation.easeInOut.delay(0.5))
@@ -168,7 +168,7 @@ struct SwitchView: View {
                            Button("IGCSE"){
                             self.selected = 1
                            }
-                           .font(.custom("Futura", size: 18))
+                           .font(.system(size: 18))
                            .padding(.horizontal, 8)
                            //.animation(Animation.easeInOut.delay(0.5))
                            .foregroundColor(self.selected == 1 ? Color.white : Color("SwitchTextColor"))
@@ -179,7 +179,8 @@ struct SwitchView: View {
                            Button("Alevel"){
                             self.selected = 2
                            }
-                           .font(.custom("Futura", size: 18))
+//                           .font(.custom("Futura", size: 18))
+                           .font(.system(size: 18))
                            .padding(.horizontal, 8)
                            .foregroundColor(self.selected == 2 ? Color.white : Color("SwitchTextColor"))
                            //.animation(Animation.easeInOut.delay(0.5))
