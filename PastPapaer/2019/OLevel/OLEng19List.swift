@@ -16,7 +16,7 @@ struct  LandmarkList: View {
         
       
     NavigationView {
-        ZStack{
+        
             
             VStack{
                 Picker(selection: $selected, label: Text("")){
@@ -40,9 +40,10 @@ struct  LandmarkList: View {
             .navigationBarItems(trailing: Button("Dismiss") {
                 self.presentationMode.wrappedValue.dismiss()
             })
+        
+                
         }
         .navigationViewStyle(StackNavigationViewStyle())
-        }
     }
 }
 
