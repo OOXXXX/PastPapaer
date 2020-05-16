@@ -11,7 +11,7 @@ import SwiftUI
 import SwiftUI
 
 struct  _10L: View {
-    
+    @Environment(\.presentationMode) var presentationMode
     @State var selected = 1
     //@State private var listView = [_18LististView(), TestView()]
     
