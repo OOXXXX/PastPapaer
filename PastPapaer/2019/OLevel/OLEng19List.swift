@@ -22,7 +22,7 @@ struct  LandmarkList: View {
                        Text("Oct-Nov").tag(2)
                    }
                 .pickerStyle(SegmentedPickerStyle())
-                 
+                .padding(.horizontal, 10)
                 //.frame(width: screen.width-24)
                 
                 if selected == 1{

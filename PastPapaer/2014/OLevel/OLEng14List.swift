@@ -23,7 +23,7 @@ struct  _14L: View {
                        Text("Oct-Nov").tag(2)
                    }
                 .pickerStyle(SegmentedPickerStyle())
-                //.frame(width: screen.width-24)
+                .padding(.horizontal, 10)
                 
                 if selected == 1{
                     _14L1()

@@ -22,7 +22,7 @@ var body: some View {
                    Text("Oct-Nov").tag(2)
                }
             .pickerStyle(SegmentedPickerStyle())
-             
+            .padding(.horizontal, 10)
             
             if selected == 1{
                 OGeo10List()

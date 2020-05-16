@@ -136,11 +136,7 @@ GeometryReader{ bounds in
          }
         
     }
-                                
-         
-         
-            
-            
+  
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .padding(.bottom, 28)
           }
