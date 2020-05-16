@@ -9,10 +9,55 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
+    
+    @State var selection = 0
+       var body: some View {
         
-        TextShimmerView()
-    }
+            TabView(selection: $selection) {
+                Home()
+                     
+                    .tabItem {
+                        if selection == 0 {
+                            Image(systemName: "house.fill")
+                            .font(.system(size: 23))
+                        } else {
+                            Image(systemName: "house")
+                            .font(.system(size: 23))
+                        }
+           
+                    }.tag(0)
+                     
+        
+                
+                Text("Docs View")
+                    .tabItem {
+                        if selection == 1 {
+                            Image(systemName: "doc.text.fill")
+                            .font(.system(size: 23))
+                        } else {
+                            Image(systemName: "doc.text")
+                            .font(.system(size: 23))
+                        }
+                    }.tag(1)
+                .transition(.slide)
+                
+                Text("About View")
+                .tabItem {
+                    if selection == 2 {
+                        Image(systemName: "person.fill")
+                        .font(.system(size: 23))
+                    } else {
+                        Image(systemName: "person")
+                        .font(.system(size: 23))
+                    }
+                }.tag(2)
+                .transition(.slide)
+            }
+                        
+                     
+             
+        }
+
 }
 
 struct ContentView_Previews: PreviewProvider {
