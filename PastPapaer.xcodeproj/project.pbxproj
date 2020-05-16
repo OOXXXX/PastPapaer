@@ -1433,7 +1433,6 @@
 				18FFE9D3246D69FE00FC1DB7 /* ClockView.swift */,
 				18367EC524151F06004B634D /* BlogView.swift */,
 				18B21DC52444A9CF007ECAE7 /* Home.swift */,
-				18FFE9DA246D6B9600FC1DB7 /* HomeView.swift */,
 				180408C72413C91D005979A5 /* OLView.swift */,
 				18CC130A245C12A200C22204 /* IGView.swift */,
 				18CC130C245C200600C22204 /* ALView.swift */,
@@ -1913,6 +1912,7 @@
 			children = (
 				18FFE9D5246D6A2900FC1DB7 /* ClockViewModel.swift */,
 				18FFE9D7246D6A4000FC1DB7 /* FlipViewModel.swift */,
+				18FFE9DA246D6B9600FC1DB7 /* HomeView.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";

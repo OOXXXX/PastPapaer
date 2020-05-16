@@ -136,7 +136,7 @@ struct SwitchView: View {
                 
                 Rectangle()
                 
-                .foregroundColor((Color(#colorLiteral(red: 0.9411764706, green: 0.937254902, blue: 0.937254902, alpha: 0.95))))
+                .foregroundColor(Color("SwitchColor"))
                 .frame(width: 240, height: 41)
                 .blendMode(.sourceAtop)
                 .clipShape(RoundedRectangle(cornerRadius: 16))
@@ -144,7 +144,7 @@ struct SwitchView: View {
                
                 
                 Rectangle()
-                .foregroundColor((Color(#colorLiteral(red: 0.7960784314, green: 0.7960784314, blue: 0.7960784314, alpha: 1))))
+                .foregroundColor(Color("SwitchTopColor"))
                 .frame(width: 80, height: 33)
                 .clipShape(RoundedRectangle(cornerRadius: 15))
                 .offset(x: self.selected == 0 ? -75 : 0, y: 0)
@@ -162,7 +162,7 @@ struct SwitchView: View {
                            }
                            .font(.custom("Futura", size: 18))
                            .padding(.horizontal, 8)
-                           .foregroundColor(self.selected == 0 ? Color.white : Color.gray)
+                           .foregroundColor(self.selected == 0 ? Color.white : Color("SwitchTextColor"))
                            //.animation(Animation.easeInOut.delay(0.5))
                            
                            Button("IGCSE"){
@@ -171,7 +171,7 @@ struct SwitchView: View {
                            .font(.custom("Futura", size: 18))
                            .padding(.horizontal, 8)
                            //.animation(Animation.easeInOut.delay(0.5))
-                           .foregroundColor(self.selected == 1 ? Color.white : Color.gray)
+                           .foregroundColor(self.selected == 1 ? Color.white : Color("SwitchTextColor"))
                            //.foregroundColor(Color.gray)
                            
                            
@@ -181,7 +181,7 @@ struct SwitchView: View {
                            }
                            .font(.custom("Futura", size: 18))
                            .padding(.horizontal, 8)
-                           .foregroundColor(self.selected == 2 ? Color.white : Color.gray)
+                           .foregroundColor(self.selected == 2 ? Color.white : Color("SwitchTextColor"))
                            //.animation(Animation.easeInOut.delay(0.5))
                        
                        }
