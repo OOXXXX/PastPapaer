@@ -8,7 +8,6 @@
 
 import SwiftUI
 
-import SwiftUI
 
 struct  _10L: View {
     @Environment(\.presentationMode) var presentationMode
