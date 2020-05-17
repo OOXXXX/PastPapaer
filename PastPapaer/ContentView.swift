@@ -110,13 +110,18 @@ struct TextShimmerView : View {
                 
                     
                 
+                Group {
                     Text("Storing: 1330 Paper")
-                    .foregroundColor(Color("ColorShimmerText"))
-                    .font(.system(size: 15))
+                        .foregroundColor(Color("ColorShimmerText"))
+                        .font(.system(size: 15))
+                
                         
                     Text("Currently Support: 6 subjects")
                     .foregroundColor(Color("ColorShimmerText"))
                     .font(.system(size: 15))
+                }
+            .offset(x: 0, y: -125)
+            
             }
             .padding(.bottom, 23.5)
             .edgesIgnoringSafeArea(.bottom)

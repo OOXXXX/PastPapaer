@@ -167,6 +167,8 @@
 		183398ED24619933002F0D88 /* OLMathD11.json in Resources */ = {isa = PBXBuildFile; fileRef = 183398EC24619933002F0D88 /* OLMathD11.json */; };
 		183398EF2461993C002F0D88 /* OLMathD11-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 183398EE2461993C002F0D88 /* OLMathD11-2.json */; };
 		18367EC624151F06004B634D /* BlogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18367EC524151F06004B634D /* BlogView.swift */; };
+		183C38F924718CAF00678717 /* IBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C38F824718CAF00678717 /* IBView.swift */; };
+		183C38FB24718CB800678717 /* STEPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C38FA24718CB800678717 /* STEPView.swift */; };
 		18468223245FDD6B0054B8D0 /* OLYearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18468222245FDD6B0054B8D0 /* OLYearView.swift */; };
 		18601E8F2462A14000D11325 /* OLCs14.json in Resources */ = {isa = PBXBuildFile; fileRef = 18601E8E2462A14000D11325 /* OLCs14.json */; };
 		18601E912462A14A00D11325 /* OLCs14-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 18601E902462A14A00D11325 /* OLCs14-2.json */; };
@@ -461,6 +463,8 @@
 		183398EC24619933002F0D88 /* OLMathD11.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = OLMathD11.json; sourceTree = "<group>"; };
 		183398EE2461993C002F0D88 /* OLMathD11-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "OLMathD11-2.json"; sourceTree = "<group>"; };
 		18367EC524151F06004B634D /* BlogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogView.swift; sourceTree = "<group>"; };
+		183C38F824718CAF00678717 /* IBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBView.swift; sourceTree = "<group>"; };
+		183C38FA24718CB800678717 /* STEPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STEPView.swift; sourceTree = "<group>"; };
 		18468222245FDD6B0054B8D0 /* OLYearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLYearView.swift; sourceTree = "<group>"; };
 		18601E8E2462A14000D11325 /* OLCs14.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = OLCs14.json; sourceTree = "<group>"; };
 		18601E902462A14A00D11325 /* OLCs14-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "OLCs14-2.json"; sourceTree = "<group>"; };
@@ -1436,6 +1440,8 @@
 				180408C72413C91D005979A5 /* OLView.swift */,
 				18CC130A245C12A200C22204 /* IGView.swift */,
 				18CC130C245C200600C22204 /* ALView.swift */,
+				183C38F824718CAF00678717 /* IBView.swift */,
+				183C38FA24718CB800678717 /* STEPView.swift */,
 				18468222245FDD6B0054B8D0 /* OLYearView.swift */,
 				18F5CE7F245F08F600D9D627 /* DocsView.swift */,
 				189F8D3E2462DBF8000044F0 /* ContentView.swift */,
@@ -2231,6 +2237,7 @@
 				183397E124613E83002F0D88 /* OLBio10Data.swift in Sources */,
 				18DB6B3C2416211A0050F099 /* OLEng11List.swift in Sources */,
 				183397B524613B4F002F0D88 /* OLCs12Data.swift in Sources */,
+				183C38F924718CAF00678717 /* IBView.swift in Sources */,
 				18DB6B402416213F0050F099 /* OLEng11Data.swift in Sources */,
 				18D5B43D24611215001B6774 /* OLPhy18Data.swift in Sources */,
 				18D5B45E24611B49001B6774 /* OLMath17List.swift in Sources */,
@@ -2277,6 +2284,7 @@
 				18339789246136DD002F0D88 /* OLMath14Data.swift in Sources */,
 				18D5B4592461175B001B6774 /* OLBio19Data.swift in Sources */,
 				18D5B4792461224F001B6774 /* OLEng10List.swift in Sources */,
+				183C38FB24718CB800678717 /* STEPView.swift in Sources */,
 				1833976D24613358002F0D88 /* OLPhy15List.swift in Sources */,
 				183397712461336F002F0D88 /* OLBio15List.swift in Sources */,
 				18D5B44624611215001B6774 /* OLBio18List.swift in Sources */,

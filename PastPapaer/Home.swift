@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct Home: View {
-        @State var selected = 0
+        @State var selected = 1
         
         var body: some View {
             
@@ -23,6 +23,14 @@ struct Home: View {
                 }
                 if self.selected == 2{
                     ALView()
+                     
+                }
+                if self.selected == 3{
+                    IBView()
+                     
+                }
+                if self.selected == 4{
+                    STEPView()
                      
                 }
  
@@ -137,19 +145,24 @@ struct SwitchView: View {
                 Rectangle()
                 
                 .foregroundColor(Color("SwitchColor"))
-                .frame(width: 240, height: 41)
+                .frame(width: 346, height: 41)
                 .blendMode(.sourceAtop)
-                .clipShape(RoundedRectangle(cornerRadius: 16))
+                .clipShape(RoundedRectangle(cornerRadius: 17))
                 
                
                 
                 Rectangle()
                 .foregroundColor(Color("SwitchTopColor"))
-                .frame(width: 80, height: 33)
+                .frame(width: self.selected == 3 ? 46 : 72, height: 33)
+                 
+                //.frame(width: self.selected == 4 ? 76 : 80, height: 33)
                 .clipShape(RoundedRectangle(cornerRadius: 15))
-                .offset(x: self.selected == 0 ? -75 : 0, y: 0)
-                .offset(x: self.selected == 1 ? 0 : 0, y: 0)
-                .offset(x: self.selected == 2 ? 75 : 0, y: 0)
+                    .offset(x: self.selected == 0 ? -131 : 0, y: 0)
+                    .offset(x: self.selected == 1 ? -54 : 0, y: 0)
+                .offset(x: self.selected == 2 ? 22 : 0, y: 0)
+                .offset(x: self.selected == 3 ? 79 : 0, y: 0)
+                    .offset(x: self.selected == 4 ? 133 : 0, y: 0)
+                     
                 .animation(Animation.easeInOut(duration: 0.25))
                 
                 
@@ -184,7 +197,23 @@ struct SwitchView: View {
                            .padding(.horizontal, 8)
                            .foregroundColor(self.selected == 2 ? Color.white : Color("SwitchTextColor"))
                            //.animation(Animation.easeInOut.delay(0.5))
-                       
+                            
+                            Button("IB"){
+                            self.selected = 3
+                           }
+    //                           .font(.custom("Futura", size: 18))
+                           .font(.system(size: 18))
+                           .padding(.horizontal, 8)
+                           .foregroundColor(self.selected == 3 ? Color.white : Color("SwitchTextColor"))
+                        
+                            Button("STEP"){
+                            self.selected = 4
+                           }
+    //                           .font(.custom("Futura", size: 18))
+                           .font(.system(size: 18))
+                           .padding(.horizontal, 8)
+                           .foregroundColor(self.selected == 4 ? Color.white : Color("SwitchTextColor"))
+                        
                        }
                        
                    }
