@@ -179,7 +179,6 @@ struct Firstcard: View {
             Spacer()
         }
             .frame(width: screen.width-30, height: 80.0)
-            // .background(Color("secondary"))
             .background(Color("Color-2"))
             .cornerRadius(11)
             .overlay(RoundedRectangle(cornerRadius: 10)
