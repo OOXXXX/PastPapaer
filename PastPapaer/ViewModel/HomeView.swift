@@ -35,7 +35,7 @@ struct HomeView: View {
            .padding(.top)
                 
            
-                NavigationLink(destination: OLView(), isActive: self.$showOL){
+        NavigationLink(destination: OLView(), isActive: self.$showOL){
             Button(action: {
                 let selectionFeedback = UISelectionFeedbackGenerator()
                   selectionFeedback.selectionChanged()

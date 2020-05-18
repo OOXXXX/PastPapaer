@@ -10,6 +10,7 @@ import SwiftUI
 import SafariServices
 
 struct NotesView: View {
+@State var All = false
 @State var AllShow = false
 @State var EngShow = false
 @State var PhyShow = false
@@ -26,7 +27,21 @@ struct NotesView: View {
                 
             ScrollView(.vertical, showsIndicators: false){
                 VStack {
-                    ButtonView2(name: "All Docs", level: "Built with Notion")
+                    
+                    
+                   NavigationLink(destination: TextShimmerView(), isActive: self.$All){
+                        Button(action: {
+                            let selectionFeedback = UISelectionFeedbackGenerator()
+                              selectionFeedback.selectionChanged()
+                            
+                            self.All = true
+                                             
+                          })
+                        {
+
+                            ButtonView2(name: "All Subject", level: "Built with Notion")
+                         }
+                    }
                  
                 HStack{
                     VStack {
