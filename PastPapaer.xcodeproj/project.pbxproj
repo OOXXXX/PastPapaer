@@ -195,6 +195,10 @@
 		1865B3EA2417807B007DB193 /* 2013-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3E92417807B007DB193 /* 2013-2.json */; };
 		1865B3EC24178088007DB193 /* 2012-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3EB24178088007DB193 /* 2012-2.json */; };
 		1865B3EE24178094007DB193 /* 2011-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3ED24178094007DB193 /* 2011-2.json */; };
+		1873B3052472B30C00B166F5 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873B3042472B30C00B166F5 /* NotesView.swift */; };
+		1873B30A2472B33000B166F5 /* RopaSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1873B3072472B33000B166F5 /* RopaSans-Italic.ttf */; };
+		1873B30B2472B33000B166F5 /* RopaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1873B3082472B33000B166F5 /* RopaSans-Regular.ttf */; };
+		1873B30C2472B33000B166F5 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1873B3092472B33000B166F5 /* OFL.txt */; };
 		189F8D3F2462DBF8000044F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189F8D3E2462DBF8000044F0 /* ContentView.swift */; };
 		18B21DC62444A9CF007ECAE7 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B21DC52444A9CF007ECAE7 /* Home.swift */; };
 		18B6E24B24134DE7002615DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E24A24134DE7002615DE /* AppDelegate.swift */; };
@@ -491,6 +495,10 @@
 		1865B3E92417807B007DB193 /* 2013-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2013-2.json"; sourceTree = "<group>"; };
 		1865B3EB24178088007DB193 /* 2012-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2012-2.json"; sourceTree = "<group>"; };
 		1865B3ED24178094007DB193 /* 2011-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2011-2.json"; sourceTree = "<group>"; };
+		1873B3042472B30C00B166F5 /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
+		1873B3072472B33000B166F5 /* RopaSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RopaSans-Italic.ttf"; sourceTree = "<group>"; };
+		1873B3082472B33000B166F5 /* RopaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RopaSans-Regular.ttf"; sourceTree = "<group>"; };
+		1873B3092472B33000B166F5 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		188F81AC241669F80043DBDB /* PastPaper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PastPaper.entitlements; sourceTree = "<group>"; };
 		189F8D3E2462DBF8000044F0 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		18B21DC52444A9CF007ECAE7 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -1392,6 +1400,16 @@
 			path = Maths10;
 			sourceTree = "<group>";
 		};
+		1873B3062472B33000B166F5 /* Ropa_Sans */ = {
+			isa = PBXGroup;
+			children = (
+				1873B3072472B33000B166F5 /* RopaSans-Italic.ttf */,
+				1873B3082472B33000B166F5 /* RopaSans-Regular.ttf */,
+				1873B3092472B33000B166F5 /* OFL.txt */,
+			);
+			path = Ropa_Sans;
+			sourceTree = "<group>";
+		};
 		188F81AD24166A750043DBDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1444,6 +1462,7 @@
 				183C38FA24718CB800678717 /* STEPView.swift */,
 				18468222245FDD6B0054B8D0 /* OLYearView.swift */,
 				18F5CE7F245F08F600D9D627 /* DocsView.swift */,
+				1873B3042472B30C00B166F5 /* NotesView.swift */,
 				189F8D3E2462DBF8000044F0 /* ContentView.swift */,
 				18CF47892414A4FD006F01FA /* Source */,
 				18B6E25324134DEA002615DE /* Assets.xcassets */,
@@ -1452,6 +1471,7 @@
 				188F81AC241669F80043DBDB /* PastPaper.entitlements */,
 				18B6E24E24134DE7002615DE /* PastPapaer.xcdatamodeld */,
 				18DB6B4724163C0A0050F099 /* Radiohead-Creep.mp3 */,
+				1873B3062472B33000B166F5 /* Ropa_Sans */,
 				18E956B12415326400DAF229 /* Girassol */,
 				18E956A42415311000DAF229 /* Teko */,
 				18E9569324152EC800DAF229 /* Amatic_SC */,
@@ -1986,6 +2006,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				183398492461910C002F0D88 /* OLGeo17.json in Resources */,
+				1873B30A2472B33000B166F5 /* RopaSans-Italic.ttf in Resources */,
 				18E956C02415357200DAF229 /* 2018.json in Resources */,
 				18339884246194D5002F0D88 /* OLMath14.json in Resources */,
 				183398A924619616002F0D88 /* OLMathD13.json in Resources */,
@@ -2040,6 +2061,7 @@
 				18E956872415299100DAF229 /* RobotoMono-ThinItalic.ttf in Resources */,
 				183398E4246198D5002F0D88 /* OLGeo11.json in Resources */,
 				183398B82461968A002F0D88 /* OLMath12-2.json in Resources */,
+				1873B30C2472B33000B166F5 /* OFL.txt in Resources */,
 				18E956AD2415311000DAF229 /* Teko-SemiBold.ttf in Resources */,
 				18601E992462A20B00D11325 /* OLCs12.json in Resources */,
 				18339845246190F8002F0D88 /* OLMathD17.json in Resources */,
@@ -2066,6 +2088,7 @@
 				1833982424618F14002F0D88 /* OLPhy18.json in Resources */,
 				183398A1246195D2002F0D88 /* OLPhy13.json in Resources */,
 				1833987124619280002F0D88 /* OLPhy15-2.json in Resources */,
+				1873B30B2472B33000B166F5 /* RopaSans-Regular.ttf in Resources */,
 				18601E8F2462A14000D11325 /* OLCs14.json in Resources */,
 				18E9569724152EC800DAF229 /* AmaticSC-Regular.ttf in Resources */,
 				18E956B02415311000DAF229 /* Teko-Light.ttf in Resources */,
@@ -2207,6 +2230,7 @@
 				18B6E2822413822D002615DE /* OLEng19Data.swift in Sources */,
 				189F8D3F2462DBF8000044F0 /* ContentView.swift in Sources */,
 				18D5B46024611B56001B6774 /* OLPhy17List.swift in Sources */,
+				1873B3052472B30C00B166F5 /* NotesView.swift in Sources */,
 				18B6E24D24134DE7002615DE /* SceneDelegate.swift in Sources */,
 				18D5B44424611215001B6774 /* OLCs18List.swift in Sources */,
 				183397E324613E8A002F0D88 /* OLGeo10Data.swift in Sources */,

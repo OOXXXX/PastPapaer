@@ -137,3 +137,10 @@ extension DateFormatter {
 
 }
 
+struct FontCoustom10: ViewModifier {
+    var size: CGFloat
+    
+    func body(content: Content) -> some View {
+        content.font(.custom("RopaSans-Regular", size: size))
+    }
+}

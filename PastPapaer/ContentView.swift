@@ -29,7 +29,7 @@ struct ContentView: View {
                      
         
                 
-                Text("Docs View")
+                NotesView()
                     .tabItem {
                         if selection == 1 {
                             Image(systemName: "doc.text.fill")

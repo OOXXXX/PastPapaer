@@ -175,7 +175,9 @@ struct SwitchView: View {
                            }
                            .font(.system(size: 18))
                            .padding(.horizontal, 8)
+                           //.padding(.vertical)
                            .foregroundColor(self.selected == 0 ? Color.white : Color("SwitchTextColor"))
+                            
                            //.animation(Animation.easeInOut.delay(0.5))
                            
                            Button("IGCSE"){

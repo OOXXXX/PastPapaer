@@ -22,6 +22,7 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
+		<string>RopaSans-Regular.ttf</string>
 		<string>Oxygen-Bold.ttf</string>
 		<string>UbuntuCondensed-Regular.ttf</string>
 		<string>RobotoMono-Regular.ttf</string>
