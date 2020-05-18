@@ -10,6 +10,7 @@ import SwiftUI
 import SafariServices
 
 struct NotesView: View {
+    
 @State var All = false
 @State var AllShow = false
 @State var EngShow = false
@@ -23,6 +24,7 @@ struct NotesView: View {
 @State var EcoString = "https://www.notion.so/Economics-Docs-b746b3faf97043519e9bc50b6e1953d5"
     
     var body: some View {
+        GeometryReader { geometry in
             NavigationView {
                 
             ScrollView(.vertical, showsIndicators: false){
@@ -51,7 +53,7 @@ struct NotesView: View {
                             .onTapGesture {
                                 self.EcoShow.toggle()
                             }
-                            .sheet(isPresented: $EcoShow) {
+                        .sheet(isPresented: self.$EcoShow) {
                         SafariView(url:URL(string: self.EcoString)!)
                                .edgesIgnoringSafeArea(.all)
                             }
@@ -63,7 +65,7 @@ struct NotesView: View {
                         .onTapGesture {
                                 self.EngShow.toggle()
                             }
-                            .sheet(isPresented: $EngShow) {
+                        .sheet(isPresented: self.$EngShow) {
                         SafariView(url:URL(string: self.EngString)!)
                                .edgesIgnoringSafeArea(.all)
                             }
@@ -76,7 +78,7 @@ struct NotesView: View {
                         .onTapGesture {
                                 self.PhyShow.toggle()
                             }
-                            .sheet(isPresented: $PhyShow) {
+                        .sheet(isPresented: self.$PhyShow) {
                         SafariView(url:URL(string: self.PhyString)!)
                                .edgesIgnoringSafeArea(.all)
                             }
@@ -87,7 +89,7 @@ struct NotesView: View {
                         .onTapGesture {
                                 self.GeoShow.toggle()
                             }
-                            .sheet(isPresented: $GeoShow) {
+                        .sheet(isPresented: self.$GeoShow) {
                         SafariView(url:URL(string: self.GeoString)!)
                                .edgesIgnoringSafeArea(.all)
                             }
@@ -102,6 +104,16 @@ struct NotesView: View {
             .background(Color("BG1"))
             
             }
+        .padding(.leading, self.leadingPadding(geometry))
+    }
+  }
+    
+    private func leadingPadding(_ geometry: GeometryProxy) -> CGFloat {
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            // A hack for correct display of the SplitView in SwiftUI on iPad
+            return geometry.size.width < geometry.size.height ? 0.5 : -0.5
+        }
+        return 0
     }
 }
 
@@ -230,3 +242,5 @@ struct SmallDocsView: View {
         .shadow(color: Color(shadow), radius: 3, x: 0, y: 1)
     }
 }
+
+
