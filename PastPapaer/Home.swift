@@ -187,7 +187,7 @@ struct SwitchView: View {
                            .padding(.horizontal, 8)
                            //.animation(Animation.easeInOut.delay(0.5))
                            .foregroundColor(self.selected == 1 ? Color.white : Color("SwitchTextColor"))
-                           //.foregroundColor(Color.gray)
+                          
                            
                            
                            
