@@ -81,7 +81,7 @@ struct IGCaieView: View {
             
              
                    
-            NavigationLink(destination: OLEng(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive1){
+            NavigationLink(destination: OLEng(), isActive: self.$isActive1){
              Button(action: {
         //        let selectionFeedback = UISelectionFeedbackGenerator()
         //          selectionFeedback.selectionChanged()
@@ -261,7 +261,7 @@ struct IGAqaView: View {
             
              
                    
-            NavigationLink(destination: OLEng(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive1){
+            NavigationLink(destination: OLEng(), isActive: self.$isActive1){
              Button(action: {
         //        let selectionFeedback = UISelectionFeedbackGenerator()
         //          selectionFeedback.selectionChanged()
@@ -440,7 +440,7 @@ struct IGEdexcelView: View {
             
              
                    
-            NavigationLink(destination: OLEng(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive1){
+            NavigationLink(destination: OLEng(), isActive: self.$isActive1){
              Button(action: {
         //        let selectionFeedback = UISelectionFeedbackGenerator()
         //          selectionFeedback.selectionChanged()

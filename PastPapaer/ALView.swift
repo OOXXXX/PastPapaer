@@ -40,7 +40,7 @@ struct ALView: View {
             
                         Group{
         
-            NavigationLink(destination: OLEng(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive1){
+            NavigationLink(destination: OLEng(), isActive: self.$isActive1){
              Button(action: {
         //        let selectionFeedback = UISelectionFeedbackGenerator()
         //          selectionFeedback.selectionChanged()

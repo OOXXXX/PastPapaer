@@ -19,6 +19,7 @@ struct OLView: View {
      
  
     let generator = UINotificationFeedbackGenerator()
+     
     @State var showUpdate = false
     @State var show2019 = false
     @State var isActive1 = false
@@ -27,6 +28,7 @@ struct OLView: View {
     @State var isActive4 = false
     @State var isActive5 = false
     @State var isActive6 = false
+    
     @State var tap = false
     @State var press = false
     @State var isNavigationBarHidden: Bool = false
@@ -42,13 +44,14 @@ GeometryReader{ bounds in
     
      
            
-    NavigationLink(destination: OLEng(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive1){
+    NavigationLink(destination: OLEng(), isActive: self.$isActive1){
      Button(action: {
 //        let selectionFeedback = UISelectionFeedbackGenerator()
 //          selectionFeedback.selectionChanged()
         impact()
         
         self.isActive1 = true
+        
         
         
       })

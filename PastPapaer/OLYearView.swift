@@ -9,14 +9,14 @@
 import SwiftUI
 
 struct OLEng: View {
-@Binding var isNavigationBarHidden: Bool
+ 
      
     
 var body: some View {
         
     VStack {
         
-            OLEngYearView(isNavigationBarHidden: $isNavigationBarHidden)
+            OLEngYearView()
             
             EngDocsView()
             .padding(.top, -5)
@@ -25,14 +25,13 @@ var body: some View {
             }
             .navigationBarTitle("English")
              
-            .onAppear {
-                self.isNavigationBarHidden = false
+            
         }
         
         
     }
     
-}
+
 
 struct OLMath: View {
 @Binding var isNavigationBarHidden: Bool
@@ -167,7 +166,7 @@ struct TestButtonView_Previews: PreviewProvider {
     
     static var previews: some View {
          
-        OLEng(isNavigationBarHidden: $isNavigationBarHidden)
+        OLEng()
         
     }
 }
@@ -194,7 +193,7 @@ struct YearRoundedButton: ButtonStyle {
 
 struct OLEngYearView: View {
     let vc = UIViewController()
-    @Binding var isNavigationBarHidden: Bool
+    
     
     @State var show2019 = false
     @State var show2018 = false
