@@ -11,7 +11,7 @@ import SafariServices
 
 struct NotesView: View {
     
-@State var All = true
+@State var All = false
 @State var AllShow = false
 @State var EngShow = false
 @State var PhyShow = false
