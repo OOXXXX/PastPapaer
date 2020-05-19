@@ -28,7 +28,7 @@ struct OLView: View {
     @State var isActive4 = false
     @State var isActive5 = false
     @State var isActive6 = false
-    
+    @State var showinfo = false
     @State var tap = false
     @State var press = false
     @State var isNavigationBarHidden: Bool = false
@@ -146,7 +146,19 @@ GeometryReader{ bounds in
             
         }
         .navigationBarTitle("PastPaper", displayMode: .inline)
-    
+        .navigationBarItems(trailing:
+             Button(action: {
+                self.showinfo = true
+             }) {
+                 Image(systemName: "waveform.path.ecg").imageScale(.large)
+                    .font(.system(size: 15, weight: .semibold))
+             }
+                .sheet(isPresented: self.$showinfo) {
+                    PaperInfoView()
+                    
+                }
+         )
+       
         }
        
     }

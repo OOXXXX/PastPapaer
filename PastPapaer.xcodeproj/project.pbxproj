@@ -186,6 +186,7 @@
 		18601EAD2462A67A00D11325 /* OLMathD10-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 18601EAC2462A67A00D11325 /* OLMathD10-2.json */; };
 		18601EAF2462A68700D11325 /* OLGeo10.json in Resources */ = {isa = PBXBuildFile; fileRef = 18601EAE2462A68700D11325 /* OLGeo10.json */; };
 		18601EB12462A69000D11325 /* OLGeo10-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 18601EB02462A69000D11325 /* OLGeo10-2.json */; };
+		18603B622473E26E00837456 /* PaperInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18603B612473E26E00837456 /* PaperInfoView.swift */; };
 		1865B3DE24177CD7007DB193 /* OLEng19-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3DD24177CD7007DB193 /* OLEng19-2.json */; };
 		1865B3E024178036007DB193 /* 2018-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3DF24178036007DB193 /* 2018-2.json */; };
 		1865B3E224178048007DB193 /* 2017-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1865B3E124178048007DB193 /* 2017-2.json */; };
@@ -486,6 +487,7 @@
 		18601EAC2462A67A00D11325 /* OLMathD10-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "OLMathD10-2.json"; sourceTree = "<group>"; };
 		18601EAE2462A68700D11325 /* OLGeo10.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = OLGeo10.json; sourceTree = "<group>"; };
 		18601EB02462A69000D11325 /* OLGeo10-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "OLGeo10-2.json"; sourceTree = "<group>"; };
+		18603B612473E26E00837456 /* PaperInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperInfoView.swift; sourceTree = "<group>"; };
 		1865B3DD24177CD7007DB193 /* OLEng19-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "OLEng19-2.json"; sourceTree = "<group>"; };
 		1865B3DF24178036007DB193 /* 2018-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2018-2.json"; sourceTree = "<group>"; };
 		1865B3E124178048007DB193 /* 2017-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "2017-2.json"; sourceTree = "<group>"; };
@@ -1455,6 +1457,7 @@
 				18FFE9D3246D69FE00FC1DB7 /* ClockView.swift */,
 				18367EC524151F06004B634D /* BlogView.swift */,
 				18B21DC52444A9CF007ECAE7 /* Home.swift */,
+				18603B612473E26E00837456 /* PaperInfoView.swift */,
 				180408C72413C91D005979A5 /* OLView.swift */,
 				18CC130A245C12A200C22204 /* IGView.swift */,
 				18CC130C245C200600C22204 /* ALView.swift */,
@@ -2198,6 +2201,7 @@
 				183397BD24613CA2002F0D88 /* OLPhy11List.swift in Sources */,
 				1833979D246138DF002F0D88 /* OLMath13Data.swift in Sources */,
 				183397C924613CF7002F0D88 /* OLCs11Data.swift in Sources */,
+				18603B622473E26E00837456 /* PaperInfoView.swift in Sources */,
 				18D5B45724611750001B6774 /* OLCs19Data.swift in Sources */,
 				18D5B46824611B96001B6774 /* OLMath17Data.swift in Sources */,
 				18D5B487246124FB001B6774 /* OLGeo16List.swift in Sources */,
