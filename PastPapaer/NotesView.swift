@@ -97,7 +97,8 @@ struct NotesView: View {
                         }
                     
                     }
-                    
+                    .frame(maxWidth: .infinity)
+                    .padding(.horizontal, 7)
                 }
             }
             .navigationBarTitle("Notes", displayMode: .inline)
@@ -105,6 +106,7 @@ struct NotesView: View {
             
             }
         .padding(.leading, self.leadingPadding(geometry))
+            
     }
   }
     
@@ -196,11 +198,12 @@ struct LargeDocsView: View {
             }
             .frame(width: 140, height: 170)
         }
-            
-        .frame(width: 160, height: 217)
+        .frame(maxWidth: .infinity/2)
+        .frame(height: 217)
         .background(Color(backcolor))
         .cornerRadius(15)
         .shadow(color: Color(shadow), radius: 3, x: 0, y: 1)
+         
     }
 }
 
@@ -235,11 +238,12 @@ struct SmallDocsView: View {
             }
             .frame(width: 140, height: 120)
         }
-            
-        .frame(width: 160, height: 170)
+        .frame(maxWidth: .infinity/2)
+        .frame(height: 170)
         .background(Color(backcolor))
         .cornerRadius(15)
         .shadow(color: Color(shadow), radius: 3, x: 0, y: 1)
+         
     }
 }
 
