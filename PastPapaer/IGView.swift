@@ -16,7 +16,7 @@ let generator = UINotificationFeedbackGenerator()
        
     GeometryReader{ bounds in
         NavigationView{
-            ScrollView(.vertical, showsIndicators: false){
+            ScrollView(.vertical, showsIndicators: true){
                 
             VStack {
                 
@@ -26,6 +26,7 @@ let generator = UINotificationFeedbackGenerator()
                        Text("Edexcel").tag(2)
                    }
                 .pickerStyle(SegmentedPickerStyle())
+                .padding(.top)
                 .padding(.horizontal)
                 //.padding(.bottom, 5)
                 
@@ -35,21 +36,21 @@ let generator = UINotificationFeedbackGenerator()
                 }
                 if self.selected == 1{
                     TextShimmerView()
-                    .padding(.top, -6)
+                    .padding(.top, 200)
                 }
                 if self.selected == 2{
                     TextShimmerView()
-                    .padding(.top, -6)
+                    .padding(.top, 200)
                 }
                 
         
                 }
                 
             }
-            .navigationBarTitle("IGCSE")
+            .navigationBarTitle("PastPaper", displayMode: .inline)
               
             }
-            .navigationViewStyle(StackNavigationViewStyle())
+             
         }
       }
 }

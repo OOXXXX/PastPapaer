@@ -219,11 +219,11 @@ struct ALView: View {
                   }
                     
                 }
-                .navigationBarTitle("Alevel")
+                .navigationBarTitle("PastPaper", displayMode: .inline)
             }
               
             
-            .navigationViewStyle(StackNavigationViewStyle())
+             
         }
       }
   

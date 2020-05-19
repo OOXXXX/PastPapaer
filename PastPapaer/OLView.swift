@@ -38,7 +38,7 @@ GeometryReader{ bounds in
         
         VStack {
     
-            ScrollView(.vertical, showsIndicators: false){
+            ScrollView(.vertical, showsIndicators: true){
     
      
            
@@ -142,10 +142,10 @@ GeometryReader{ bounds in
           }
             
         }
-        .navigationBarTitle("Olevel")
-          
+        .navigationBarTitle("PastPaper", displayMode: .inline)
+    
         }
-        .navigationViewStyle(StackNavigationViewStyle())
+       
     }
   }
 }
