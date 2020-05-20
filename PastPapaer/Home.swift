@@ -162,7 +162,7 @@ struct SwitchView: View {
                 .offset(x: self.selected == 2 ? 22 : 0, y: 0)
                 .offset(x: self.selected == 3 ? 79 : 0, y: 0)
                 .offset(x: self.selected == 4 ? 133 : 0, y: 0)
-                     
+                
                 .animation(Animation.easeInOut(duration: 0.25))
                 
                 
@@ -175,8 +175,10 @@ struct SwitchView: View {
                            }
                            .font(.system(size: 18))
                            .padding(.horizontal, 8)
-                           
                            .foregroundColor(self.selected == 0 ? Color.white : Color("SwitchTextColor"))
+                           .frame(width: 70, height: 33)
+                           .cornerRadius(15)
+                           
                             
                            //.animation(Animation.easeInOut.delay(0.5))
                            

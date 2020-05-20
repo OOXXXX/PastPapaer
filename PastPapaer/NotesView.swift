@@ -22,6 +22,8 @@ struct NotesView: View {
 @State var PhyString = "https://www.notion.so/Physics-Docs-8dc7ad8aab96474483c93fb91a5509d7"
 @State var GeoString = "https://www.notion.so/Geography-Docs-8a55eb9e51904495a9c9c63e2b0fb735"
 @State var EcoString = "https://www.notion.so/Economics-Docs-b746b3faf97043519e9bc50b6e1953d5"
+@Environment(\.presentationMode) var presentationMode
+let dg = DragGesture()
     
     var body: some View {
         GeometryReader { geometry in
@@ -54,7 +56,8 @@ struct NotesView: View {
                                 self.EcoShow.toggle()
                             }
                         .sheet(isPresented: self.$EcoShow) {
-                        SafariView(url:URL(string: self.EcoString)!)
+//                        SafariView(url:URL(string: self.EcoString)!)
+                            Webview(url: self.EcoString)
                                .edgesIgnoringSafeArea(.all)
                             }
                         
@@ -66,7 +69,8 @@ struct NotesView: View {
                                 self.EngShow.toggle()
                             }
                         .sheet(isPresented: self.$EngShow) {
-                        SafariView(url:URL(string: self.EngString)!)
+//                        SafariView(url:URL(string: self.EngString)!)
+                            Webview(url: self.EngString)
                                .edgesIgnoringSafeArea(.all)
                             }
                     }
@@ -79,7 +83,8 @@ struct NotesView: View {
                                 self.PhyShow.toggle()
                             }
                         .sheet(isPresented: self.$PhyShow) {
-                        SafariView(url:URL(string: self.PhyString)!)
+//                        SafariView(url:URL(string: self.PhyString)!)
+                            Webview(url: self.PhyString)
                                .edgesIgnoringSafeArea(.all)
                             }
                          
@@ -90,7 +95,15 @@ struct NotesView: View {
                                 self.GeoShow.toggle()
                             }
                         .sheet(isPresented: self.$GeoShow) {
-                        SafariView(url:URL(string: self.GeoString)!)
+//                        SafariView(url:URL(string: self.GeoString)!)
+                           
+                    VStack{
+                                
+                            Webview(url: self.GeoString)
+                            
+                        
+                            }
+                                
                                .edgesIgnoringSafeArea(.all)
                             }
                         

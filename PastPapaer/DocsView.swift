@@ -23,7 +23,9 @@ ScrollView(.vertical, showsIndicators: false){
              self.showSafari.toggle()
             }
         .sheet(isPresented: $showSafari) {
-     SafariView(url:URL(string: self.urlString1)!)
+//     SafariView(url:URL(string: self.urlString1)!)
+            
+        Webview(url: self.urlString1)
         .edgesIgnoringSafeArea(.all)
           }
          
