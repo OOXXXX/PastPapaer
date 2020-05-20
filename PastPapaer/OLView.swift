@@ -152,6 +152,8 @@ GeometryReader{ bounds in
              }) {
                  Image(systemName: "waveform.path.ecg").imageScale(.large)
                     .font(.system(size: 15, weight: .semibold))
+                    .frame(width: 30, height: 35)
+                    .background(Color.gray)
              }
                 .sheet(isPresented: self.$showinfo) {
                     PaperInfoView()

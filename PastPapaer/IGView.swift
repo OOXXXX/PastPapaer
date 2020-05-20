@@ -10,6 +10,7 @@ import SwiftUI
 
 struct IGView: View {
 @State var selected = 0
+@State var showinfo = false
 let generator = UINotificationFeedbackGenerator()
         
         var body: some View {
@@ -48,7 +49,18 @@ let generator = UINotificationFeedbackGenerator()
                 
             }
             .navigationBarTitle("PastPaper", displayMode: .inline)
-              
+              .navigationBarItems(trailing:
+                  Button(action: {
+                     self.showinfo = true
+                  }) {
+                      Image(systemName: "waveform.path.ecg").imageScale(.large)
+                         .font(.system(size: 15, weight: .semibold))
+                  }
+                     .sheet(isPresented: self.$showinfo) {
+                         PaperInfoView()
+                         
+                     }
+              )
             }
              
         }
