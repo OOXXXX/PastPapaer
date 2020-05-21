@@ -144,3 +144,7 @@ struct FontCoustom10: ViewModifier {
         content.font(.custom("RopaSans-Regular", size: size))
     }
 }
+
+func haptic(type: UINotificationFeedbackGenerator.FeedbackType) {
+    UINotificationFeedbackGenerator().notificationOccurred(type)
+}

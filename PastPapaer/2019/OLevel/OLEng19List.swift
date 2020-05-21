@@ -97,6 +97,7 @@ struct LandmarkDetail: View {
                 self.isActivityPopoverPresented.toggle()
             default:
                 self.isActivitySheetPresented.toggle()
+                haptic(type: .success)
             }
         }, label: {
             Image(systemName: "square.and.arrow.up")
@@ -159,6 +160,7 @@ struct LandmarkDetail2: View {
             default:
                 // ⚠️ IMPORTANT: `UIActivityViewController` must be presented in a popover on iPhone and iPod Touch:
                 self.isActivitySheetPresented.toggle()
+                haptic(type: .success)
             }
         }, label: {
             Image(systemName: "square.and.arrow.up")
