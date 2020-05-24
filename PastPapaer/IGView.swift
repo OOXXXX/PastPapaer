@@ -31,13 +31,13 @@ let generator = UINotificationFeedbackGenerator()
                        Text("Edexcel").tag(2)
                    }
                 .pickerStyle(SegmentedPickerStyle())
-                .padding(.top)
+                .padding(.top, 10)
                 .padding(.horizontal)
                 //.padding(.bottom, 5)
                 
                 if self.selected == 0{
                     IGCaieView()
-                    .padding(.top, -6)
+                    .padding(.top, -12)
                 }
                 if self.selected == 1{
                     TextShimmerView()
