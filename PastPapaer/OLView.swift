@@ -44,11 +44,11 @@ GeometryReader{ bounds in
 
         Color("BG1")
         
-        VStack {
+        
     
             ScrollView(.vertical, showsIndicators: true){
     
-     
+                VStack {
            
     NavigationLink(destination: OLEng(), isActive: self.$isActive1){
      Button(action: {

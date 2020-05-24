@@ -17,6 +17,10 @@ let generator = UINotificationFeedbackGenerator()
        
     GeometryReader{ bounds in
         NavigationView{
+            ZStack{
+            
+
+            Color("BG1")
             ScrollView(.vertical, showsIndicators: true){
                 
             VStack {
@@ -62,7 +66,7 @@ let generator = UINotificationFeedbackGenerator()
                      }
               )
             }
-             
+        }
         }
       }
 }
