@@ -36,7 +36,12 @@ struct OLView: View {
     var body: some View {
    
 GeometryReader{ bounds in
-    NavigationView{
+    
+ NavigationView{
+        
+    ZStack{
+        
+//        Color(#colorLiteral(red: 0.07450980392, green: 0.07843137255, blue: 0.08235294118, alpha: 1)).edgesIgnoringSafeArea(.all)
         
         VStack {
     
@@ -164,7 +169,7 @@ GeometryReader{ bounds in
          )
        
         }
-       
+    }
     }
   }
 }

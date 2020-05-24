@@ -43,8 +43,9 @@ struct Home: View {
                 }
  
         }
-               
+           
     }
+    
 }
 
 

@@ -27,7 +27,9 @@ let dg = DragGesture()
     
     var body: some View {
         GeometryReader { geometry in
+            
             NavigationView {
+                
                 
             ScrollView(.vertical, showsIndicators: false){
                 VStack {
@@ -121,6 +123,7 @@ let dg = DragGesture()
         .padding(.leading, self.leadingPadding(geometry))
             
     }
+        
   }
     
     private func leadingPadding(_ geometry: GeometryProxy) -> CGFloat {
