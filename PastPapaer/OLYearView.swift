@@ -13,6 +13,10 @@ struct OLEng: View {
      
     
 var body: some View {
+    ZStack{
+    
+
+    Color("BG1")
         
     VStack {
         
@@ -27,7 +31,7 @@ var body: some View {
              
             
         }
-        
+    }
         
     }
     
@@ -37,6 +41,10 @@ struct OLMath: View {
 @Binding var isNavigationBarHidden: Bool
     
 var body: some View {
+    ZStack{
+    
+
+    Color("BG1")
         
     VStack {
         
@@ -52,7 +60,7 @@ var body: some View {
                 self.isNavigationBarHidden = false
         }
         
-        
+    }
     }
     
 }
@@ -61,6 +69,10 @@ struct OLPhy: View {
 @Binding var isNavigationBarHidden: Bool
     
 var body: some View {
+    ZStack{
+    
+
+    Color("BG1")
         
     VStack {
         
@@ -75,7 +87,7 @@ var body: some View {
             .onAppear {
                 self.isNavigationBarHidden = false
         }
-        
+    }
         
     }
     
@@ -85,6 +97,10 @@ struct OLCs: View {
 @Binding var isNavigationBarHidden: Bool
     
 var body: some View {
+    ZStack{
+    
+
+    Color("BG1")
         
     VStack {
         
@@ -100,7 +116,7 @@ var body: some View {
                 self.isNavigationBarHidden = false
         }
         
-        
+    }
     }
     
 }
@@ -109,6 +125,10 @@ struct OLBio: View {
 @Binding var isNavigationBarHidden: Bool
     
 var body: some View {
+    ZStack{
+    
+
+    Color("BG1")
         
     VStack {
         
@@ -123,7 +143,7 @@ var body: some View {
             .onAppear {
                 self.isNavigationBarHidden = false
         }
-        
+    }
         
     }
     
@@ -133,6 +153,10 @@ struct OLGeo: View {
 @Binding var isNavigationBarHidden: Bool
     
 var body: some View {
+    ZStack{
+    
+
+    Color("BG1")
         
     VStack {
         
@@ -147,7 +171,7 @@ var body: some View {
             .onAppear {
                 self.isNavigationBarHidden = false
         }
-        
+    }
         
     }
     
@@ -184,8 +208,8 @@ struct YearRoundedButton: ButtonStyle {
             .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
             .clipShape(RoundedRectangle(cornerRadius: 20))
             .overlay(
-               RoundedRectangle(cornerRadius: 20).stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 2))
-            .shadow(color: Color.gray.opacity(0.2), radius: 3, x: 0, y: 2)
+               RoundedRectangle(cornerRadius: 20).stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 0.705666738)), lineWidth: 2))
+            .shadow(color: Color.gray.opacity(0.05), radius: 3, x: 0, y: 2)
     }
 }
 

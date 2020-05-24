@@ -41,7 +41,8 @@ GeometryReader{ bounds in
         
     ZStack{
         
-//        Color(#colorLiteral(red: 0.07450980392, green: 0.07843137255, blue: 0.08235294118, alpha: 1)).edgesIgnoringSafeArea(.all)
+
+        Color("BG1")
         
         VStack {
     
@@ -260,8 +261,8 @@ struct ButtonView: View {
             .background(Color("Color-2"))
             .cornerRadius(11)
             .overlay(RoundedRectangle(cornerRadius: 10)
-            .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-            .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
+            .stroke(Color.gray.opacity(0.09), lineWidth: 2))
+            //.shadow(color: Color.gray.opacity(0.03), radius: 10, x: 0, y: 5)
             .padding(.top)
             .padding(.horizontal)
      

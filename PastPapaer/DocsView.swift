@@ -200,8 +200,8 @@ struct DocView: View {
             .background(Color("Color-2"))
             .cornerRadius(11)
             .overlay(RoundedRectangle(cornerRadius: 10)
-                .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-            .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
+            .stroke(Color.gray.opacity(0.09), lineWidth: 2))
+            //.shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
             .padding()
         
         
@@ -239,8 +239,8 @@ struct IssueView: View {
             .background(Color("Color-2"))
             .cornerRadius(11)
             .overlay(RoundedRectangle(cornerRadius: 10)
-                .stroke(Color.gray.opacity(0.1), lineWidth: 2))
-            .shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
+            .stroke(Color.gray.opacity(0.09), lineWidth: 2))
+            //.shadow(color: Color.gray.opacity(0.2), radius: 10, x: 0, y: 5)
             .padding()
     }
 }
