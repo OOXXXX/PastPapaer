@@ -54,7 +54,7 @@ struct Home_Previews: PreviewProvider {
     }
 }
 
-
+ 
 struct Topbar : View {
     
     let generator = UINotificationFeedbackGenerator()

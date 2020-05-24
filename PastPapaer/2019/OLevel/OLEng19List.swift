@@ -127,6 +127,7 @@ struct LandmarkDetail: View {
                 activityView.frame(width: 300, height: 480)
             } else {
                 activityView
+                .edgesIgnoringSafeArea(.all)
             }
         }
     }
@@ -190,6 +191,7 @@ struct LandmarkDetail2: View {
                 activityView.frame(width: 300, height: 480)
             } else {
                 activityView
+                .edgesIgnoringSafeArea(.all)
             }
         }
     }

@@ -123,8 +123,8 @@ struct OGeo19Detail: View {
                  .font(.system(size: 20, weight: .medium))
                  .frame(width: 35, height: 38)
                  .hoverEffect(.automatic)
-                 .padding(.trailing, -5)
-                 .padding(.bottom, 5)
+                 .padding(.trailing, -6)
+                 .padding(.bottom, 2)
             })
         }
         
@@ -146,6 +146,7 @@ struct OGeo19Detail: View {
                     activityView.frame(width: 300, height: 480)
                 } else {
                     activityView
+                    .edgesIgnoringSafeArea(.all)
                 }
             }
         }
@@ -205,6 +206,7 @@ struct OGeo19Detail2: View {
                     activityView.frame(width: 300, height: 480)
                 } else {
                     activityView
+                    .edgesIgnoringSafeArea(.all)
                 }
             }
         }

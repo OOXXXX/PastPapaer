@@ -149,6 +149,7 @@ struct OMath19Detail: View {
                  activityView.frame(width: 300, height: 480)
              } else {
                  activityView
+                .edgesIgnoringSafeArea(.all)
              }
          }
      }
@@ -210,6 +211,7 @@ struct OMath19Detail2: View {
                     activityView.frame(width: 300, height: 480)
                 } else {
                     activityView
+                    .edgesIgnoringSafeArea(.all)
                 }
             }
         }
