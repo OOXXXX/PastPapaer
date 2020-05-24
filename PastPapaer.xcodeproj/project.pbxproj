@@ -212,6 +212,7 @@
 		18B3791D247AB98100C7438E /* ICHis19List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3791C247AB98100C7438E /* ICHis19List.swift */; };
 		18B3791F247AB9AC00C7438E /* ICChe19List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3791E247AB9AC00C7438E /* ICChe19List.swift */; };
 		18B37921247AB9C500C7438E /* ICChin19List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B37920247AB9C500C7438E /* ICChin19List.swift */; };
+		18B37924247ABBC900C7438E /* ICYearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B37923247ABBC900C7438E /* ICYearView.swift */; };
 		18B6E24B24134DE7002615DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E24A24134DE7002615DE /* AppDelegate.swift */; };
 		18B6E24D24134DE7002615DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E24C24134DE7002615DE /* SceneDelegate.swift */; };
 		18B6E25024134DE7002615DE /* PastPapaer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E24E24134DE7002615DE /* PastPapaer.xcdatamodeld */; };
@@ -524,6 +525,7 @@
 		18B3791C247AB98100C7438E /* ICHis19List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICHis19List.swift; sourceTree = "<group>"; };
 		18B3791E247AB9AC00C7438E /* ICChe19List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICChe19List.swift; sourceTree = "<group>"; };
 		18B37920247AB9C500C7438E /* ICChin19List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICChin19List.swift; sourceTree = "<group>"; };
+		18B37923247ABBC900C7438E /* ICYearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICYearView.swift; sourceTree = "<group>"; };
 		18B6E24724134DE7002615DE /* PastPaperO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PastPaperO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B6E24A24134DE7002615DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18B6E24C24134DE7002615DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -1439,6 +1441,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		18B37922247ABA9B00C7438E /* IGCSE(CAIE) */ = {
+			isa = PBXGroup;
+			children = (
+				18B3790E247AB54000C7438E /* ICMath19List.swift */,
+				18B37910247AB87400C7438E /* ICEco19List.swift */,
+				18B37912247AB8F900C7438E /* ICPhy19List.swift */,
+				18B37914247AB92000C7438E /* ICEsl19List.swift */,
+				18B37916247AB94C00C7438E /* ICBio19List.swift */,
+				18B37918247AB96000C7438E /* ICCs19List.swift */,
+				18B3791A247AB96F00C7438E /* ICGeo19List.swift */,
+				18B3791C247AB98100C7438E /* ICHis19List.swift */,
+				18B3791E247AB9AC00C7438E /* ICChe19List.swift */,
+				18B37920247AB9C500C7438E /* ICChin19List.swift */,
+			);
+			path = "IGCSE(CAIE)";
+			sourceTree = "<group>";
+		};
 		18B6E23E24134DE7002615DE = {
 			isa = PBXGroup;
 			children = (
@@ -1484,6 +1503,7 @@
 				183C38F824718CAF00678717 /* IBView.swift */,
 				183C38FA24718CB800678717 /* STEPView.swift */,
 				18468222245FDD6B0054B8D0 /* OLYearView.swift */,
+				18B37923247ABBC900C7438E /* ICYearView.swift */,
 				18F5CE7F245F08F600D9D627 /* DocsView.swift */,
 				1873B3042472B30C00B166F5 /* NotesView.swift */,
 				189F8D3E2462DBF8000044F0 /* ContentView.swift */,
@@ -1519,16 +1539,7 @@
 			isa = PBXGroup;
 			children = (
 				18D5B44724611484001B6774 /* OLevel */,
-				18B3790E247AB54000C7438E /* ICMath19List.swift */,
-				18B37910247AB87400C7438E /* ICEco19List.swift */,
-				18B37912247AB8F900C7438E /* ICPhy19List.swift */,
-				18B37914247AB92000C7438E /* ICEsl19List.swift */,
-				18B37916247AB94C00C7438E /* ICBio19List.swift */,
-				18B37918247AB96000C7438E /* ICCs19List.swift */,
-				18B3791A247AB96F00C7438E /* ICGeo19List.swift */,
-				18B3791C247AB98100C7438E /* ICHis19List.swift */,
-				18B3791E247AB9AC00C7438E /* ICChe19List.swift */,
-				18B37920247AB9C500C7438E /* ICChin19List.swift */,
+				18B37922247ABA9B00C7438E /* IGCSE(CAIE) */,
 			);
 			path = 2019;
 			sourceTree = "<group>";
@@ -2229,6 +2240,7 @@
 				18D5B46424611B6F001B6774 /* OLBio17List.swift in Sources */,
 				18D5B451246116B3001B6774 /* OLGeo19List.swift in Sources */,
 				183397932461388B002F0D88 /* OLMath13List.swift in Sources */,
+				18B37924247ABBC900C7438E /* ICYearView.swift in Sources */,
 				183397BD24613CA2002F0D88 /* OLPhy11List.swift in Sources */,
 				1833979D246138DF002F0D88 /* OLMath13Data.swift in Sources */,
 				183397C924613CF7002F0D88 /* OLCs11Data.swift in Sources */,

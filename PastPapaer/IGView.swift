@@ -88,6 +88,7 @@ struct IGCaieView: View {
     @State var isActive8 = false
     @State var isActive9 = false
     @State var isActive10 = false
+    @State var isActive11 = false
     @State var tap = false
     @State var press = false
     @State var isNavigationBarHidden: Bool = false
@@ -97,7 +98,7 @@ struct IGCaieView: View {
             
              
                    
-            NavigationLink(destination: OLEng(), isActive: self.$isActive1){
+            NavigationLink(destination: ICMath(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive1){
              Button(action: {
         //        let selectionFeedback = UISelectionFeedbackGenerator()
         //          selectionFeedback.selectionChanged()
@@ -108,7 +109,7 @@ struct IGCaieView: View {
                 
               })
             {
-                ButtonView(name: "Mathematics", level: "hhh")
+                ButtonView(name: "Mathematics", level: "0580 & 0606")
                 
                    
                 }
@@ -117,7 +118,7 @@ struct IGCaieView: View {
                     
                     
                     
-            NavigationLink(destination: OLMath(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive2){
+            NavigationLink(destination: ICEco(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive2){
                 Button(action: {
                     let selectionFeedback = UISelectionFeedbackGenerator()
                       selectionFeedback.selectionChanged()
@@ -131,7 +132,7 @@ struct IGCaieView: View {
                  }
                                         
             }
-            NavigationLink(destination: OLPhy(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive3){
+            NavigationLink(destination: ICPhy(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive3){
                 Button(action: {
                     let selectionFeedback = UISelectionFeedbackGenerator()
                       selectionFeedback.selectionChanged()
@@ -145,7 +146,7 @@ struct IGCaieView: View {
                  }
             }
                                         
-            NavigationLink(destination: OLCs(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive4){
+            NavigationLink(destination: ICEsl(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive4){
                 
                 Button(action: {
                     let selectionFeedback = UISelectionFeedbackGenerator()
@@ -156,11 +157,11 @@ struct IGCaieView: View {
                   })
                 {
 
-                    ButtonView(name: "ESL", level: "0510 & 0991")
+                    ButtonView(name: "ESL", level: "0500")
                  }
             }
                 
-            NavigationLink(destination: OLBio(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive5){
+            NavigationLink(destination: ICBio(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive5){
                 Button(action: {
                     let selectionFeedback = UISelectionFeedbackGenerator()
                       selectionFeedback.selectionChanged()
@@ -170,12 +171,12 @@ struct IGCaieView: View {
                   })
                 {
 
-                    ButtonView(name: "Biology", level: "0610")
+                    ButtonView(name: "Biology", level: "0438")
                  }
                                         
             }
                         
-            NavigationLink(destination: OLGeo(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive6){
+            NavigationLink(destination: ICChe(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive6){
                 
                 Button(action: {
                     let selectionFeedback = UISelectionFeedbackGenerator()
@@ -186,13 +187,13 @@ struct IGCaieView: View {
                   })
                 {
                     
-                    ButtonView(name: "Computer Science", level: "0460")
+                    ButtonView(name: "Chemistry", level: "0620 & 0971")
         
                  }
                 
             }
                 
-            NavigationLink(destination: OLGeo(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive7){
+            NavigationLink(destination: ICCs(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive7){
                 
                 Button(action: {
                     let selectionFeedback = UISelectionFeedbackGenerator()
@@ -203,14 +204,14 @@ struct IGCaieView: View {
                   })
                 {
                     
-                    ButtonView(name: "Geography", level: "0478")
+                    ButtonView(name: "Computer Science", level: "0478")
                     
                     
                  }
                 
             }
             
-            NavigationLink(destination: OLGeo(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive8){
+            NavigationLink(destination: ICGeo(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive8){
                 
                 Button(action: {
                     let selectionFeedback = UISelectionFeedbackGenerator()
@@ -221,14 +222,14 @@ struct IGCaieView: View {
                   })
                 {
                     
-                    ButtonView(name: "History", level: "0470")
+                    ButtonView(name: "Geography", level: "0460 & 0976")
                     
                     
                  }
                 
             }
             
-            NavigationLink(destination: OLGeo(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive9){
+            NavigationLink(destination: ICHis(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive9){
                 
                 Button(action: {
                     let selectionFeedback = UISelectionFeedbackGenerator()
@@ -239,21 +240,43 @@ struct IGCaieView: View {
                   })
                 {
                     
-                    ButtonView(name: "Chinese", level: "0509")
+                    ButtonView(name: "History", level: "0470")
                     
                     
                  }
                 
             }
                 
+            NavigationLink(destination: ICChin(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$isActive10){
+                           
+                           Button(action: {
+                               let selectionFeedback = UISelectionFeedbackGenerator()
+                                 selectionFeedback.selectionChanged()
+                               
+                               self.isActive10 = true
+                               
+                             })
+                           {
+                               
+                               ButtonView(name: "Chinese FL", level: "0509")
+                               
+                               
+                            }
+                           
+                       }
+            
+            
+                
                 
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .padding(.bottom, 62)
+                .padding(.bottom, 62)
                     
-                  }
+                  
+        }
     }
     
 }
+
 
 struct IGAqaView: View {
     @State var showUpdate = false
