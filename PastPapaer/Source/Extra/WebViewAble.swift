@@ -13,10 +13,13 @@ var activityIndicator: UIActivityIndicatorView!
 
 struct Webview: UIViewControllerRepresentable {
     let url: String
+    
 
     func makeUIViewController(context: Context) -> WebviewController {
         let webviewController = WebviewController()
+        
 
+        
         let request = URLRequest(url: URL(string: self.url)!, cachePolicy: .returnCacheDataElseLoad)
         webviewController.webview.load(request)
 
@@ -26,6 +29,7 @@ struct Webview: UIViewControllerRepresentable {
     func updateUIViewController(_ webviewController: WebviewController, context: Context) {
         let request = URLRequest(url: URL(string: self.url)!, cachePolicy: .returnCacheDataElseLoad)
         webviewController.webview.load(request)
+        
     }
 }
 
@@ -38,6 +42,7 @@ class WebviewController: UIViewController {
 
         self.webview.frame = self.view.frame
         self.webview.translatesAutoresizingMaskIntoConstraints = false
+        self.webview.allowsBackForwardNavigationGestures = true
         self.view.addSubview(self.webview)
 
         self.view.addSubview(self.progressbar)
