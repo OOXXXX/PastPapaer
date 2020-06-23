@@ -39,7 +39,7 @@ struct ContentView: View {
                             .font(.system(size: 23))
                         }
                     }.tag(1)
-                .transition(.slide)
+                
                 
                 Text("About View")
                 .tabItem {
@@ -51,7 +51,7 @@ struct ContentView: View {
                         .font(.system(size: 23))
                     }
                 }.tag(2)
-                .transition(.slide)
+                
             }
                         
                      
