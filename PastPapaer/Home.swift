@@ -51,7 +51,12 @@ struct Home: View {
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        if #available(iOS 15.0, *) {
+            Home()
+                .previewInterfaceOrientation(.portrait)
+        } else {
+            // Fallback on earlier versions
+        }
     }
 }
 

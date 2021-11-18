@@ -18,7 +18,7 @@ struct NotesView: View {
 @State var GeoShow = false
 @State var EcoShow = false
 @State var AllString = "https://www.notion.so/ALL-Documents-e79a3abbe36c42678aef8fc9ad3ea355"
-@State var EngString = "https://www.notion.so/English-Docs-728f1471a1d94432a965b3d2750a94d1"
+@State var EngString = "https://notesonline.fun/english-docs"
 @State var PhyString = "https://www.notion.so/Physics-Docs-8dc7ad8aab96474483c93fb91a5509d7"
 @State var GeoString = "https://www.notion.so/Geography-Docs-8a55eb9e51904495a9c9c63e2b0fb735"
 @State var EcoString = "https://www.notion.so/Economics-Docs-b746b3faf97043519e9bc50b6e1953d5"
