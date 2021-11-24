@@ -9,37 +9,42 @@
 import SwiftUI
 
 struct Home: View {
-        @State var selected = 0
+    @State var selection: Int = 0
+    private let items: [String] = ["Olevel", "IGCSE", "Alevel", "IAL"]
+    
         
         var body: some View {
             
+//
             ZStack {
-                if self.selected == 0{
+                if selection == 0{
                     OLView()
                 }
-                if self.selected == 1{
+                if selection == 1{
                     IGView()
-                     
+
                 }
-                if self.selected == 2{
+                if selection == 2{
                     ALView()
-                     
+
                 }
-                if self.selected == 3{
+                if selection == 3{
                     IBView()
-                     
+
                 }
-                if self.selected == 4{
+                if selection == 4{
                     STEPView()
-                     
+
                 }
  
                 VStack {
-                    Text(" ")
+                    //Text(" ")
                     
                     Spacer()
-                    SwitchView(selected: self.$selected)
-                    .padding(.bottom, 10)
+                    PreviewView()
+                        .font(.system(size: 16, weight: .medium))
+                    
+                    
                 }
  
         }

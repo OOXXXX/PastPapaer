@@ -316,6 +316,7 @@
 		18FFE9D6246D6A2900FC1DB7 /* ClockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFE9D5246D6A2900FC1DB7 /* ClockViewModel.swift */; };
 		18FFE9D8246D6A4000FC1DB7 /* FlipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFE9D7246D6A4000FC1DB7 /* FlipViewModel.swift */; };
 		18FFE9DB246D6B9600FC1DB7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFE9DA246D6B9600FC1DB7 /* HomeView.swift */; };
+		4B005229274E980900304BE7 /* SegmentControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B005228274E980900304BE7 /* SegmentControlView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -631,6 +632,7 @@
 		18FFE9D5246D6A2900FC1DB7 /* ClockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewModel.swift; sourceTree = "<group>"; };
 		18FFE9D7246D6A4000FC1DB7 /* FlipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipViewModel.swift; sourceTree = "<group>"; };
 		18FFE9DA246D6B9600FC1DB7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4B005228274E980900304BE7 /* SegmentControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentControlView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1506,6 +1508,7 @@
 				18B37923247ABBC900C7438E /* ICYearView.swift */,
 				18F5CE7F245F08F600D9D627 /* DocsView.swift */,
 				1873B3042472B30C00B166F5 /* NotesView.swift */,
+				4B005228274E980900304BE7 /* SegmentControlView.swift */,
 				189F8D3E2462DBF8000044F0 /* ContentView.swift */,
 				18CF47892414A4FD006F01FA /* Source */,
 				18B6E25324134DEA002615DE /* Assets.xcassets */,
@@ -2323,6 +2326,7 @@
 				183397AB24613B22002F0D88 /* OLCs12List.swift in Sources */,
 				18D5B47024611BD7001B6774 /* OLGeo17Data.swift in Sources */,
 				18D5B46624611B7B001B6774 /* OLGeo17List.swift in Sources */,
+				4B005229274E980900304BE7 /* SegmentControlView.swift in Sources */,
 				18B37915247AB92000C7438E /* ICEsl19List.swift in Sources */,
 				1833976F24613362002F0D88 /* OLCs15List.swift in Sources */,
 				18D5B44D24611689001B6774 /* OLPhy19List.swift in Sources */,
