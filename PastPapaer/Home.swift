@@ -9,8 +9,8 @@
 import SwiftUI
 
 struct Home: View {
-    @State var selection: Int = 0
-    private let items: [String] = ["Olevel", "IGCSE", "Alevel", "IAL"]
+    @State var selection = 0
+//    private let items: [String] = ["Olevel", "IGCSE", "Alevel", "IAL"]
     
         
         var body: some View {
@@ -41,7 +41,7 @@ struct Home: View {
                     //Text(" ")
                     
                     Spacer()
-                    PreviewView()
+                    PreviewView(selection: self.$selection)
                         .font(.system(size: 16, weight: .medium))
                     
                     
@@ -165,3 +165,5 @@ struct SwitchView: View {
                }
     }
 }
+
+

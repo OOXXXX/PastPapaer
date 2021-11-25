@@ -135,13 +135,16 @@ struct SegmentedPicker: View {
             return
         }
         self.selection = index
+        
     }
+    
     
 }
 
 
 struct PreviewView: View {
-    @State var selection: Int = 0
+    @Binding var selection : Int
+
     private let items: [String] = ["Olevel", "IGCSE", "Alevel", "IAL"]
     
     
@@ -150,28 +153,14 @@ struct PreviewView: View {
             .padding(.horizontal)
             .padding(.vertical, 8)
         
-//        if self.selection == 0{
-//            OLView()
-//        }
-//        if self.selection == 1{
-//            IGView()
-//             
-//        }
-//        if self.selection == 2{
-//            ALView()
-//             
-//        }
-//        if self.selection == 3{
-//            IBView()
-//             
-//        }
+        
     }
 }
 
-struct SegmentControlView_Previews: PreviewProvider {
-    static var previews: some View {
-        PreviewView()
-            .font(.system(size: 16, weight: .bold))
-    }
-}
-
+//struct SegmentControlView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PreviewView(selection: self.$selection)
+//            .font(.system(size: 16, weight: .bold))
+//    }
+//}
+//
