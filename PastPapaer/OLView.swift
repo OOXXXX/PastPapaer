@@ -170,7 +170,7 @@ GeometryReader{ bounds in
          )
        
         }
-    }
+     }
     }
   }
 }

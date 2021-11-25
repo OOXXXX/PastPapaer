@@ -136,7 +136,7 @@ struct SegmentedPicker: View {
         }
         self.selection = index
         let selectionFeedback = UISelectionFeedbackGenerator()
-          selectionFeedback.selectionChanged()
+            selectionFeedback.selectionChanged()
         
     }
     
